@@ -1,6 +1,17 @@
 # verbi
 
-A [Next.js](https://nextjs.org) app. Packages are installed with **pnpm**.
+An Italian verb conjugation app. Type a verb, see every form across all tenses and moods. Simple, fast, works offline.
+
+Built by [orjon.com](https://www.orjon.com)
+
+## Roadmap
+
+- **v0.1 — Lookup** *(current)* — search a verb, get the full conjugation table. No account, no backend.
+- **v0.2 — Accounts** — optional sign-in. Lookup stays free and needs no account.
+- **v0.3 — Practice** — fill-in-the-blank drills and a verb of the day, tracking progress to resurface weak spots.
+- **v0.4 — Mobile** — a React Native app sharing the same conjugation logic.
+
+Built with Next.js, TypeScript and Tailwind. Conjugation data comes from the `italian-verbs` and `italian-verbs-dict` packages.
 
 ## Setup
 
