@@ -11,7 +11,9 @@ Built by [orjon.com](https://www.orjon.com)
 - **v0.3 — Practice** — fill-in-the-blank drills and a verb of the day, tracking progress to resurface weak spots.
 - **v0.4 — Mobile** — a React Native app sharing the same conjugation logic.
 
-Built with Next.js, TypeScript and Tailwind. Conjugation data comes from the `italian-verbs` and `italian-verbs-dict` packages.
+Built with Next.js, TypeScript and Tailwind. Conjugation data comes from the `italian-verbs` and
+`italian-verbs-dict` packages, which derive from [Morph-it!](https://docs.sslmit.unibo.it/doku.php?id=resources:morph-it)
+by Marco Baroni and Eros Zanchetta, used under CC BY-SA 2.0.
 
 ## Setup
 

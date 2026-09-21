@@ -166,6 +166,12 @@ importers:
 
   .:
     dependencies:
+      italian-verbs:
+        specifier: ^5.4.0
+        version: 5.4.0
+      italian-verbs-dict:
+        specifier: ^3.4.0
+        version: 3.4.0
       next:
         specifier: 16.3.5
         version: 16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@20.19.43)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -1567,6 +1573,14 @@ packages:
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
+
+  italian-verbs-dict@3.4.0:
+    resolution: {integrity: sha512-TY0kVsDUxP8sg1V+9QDXryu/IJzaRGLZgkeOibECr1ASMwBwMW/O63YQEJl4R5kLO5cE3RIltFxt15mQkkdOlA==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+  italian-verbs@5.4.0:
+    resolution: {integrity: sha512-OsDVOqN6p1I249sBXvcCZXJo4pWcRSiKKGwv3VN+uR5Hs77837KzBikgQ5fvJApx2LADO4aLg2o2G2Umi2kRDQ==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   iterator.prototype@1.1.5:
     resolution: {integrity: sha512-H0dkQoCa3b2VEeKQBOxFph+JAbcrQdE7KC0UkqwpLmv2EC4P41QXP+rqo9wYodACiG5/WM5s9oDApTU8utwj9g==}
@@ -3646,6 +3660,10 @@ snapshots:
   isarray@2.0.5: {}
 
   isexe@2.0.0: {}
+
+  italian-verbs-dict@3.4.0: {}
+
+  italian-verbs@5.4.0: {}
 
   iterator.prototype@1.1.5:
     dependencies:
