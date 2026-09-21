@@ -22,6 +22,6 @@ pnpm lint    # check the code
 
 ## "command not found: pnpm"
 
-Your terminal only looks up where a command lives once, and `pnpm` arrived after this window opened. Type `rehash`, or open a new window.
+If `node` and `corepack` are also missing, no Node.js version is switched on. With nvm, run `nvm use 22`. If your default is `lts/*` it can point at a version you haven't installed, so pin a real one: `nvm alias default 22`.
 
-If you've switched Node.js version since, run `corepack enable pnpm` again.
+If `node` works but `pnpm` doesn't, run `corepack enable pnpm` — it's tied to the Node.js version that was active when you first ran it.
