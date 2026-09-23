@@ -1,0 +1,93 @@
+{
+  "cadere": {
+    "cond": {
+      "pres": {
+        "S3": "cadrebbe",
+        "P3": "cadrebbero",
+        "S1": "cadrei",
+        "P1": "cadremmo",
+        "P2": "cadreste",
+        "S2": "cadresti"
+      }
+    },
+    "ger": {
+      "pres": "cadendo"
+    },
+    "impr": {
+      "pres": {
+        "P2": "cadete",
+        "S2": "cadi",
+        "P1": "cadiamo"
+      }
+    },
+    "ind": {
+      "pres": {
+        "S3": "cade",
+        "P2": "cadete",
+        "S2": "cadi",
+        "P1": "cadiamo",
+        "S1": "cado",
+        "P3": "cadono"
+      },
+      "past": {
+        "S3": "cadde",
+        "P3": "caddero",
+        "S1": "caddi",
+        "P1": "cademmo",
+        "P2": "cadeste",
+        "S2": "cadesti"
+      },
+      "impf": {
+        "S3": "cadeva",
+        "P1": "cadevamo",
+        "P3": "cadevano",
+        "P2": "cadevate",
+        "S2": "cadevi",
+        "S1": "cadevo"
+      },
+      "fut": {
+        "S2": "cadrai",
+        "P3": "cadranno",
+        "P1": "cadremo",
+        "P2": "cadrete",
+        "S3": "cadrà",
+        "S1": "cadrò"
+      }
+    },
+    "inf": {
+      "pres": "cadere"
+    },
+    "part": {
+      "pres": {
+        "SF": "cadente",
+        "S": "cadente",
+        "PF": "cadenti",
+        "P": "cadenti"
+      },
+      "past": {
+        "SF": "caduta",
+        "PF": "cadute",
+        "P": "caduti",
+        "S": "caduto"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "cada",
+        "S2": "cada",
+        "S3": "cada",
+        "P3": "cadano",
+        "P1": "cadiamo",
+        "P2": "cadiate"
+      },
+      "impf": {
+        "S3": "cadesse",
+        "P3": "cadessero",
+        "S1": "cadessi",
+        "S2": "cadessi",
+        "P1": "cadessimo",
+        "P2": "cadeste"
+      }
+    }
+  }
+}
