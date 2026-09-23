@@ -1,7 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import verbs from 'italian-verbs-dict/dist/verbs.json' with { type: 'json' };
-import { conjugate, conjugateTense, hasVerb } from './conjugate.ts';
+import { conjugate, conjugateTense, hasVerb, listVerbs } from './conjugate.ts';
+import { EXCLUDED, isExcluded } from './excluded.ts';
 import { getAux, isDualAux, _lists } from './aux.ts';
 
 test('every verb in the auxiliary lists exists in the dictionary', () => {
@@ -82,4 +83,24 @@ test('a reflexive verb points the caller at the base verb', () => {
 
 test('a defective verb names the missing tense', () => {
   assert.throws(() => conjugate('vigere', 'PASSATO_PROSSIMO', 3, 'S'), /no PASSATO_PROSSIMO form/);
+});
+
+test('excluded entries are left out of the verb list', () => {
+  const listed = listVerbs();
+  assert.equal(listed.length, Object.keys(verbs).length - EXCLUDED.size);
+  assert.ok(!listed.includes('dimmi'));
+  assert.ok(!listed.includes('abbuffarsi'));
+  assert.ok(listed.includes('parlare'));
+  // sedere has a broken gerund but is a common verb, so it stays
+  assert.ok(listed.includes('sedere'));
+});
+
+test('every excluded key is really in the dictionary', () => {
+  const missing = [...EXCLUDED].filter((v) => !hasVerb(v));
+  assert.deepEqual(missing, [], `excluded but not present: ${missing.join(', ')}`);
+});
+
+test('all reflexives are excluded', () => {
+  const kept = Object.keys(verbs).filter((v) => v.endsWith('si') && !isExcluded(v));
+  assert.deepEqual(kept, []);
 });

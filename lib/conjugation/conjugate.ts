@@ -5,41 +5,33 @@
  * They never choose an auxiliary, so they cannot choose the wrong one.
  */
 import { getConjugation } from 'italian-verbs';
-import verbs from 'italian-verbs-dict/dist/verbs.json' with { type: 'json' };
+import type { VerbsInfo } from 'italian-verbs-dict';
+import verbsJson from 'italian-verbs-dict/dist/verbs.json' with { type: 'json' };
 import { getAux, isReflexive, reflexiveBase } from './aux.ts';
+import { isExcluded } from './excluded.ts';
+import type { ConjugateOptions, Numbers, Person, Tense } from '../../types/index.ts';
+import { COMPOUND_TENSES, PERSONS } from '../../constants/index.ts';
 
-export type Person = 1 | 2 | 3;
-export type Numbers = 'S' | 'P';
-export type Gender = 'M' | 'F';
-
-export type Tense =
-  | 'PRESENTE' | 'IMPERFETTO' | 'PASSATO_REMOTO' | 'FUTURO_SEMPLICE'
-  | 'PASSATO_PROSSIMO' | 'TRAPASSATO_PROSSIMO' | 'TRAPASSATO_REMOTO'
-  | 'FUTURO_ANTERIORE' | 'CONG_PRESENTE' | 'CONG_PASSATO' | 'CONG_IMPERFETTO'
-  | 'CONG_TRAPASSATO' | 'COND_PRESENTE' | 'COND_PASSATO' | 'IMPERATIVO';
-
-/** Tenses built from an auxiliary plus the past participle. */
-export const COMPOUND_TENSES: readonly Tense[] = [
-  'PASSATO_PROSSIMO', 'TRAPASSATO_PROSSIMO', 'TRAPASSATO_REMOTO',
-  'FUTURO_ANTERIORE', 'CONG_PASSATO', 'CONG_TRAPASSATO', 'COND_PASSATO',
-];
+// The JSON import resolves to `{}` under some TypeScript module settings, so
+// state the shape the package already declares rather than relying on it.
+const verbs = verbsJson as unknown as VerbsInfo;
 
 export function isCompound(tense: Tense): boolean {
   return COMPOUND_TENSES.includes(tense);
 }
 
-/** True when the dictionary has this verb. */
+/** True when the dictionary has this verb, excluded or not. */
 export function hasVerb(verb: string): boolean {
   return Object.prototype.hasOwnProperty.call(verbs, verb);
 }
 
-export interface ConjugateOptions {
-  /**
-   * Gender of the subject, for participle agreement in compound tenses formed
-   * with `essere`: "sono andato" / "sono andata". Ignored with `avere`, where
-   * the participle does not agree with the subject. Defaults to masculine.
-   */
-  gender?: Gender;
+/**
+ * The verbs the app offers: every dictionary key except the excluded ones,
+ * sorted. Use this for search and listings rather than reading the dictionary
+ * directly.
+ */
+export function listVerbs(): string[] {
+  return Object.keys(verbs).filter((v) => !isExcluded(v)).sort();
 }
 
 /**
@@ -83,10 +75,6 @@ export function conjugate(
     throw new Error(`${verb} has no ${tense} form.`, { cause });
   }
 }
-
-const PERSONS: ReadonlyArray<[Person, Numbers]> = [
-  [1, 'S'], [2, 'S'], [3, 'S'], [1, 'P'], [2, 'P'], [3, 'P'],
-];
 
 /**
  * A whole tense, in the order a conjugation table is read:

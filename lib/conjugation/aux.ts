@@ -6,8 +6,7 @@
  * returns "ho andato" — wrong Italian, no warning. This module makes that call
  * so the rest of the app never has to.
  */
-
-export type ItalianAux = 'ESSERE' | 'AVERE';
+import type { ItalianAux } from '../../types/index.ts';
 
 /**
  * Verbs taking `essere`: intransitives of motion, state, and change of state,
