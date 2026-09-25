@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useMemo, useState } from "react"
 
 const ENDINGS = ["are", "ere", "ire", "rre"] as const
@@ -116,8 +117,13 @@ export function VerbList({
         )}
         <ul className="mx-auto w-full max-w-5xl columns-2 gap-6 sm:columns-3 lg:columns-4">
           {shown.map((verb) => (
-            <li key={verb} className="py-0.5 text-sm break-inside-avoid">
-              {verb}
+            <li key={verb} className="break-inside-avoid">
+              <Link
+                href={`/verbs/${verb}`}
+                className="block py-0.5 text-sm hover:underline"
+              >
+                {verb}
+              </Link>
             </li>
           ))}
         </ul>

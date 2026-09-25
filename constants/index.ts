@@ -30,3 +30,46 @@ export const COMPOUND_TENSES: readonly Tense[] = [
   'PASSATO_PROSSIMO', 'TRAPASSATO_PROSSIMO', 'TRAPASSATO_REMOTO',
   'FUTURO_ANTERIORE', 'CONG_PASSATO', 'CONG_TRAPASSATO', 'COND_PASSATO',
 ];
+
+/**
+ * The moods and tenses of a full conjugation table, in the order they are
+ * shown: simple tenses first within each mood, then the compound ones.
+ */
+export const TENSE_GROUPS: ReadonlyArray<{
+  mood: string;
+  tenses: ReadonlyArray<{ tense: Tense; label: string }>;
+}> = [
+  {
+    mood: 'Indicativo',
+    tenses: [
+      { tense: 'PRESENTE', label: 'Presente' },
+      { tense: 'IMPERFETTO', label: 'Imperfetto' },
+      { tense: 'PASSATO_REMOTO', label: 'Passato remoto' },
+      { tense: 'FUTURO_SEMPLICE', label: 'Futuro semplice' },
+      { tense: 'PASSATO_PROSSIMO', label: 'Passato prossimo' },
+      { tense: 'TRAPASSATO_PROSSIMO', label: 'Trapassato prossimo' },
+      { tense: 'TRAPASSATO_REMOTO', label: 'Trapassato remoto' },
+      { tense: 'FUTURO_ANTERIORE', label: 'Futuro anteriore' },
+    ],
+  },
+  {
+    mood: 'Congiuntivo',
+    tenses: [
+      { tense: 'CONG_PRESENTE', label: 'Presente' },
+      { tense: 'CONG_IMPERFETTO', label: 'Imperfetto' },
+      { tense: 'CONG_PASSATO', label: 'Passato' },
+      { tense: 'CONG_TRAPASSATO', label: 'Trapassato' },
+    ],
+  },
+  {
+    mood: 'Condizionale',
+    tenses: [
+      { tense: 'COND_PRESENTE', label: 'Presente' },
+      { tense: 'COND_PASSATO', label: 'Passato' },
+    ],
+  },
+  {
+    mood: 'Imperativo',
+    tenses: [{ tense: 'IMPERATIVO', label: 'Imperativo' }],
+  },
+];
