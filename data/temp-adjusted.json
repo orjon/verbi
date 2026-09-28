@@ -1,0 +1,646 @@
+{
+ "abboffare": [
+  "part.pres"
+ ],
+ "abbuffare": [
+  "part.pres"
+ ],
+ "accaldare": [
+  "part.pres"
+ ],
+ "accanire": [
+  "part.pres"
+ ],
+ "accapigliare": [
+  "part.pres"
+ ],
+ "accigliare": [
+  "part.pres"
+ ],
+ "accoccolare": [
+  "part.pres"
+ ],
+ "accorgere": [
+  "part.pres"
+ ],
+ "accosciare": [
+  "part.pres"
+ ],
+ "accovacciare": [
+  "part.pres"
+ ],
+ "accucciare": [
+  "part.pres"
+ ],
+ "addire": [
+  "ger.pres"
+ ],
+ "adirare": [
+  "part.pres"
+ ],
+ "adontare": [
+  "part.pres"
+ ],
+ "affare": [
+  "impr",
+  "part.pres"
+ ],
+ "afflosciare": [
+  "part.pres"
+ ],
+ "appigliare": [
+  "part.pres"
+ ],
+ "appisolare": [
+  "part.pres"
+ ],
+ "appollaiare": [
+  "part.pres"
+ ],
+ "arrabattare": [
+  "part.pres"
+ ],
+ "assentare": [
+  "part.pres"
+ ],
+ "attagliare": [
+  "part.pres"
+ ],
+ "attendare": [
+  "part.pres"
+ ],
+ "autocandidare": [
+  "part.pres"
+ ],
+ "avvalere": [
+  "part.pres"
+ ],
+ "avvedere": [
+  "part.pres"
+ ],
+ "barcamenare": [
+  "part.pres"
+ ],
+ "calere": [
+  "cond",
+  "cond.pres.P3",
+  "cond.pres.S3",
+  "ger.pres",
+  "impr",
+  "impr.pres.P2",
+  "impr.pres.S2",
+  "ind.fut",
+  "ind.impf.P1",
+  "ind.impf.P2",
+  "ind.impf.P3",
+  "ind.impf.S1",
+  "ind.impf.S2",
+  "ind.impf.S3",
+  "ind.past.P1",
+  "ind.past.P2",
+  "ind.past.P3",
+  "ind.past.S1",
+  "ind.past.S2",
+  "ind.past.S3",
+  "ind.pres.P1",
+  "ind.pres.P2",
+  "ind.pres.P3",
+  "ind.pres.S1",
+  "ind.pres.S2",
+  "ind.pres.S3",
+  "inf.pres",
+  "part.past.P",
+  "part.past.PF",
+  "part.past.S",
+  "part.past.SF",
+  "part.pres",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF",
+  "sub.impf.P1",
+  "sub.impf.P2",
+  "sub.impf.P3",
+  "sub.impf.S1",
+  "sub.impf.S2",
+  "sub.impf.S3",
+  "sub.pres.P1",
+  "sub.pres.P2",
+  "sub.pres.P3",
+  "sub.pres.S1",
+  "sub.pres.S2",
+  "sub.pres.S3"
+ ],
+ "cerchiare": [
+  "impr.pres.P1",
+  "impr.pres.P2",
+  "impr.pres.S2",
+  "ind.pres.P1",
+  "ind.pres.P2",
+  "ind.pres.P3",
+  "ind.pres.S1",
+  "ind.pres.S2",
+  "ind.pres.S3",
+  "part.past.P",
+  "part.past.PF",
+  "part.past.S",
+  "part.past.SF",
+  "sub.pres.P1",
+  "sub.pres.P2",
+  "sub.pres.P3",
+  "sub.pres.S1",
+  "sub.pres.S2",
+  "sub.pres.S3"
+ ],
+ "cuocere": [
+  "ger.pres"
+ ],
+ "congratulare": [
+  "part.pres"
+ ],
+ "consumere": [
+  "cond",
+  "ger",
+  "ger.pres",
+  "impr",
+  "impr.pres.P2",
+  "ind.fut",
+  "ind.impf",
+  "ind.impf.P1",
+  "ind.impf.P2",
+  "ind.impf.P3",
+  "ind.impf.S1",
+  "ind.impf.S2",
+  "ind.impf.S3",
+  "ind.past.P1",
+  "ind.past.P2",
+  "ind.past.P3",
+  "ind.past.S1",
+  "ind.past.S2",
+  "ind.past.S3",
+  "ind.pres",
+  "ind.pres.P2",
+  "ind.pres.P3",
+  "ind.pres.S3",
+  "inf.pres",
+  "part.past.P",
+  "part.past.PF",
+  "part.past.S",
+  "part.past.SF",
+  "part.pres",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF",
+  "sub",
+  "sub.impf.P1",
+  "sub.impf.P2",
+  "sub.impf.P3",
+  "sub.impf.S1",
+  "sub.impf.S2",
+  "sub.impf.S3"
+ ],
+ "dare": [
+  "impr.pres.S2",
+  "ind.pres.S1",
+  "ind.pres.S2"
+ ],
+ "defaticare": [
+  "part.pres"
+ ],
+ "disdire": [
+  "ger.pres",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF"
+ ],
+ "disfare": [
+  "ger.pres"
+ ],
+ "essere": [
+  "ind.pres.S3"
+ ],
+ "imbattere": [
+  "part.pres"
+ ],
+ "immusonire": [
+  "part.pres"
+ ],
+ "impadronire": [
+  "part.pres"
+ ],
+ "impancare": [
+  "part.pres"
+ ],
+ "impaperare": [
+  "part.pres"
+ ],
+ "impelagare": [
+  "part.pres"
+ ],
+ "impipare": [
+  "part.pres"
+ ],
+ "impossessare": [
+  "part.pres"
+ ],
+ "incaponire": [
+  "part.pres"
+ ],
+ "incapricciare": [
+  "part.pres"
+ ],
+ "incavolare": [
+  "part.pres"
+ ],
+ "incazzare": [
+  "part.pres"
+ ],
+ "incrodare": [
+  "part.pres"
+ ],
+ "industriare": [
+  "part.pres"
+ ],
+ "inerpicare": [
+  "part.pres"
+ ],
+ "infischiare": [
+  "part.pres"
+ ],
+ "infognare": [
+  "part.pres"
+ ],
+ "infortunare": [
+  "part.pres"
+ ],
+ "ingegnare": [
+  "part.pres"
+ ],
+ "inginocchiare": [
+  "part.pres"
+ ],
+ "intestardire": [
+  "part.pres"
+ ],
+ "inurbare": [
+  "part.pres"
+ ],
+ "lagnare": [
+  "part.pres"
+ ],
+ "licere": [
+  "cond",
+  "ger",
+  "impr",
+  "ind.fut",
+  "ind.impf.P1",
+  "ind.impf.P2",
+  "ind.impf.P3",
+  "ind.impf.S1",
+  "ind.impf.S2",
+  "ind.impf.S3",
+  "ind.past",
+  "ind.pres.P1",
+  "ind.pres.P2",
+  "ind.pres.P3",
+  "ind.pres.S1",
+  "ind.pres.S2",
+  "ind.pres.S3",
+  "inf.pres",
+  "part.past.P",
+  "part.past.PF",
+  "part.past.S",
+  "part.past.SF",
+  "part.pres",
+  "sub.impf.P1",
+  "sub.impf.P2",
+  "sub.impf.P3",
+  "sub.impf.S1",
+  "sub.impf.S2",
+  "sub.impf.S3",
+  "sub.pres"
+ ],
+ "ostinare": [
+  "part.pres"
+ ],
+ "pavoneggiare": [
+  "part.pres"
+ ],
+ "pentire": [
+  "part.pres"
+ ],
+ "percuotere": [
+  "ger.pres",
+  "ind.impf.S1",
+  "part.pres",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF"
+ ],
+ "peritare": [
+  "part.pres"
+ ],
+ "piccare": [
+  "part.pres"
+ ],
+ "plaudere": [
+  "ger.pres",
+  "impr.pres.P1",
+  "impr.pres.P2",
+  "impr.pres.S2",
+  "ind.past.P1",
+  "ind.past.P2",
+  "ind.past.P3",
+  "ind.past.S1",
+  "ind.past.S2",
+  "ind.past.S3",
+  "ind.pres.P1",
+  "ind.pres.P2",
+  "ind.pres.P3",
+  "ind.pres.S1",
+  "ind.pres.S2",
+  "ind.pres.S3",
+  "part.past.P",
+  "part.past.PF",
+  "part.past.S",
+  "part.past.SF",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF",
+  "sub.pres.P1",
+  "sub.pres.P2",
+  "sub.pres.P3",
+  "sub.pres.S1",
+  "sub.pres.S2",
+  "sub.pres.S3"
+ ],
+ "possedere": [
+  "ger.pres",
+  "ind.impf.S1",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF"
+ ],
+ "presentire": [
+  "impr.pres.P1",
+  "impr.pres.P2",
+  "impr.pres.S2",
+  "ind.pres.P1",
+  "ind.pres.P2",
+  "ind.pres.P3",
+  "ind.pres.S1",
+  "ind.pres.S2",
+  "ind.pres.S3",
+  "sub.pres.P1",
+  "sub.pres.P2",
+  "sub.pres.P3",
+  "sub.pres.S1",
+  "sub.pres.S2",
+  "sub.pres.S3"
+ ],
+ "provenire": [
+  "ger.pres"
+ ],
+ "recere": [
+  "cond",
+  "ger",
+  "impr",
+  "ind.fut",
+  "ind.impf",
+  "ind.past",
+  "ind.pres.P1",
+  "ind.pres.P2",
+  "ind.pres.P3",
+  "ind.pres.S1",
+  "ind.pres.S2",
+  "ind.pres.S3",
+  "inf.pres",
+  "part.past.P",
+  "part.past.PF",
+  "part.past.S",
+  "part.past.SF",
+  "part.pres",
+  "sub"
+ ],
+ "riappropriare": [
+  "part.pres"
+ ],
+ "ridare": [
+  "ind.pres.S1"
+ ],
+ "rimpossessare": [
+  "part.pres"
+ ],
+ "rincagnare": [
+  "part.pres"
+ ],
+ "ripentire": [
+  "part.pres"
+ ],
+ "ripercuotere": [
+  "ger.pres",
+  "part.pres",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF"
+ ],
+ "riscuotere": [
+  "ger.pres",
+  "ind.impf.S1",
+  "part.pres",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF"
+ ],
+ "risedere": [
+  "ger.pres",
+  "ind.impf.S1",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF"
+ ],
+ "rivalere": [
+  "part.pres"
+ ],
+ "sbellicare": [
+  "part.pres"
+ ],
+ "sbracciare": [
+  "part.pres"
+ ],
+ "sbronzare": [
+  "part.pres"
+ ],
+ "scalmanare": [
+  "part.pres"
+ ],
+ "scamiciare": [
+  "part.pres"
+ ],
+ "scapicollare": [
+  "part.pres"
+ ],
+ "scervellare": [
+  "part.pres"
+ ],
+ "scollacciare": [
+  "part.pres"
+ ],
+ "scuotere": [
+  "ger.pres",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF"
+ ],
+ "sedere": [
+  "ger.pres",
+  "ind.impf.S1",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF"
+ ],
+ "sfegatare": [
+  "part.pres"
+ ],
+ "sfratare": [
+  "part.pres"
+ ],
+ "sgolare": [
+  "part.pres"
+ ],
+ "soddisfare": [
+  "ger.pres"
+ ],
+ "solere": [
+  "cond",
+  "cond.pres.P1",
+  "cond.pres.P2",
+  "cond.pres.P3",
+  "cond.pres.S1",
+  "cond.pres.S2",
+  "cond.pres.S3",
+  "ind.fut",
+  "ind.past",
+  "sub.pres.P1",
+  "sub.pres.P2",
+  "sub.pres.P3",
+  "sub.pres.S1",
+  "sub.pres.S2",
+  "sub.pres.S3"
+ ],
+ "sonare": [
+  "ger.pres",
+  "impr.pres.P1",
+  "impr.pres.P2",
+  "impr.pres.S2",
+  "ind.impf.P1",
+  "ind.impf.P2",
+  "ind.impf.P3",
+  "ind.impf.S1",
+  "ind.impf.S2",
+  "ind.impf.S3",
+  "ind.past.P1",
+  "ind.past.P2",
+  "ind.past.P3",
+  "ind.past.S1",
+  "ind.past.S2",
+  "ind.past.S3",
+  "ind.pres.P1",
+  "ind.pres.P2",
+  "ind.pres.P3",
+  "ind.pres.S1",
+  "ind.pres.S2",
+  "ind.pres.S3",
+  "inf.pres",
+  "part.past.P",
+  "part.past.PF",
+  "part.past.S",
+  "part.past.SF",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF",
+  "sub.impf.P1",
+  "sub.impf.P2",
+  "sub.impf.P3",
+  "sub.impf.S1",
+  "sub.impf.S2",
+  "sub.impf.S3"
+ ],
+ "soprassedere": [
+  "ger.pres",
+  "ind.impf.S1",
+  "part.pres",
+  "part.pres.P",
+  "part.pres.PF",
+  "part.pres.S",
+  "part.pres.SF"
+ ],
+ "spaparacchiare": [
+  "part.pres"
+ ],
+ "spaparanzare": [
+  "part.pres"
+ ],
+ "specchiare": [
+  "part.pres"
+ ],
+ "spengere": [
+  "ind.past.P1",
+  "ind.past.P2",
+  "ind.past.P3",
+  "ind.past.S1",
+  "ind.past.S2",
+  "ind.past.S3",
+  "ind.pres.P1",
+  "ind.pres.P2",
+  "ind.pres.P3",
+  "ind.pres.S1",
+  "ind.pres.S2",
+  "ind.pres.S3",
+  "part.past.P",
+  "part.past.PF",
+  "part.past.S",
+  "part.past.SF",
+  "sub.pres.P1",
+  "sub.pres.P2",
+  "sub.pres.P3",
+  "sub.pres.S1",
+  "sub.pres.S2",
+  "sub.pres.S3"
+ ],
+ "spericolare": [
+  "part.pres"
+ ],
+ "spolmonare": [
+  "part.pres"
+ ],
+ "spretare": [
+  "part.pres"
+ ],
+ "stempiare": [
+  "part.pres"
+ ],
+ "stravaccare": [
+  "part.pres"
+ ],
+ "suicidare": [
+  "part.pres"
+ ],
+ "vanagloriare": [
+  "part.pres"
+ ],
+ "vergognare": [
+  "part.pres"
+ ]
+}

@@ -1,24 +1,17 @@
 import { PERSON_SLOTS } from './slots.ts';
 
 /**
- * NOT IN USE.
+ * Chooses one form per slot from Morph-it's candidates. scripts/build.ts calls
+ * `choose` for every slot that has no override.
  *
- * Nothing reads this file yet. It was written for an earlier build that has
- * been abandoned, and is kept because the choosing logic will be needed when a
- * merge tool is written. Until then it decides nothing, and the counts in
- * resources/to-verify.md are computed without it.
+ * A slot whose forms are all rejected is left empty. The build then tries the
+ * rules in scripts/derive.ts, and records any slot still empty in the
+ * `emptied` section of data/temp-unresolved.json.
  *
- * Before using it, settle two things:
- *
- *   - The `ind.fut` rule below is unverified. It assumes the future endings are
- *     invariant across all six persons, which is exactly the open question in
- *     item 3a of resources/to-verify.md. Every other rule here was measured
- *     against the whole dictionary with no counter-example.
- *
- *   - Rejecting a form makes a slot empty. The gap counts in to-verify.md treat
- *     a slot as filled whenever Morph-it has anything in it, so running this
- *     will produce gaps that document does not yet predict — `sedere`'s present
- *     participle, for one.
+ * There is no `ind.fut` rule: it would assume the future endings are the same
+ * across all six persons, which is the open question in item 3a of
+ * resources/to-verify.md. Every rule below was measured against the whole
+ * dictionary with no counter-example.
  *
  * ---
  *

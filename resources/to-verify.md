@@ -3,8 +3,8 @@
 Morph-it is the source and is assumed correct. This lists where it does not
 give a single clear answer, so you can decide.
 
-Decisions go in `resources/overrides.json`, which currently holds 177 forms
-and 76 nulls and takes precedence over Morph-it. Its entries are of three kinds:
+Decisions go in `resources/overrides.json`, which currently holds 198 forms
+and 81 nulls and takes precedence over Morph-it. Its entries are of three kinds:
 
 - a form filling a slot Morph-it left empty — most of them
 - a form replacing one Morph-it has tagged correctly but which is not the one
@@ -175,6 +175,12 @@ one decision per verb rather than one per slot.
 
 **Question:** one answer per verb — which stem leads?
 
+**Partly decided.** The gerund is settled for all but `nuocere`, and the
+imperfect `io` form for the `-ie-`/`-uo-` verbs — see *Gerunds and present
+participles* under Resolved. The rest of each paradigm is still open, but the
+same reasoning points the way: `-ie-` drops when unstressed (`sedeva`), `-uo-`
+is kept (`scuoteva`).
+
 ## 2b. Passato remoto — strong or weak — 164 slots
 
 Many `-ere` verbs have both a strong perfect and a regular one, and Morph-it
@@ -310,7 +316,9 @@ at all: `figgere` → *fisse*, `suggere` → *susse*, `urgere` → *urse*.
 
 **Question:** confirm those three.
 
-## 3c. A participle that is not a participle — 8
+## 3c. A participle that is not a participle — 8 — **DECIDED**
+
+See *Gerunds and present participles* under Resolved.
 
 All four gender slots hold the same word, and it is an imperfect indicative.
 
@@ -331,7 +339,10 @@ spelling anywhere in Morph-it. `presentire` is answered.
 | `calere` | cond.pres.P3 | calerebber | calerebbero |
 | `consumere` | ind.past.P3 | consumeron | consumerono |
 
-## 3e. A gerund that is not a gerund — 1
+## 3e. A gerund that is not a gerund — 1 — **DECIDED**
+
+`disdicendo`, made by the gerund rule. See *Gerunds and present participles*
+under Resolved.
 
 | Verb | Morph-it has | Probably |
 | --- | --- | --- |
@@ -354,7 +365,9 @@ longer form is used and the shorter ignored.
 # Resolved
 
 Decisions already recorded. **572 of the original 866 empty slots are closed**,
-plus 6 of the 619 conflicts.
+plus 6 of the 619 conflicts. The gerund and present-participle decisions below
+closed a further 10 conflicts and 42 misfiled slots, counted by
+`scripts/build.ts` rather than the report.
 
 | What | Slots closed | Where it lives |
 | --- | --- | --- |
@@ -408,8 +421,78 @@ the right place and the conditional is nulled.
 This is the pattern to watch: overriding a form Morph-it has tagged correctly,
 rather than filling a gap or removing junk.
 
+## Gerunds and present participles — decided 2026-09-28
+
+Morph-it files imperfect forms (`sedevo`, `disdicevo`) under the gerund and
+present participle of nine verbs. `scripts/validate.ts` rejects them, since a
+gerund must end in `-ando`/`-endo` and a present participle in `-ente`/`-ante`.
+The decisions below fill or close those slots, and settle the gerund conflicts.
+Every form was checked against Wiktionary, Treccani or the Olivetti dictionary.
+
+**Decision 1 — a missing gerund is made from the imperfect by rule.** The
+gerund shares the imperfect's stem: `facevo → facendo`, `sedevo → sedendo`.
+This matches Morph-it's own gerund for 6,058 of 6,061 verbs; the three
+exceptions (`essere`, `riessere`, `empire`) already have a gerund. The rule is
+`gerundFromImperfect` in `scripts/derive.ts`, which also holds the grammar
+notes. It only fills an empty gerund and respects a `null` override.
+
+**Decision 2 — `-ie-` drops when unstressed; `-uo-` is kept.** Both are mobile
+diphthongs (*dittongo mobile*). `-ie-` still follows the traditional rule and
+appears only under stress (`sìedo`, but `sedévo`). Modern Italian keeps `-uo-`
+in unstressed forms too (`scuotévo`); Wiktionary marks the `-o-` forms rare.
+Because the two go opposite ways, these are overrides, not a rule. The
+imperfect `io` form was set, and Decision 1 makes the gerund from it:
+
+| Verb | Imperfect (override) | Gerund (rule) |
+| --- | --- | --- |
+| `sedere` | sedevo | sedendo |
+| `possedere` | possedevo | possedendo |
+| `risedere` | risedevo | risedendo |
+| `soprassedere` | soprassedevo | soprassedendo |
+| `percuotere` | percuotevo | percuotendo |
+| `riscuotere` | riscuotevo | riscuotendo |
+
+`disdire` (`disdicevo → disdicendo`) and `provenire` (`provenendo` over
+`proveniendo`) were made by the rule with no override needed.
+
+**Decision 3 — the `fare` compounds take `-facendo`; `cuocere` keeps `-uo-`.**
+Overrides on the gerund itself:
+
+| Verb | Gerund | Reason |
+| --- | --- | --- |
+| `disfare` | disfacendo | `disfando` treats it as a regular `-are` verb; Wiktionary lists only `disfacendo` |
+| `soddisfare` | soddisfacendo | as `disfare` |
+| `cuocere` | cuocendo | `cocendo` is marked rare, as in Decision 2 |
+
+**Decision 4 — a present participle is kept only where it is in use.** This is
+the standard applied to the 83 verbs in `corrections.ts`. The forms follow the
+rule (`sedevo → sedente`); the question was whether each one exists in use.
+
+| Verb | Decision | Evidence |
+| --- | --- | --- |
+| `sedere` | sedente | own entry on Italian Wiktionary |
+| `disdire` | disdicente | own entry on Italian Wiktionary |
+| `risedere` | risedente | own entry in the Olivetti dictionary |
+| `scuotere` | scuotente | literary use: De Roberto, *La morta* (1888) |
+| `possedere` | **possidente** | Treccani: *"possedènte, raro, spesso sostituito da possidènte"* |
+| `soprassedere` | `null` | only in generated conjugation tables |
+| `percuotere` | `null` | only two unverified example sentences |
+| `riscuotere` | `null` | only in generated conjugation tables |
+| `ripercuotere` | `null` | only in generated conjugation tables |
+
+**Not used as a source:** `italian-verbs-dict`. It is built from Morph-it and
+keeps whichever form Morph-it lists last, so it repeats these errors — its
+gerund for `sedere` is `siedevo`.
+
+Sources: [Treccani — possedere](https://www.treccani.it/vocabolario/possedere/),
+[Wikizionario — possidente](https://it.wiktionary.org/wiki/possidente),
+[Olivetti — risedente](https://www.dizionario-italiano.it/dizionario-italiano.php?lemma=RISEDENTE100),
+[Dizy — scuotente](https://www.dizy.com/it/voce/scuotente),
+and the Wiktionary conjugation tables for each verb.
+
 ## Four forms removed from `corrections.ts`
 
 `disdire`'s gerund and the strong perfects `fisse`, `susse`, `urse` were
 written there from recall and are not confirmed. They have been taken out of
-the data and remain open as items 3b and 3e.
+the data. The strong perfects remain open as item 3b; `disdire`'s gerund is
+now decided (item 3e).

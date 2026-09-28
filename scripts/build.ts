@@ -21,7 +21,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { type Features, parseLexicon } from "./parse-lexicon.ts"
-import { choose } from "./validate.ts"
+import { choose, plausible } from "./validate.ts"
 import { absentSlots, IGNORED_ENTRIES } from "./corrections.ts"
 import { gerundFromImperfect } from "./derive.ts"
 import { FUTURE_ENDINGS, PERSON_SLOTS } from "./slots.ts"
@@ -62,6 +62,25 @@ const getOverride = (verb: string, { mood, tense, slot }: Features) => {
   if (typeof tenseOverrides === "string")
     return slot ? undefined : tenseOverrides
   return slot && slot in tenseOverrides ? tenseOverrides[slot] : undefined
+}
+
+/**
+ * Lists every path the overrides file sets for a verb, at the level it is set:
+ * a whole mood (`impr`), a whole tense (`part.pres`) or a single slot
+ * (`ind.pres.S3`). Covers forms and nulls.
+ *
+ * Returns, for calere: ["inf.pres", "ger.pres", "ind.pres.S1", ..., "cond", ...]
+ */
+const overridePaths = (verb: string): string[] => {
+  const paths: string[] = []
+  const walk = (node: unknown, prefix: string) => {
+    if (node === null || typeof node === "string") paths.push(prefix)
+    else for (const [k, v] of Object.entries(node as Tree))
+      walk(v, prefix ? `${prefix}.${k}` : k)
+  }
+  const overrides = verbFormOverrides[verb]
+  if (overrides) walk(overrides, "")
+  return paths
 }
 
 /**
@@ -108,6 +127,8 @@ const newStats = () => ({
   conflicts: 0,
   emptied: 0,
   futureFlags: 0,
+  adjustedVerbs: 0,
+  adjustedSlots: 0,
 })
 type Stats = ReturnType<typeof newStats>
 
@@ -138,6 +159,10 @@ const getForm = (
   const byTense = verbEntry[mood]?.[tense]
   return slot ? byTense?.[slot] : byTense
 }
+
+// Marks a slot where Morph-it gives forms but validate.ts rejects them all. It
+// never equals a final form, so such a slot always counts as adjusted.
+const REJECTED = Symbol("rejected")
 
 const GERUND_SLOT: Features = { mood: "ger", tense: "pres", slot: null }
 const IMPERFECT_S1: Features = { mood: "ind", tense: "impf", slot: "S1" }
@@ -236,12 +261,17 @@ const decideSlot = (
  *   conflicting:     { accrescere: { "ind.past.S1": ["accrebbi", "accrescei"] } }
  *   emptied:         { sedere: { "part.pres.S": ["sedevo", "siedevo"] } }
  *   futureDisagrees: { accendere: ["S1: accenderà (others imply accenderò)"] }
+ *
+ * and adds to adjusted the slots that differ from Morph-it, for example:
+ *
+ *   { sedere: ["ger.pres", "ind.impf.S1", "part.pres.P", ...] }
  */
 const buildVerb = (
   infinitive: string,
   featurePaths: Record<string, string[]>,
   stats: Stats,
   unresolved: Tree,
+  adjusted: Record<string, string[]>,
 ): Tree => {
   const absent = new Set(absentSlots(infinitive))
   const verbEntry: Tree = {}
@@ -249,11 +279,31 @@ const buildVerb = (
   // unresolved only after the rules below have run, since a rule may fill them.
   const conflictSlots: [Features, string, string[]][] = [] // several forms, none chosen
   const rejectedSlots: [Features, string, string[]][] = [] // every form rejected
+  // What Morph-it gives for each slot on its own, before overrides and rules:
+  // its single form after validate.ts, REJECTED when it gives only forms that
+  // validate.ts rejects, or null when it gives none.
+  const morphItForms = new Map<string, string | typeof REJECTED | null>()
+  // Slots where validate.ts rejected a form that is not a clipped variant of
+  // a kept one — a form Morph-it filed under the wrong slot, such as `addicevo`
+  // under the gerund of `addire`.
+  const misfiledSlots: string[] = []
 
   for (const featurePath of slotPaths(infinitive, featurePaths)) {
     const [mood, tense, slot = null] = featurePath.split(".")
     const features: Features = { mood, tense, slot }
     const forms = featurePaths[featurePath]
+    const morphIt = forms?.length ? choose(featurePath, forms, infinitive) : null
+    if (forms?.length) {
+      const valid = forms.filter((f) => plausible(featurePath, f, infinitive))
+      const misfiled = forms.some(
+        (f) => !valid.includes(f) && !valid.some((v) => v.startsWith(f)),
+      )
+      if (misfiled) misfiledSlots.push(featurePath)
+    }
+    morphItForms.set(
+      featurePath,
+      morphIt?.rejected ? REJECTED : (morphIt?.form ?? null),
+    )
     const decision = decideSlot(
       infinitive,
       featurePath,
@@ -327,21 +377,53 @@ const buildVerb = (
     }
   }
 
+  // Record every path where we changed or checked Morph-it's data:
+  //   - every path an override or a class rule sets, even when the result
+  //     matches Morph-it
+  //   - every slot where validate.ts rejected a misfiled form
+  //   - every slot whose final form differs from what Morph-it gives on its
+  //     own, which adds the forms made by a derivation
+  const changed = new Set<string>([
+    ...overridePaths(infinitive),
+    ...absent,
+    ...misfiledSlots,
+  ])
+  const paths = new Set([...morphItForms.keys(), "ger.pres"])
+  for (const featurePath of paths) {
+    const [mood, tense, slot = null] = featurePath.split(".")
+    const final = getForm(verbEntry, { mood, tense, slot }) ?? null
+    if (final !== (morphItForms.get(featurePath) ?? null)) changed.add(featurePath)
+  }
+  if (changed.size) {
+    adjusted[infinitive] = [...changed].sort()
+    stats.adjustedVerbs++
+    stats.adjustedSlots += changed.size
+  }
+
   return verbEntry
 }
 
 /**
- * Writes the two output files:
+ * Writes the three output files:
  *
  *   data/temp-verbs.json       { "abbacchiare": { "ind": { "pres": { "S2": "abbacchi", ... } } }, ... }
  *   data/temp-unresolved.json  { "conflicting": { ... }, "emptied": { ... }, "futureDisagrees": { ... } }
+ *   data/temp-adjusted.json    { "sedere": ["ger.pres", "ind.impf.S1", ...], ... }
  */
-const writeOutput = (verbs: Tree, unresolved: Tree) => {
+const writeOutput = (
+  verbs: Tree,
+  unresolved: Tree,
+  adjusted: Record<string, string[]>,
+) => {
   fs.mkdirSync(OUT_DIR, { recursive: true })
   fs.writeFileSync(path.join(OUT_DIR, "temp-verbs.json"), JSON.stringify(verbs))
   fs.writeFileSync(
     path.join(OUT_DIR, "temp-unresolved.json"),
     JSON.stringify(unresolved, null, 1),
+  )
+  fs.writeFileSync(
+    path.join(OUT_DIR, "temp-adjusted.json"),
+    JSON.stringify(adjusted, null, 1),
   )
 }
 
@@ -380,7 +462,19 @@ const printStats = (s: Stats) => {
     s.futureFlags.toLocaleString(),
     "(reported only)",
   )
-  for (const f of ["temp-verbs.json", "temp-unresolved.json"]) {
+  console.log("")
+  console.log(
+    "adjusted from Morph-it:",
+    s.adjustedSlots.toLocaleString(),
+    "paths in",
+    s.adjustedVerbs.toLocaleString(),
+    "verbs",
+  )
+  for (const f of [
+    "temp-verbs.json",
+    "temp-unresolved.json",
+    "temp-adjusted.json",
+  ]) {
     console.log(
       `${f.padEnd(22)}: ${(fs.statSync(path.join(OUT_DIR, f)).size / 1e6).toFixed(2)} MB`,
     )
@@ -391,6 +485,7 @@ const build = () => {
   const { verbForms } = parseLexicon()
   const verbs: Tree = {}
   const unresolved: Tree = { conflicting: {}, emptied: {}, futureDisagrees: {} }
+  const adjusted: Record<string, string[]> = {}
   const stats = newStats()
 
   for (const [infinitive, featurePaths] of Object.entries(verbForms)) {
@@ -407,11 +502,17 @@ const build = () => {
       continue
     }
 
-    verbs[infinitive] = buildVerb(infinitive, featurePaths, stats, unresolved)
+    verbs[infinitive] = buildVerb(
+      infinitive,
+      featurePaths,
+      stats,
+      unresolved,
+      adjusted,
+    )
     stats.verbs++
   }
 
-  writeOutput(verbs, unresolved)
+  writeOutput(verbs, unresolved, adjusted)
   return stats
 }
 

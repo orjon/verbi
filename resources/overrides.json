@@ -152,6 +152,16 @@
       }
     }
   },
+  "disdire": {
+    "part": {
+      "pres": {
+        "S": "disdicente",
+        "SF": "disdicente",
+        "P": "disdicenti",
+        "PF": "disdicenti"
+      }
+    }
+  },
   "disfare": {
     "ger": {
       "pres": "disfacendo"
@@ -217,6 +227,9 @@
       "impf": {
         "S1": "percuotevo"
       }
+    },
+    "part": {
+      "pres": null
     }
   },
   "plaudere": {
@@ -277,6 +290,14 @@
     "ind": {
       "impf": {
         "S1": "possedevo"
+      }
+    },
+    "part": {
+      "pres": {
+        "S": "possidente",
+        "SF": "possidente",
+        "P": "possidenti",
+        "PF": "possidenti"
       }
     }
   },
@@ -347,11 +368,19 @@
       }
     }
   },
+  "ripercuotere": {
+    "part": {
+      "pres": null
+    }
+  },
   "riscuotere": {
     "ind": {
       "impf": {
         "S1": "riscuotevo"
       }
+    },
+    "part": {
+      "pres": null
     }
   },
   "risedere": {
@@ -359,12 +388,38 @@
       "impf": {
         "S1": "risedevo"
       }
+    },
+    "part": {
+      "pres": {
+        "S": "risedente",
+        "SF": "risedente",
+        "P": "risedenti",
+        "PF": "risedenti"
+      }
+    }
+  },
+  "scuotere": {
+    "part": {
+      "pres": {
+        "S": "scuotente",
+        "SF": "scuotente",
+        "P": "scuotenti",
+        "PF": "scuotenti"
+      }
     }
   },
   "sedere": {
     "ind": {
       "impf": {
         "S1": "sedevo"
+      }
+    },
+    "part": {
+      "pres": {
+        "S": "sedente",
+        "SF": "sedente",
+        "P": "sedenti",
+        "PF": "sedenti"
       }
     }
   },
@@ -460,6 +515,9 @@
       "impf": {
         "S1": "soprassedevo"
       }
+    },
+    "part": {
+      "pres": null
     }
   },
   "spengere": {
