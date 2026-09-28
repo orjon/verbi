@@ -1,0 +1,3540 @@
+{
+ "conflicting": {
+  "accrescere": {
+   "ind.past.S1": [
+    "accrebbi",
+    "accrescei"
+   ]
+  },
+  "addivenire": {
+   "ind.fut.P1": [
+    "addiverremo",
+    "addiverrò"
+   ]
+  },
+  "andare": {
+   "impr.pres.S2": [
+    "va'",
+    "vai"
+   ]
+  },
+  "annettere": {
+   "ind.past.S3": [
+    "annesse",
+    "annetté"
+   ],
+   "ind.past.P3": [
+    "annessero",
+    "annetterono"
+   ]
+  },
+  "assistere": {
+   "ind.past.S1": [
+    "assistei",
+    "assistetti"
+   ],
+   "ind.past.P3": [
+    "assisterono",
+    "assistettero"
+   ],
+   "ind.past.S3": [
+    "assistette",
+    "assistè"
+   ]
+  },
+  "assuefare": {
+   "impr.pres.S2": [
+    "assuefa'",
+    "assuefai"
+   ]
+  },
+  "co-presiedere": {
+   "ind.past.S3": [
+    "co-presiedette",
+    "co-presiedé"
+   ]
+  },
+  "cuocere": {
+   "ind.past.P1": [
+    "cocemmo",
+    "cuocemmo"
+   ],
+   "ind.fut.S2": [
+    "cocerai",
+    "cuocerai"
+   ],
+   "ind.fut.P3": [
+    "coceranno",
+    "cuoceranno"
+   ],
+   "cond.pres.S3": [
+    "cocerebbe",
+    "cuocerebbe"
+   ],
+   "cond.pres.P3": [
+    "cocerebbero",
+    "cuocerebbero"
+   ],
+   "cond.pres.S1": [
+    "cocerei",
+    "cuocerei"
+   ],
+   "cond.pres.P1": [
+    "coceremmo",
+    "cuoceremmo"
+   ],
+   "ind.fut.P1": [
+    "coceremo",
+    "cuoceremo"
+   ],
+   "cond.pres.P2": [
+    "cocereste",
+    "cuocereste"
+   ],
+   "cond.pres.S2": [
+    "coceresti",
+    "cuoceresti"
+   ],
+   "ind.fut.P2": [
+    "cocerete",
+    "cuocerete"
+   ],
+   "ind.fut.S3": [
+    "cocerà",
+    "cuocerà"
+   ],
+   "ind.fut.S1": [
+    "cocerò",
+    "cuocerò"
+   ],
+   "sub.impf.S3": [
+    "cocesse",
+    "cuocesse"
+   ],
+   "sub.impf.P3": [
+    "cocessero",
+    "cuocessero"
+   ],
+   "sub.impf.S1": [
+    "cocessi",
+    "cuocessi"
+   ],
+   "sub.impf.S2": [
+    "cocessi",
+    "cuocessi"
+   ],
+   "sub.impf.P1": [
+    "cocessimo",
+    "cuocessimo"
+   ],
+   "ind.past.P2": [
+    "coceste",
+    "cuoceste"
+   ],
+   "sub.impf.P2": [
+    "coceste",
+    "cuoceste"
+   ],
+   "ind.past.S2": [
+    "cocesti",
+    "cuocesti"
+   ],
+   "impr.pres.P2": [
+    "cocete",
+    "cuocete"
+   ],
+   "ind.impf.S3": [
+    "coceva",
+    "cuoceva"
+   ],
+   "ind.impf.P1": [
+    "cocevamo",
+    "cuocevamo"
+   ],
+   "ind.impf.P3": [
+    "cocevano",
+    "cuocevano"
+   ],
+   "ind.impf.P2": [
+    "cocevate",
+    "cuocevate"
+   ],
+   "ind.impf.S2": [
+    "cocevi",
+    "cuocevi"
+   ],
+   "ind.impf.S1": [
+    "cocevo",
+    "cuocevo"
+   ],
+   "impr.pres.P1": [
+    "cociamo",
+    "cuociamo"
+   ],
+   "sub.pres.P1": [
+    "cociamo",
+    "cuociamo"
+   ],
+   "sub.pres.P2": [
+    "cociate",
+    "cuociate"
+   ],
+   "ind.past.S3": [
+    "cosse",
+    "cuocè"
+   ],
+   "ind.past.P3": [
+    "cossero",
+    "cuocerono"
+   ],
+   "ind.past.S1": [
+    "cossi",
+    "cuocei"
+   ]
+  },
+  "coesistere": {
+   "ind.past.S1": [
+    "coesistei",
+    "coesistetti"
+   ],
+   "ind.past.P3": [
+    "coesisterono",
+    "coesistettero"
+   ],
+   "ind.past.S3": [
+    "coesistette",
+    "coesisté"
+   ]
+  },
+  "concedere": {
+   "ind.past.S3": [
+    "concedette",
+    "concesse"
+   ],
+   "ind.past.P3": [
+    "concedettero",
+    "concessero"
+   ],
+   "ind.past.S1": [
+    "concedetti",
+    "concessi"
+   ]
+  },
+  "confare": {
+   "impr.pres.S2": [
+    "confa'",
+    "confai"
+   ]
+  },
+  "connettere": {
+   "ind.past.S3": [
+    "connesse",
+    "connetté"
+   ],
+   "ind.past.P3": [
+    "connessero",
+    "connetterono"
+   ],
+   "ind.past.S1": [
+    "connessi",
+    "connettei"
+   ]
+  },
+  "consentire": {
+   "part.pres.SF": [
+    "consentente",
+    "consenziente"
+   ],
+   "part.pres.S": [
+    "consentente",
+    "consenziente"
+   ],
+   "part.pres.PF": [
+    "consententi",
+    "consenzienti"
+   ],
+   "part.pres.P": [
+    "consententi",
+    "consenzienti"
+   ]
+  },
+  "consistere": {
+   "ind.past.S1": [
+    "consistei",
+    "consistetti"
+   ],
+   "ind.past.P3": [
+    "consisterono",
+    "consistettero"
+   ],
+   "ind.past.S3": [
+    "consistette",
+    "consistè"
+   ]
+  },
+  "crescere": {
+   "ind.past.S1": [
+    "crebbi",
+    "crescei"
+   ]
+  },
+  "credere": {
+   "ind.past.S1": [
+    "credei",
+    "credetti"
+   ],
+   "ind.past.P3": [
+    "crederono",
+    "credettero"
+   ],
+   "ind.past.S3": [
+    "credette",
+    "credè"
+   ]
+  },
+  "dare": {
+   "ind.past.S3": [
+    "dette",
+    "diede"
+   ],
+   "ind.past.P3": [
+    "dettero",
+    "diedero"
+   ],
+   "ind.past.S1": [
+    "detti",
+    "diedi"
+   ]
+  },
+  "dovere": {
+   "ind.pres.P3": [
+    "debbono",
+    "devono"
+   ],
+   "ind.past.S1": [
+    "dovei",
+    "dovetti"
+   ],
+   "ind.past.P3": [
+    "doverono",
+    "dovettero"
+   ],
+   "ind.past.S3": [
+    "dovette",
+    "dové"
+   ]
+  },
+  "decrescere": {
+   "ind.past.S1": [
+    "decrebbi",
+    "decrescei"
+   ]
+  },
+  "deflettere": {
+   "ind.past.S3": [
+    "deflesse",
+    "defletté"
+   ],
+   "ind.past.P3": [
+    "deflessero",
+    "defletterono"
+   ],
+   "ind.past.S1": [
+    "deflessi",
+    "deflettei"
+   ]
+  },
+  "desistere": {
+   "ind.past.S1": [
+    "desistei",
+    "desistetti"
+   ],
+   "ind.past.P3": [
+    "desisterono",
+    "desistettero"
+   ],
+   "ind.past.S3": [
+    "desistette",
+    "desistè"
+   ]
+  },
+  "dire": {
+   "impr.pres.S2": [
+    "di'",
+    "dì"
+   ]
+  },
+  "dirimere": {
+   "ind.past.S1": [
+    "dirimei",
+    "dirimetti"
+   ],
+   "ind.past.P3": [
+    "dirimerono",
+    "dirimettero"
+   ],
+   "ind.past.S3": [
+    "dirimette",
+    "dirimé"
+   ]
+  },
+  "discernere": {
+   "ind.past.S3": [
+    "discernette",
+    "discerné"
+   ]
+  },
+  "disconnettere": {
+   "ind.past.S3": [
+    "disconnesse",
+    "disconnetté"
+   ],
+   "ind.past.P3": [
+    "disconnessero",
+    "disconnetterono"
+   ],
+   "ind.past.S1": [
+    "disconnessi",
+    "disconnettei"
+   ]
+  },
+  "discutere": {
+   "ind.past.S3": [
+    "discusse",
+    "discuté"
+   ],
+   "ind.past.P3": [
+    "discussero",
+    "discuterono"
+   ],
+   "ind.past.S1": [
+    "discussi",
+    "discutei"
+   ]
+  },
+  "disfare": {
+   "impr.pres.S2": [
+    "disfa'",
+    "disfai"
+   ],
+   "sub.pres.S1": [
+    "disfaccia",
+    "disfi"
+   ],
+   "sub.pres.S2": [
+    "disfaccia",
+    "disfi"
+   ],
+   "sub.pres.S3": [
+    "disfaccia",
+    "disfi"
+   ],
+   "impr.pres.P1": [
+    "disfacciamo",
+    "disfiamo"
+   ],
+   "ind.pres.P1": [
+    "disfacciamo",
+    "disfiamo"
+   ],
+   "sub.pres.P1": [
+    "disfacciamo",
+    "disfiamo"
+   ],
+   "sub.pres.P3": [
+    "disfacciano",
+    "disfino"
+   ],
+   "sub.pres.P2": [
+    "disfacciate",
+    "disfiate"
+   ],
+   "ind.pres.S1": [
+    "disfaccio",
+    "disfo"
+   ],
+   "ind.past.P1": [
+    "disfacemmo",
+    "disfammo"
+   ],
+   "part.pres.SF": [
+    "disfacente",
+    "disfante"
+   ],
+   "part.pres.S": [
+    "disfacente",
+    "disfante"
+   ],
+   "part.pres.PF": [
+    "disfacenti",
+    "disfanti"
+   ],
+   "part.pres.P": [
+    "disfacenti",
+    "disfanti"
+   ],
+   "sub.impf.S3": [
+    "disfacesse",
+    "disfasse"
+   ],
+   "sub.impf.P3": [
+    "disfacessero",
+    "disfassero"
+   ],
+   "sub.impf.S1": [
+    "disfacessi",
+    "disfassi"
+   ],
+   "sub.impf.S2": [
+    "disfacessi",
+    "disfassi"
+   ],
+   "sub.impf.P1": [
+    "disfacessimo",
+    "disfassimo"
+   ],
+   "ind.past.P2": [
+    "disfaceste",
+    "disfaste"
+   ],
+   "sub.impf.P2": [
+    "disfaceste",
+    "disfaste"
+   ],
+   "ind.past.S2": [
+    "disfacesti",
+    "disfasti"
+   ],
+   "ind.impf.S3": [
+    "disfaceva",
+    "disfava"
+   ],
+   "ind.impf.P1": [
+    "disfacevamo",
+    "disfavamo"
+   ],
+   "ind.impf.P3": [
+    "disfacevano",
+    "disfavano"
+   ],
+   "ind.impf.P2": [
+    "disfacevate",
+    "disfavate"
+   ],
+   "ind.impf.S2": [
+    "disfacevi",
+    "disfavi"
+   ],
+   "ind.impf.S1": [
+    "disfacevo",
+    "disfavo"
+   ],
+   "ind.past.S1": [
+    "disfai",
+    "disfeci"
+   ],
+   "ind.pres.S2": [
+    "disfai",
+    "disfi"
+   ],
+   "ind.pres.P3": [
+    "disfanno",
+    "disfano"
+   ],
+   "ind.fut.S2": [
+    "disfarai",
+    "disferai"
+   ],
+   "ind.fut.P3": [
+    "disfaranno",
+    "disferanno"
+   ],
+   "cond.pres.S3": [
+    "disfarebbe",
+    "disferebbe"
+   ],
+   "cond.pres.P3": [
+    "disfarebbero",
+    "disferebbero"
+   ],
+   "cond.pres.S1": [
+    "disfarei",
+    "disferei"
+   ],
+   "cond.pres.P1": [
+    "disfaremmo",
+    "disferemmo"
+   ],
+   "ind.fut.P1": [
+    "disfaremo",
+    "disferemo"
+   ],
+   "cond.pres.P2": [
+    "disfareste",
+    "disfereste"
+   ],
+   "cond.pres.S2": [
+    "disfaresti",
+    "disferesti"
+   ],
+   "ind.fut.P2": [
+    "disfarete",
+    "disferete"
+   ],
+   "ind.past.P3": [
+    "disfarono",
+    "disfecero"
+   ],
+   "ind.fut.S3": [
+    "disfarà",
+    "disferà"
+   ],
+   "ind.fut.S1": [
+    "disfarò",
+    "disferò"
+   ],
+   "part.past.SF": [
+    "disfata",
+    "disfatta"
+   ],
+   "part.past.PF": [
+    "disfate",
+    "disfatte"
+   ],
+   "part.past.P": [
+    "disfati",
+    "disfatti"
+   ],
+   "part.past.S": [
+    "disfato",
+    "disfatto"
+   ],
+   "ind.past.S3": [
+    "disfece",
+    "disfò"
+   ]
+  },
+  "disseppellire": {
+   "part.past.SF": [
+    "dissepolta",
+    "disseppellita"
+   ],
+   "part.past.PF": [
+    "dissepolte",
+    "disseppellite"
+   ],
+   "part.past.P": [
+    "dissepolti",
+    "disseppelliti"
+   ],
+   "part.past.S": [
+    "dissepolto",
+    "disseppellito"
+   ]
+  },
+  "eccedere": {
+   "ind.past.S3": [
+    "eccedette",
+    "eccedé"
+   ]
+  },
+  "essere": {
+   "sub.impf.S3": [
+    "foss'",
+    "fosse"
+   ]
+  },
+  "esigere": {
+   "ind.past.S1": [
+    "esigei",
+    "esigetti"
+   ],
+   "ind.past.P3": [
+    "esigerono",
+    "esigettero"
+   ],
+   "ind.past.S3": [
+    "esigette",
+    "esigé"
+   ]
+  },
+  "esistere": {
+   "ind.past.S1": [
+    "esistei",
+    "esistetti"
+   ],
+   "ind.past.P3": [
+    "esisterono",
+    "esistettero"
+   ],
+   "ind.past.S3": [
+    "esistette",
+    "esistè"
+   ]
+  },
+  "fare": {
+   "impr.pres.S2": [
+    "fa'",
+    "fai"
+   ]
+  },
+  "flettere": {
+   "ind.past.S3": [
+    "flesse",
+    "fletté"
+   ],
+   "ind.past.P3": [
+    "flessero",
+    "fletterono"
+   ],
+   "ind.past.S1": [
+    "flessi",
+    "flettei"
+   ]
+  },
+  "genuflettere": {
+   "ind.past.S3": [
+    "genuflesse",
+    "genufletté"
+   ],
+   "ind.past.P3": [
+    "genuflessero",
+    "genufletterono"
+   ],
+   "ind.past.S1": [
+    "genuflessi",
+    "genuflettei"
+   ]
+  },
+  "godere": {
+   "ind.past.S3": [
+    "godette",
+    "godé"
+   ]
+  },
+  "incartapecorire": {
+   "sub.pres.S1": [
+    "incartapecora",
+    "incartapecorisca"
+   ],
+   "sub.pres.S2": [
+    "incartapecora",
+    "incartapecorisca"
+   ],
+   "sub.pres.S3": [
+    "incartapecora",
+    "incartapecorisca"
+   ],
+   "sub.pres.P3": [
+    "incartapecorano",
+    "incartapecoriscano"
+   ],
+   "ind.pres.S1": [
+    "incartapecorisco",
+    "incartapecoro"
+   ],
+   "ind.pres.P3": [
+    "incartapecoriscono",
+    "incartapecorono"
+   ]
+  },
+  "incedere": {
+   "ind.past.S3": [
+    "incedette",
+    "incedé"
+   ]
+  },
+  "incombere": {
+   "ind.past.S1": [
+    "incombei",
+    "incombetti"
+   ],
+   "ind.past.P3": [
+    "incomberono",
+    "incombettero"
+   ],
+   "ind.past.S3": [
+    "incombette",
+    "incombé"
+   ]
+  },
+  "increscere": {
+   "ind.past.S1": [
+    "increbbi",
+    "increscei"
+   ]
+  },
+  "incutere": {
+   "ind.past.S3": [
+    "incusse",
+    "incuté"
+   ],
+   "ind.past.P3": [
+    "incussero",
+    "incuterono"
+   ],
+   "ind.past.S1": [
+    "incussi",
+    "incutei"
+   ]
+  },
+  "inferire": {
+   "ind.past.S1": [
+    "inferii",
+    "infersi"
+   ],
+   "ind.past.P3": [
+    "inferirono",
+    "infersero"
+   ],
+   "part.past.SF": [
+    "inferita",
+    "inferta"
+   ],
+   "part.past.PF": [
+    "inferite",
+    "inferti"
+   ],
+   "part.past.P": [
+    "inferiti",
+    "inferti"
+   ],
+   "part.past.S": [
+    "inferito",
+    "inferto"
+   ],
+   "ind.past.S3": [
+    "inferse",
+    "inferì"
+   ]
+  },
+  "insistere": {
+   "ind.past.S1": [
+    "insistei",
+    "insistetti"
+   ],
+   "ind.past.P3": [
+    "insisterono",
+    "insistettero"
+   ],
+   "ind.past.S3": [
+    "insistette",
+    "insisté"
+   ]
+  },
+  "intercedere": {
+   "ind.past.S3": [
+    "intercedette",
+    "intercedé"
+   ]
+  },
+  "liquefare": {
+   "impr.pres.S2": [
+    "liquefa'",
+    "liquefai"
+   ]
+  },
+  "nuocere": {
+   "sub.pres.S1": [
+    "noccia",
+    "nuoccia"
+   ],
+   "sub.pres.S2": [
+    "noccia",
+    "nuoccia"
+   ],
+   "sub.pres.S3": [
+    "noccia",
+    "nuoccia"
+   ],
+   "sub.pres.P3": [
+    "nocciano",
+    "nuocciano"
+   ],
+   "ind.pres.S1": [
+    "noccio",
+    "nuoccio"
+   ],
+   "ind.pres.P3": [
+    "nocciono",
+    "nuocciono"
+   ],
+   "ind.past.P1": [
+    "nocemmo",
+    "nuocemmo"
+   ],
+   "ind.past.P2": [
+    "noceste",
+    "nuoceste"
+   ],
+   "ind.past.S2": [
+    "nocesti",
+    "nuocesti"
+   ],
+   "impr.pres.P2": [
+    "nocete",
+    "nuocete"
+   ],
+   "ind.pres.P2": [
+    "nocete",
+    "nuocete"
+   ],
+   "impr.pres.P1": [
+    "nociamo",
+    "nuociamo"
+   ],
+   "ind.pres.P1": [
+    "nociamo",
+    "nuociamo"
+   ],
+   "sub.pres.P1": [
+    "nociamo",
+    "nuociamo"
+   ],
+   "sub.pres.P2": [
+    "nociate",
+    "nuociate"
+   ],
+   "part.past.PF": [
+    "nociuto",
+    "nuociuto"
+   ],
+   "part.past.P": [
+    "nociuto",
+    "nuociuto"
+   ],
+   "part.past.SF": [
+    "nociuto",
+    "nuociuto"
+   ],
+   "part.past.S": [
+    "nociuto",
+    "nuociuto"
+   ]
+  },
+  "pascere": {
+   "ind.past.S1": [
+    "pascei",
+    "pascetti"
+   ],
+   "ind.past.P3": [
+    "pascerono",
+    "pascettero"
+   ],
+   "ind.past.S3": [
+    "pascette",
+    "pascé"
+   ]
+  },
+  "pendere": {
+   "ind.past.S1": [
+    "pendei",
+    "pendetti"
+   ],
+   "ind.past.P3": [
+    "penderono",
+    "pendettero"
+   ],
+   "ind.past.S3": [
+    "pendette",
+    "pendé"
+   ]
+  },
+  "percuotere": {
+   "ind.past.P1": [
+    "percotemmo",
+    "percuotemmo"
+   ],
+   "sub.impf.S3": [
+    "percotesse",
+    "percuotesse"
+   ],
+   "sub.impf.P3": [
+    "percotessero",
+    "percuotessero"
+   ],
+   "sub.impf.S1": [
+    "percotessi",
+    "percuotessi"
+   ],
+   "sub.impf.S2": [
+    "percotessi",
+    "percuotessi"
+   ],
+   "sub.impf.P1": [
+    "percotessimo",
+    "percuotessimo"
+   ],
+   "ind.past.P2": [
+    "percoteste",
+    "percuoteste"
+   ],
+   "sub.impf.P2": [
+    "percoteste",
+    "percuoteste"
+   ],
+   "ind.past.S2": [
+    "percotesti",
+    "percuotesti"
+   ],
+   "impr.pres.P2": [
+    "percotete",
+    "percuotiamo"
+   ],
+   "ind.pres.P2": [
+    "percotete",
+    "percuotiamo"
+   ],
+   "ind.impf.S3": [
+    "percoteva",
+    "percuoteva"
+   ],
+   "ind.impf.P1": [
+    "percotevamo",
+    "percuotevamo"
+   ],
+   "ind.impf.P3": [
+    "percotevano",
+    "percuotevano"
+   ],
+   "ind.impf.P2": [
+    "percotevate",
+    "percuotevate"
+   ],
+   "ind.impf.S2": [
+    "percotevi",
+    "percuotevi"
+   ],
+   "impr.pres.P1": [
+    "percotiamo",
+    "percuotiamo"
+   ],
+   "ind.pres.P1": [
+    "percotiamo",
+    "percuotiamo"
+   ],
+   "sub.pres.P1": [
+    "percotiamo",
+    "percuotiamo"
+   ],
+   "sub.pres.P2": [
+    "percotiate",
+    "percuotiate"
+   ]
+  },
+  "perdere": {
+   "part.past.PF": [
+    "perduto",
+    "perso"
+   ],
+   "part.past.P": [
+    "perduto",
+    "perso"
+   ],
+   "part.past.SF": [
+    "perduto",
+    "perso"
+   ],
+   "part.past.S": [
+    "perduto",
+    "perso"
+   ]
+  },
+  "persistere": {
+   "ind.past.S1": [
+    "persistei",
+    "persistetti"
+   ],
+   "ind.past.P3": [
+    "persisterono",
+    "persistettero"
+   ],
+   "ind.past.S3": [
+    "persistette",
+    "persisté"
+   ]
+  },
+  "possedere": {
+   "sub.pres.P3": [
+    "possedano",
+    "posseggano",
+    "possiedano"
+   ],
+   "ind.fut.S2": [
+    "possederai",
+    "possiederai"
+   ],
+   "ind.fut.P3": [
+    "possederanno",
+    "possiederanno"
+   ],
+   "cond.pres.S3": [
+    "possederebbe",
+    "possiederebbe"
+   ],
+   "cond.pres.P3": [
+    "possederebbero",
+    "possiederebbero"
+   ],
+   "cond.pres.S1": [
+    "possederei",
+    "possiederei"
+   ],
+   "cond.pres.P1": [
+    "possederemmo",
+    "possiederemmo"
+   ],
+   "ind.fut.P1": [
+    "possederemo",
+    "possiederemo"
+   ],
+   "cond.pres.P2": [
+    "possedereste",
+    "possiedereste"
+   ],
+   "cond.pres.S2": [
+    "possederesti",
+    "possiederesti"
+   ],
+   "ind.fut.P2": [
+    "possederete",
+    "possiederete"
+   ],
+   "ind.fut.S1": [
+    "possederà",
+    "possiederà"
+   ],
+   "ind.fut.S3": [
+    "possederà",
+    "possiederà"
+   ],
+   "impr.pres.P2": [
+    "possedete",
+    "possiedete"
+   ],
+   "ind.pres.P2": [
+    "possedete",
+    "possiedete"
+   ],
+   "ind.impf.S3": [
+    "possedeva",
+    "possiedeva"
+   ],
+   "ind.impf.P1": [
+    "possedevamo",
+    "possiedevamo"
+   ],
+   "ind.impf.P3": [
+    "possedevano",
+    "possiedevano"
+   ],
+   "ind.impf.P2": [
+    "possedevate",
+    "possiedevate"
+   ],
+   "ind.impf.S2": [
+    "possedevi",
+    "possiedevi"
+   ],
+   "impr.pres.P1": [
+    "possediamo",
+    "possiediamo"
+   ],
+   "ind.pres.P1": [
+    "possediamo",
+    "possiediamo"
+   ],
+   "sub.pres.P1": [
+    "possediamo",
+    "possiediamo"
+   ],
+   "sub.pres.P2": [
+    "possediate",
+    "possiediate"
+   ],
+   "sub.pres.S3": [
+    "possegga",
+    "possieda"
+   ],
+   "ind.pres.S1": [
+    "posseggo",
+    "possiedo"
+   ],
+   "ind.pres.P3": [
+    "posseggono",
+    "possiedono"
+   ]
+  },
+  "preesistere": {
+   "ind.past.S1": [
+    "preesistei",
+    "preesistetti"
+   ],
+   "ind.past.P3": [
+    "preesisterono",
+    "preesistettero"
+   ],
+   "ind.past.S3": [
+    "preesistette",
+    "preesisté"
+   ]
+  },
+  "premere": {
+   "ind.past.S1": [
+    "premei",
+    "premetti"
+   ],
+   "ind.past.P3": [
+    "premerono",
+    "premettero"
+   ]
+  },
+  "premorire": {
+   "sub.pres.S1": [
+    "premora",
+    "premuoia"
+   ],
+   "sub.pres.P3": [
+    "premorano",
+    "premuoiano"
+   ],
+   "ind.fut.S2": [
+    "premorirai",
+    "premorrai"
+   ],
+   "ind.fut.P3": [
+    "premoriranno",
+    "premorranno"
+   ],
+   "cond.pres.S3": [
+    "premorirebbe",
+    "premorrebbe"
+   ],
+   "cond.pres.P3": [
+    "premorirebbero",
+    "premorrebbero"
+   ],
+   "cond.pres.S1": [
+    "premorirei",
+    "premorrei"
+   ],
+   "cond.pres.P1": [
+    "premoriremmo",
+    "premorremmo"
+   ],
+   "ind.fut.P1": [
+    "premoriremo",
+    "premorremo"
+   ],
+   "cond.pres.P2": [
+    "premorireste",
+    "premorreste"
+   ],
+   "cond.pres.S2": [
+    "premoriresti",
+    "premorresti"
+   ],
+   "ind.fut.P2": [
+    "premorirete",
+    "premorrete"
+   ],
+   "ind.fut.S3": [
+    "premorirà",
+    "premorrà"
+   ],
+   "ind.fut.S1": [
+    "premorirò",
+    "premorrò"
+   ],
+   "ind.pres.S1": [
+    "premoro",
+    "premuoio"
+   ],
+   "ind.pres.P3": [
+    "premorono",
+    "premuoiono"
+   ]
+  },
+  "presiedere": {
+   "ind.past.S3": [
+    "presiedette",
+    "presiedé"
+   ]
+  },
+  "procombere": {
+   "ind.past.S1": [
+    "procombei",
+    "procombetti"
+   ],
+   "ind.past.P3": [
+    "procomberono",
+    "procombettero"
+   ],
+   "ind.past.S3": [
+    "procombette",
+    "procombé"
+   ]
+  },
+  "prudere": {
+   "ind.past.S1": [
+    "pruderono",
+    "prudettero"
+   ],
+   "ind.past.S3": [
+    "prudette",
+    "prudé"
+   ]
+  },
+  "putire": {
+   "sub.pres.S1": [
+    "puta",
+    "putisca"
+   ],
+   "sub.pres.S2": [
+    "puta",
+    "putisca"
+   ],
+   "sub.pres.S3": [
+    "puta",
+    "putisca"
+   ],
+   "sub.pres.P3": [
+    "putano",
+    "putiscano"
+   ],
+   "ind.pres.S3": [
+    "pute",
+    "putisce"
+   ],
+   "ind.pres.S1": [
+    "putisco",
+    "puto"
+   ],
+   "ind.pres.P3": [
+    "putiscono",
+    "putono"
+   ]
+  },
+  "putrefare": {
+   "impr.pres.S2": [
+    "putrefa'",
+    "putrefai"
+   ]
+  },
+  "radioassistere": {
+   "ind.past.P3": [
+    "radioasistettero",
+    "radioassisterono"
+   ],
+   "ind.past.S1": [
+    "radioassistei",
+    "radioassistetti"
+   ],
+   "ind.past.S3": [
+    "radioassistette",
+    "radioassisté"
+   ]
+  },
+  "rarefare": {
+   "impr.pres.S2": [
+    "rarefa'",
+    "rarefai"
+   ]
+  },
+  "recedere": {
+   "ind.past.S3": [
+    "recedette",
+    "recedé"
+   ]
+  },
+  "redigere": {
+   "ind.past.S3": [
+    "redasse",
+    "redigé"
+   ],
+   "ind.past.P3": [
+    "redassero",
+    "redigerono"
+   ],
+   "ind.past.S1": [
+    "redassi",
+    "redigei"
+   ]
+  },
+  "resistere": {
+   "ind.past.S1": [
+    "resistei",
+    "resistetti"
+   ],
+   "ind.past.P3": [
+    "resisterono",
+    "resistettero"
+   ],
+   "ind.past.S3": [
+    "resistette",
+    "resisté"
+   ]
+  },
+  "retrocedere": {
+   "ind.past.S3": [
+    "retrocedette",
+    "retrocedé"
+   ]
+  },
+  "riandare": {
+   "impr.pres.S2": [
+    "riva'",
+    "rivai"
+   ]
+  },
+  "riannettere": {
+   "ind.past.S3": [
+    "riannesse",
+    "riannetté"
+   ],
+   "ind.past.P3": [
+    "riannessero",
+    "riannetterono"
+   ],
+   "ind.past.S1": [
+    "riannessi",
+    "riannettei"
+   ]
+  },
+  "ricedere": {
+   "ind.past.S3": [
+    "ricedette",
+    "ricedé"
+   ]
+  },
+  "ricevere": {
+   "ind.past.S1": [
+    "ricevei",
+    "ricevetti"
+   ],
+   "ind.past.P3": [
+    "riceverono",
+    "ricevettero"
+   ],
+   "ind.past.S3": [
+    "ricevette",
+    "ricevé"
+   ]
+  },
+  "riconnettere": {
+   "ind.past.S3": [
+    "riconnesse",
+    "riconnetté"
+   ],
+   "ind.past.P3": [
+    "riconnessero",
+    "riconnetterono"
+   ],
+   "ind.past.S1": [
+    "riconnessi",
+    "riconnettei"
+   ]
+  },
+  "ricuocere": {
+   "ind.past.S3": [
+    "ricosse",
+    "ricuocé"
+   ],
+   "ind.past.P3": [
+    "ricossero",
+    "ricuocerono"
+   ],
+   "ind.past.S1": [
+    "ricossi",
+    "ricuocei"
+   ]
+  },
+  "ricrescere": {
+   "ind.past.S1": [
+    "ricrebbi",
+    "ricrescei"
+   ]
+  },
+  "ricredere": {
+   "ind.past.S1": [
+    "ricredei",
+    "ricredetti"
+   ],
+   "ind.past.P3": [
+    "ricrederono",
+    "ricredettero"
+   ],
+   "ind.past.S3": [
+    "ricredette",
+    "ricredè"
+   ]
+  },
+  "ridare": {
+   "impr.pres.S2": [
+    "rida'",
+    "ridai"
+   ]
+  },
+  "ridire": {
+   "impr.pres.S2": [
+    "ridi'",
+    "ridici",
+    "ridì"
+   ]
+  },
+  "riesplodere": {
+   "ind.past.S1": [
+    "riesplodei",
+    "riesplosi"
+   ],
+   "ind.past.P3": [
+    "riesploderono",
+    "riesplosero"
+   ],
+   "ind.past.S3": [
+    "riesplodé",
+    "riesplose"
+   ]
+  },
+  "rifare": {
+   "impr.pres.S2": [
+    "rifa'",
+    "rifai"
+   ]
+  },
+  "rincrescere": {
+   "ind.past.S1": [
+    "rincrebbi",
+    "rincrescei"
+   ]
+  },
+  "riudire": {
+   "ind.fut.S2": [
+    "riudirai",
+    "riudrai"
+   ],
+   "ind.fut.P3": [
+    "riudiranno",
+    "riudranno"
+   ],
+   "cond.pres.S3": [
+    "riudirebbe",
+    "riudrebbe"
+   ],
+   "cond.pres.P3": [
+    "riudirebbero",
+    "riudrebbero"
+   ],
+   "cond.pres.S1": [
+    "riudirei",
+    "riudrei"
+   ],
+   "cond.pres.P1": [
+    "riudiremmo",
+    "riudremmo"
+   ],
+   "ind.fut.P1": [
+    "riudiremo",
+    "riudremo"
+   ],
+   "cond.pres.P2": [
+    "riudireste",
+    "riudreste"
+   ],
+   "cond.pres.S2": [
+    "riudiresti",
+    "riudresti"
+   ],
+   "ind.fut.P2": [
+    "riudirete",
+    "riudrete"
+   ],
+   "ind.fut.S3": [
+    "riudirà",
+    "riudrà"
+   ],
+   "ind.fut.S1": [
+    "riudirò",
+    "riudrò"
+   ]
+  },
+  "ripartire": {
+   "sub.pres.S1": [
+    "riparta",
+    "ripartisca"
+   ],
+   "sub.pres.S2": [
+    "riparta",
+    "ripartisca"
+   ],
+   "sub.pres.S3": [
+    "riparta",
+    "ripartisca"
+   ],
+   "sub.pres.P3": [
+    "ripartano",
+    "ripartiscano"
+   ],
+   "ind.pres.S3": [
+    "riparte",
+    "ripartisce"
+   ],
+   "ind.pres.S1": [
+    "ripartisco",
+    "riparto"
+   ],
+   "ind.pres.P3": [
+    "ripartiscono",
+    "ripartono"
+   ]
+  },
+  "ripercuotere": {
+   "ind.past.P1": [
+    "ripercotemmo",
+    "ripercuotemmo"
+   ]
+  },
+  "riscuotere": {
+   "ind.past.P1": [
+    "riscotemmo",
+    "riscuotemmo"
+   ],
+   "sub.impf.S3": [
+    "riscotesse",
+    "riscuotesse"
+   ],
+   "sub.impf.P3": [
+    "riscotessero",
+    "riscuotessero"
+   ],
+   "sub.impf.S1": [
+    "riscotessi",
+    "riscuotessi"
+   ],
+   "sub.impf.S2": [
+    "riscotessi",
+    "riscuotessi"
+   ],
+   "sub.impf.P1": [
+    "riscotessimo",
+    "riscuotessimo"
+   ],
+   "ind.past.P2": [
+    "riscoteste",
+    "riscuoteste"
+   ],
+   "sub.impf.P2": [
+    "riscoteste",
+    "riscuoteste"
+   ],
+   "ind.past.S2": [
+    "riscotesti",
+    "riscuotesti"
+   ],
+   "impr.pres.P2": [
+    "riscotete",
+    "riscuotiamo"
+   ],
+   "ind.pres.P2": [
+    "riscotete",
+    "riscuotiamo"
+   ],
+   "ind.impf.S3": [
+    "riscoteva",
+    "riscuoteva"
+   ],
+   "ind.impf.P1": [
+    "riscotevamo",
+    "riscuotevamo"
+   ],
+   "ind.impf.P3": [
+    "riscotevano",
+    "riscuotevano"
+   ],
+   "ind.impf.P2": [
+    "riscotevate",
+    "riscuotevate"
+   ],
+   "ind.impf.S2": [
+    "riscotevi",
+    "riscuotevi"
+   ],
+   "impr.pres.P1": [
+    "riscotiamo",
+    "riscuotiamo"
+   ],
+   "ind.pres.P1": [
+    "riscotiamo",
+    "riscuotiamo"
+   ],
+   "sub.pres.P1": [
+    "riscotiamo",
+    "riscuotiamo"
+   ],
+   "sub.pres.P2": [
+    "riscotiate",
+    "riscuotiate"
+   ]
+  },
+  "risedere": {
+   "sub.pres.P3": [
+    "risedano",
+    "risiedano"
+   ],
+   "ind.fut.S2": [
+    "risederai",
+    "risiederai"
+   ],
+   "ind.fut.P3": [
+    "risederanno",
+    "risiederanno"
+   ],
+   "cond.pres.S3": [
+    "risederebbe",
+    "risiederebbe"
+   ],
+   "cond.pres.P3": [
+    "risederebbero",
+    "risiederebbero"
+   ],
+   "cond.pres.S1": [
+    "risederei",
+    "risiederei"
+   ],
+   "cond.pres.P1": [
+    "risederemmo",
+    "risiederemmo"
+   ],
+   "ind.fut.P1": [
+    "risederemo",
+    "risiederemo"
+   ],
+   "cond.pres.P2": [
+    "risedereste",
+    "risiedereste"
+   ],
+   "cond.pres.S2": [
+    "risederesti",
+    "risiederesti"
+   ],
+   "ind.fut.P2": [
+    "risederete",
+    "risiederete"
+   ],
+   "ind.fut.S1": [
+    "risederà",
+    "risiederà"
+   ],
+   "ind.fut.S3": [
+    "risederà",
+    "risiederà"
+   ],
+   "impr.pres.P2": [
+    "risedete",
+    "risiedete"
+   ],
+   "ind.pres.P2": [
+    "risedete",
+    "risiedete"
+   ],
+   "ind.impf.S3": [
+    "risedeva",
+    "risiedeva"
+   ],
+   "ind.impf.P1": [
+    "risedevamo",
+    "risiedevamo"
+   ],
+   "ind.impf.P3": [
+    "risedevano",
+    "risiedevano"
+   ],
+   "ind.impf.P2": [
+    "risedevate",
+    "risiedevate"
+   ],
+   "ind.impf.S2": [
+    "risedevi",
+    "risiedevi"
+   ],
+   "impr.pres.P1": [
+    "risediamo",
+    "risiediamo"
+   ],
+   "ind.pres.P1": [
+    "risediamo",
+    "risiediamo"
+   ],
+   "sub.pres.P1": [
+    "risediamo",
+    "risiediamo"
+   ],
+   "sub.pres.P2": [
+    "risediate",
+    "risiediate"
+   ],
+   "ind.pres.S1": [
+    "riseggo",
+    "risiedo"
+   ],
+   "ind.pres.P3": [
+    "riseggono",
+    "risiedono"
+   ]
+  },
+  "risiedere": {
+   "ind.past.S3": [
+    "risiedette",
+    "risiedé"
+   ]
+  },
+  "risplendere": {
+   "ind.past.S1": [
+    "risplendei",
+    "risplendetti"
+   ],
+   "ind.past.P3": [
+    "risplenderono",
+    "risplendettero"
+   ],
+   "ind.past.S3": [
+    "risplendette",
+    "risplendé"
+   ]
+  },
+  "scernere": {
+   "ind.past.S3": [
+    "scernette",
+    "scerné"
+   ]
+  },
+  "scompartire": {
+   "sub.pres.S1": [
+    "scomparta",
+    "scompartisca"
+   ],
+   "sub.pres.S2": [
+    "scomparta",
+    "scompartisca"
+   ],
+   "sub.pres.S3": [
+    "scomparta",
+    "scompartisca"
+   ],
+   "ind.pres.P3": [
+    "scompartano",
+    "scompartiscono"
+   ],
+   "sub.pres.P3": [
+    "scompartano",
+    "scompartiscano"
+   ],
+   "ind.pres.S1": [
+    "scompartisco",
+    "scomparto"
+   ]
+  },
+  "sconnettere": {
+   "ind.past.S3": [
+    "sconnesse",
+    "sconnetté"
+   ],
+   "ind.past.P3": [
+    "sconnessero",
+    "sconnetterono"
+   ],
+   "ind.past.S1": [
+    "sconnessi",
+    "sconnettei"
+   ]
+  },
+  "scuotere": {
+   "ind.past.P1": [
+    "scotemmo",
+    "scuotemmo"
+   ],
+   "sub.impf.S3": [
+    "scotesse",
+    "scuotesse"
+   ],
+   "sub.impf.P3": [
+    "scotessero",
+    "scuotessero"
+   ],
+   "sub.impf.S1": [
+    "scotessi",
+    "scuotessi"
+   ],
+   "sub.impf.S2": [
+    "scotessi",
+    "scuotessi"
+   ],
+   "sub.impf.P1": [
+    "scotessimo",
+    "scuotessimo"
+   ],
+   "ind.past.P2": [
+    "scoteste",
+    "scuoteste"
+   ],
+   "sub.impf.P2": [
+    "scoteste",
+    "scuoteste"
+   ],
+   "ind.past.S2": [
+    "scotesti",
+    "scuotesti"
+   ],
+   "impr.pres.P2": [
+    "scotete",
+    "scuotiamo"
+   ],
+   "ind.pres.P2": [
+    "scotete",
+    "scuotiamo"
+   ],
+   "ind.impf.S3": [
+    "scoteva",
+    "scuoteva"
+   ],
+   "ind.impf.P1": [
+    "scotevamo",
+    "scuotevamo"
+   ],
+   "ind.impf.P3": [
+    "scotevano",
+    "scuotevano"
+   ],
+   "ind.impf.P2": [
+    "scotevate",
+    "scuotevate"
+   ],
+   "ind.impf.S2": [
+    "scotevi",
+    "scuotevi"
+   ],
+   "ind.impf.S1": [
+    "scotevo",
+    "scuotevo"
+   ],
+   "impr.pres.P1": [
+    "scotiamo",
+    "scuotiamo"
+   ],
+   "ind.pres.P1": [
+    "scotiamo",
+    "scuotiamo"
+   ],
+   "sub.pres.P1": [
+    "scotiamo",
+    "scuotiamo"
+   ],
+   "sub.pres.P2": [
+    "scotiate",
+    "scuotiate"
+   ]
+  },
+  "secernere": {
+   "ind.past.S3": [
+    "secernette",
+    "secerné"
+   ]
+  },
+  "sedere": {
+   "impr.pres.P2": [
+    "sedete",
+    "siedete"
+   ],
+   "ind.pres.P2": [
+    "sedete",
+    "siedete"
+   ],
+   "ind.impf.S3": [
+    "sedeva",
+    "siedeva"
+   ],
+   "ind.impf.P1": [
+    "sedevamo",
+    "siedevamo"
+   ],
+   "ind.impf.P3": [
+    "sedevano",
+    "siedevano"
+   ],
+   "ind.impf.P2": [
+    "sedevate",
+    "siedevate"
+   ],
+   "ind.impf.S2": [
+    "sedevi",
+    "siedevi"
+   ],
+   "impr.pres.P1": [
+    "sediamo",
+    "siediamo"
+   ],
+   "ind.pres.P1": [
+    "sediamo",
+    "siediamo"
+   ],
+   "sub.pres.P1": [
+    "sediamo",
+    "siediamo"
+   ],
+   "sub.pres.P2": [
+    "sediate",
+    "siediate"
+   ],
+   "ind.pres.S1": [
+    "seggo",
+    "siedo"
+   ],
+   "ind.pres.P3": [
+    "seggono",
+    "siedono"
+   ]
+  },
+  "soccombere": {
+   "ind.past.S1": [
+    "soccombei",
+    "soccombetti"
+   ],
+   "ind.past.P3": [
+    "soccomberono",
+    "soccombettero"
+   ],
+   "ind.past.S3": [
+    "soccombette",
+    "soccombé"
+   ]
+  },
+  "soddisfare": {
+   "impr.pres.S2": [
+    "soddisfa'",
+    "soddisfai"
+   ],
+   "sub.pres.S1": [
+    "soddisfaccia",
+    "soddisfi"
+   ],
+   "sub.pres.S2": [
+    "soddisfaccia",
+    "soddisfi"
+   ],
+   "sub.pres.S3": [
+    "soddisfaccia",
+    "soddisfi"
+   ],
+   "impr.pres.P1": [
+    "soddisfacciamo",
+    "soddisfiamo"
+   ],
+   "ind.pres.P1": [
+    "soddisfacciamo",
+    "soddisfiamo"
+   ],
+   "sub.pres.P1": [
+    "soddisfacciamo",
+    "soddisfiamo"
+   ],
+   "sub.pres.P3": [
+    "soddisfacciano",
+    "soddisfino"
+   ],
+   "sub.pres.P2": [
+    "soddisfacciate",
+    "soddisfiate"
+   ],
+   "ind.pres.S1": [
+    "soddisfaccio",
+    "soddisfo"
+   ],
+   "ind.past.P1": [
+    "soddisfacemmo",
+    "soddisfammo"
+   ],
+   "part.pres.SF": [
+    "soddisfacente",
+    "soddisfante"
+   ],
+   "part.pres.S": [
+    "soddisfacente",
+    "soddisfante"
+   ],
+   "part.pres.PF": [
+    "soddisfacenti",
+    "soddisfanti"
+   ],
+   "part.pres.P": [
+    "soddisfacenti",
+    "soddisfanti"
+   ],
+   "sub.impf.S3": [
+    "soddisfacesse",
+    "soddisfasse"
+   ],
+   "sub.impf.P3": [
+    "soddisfacessero",
+    "soddisfassero"
+   ],
+   "sub.impf.S1": [
+    "soddisfacessi",
+    "soddisfassi"
+   ],
+   "sub.impf.S2": [
+    "soddisfacessi",
+    "soddisfassi"
+   ],
+   "sub.impf.P1": [
+    "soddisfacessimo",
+    "soddisfassimo"
+   ],
+   "ind.past.P2": [
+    "soddisfaceste",
+    "soddisfaste"
+   ],
+   "sub.impf.P2": [
+    "soddisfaceste",
+    "soddisfaste"
+   ],
+   "ind.past.S2": [
+    "soddisfacesti",
+    "soddisfasti"
+   ],
+   "ind.impf.S3": [
+    "soddisfaceva",
+    "soddisfava"
+   ],
+   "ind.impf.P1": [
+    "soddisfacevamo",
+    "soddisfavamo"
+   ],
+   "ind.impf.P3": [
+    "soddisfacevano",
+    "soddisfavano"
+   ],
+   "ind.impf.P2": [
+    "soddisfacevate",
+    "soddisfavate"
+   ],
+   "ind.impf.S2": [
+    "soddisfacevi",
+    "soddisfavi"
+   ],
+   "ind.impf.S1": [
+    "soddisfacevo",
+    "soddisfavo"
+   ],
+   "ind.past.S1": [
+    "soddisfai",
+    "soddisfeci"
+   ],
+   "ind.pres.S2": [
+    "soddisfai",
+    "soddisfi"
+   ],
+   "ind.pres.P3": [
+    "soddisfanno",
+    "soddisfano"
+   ],
+   "ind.fut.S2": [
+    "soddisfarai",
+    "soddisferai"
+   ],
+   "ind.fut.P3": [
+    "soddisfaranno",
+    "soddisferanno"
+   ],
+   "cond.pres.S3": [
+    "soddisfarebbe",
+    "soddisferebbe"
+   ],
+   "cond.pres.P3": [
+    "soddisfarebbero",
+    "soddisferebbero"
+   ],
+   "cond.pres.S1": [
+    "soddisfarei",
+    "soddisferei"
+   ],
+   "cond.pres.P1": [
+    "soddisfaremmo",
+    "soddisferemmo"
+   ],
+   "ind.fut.P1": [
+    "soddisfaremo",
+    "soddisferemo"
+   ],
+   "cond.pres.P2": [
+    "soddisfareste",
+    "soddisfereste"
+   ],
+   "cond.pres.S2": [
+    "soddisfaresti",
+    "soddisferesti"
+   ],
+   "ind.fut.P2": [
+    "soddisfarete",
+    "soddisferete"
+   ],
+   "ind.past.P3": [
+    "soddisfarono",
+    "soddisfecero"
+   ],
+   "ind.fut.S3": [
+    "soddisfarà",
+    "soddisferà"
+   ],
+   "ind.fut.S1": [
+    "soddisfarò",
+    "soddisferò"
+   ],
+   "part.past.SF": [
+    "soddisfata",
+    "soddisfatta"
+   ],
+   "part.past.PF": [
+    "soddisfate",
+    "soddisfatte"
+   ],
+   "part.past.P": [
+    "soddisfati",
+    "soddisfatti"
+   ],
+   "part.past.S": [
+    "soddisfato",
+    "soddisfatto"
+   ],
+   "ind.past.S3": [
+    "soddisfece",
+    "soddisfò"
+   ]
+  },
+  "sopraffare": {
+   "impr.pres.S2": [
+    "sopraffa'",
+    "sopraffai"
+   ]
+  },
+  "soprassedere": {
+   "sub.pres.P3": [
+    "soprassedano",
+    "soprassiedano"
+   ],
+   "ind.fut.S2": [
+    "soprassederai",
+    "soprassiederai"
+   ],
+   "ind.fut.P3": [
+    "soprassederanno",
+    "soprassiederanno"
+   ],
+   "cond.pres.S3": [
+    "soprassederebbe",
+    "soprassiederebbe"
+   ],
+   "cond.pres.P3": [
+    "soprassederebbero",
+    "soprassiederebbero"
+   ],
+   "cond.pres.S1": [
+    "soprassederei",
+    "soprassiederei"
+   ],
+   "cond.pres.P1": [
+    "soprassederemmo",
+    "soprassiederemmo"
+   ],
+   "ind.fut.P1": [
+    "soprassederemo",
+    "soprassiederemo"
+   ],
+   "cond.pres.P2": [
+    "soprassedereste",
+    "soprassiedereste"
+   ],
+   "cond.pres.S2": [
+    "soprassederesti",
+    "soprassiederesti"
+   ],
+   "ind.fut.P2": [
+    "soprassederete",
+    "soprassiederete"
+   ],
+   "ind.fut.S1": [
+    "soprassederà",
+    "soprassiederà"
+   ],
+   "ind.fut.S3": [
+    "soprassederà",
+    "soprassiederà"
+   ],
+   "impr.pres.P2": [
+    "soprassedete",
+    "soprassiedete"
+   ],
+   "ind.pres.P2": [
+    "soprassedete",
+    "soprassiedete"
+   ],
+   "ind.impf.S3": [
+    "soprassedeva",
+    "soprassiedeva"
+   ],
+   "ind.impf.P1": [
+    "soprassedevamo",
+    "soprassiedevamo"
+   ],
+   "ind.impf.P3": [
+    "soprassedevano",
+    "soprassiedevano"
+   ],
+   "ind.impf.P2": [
+    "soprassedevate",
+    "soprassiedevate"
+   ],
+   "ind.impf.S2": [
+    "soprassedevi",
+    "soprassiedevi"
+   ],
+   "impr.pres.P1": [
+    "soprassediamo",
+    "soprassiediamo"
+   ],
+   "ind.pres.P1": [
+    "soprassediamo",
+    "soprassiediamo"
+   ],
+   "sub.pres.P1": [
+    "soprassediamo",
+    "soprassiediamo"
+   ],
+   "sub.pres.P2": [
+    "soprassediate",
+    "soprassiediate"
+   ],
+   "ind.pres.S1": [
+    "soprasseggo",
+    "soprassiedo"
+   ],
+   "ind.pres.P3": [
+    "soprasseggono",
+    "soprassiedono"
+   ]
+  },
+  "sottostare": {
+   "impr.pres.S2": [
+    "sottosta'",
+    "sottostai"
+   ]
+  },
+  "sparire": {
+   "ind.past.S1": [
+    "sparii",
+    "sparvi"
+   ],
+   "ind.past.P3": [
+    "sparirono",
+    "sparvero"
+   ],
+   "ind.past.S3": [
+    "sparve",
+    "sparì"
+   ]
+  },
+  "sperdere": {
+   "part.past.PF": [
+    "sperduto",
+    "sperso"
+   ],
+   "part.past.P": [
+    "sperduto",
+    "sperso"
+   ],
+   "part.past.SF": [
+    "sperduto",
+    "sperso"
+   ],
+   "part.past.S": [
+    "sperduto",
+    "sperso"
+   ]
+  },
+  "splendere": {
+   "ind.past.S1": [
+    "splendei",
+    "splendetti"
+   ],
+   "ind.past.P3": [
+    "splenderono",
+    "splendettero"
+   ],
+   "ind.past.S3": [
+    "splendette",
+    "splendé"
+   ]
+  },
+  "spremere": {
+   "ind.past.S1": [
+    "spremei",
+    "spremetti"
+   ],
+   "ind.past.P3": [
+    "spremerono",
+    "spremettero"
+   ]
+  },
+  "stare": {
+   "impr.pres.S2": [
+    "sta'",
+    "stai"
+   ]
+  },
+  "stracuocere": {
+   "ind.past.S3": [
+    "stracosse",
+    "stracuocé"
+   ],
+   "ind.past.P3": [
+    "stracossero",
+    "stracuocerono"
+   ],
+   "ind.past.S1": [
+    "stracossi",
+    "stracuocei"
+   ]
+  },
+  "strafare": {
+   "impr.pres.S2": [
+    "strafa'",
+    "strafai"
+   ]
+  },
+  "stupefare": {
+   "impr.pres.S2": [
+    "stupefa'",
+    "stupefai"
+   ]
+  },
+  "succedere": {
+   "ind.past.S3": [
+    "succedette",
+    "successe"
+   ],
+   "ind.past.P3": [
+    "succedettero",
+    "successero"
+   ],
+   "part.past.PF": [
+    "succeduto",
+    "successo"
+   ],
+   "part.past.P": [
+    "succeduto",
+    "successo"
+   ],
+   "part.past.SF": [
+    "succeduto",
+    "successo"
+   ],
+   "part.past.S": [
+    "succeduto",
+    "successo"
+   ]
+  },
+  "sussistere": {
+   "ind.past.S1": [
+    "sussistei",
+    "sussistetti"
+   ],
+   "ind.past.P3": [
+    "sussisterono",
+    "sussistettero"
+   ],
+   "ind.past.S3": [
+    "sussistette",
+    "sussisté"
+   ]
+  },
+  "temere": {
+   "ind.past.S1": [
+    "temei",
+    "temetti"
+   ],
+   "ind.past.P3": [
+    "temerono",
+    "temettero"
+   ],
+   "ind.past.S3": [
+    "temette",
+    "temé"
+   ]
+  },
+  "transigere": {
+   "ind.past.S1": [
+    "transigei",
+    "transigetti"
+   ],
+   "ind.past.P3": [
+    "transigerono",
+    "transigettero"
+   ],
+   "ind.past.S3": [
+    "transigette",
+    "transigé"
+   ]
+  }
+ },
+ "emptied": {
+  "disdire": {
+   "part.pres.PF": [
+    "disdicevo"
+   ],
+   "part.pres.P": [
+    "disdicevo"
+   ],
+   "part.pres.SF": [
+    "disdicevo"
+   ],
+   "part.pres.S": [
+    "disdicevo"
+   ]
+  },
+  "percuotere": {
+   "part.pres.PF": [
+    "percotevo",
+    "percuotevo"
+   ],
+   "part.pres.P": [
+    "percotevo",
+    "percuotevo"
+   ],
+   "part.pres.SF": [
+    "percotevo",
+    "percuotevo"
+   ],
+   "part.pres.S": [
+    "percotevo",
+    "percuotevo"
+   ]
+  },
+  "possedere": {
+   "part.pres.PF": [
+    "possedevo",
+    "possiedevo"
+   ],
+   "part.pres.P": [
+    "possedevo",
+    "possiedevo"
+   ],
+   "part.pres.SF": [
+    "possedevo",
+    "possiedevo"
+   ],
+   "part.pres.S": [
+    "possedevo",
+    "possiedevo"
+   ]
+  },
+  "ripercuotere": {
+   "part.pres.PF": [
+    "ripercuotevo"
+   ],
+   "part.pres.P": [
+    "ripercuotevo"
+   ],
+   "part.pres.SF": [
+    "ripercuotevo"
+   ],
+   "part.pres.S": [
+    "ripercuotevo"
+   ]
+  },
+  "riscuotere": {
+   "part.pres.PF": [
+    "riscotevo",
+    "riscuotevo"
+   ],
+   "part.pres.P": [
+    "riscotevo",
+    "riscuotevo"
+   ],
+   "part.pres.SF": [
+    "riscotevo",
+    "riscuotevo"
+   ],
+   "part.pres.S": [
+    "riscotevo",
+    "riscuotevo"
+   ]
+  },
+  "risedere": {
+   "part.pres.PF": [
+    "risedevo",
+    "risiedevo"
+   ],
+   "part.pres.P": [
+    "risedevo",
+    "risiedevo"
+   ],
+   "part.pres.SF": [
+    "risedevo",
+    "risiedevo"
+   ],
+   "part.pres.S": [
+    "risedevo",
+    "risiedevo"
+   ]
+  },
+  "scuotere": {
+   "part.pres.PF": [
+    "scotevo",
+    "scuotevo"
+   ],
+   "part.pres.P": [
+    "scotevo",
+    "scuotevo"
+   ],
+   "part.pres.SF": [
+    "scotevo",
+    "scuotevo"
+   ],
+   "part.pres.S": [
+    "scotevo",
+    "scuotevo"
+   ]
+  },
+  "sedere": {
+   "part.pres.PF": [
+    "sedevo",
+    "siedevo"
+   ],
+   "part.pres.P": [
+    "sedevo",
+    "siedevo"
+   ],
+   "part.pres.SF": [
+    "sedevo",
+    "siedevo"
+   ],
+   "part.pres.S": [
+    "sedevo",
+    "siedevo"
+   ]
+  },
+  "soprassedere": {
+   "part.pres.PF": [
+    "soprassedevo",
+    "soprassiedevo"
+   ],
+   "part.pres.P": [
+    "soprassedevo",
+    "soprassiedevo"
+   ],
+   "part.pres.SF": [
+    "soprassedevo",
+    "soprassiedevo"
+   ],
+   "part.pres.S": [
+    "soprassedevo",
+    "soprassiedevo"
+   ]
+  }
+ },
+ "futureDisagrees": {
+  "accendere": [
+   "S1: accenderà (others imply accenderò)"
+  ],
+  "accondiscendere": [
+   "S1: accondiscenderà (others imply accondiscenderò)"
+  ],
+  "adempiere": [
+   "S1: adempierà (others imply adempierò)"
+  ],
+  "adergere": [
+   "S1: adergerà (others imply adergerò)"
+  ],
+  "affiggere": [
+   "S1: affiggerà (others imply affiggerò)"
+  ],
+  "affliggere": [
+   "S1: affliggerà (others imply affliggerò)"
+  ],
+  "annettere": [
+   "S1: annetterà (others imply annetterò)"
+  ],
+  "appendere": [
+   "S1: appenderà (others imply appenderò)"
+  ],
+  "apprendere": [
+   "S1: apprenderà (others imply apprenderò)"
+  ],
+  "ardere": [
+   "S1: arderà (others imply arderò)"
+  ],
+  "arrendere": [
+   "S1: arrenderà (others imply arrenderò)"
+  ],
+  "arridere": [
+   "S1: arriderà (others imply arriderò)"
+  ],
+  "ascendere": [
+   "S1: ascenderà (others imply ascenderò)"
+  ],
+  "ascondere": [
+   "S1: asconderà (others imply asconderò)"
+  ],
+  "aspergere": [
+   "S1: aspergerà (others imply aspergerò)"
+  ],
+  "assidere": [
+   "S1: assiderà (others imply assiderò)"
+  ],
+  "astringere": [
+   "S1: astringerà (others imply astringerò)"
+  ],
+  "attendere": [
+   "S1: attenderà (others imply attenderò)"
+  ],
+  "attingere": [
+   "S1: attingerà (others imply attingerò)"
+  ],
+  "attorcere": [
+   "S1: attorcerà (others imply attorcerò)"
+  ],
+  "autoassolvere": [
+   "S1: autoassolverà (others imply autoassolverò)"
+  ],
+  "autocompiacere": [
+   "S1: autocompiacerà (others imply autocompiacerò)"
+  ],
+  "autoconvincere": [
+   "S1: autoconvincerà (others imply autoconvincerò)"
+  ],
+  "autocorreggere": [
+   "S1: autocorreggerà (others imply autocorreggerò)"
+  ],
+  "autodifendere": [
+   "S1: autodifenderà (others imply autodifenderò)"
+  ],
+  "autodirigere": [
+   "S1: autodirigerà (others imply autodirigerò)"
+  ],
+  "autodistruggere": [
+   "S1: autodistruggerà (others imply autodistruggerò)"
+  ],
+  "autoerigere": [
+   "S1: autoerigerà (others imply autoerigerò)"
+  ],
+  "autoescludere": [
+   "S1: autoescluderà (others imply autoescluderò)"
+  ],
+  "autoinfliggere": [
+   "S1: autoinfliggerà (others imply autoinfliggerò)"
+  ],
+  "autoprodurre": [
+   "S1: autoprodurrà (others imply autoprodurrò)"
+  ],
+  "autopromuovere": [
+   "S1: autopromuoverà (others imply autopromuoverò)"
+  ],
+  "autoproporre": [
+   "S1: autoproporrà (others imply autoproporrò)"
+  ],
+  "autoredimere": [
+   "S1: autoredimerà (others imply autoredimerò)"
+  ],
+  "autoridurre": [
+   "S1: autoridurrà (others imply autoridurrò)"
+  ],
+  "autoriprodurre": [
+   "S1: autoriprodurrà (others imply autoriprodurrò)"
+  ],
+  "autoritrasmettere": [
+   "S1: autoritrasmetterà (others imply autoritrasmetterò)"
+  ],
+  "autosciogliere": [
+   "S1: autoscioglierà (others imply autoscioglierò)"
+  ],
+  "autosospendere": [
+   "S1: autosospenderà (others imply autosospenderò)"
+  ],
+  "autosostenere": [
+   "S1: autososterrà (others imply autososterrò)"
+  ],
+  "autospendere": [
+   "S1: autospenderà (others imply autospenderò)"
+  ],
+  "avellere": [
+   "S1: avellerà (others imply avellerò)"
+  ],
+  "circonfondere": [
+   "S1: circonfonderà (others imply circonfonderò)"
+  ],
+  "co-presiedere": [
+   "S1: co-presiederà (others imply co-presiederò)"
+  ],
+  "co-produrre": [
+   "S1: co-produrrà (others imply co-produrrò)"
+  ],
+  "coesistere": [
+   "S1: coesisterà (others imply coesisterò)"
+  ],
+  "collidere": [
+   "S1: colliderà (others imply colliderò)"
+  ],
+  "compiangere": [
+   "S1: compiangerà (others imply compiangerò)"
+  ],
+  "compravendere": [
+   "S1: compravenderà (others imply compravenderò)"
+  ],
+  "comprendere": [
+   "S1: comprenderà (others imply comprenderò)"
+  ],
+  "compungere": [
+   "S1: compungerà (others imply compungerò)"
+  ],
+  "condiscendere": [
+   "S1: condiscenderà (others imply condiscenderò)"
+  ],
+  "condolere": [
+   "S1: condolerà (others imply condolerò)"
+  ],
+  "configgere": [
+   "S1: configgerà (others imply configgerò)"
+  ],
+  "confliggere": [
+   "S1: confliggerà (others imply confliggerò)"
+  ],
+  "connettere": [
+   "S1: connetterà (others imply connetterò)"
+  ],
+  "conquidere": [
+   "S1: conquiderà (others imply conquiderò)"
+  ],
+  "contendere": [
+   "S1: contenderà (others imply contenderò)"
+  ],
+  "contraddistinguere": [
+   "S1: contraddistinguerà (others imply contraddistinguerò)"
+  ],
+  "contundere": [
+   "S1: contunderà (others imply contunderò)"
+  ],
+  "convergere": [
+   "S1: convergerà (others imply convergerò)"
+  ],
+  "convivere": [
+   "S1: convivrà (others imply convivrò)"
+  ],
+  "coprodurre": [
+   "S1: coprodurrà (others imply coprodurrò)"
+  ],
+  "corrispondere": [
+   "S1: corrisponderà (others imply corrisponderò)"
+  ],
+  "coscrivere": [
+   "S1: coscriverà (others imply coscriverò)"
+  ],
+  "crocefiggere": [
+   "S1: crocefiggerà (others imply crocefiggerò)"
+  ],
+  "crocifiggere": [
+   "S1: crocifiggerà (others imply crocifiggerò)"
+  ],
+  "dattiloscrivere": [
+   "S1: dattiloscriverà (others imply dattiloscriverò)"
+  ],
+  "decomprimere": [
+   "S1: decomprimerà (others imply decomprimerò)"
+  ],
+  "decrescere": [
+   "S1: decrescerà (others imply decrescerò)"
+  ],
+  "defiggere": [
+   "S1: defiggerà (others imply defiggerò)"
+  ],
+  "deflettere": [
+   "S1: defletterà (others imply defletterò)"
+  ],
+  "demordere": [
+   "S1: demorderà (others imply demorderò)"
+  ],
+  "detergere": [
+   "S1: detergerà (others imply detergerò)"
+  ],
+  "devolvere": [
+   "S1: devolverà (others imply devolverò)"
+  ],
+  "difendere": [
+   "S1: difenderà (others imply difenderò)"
+  ],
+  "dipendere": [
+   "S1: dipenderà (others imply dipenderò)"
+  ],
+  "dirimere": [
+   "S1: dirimerà (others imply dirimerò)"
+  ],
+  "disattendere": [
+   "S1: disattenderà (others imply disattenderò)"
+  ],
+  "discendere": [
+   "S1: discenderà (others imply discenderò)"
+  ],
+  "discernere": [
+   "S1: discernerà (others imply discernerò)"
+  ],
+  "discingere": [
+   "S1: discingerà (others imply discingerò)"
+  ],
+  "disciogliere": [
+   "S1: discioglierà (others imply discioglierò)"
+  ],
+  "disconnettere": [
+   "S1: disconnetterà (others imply disconnetterò)"
+  ],
+  "disconoscere": [
+   "S1: disconoscerà (others imply disconoscerò)"
+  ],
+  "discutere": [
+   "S1: discuterà (others imply discuterò)"
+  ],
+  "dismettere": [
+   "S1: dismetterà (others imply dismetterò)"
+  ],
+  "disperdere": [
+   "S1: disperderà (others imply disperderò)"
+  ],
+  "distendere": [
+   "S1: distenderà (others imply distenderò)"
+  ],
+  "disvolere": [
+   "S1: disvorrà (others imply disvorrò)"
+  ],
+  "divedere": [
+   "S1: divedrà (others imply divedrò)"
+  ],
+  "divergere": [
+   "S1: divergerà (others imply divergerò)"
+  ],
+  "dolere": [
+   "S1: dolerà (others imply dolerò)"
+  ],
+  "eccedere": [
+   "S1: eccederà (others imply eccederò)"
+  ],
+  "eccellere": [
+   "S1: eccellerà (others imply eccellerò)"
+  ],
+  "elidere": [
+   "S1: eliderà (others imply eliderò)"
+  ],
+  "empiere": [
+   "S1: empierà (others imply empierò)"
+  ],
+  "erigere": [
+   "S1: erigerà (others imply erigerò)"
+  ],
+  "ergere": [
+   "S1: ergerà (others imply ergerò)"
+  ],
+  "esigere": [
+   "S1: esigerà (others imply esigerò)"
+  ],
+  "espandere": [
+   "S1: espanderà (others imply espanderò)"
+  ],
+  "espellere": [
+   "S1: espellerà (others imply espellerò)"
+  ],
+  "espungere": [
+   "S1: espungerà (others imply espungerò)"
+  ],
+  "estendere": [
+   "S1: estenderà (others imply estenderò)"
+  ],
+  "estrovertere": [
+   "S1: estroverterà (others imply estroverterò)"
+  ],
+  "estrudere": [
+   "S1: estruderà (others imply estruderò)"
+  ],
+  "evolvere": [
+   "S1: evolverà (others imply evolverò)"
+  ],
+  "fendere": [
+   "S1: fenderà (others imply fenderò)"
+  ],
+  "fingere": [
+   "S1: fingerà (others imply fingerò)"
+  ],
+  "flettere": [
+   "S1: fletterà (others imply fletterò)"
+  ],
+  "fraintendere": [
+   "S1: fraintenderà (others imply fraintenderò)"
+  ],
+  "frammettere": [
+   "S1: frammetterà (others imply frammetterò)"
+  ],
+  "frangere": [
+   "S1: frangerà (others imply frangerò)"
+  ],
+  "fremere": [
+   "S1: fremerà (others imply fremerò)"
+  ],
+  "friggere": [
+   "S1: friggerà (others imply friggerò)"
+  ],
+  "fulgere": [
+   "S1: fulgerà (others imply fulgerò)"
+  ],
+  "fungere": [
+   "S1: fungerà (others imply fungerò)"
+  ],
+  "gemere": [
+   "S1: gemerà (others imply gemerò)"
+  ],
+  "genuflettere": [
+   "S1: genufletterà (others imply genufletterò)"
+  ],
+  "godere": [
+   "S1: goderà (others imply goderò)"
+  ],
+  "imbevere": [
+   "S1: imbeverà (others imply imbeverò)"
+  ],
+  "imprendere": [
+   "S1: imprenderà (others imply imprenderò)"
+  ],
+  "incedere": [
+   "S1: incederà (others imply incederò)"
+  ],
+  "incombere": [
+   "S1: incomberà (others imply incomberò)"
+  ],
+  "increscere": [
+   "S1: increscerà (others imply increscerò)"
+  ],
+  "incutere": [
+   "S1: incuterà (others imply incuterò)"
+  ],
+  "indisporre": [
+   "S1: indisporrà (others imply indisporrò)"
+  ],
+  "indulgere": [
+   "S1: indulgerà (others imply indulgerò)"
+  ],
+  "infiggere": [
+   "S1: infiggerà (others imply infiggerò)"
+  ],
+  "infingere": [
+   "S1: infingerà (others imply infingerò)"
+  ],
+  "infliggere": [
+   "S1: infliggerà (others imply infliggerò)"
+  ],
+  "inframmettere": [
+   "S1: inframmetterà (others imply inframmetterò)"
+  ],
+  "infrangere": [
+   "S1: infrangerà (others imply infrangerò)"
+  ],
+  "insistere": [
+   "S1: insisterà (others imply insisterò)"
+  ],
+  "intendere": [
+   "S1: intenderà (others imply intenderò)"
+  ],
+  "intercedere": [
+   "S1: intercederà (others imply intercederò)"
+  ],
+  "intraprendere": [
+   "S1: intraprenderà (others imply intraprenderò)"
+  ],
+  "intravvedere": [
+   "S1: intravvedrà (others imply intravvedrò)"
+  ],
+  "intridere": [
+   "S1: intriderà (others imply intriderò)"
+  ],
+  "intromettere": [
+   "S1: intrometterà (others imply intrometterò)"
+  ],
+  "intrudere": [
+   "S1: intruderà (others imply intruderò)"
+  ],
+  "invalere": [
+   "S1: invarrà (others imply invarrò)"
+  ],
+  "involgere": [
+   "S1: involgerà (others imply involgerò)"
+  ],
+  "involvere": [
+   "S1: involverà (others imply involverò)"
+  ],
+  "irridere": [
+   "S1: irriderà (others imply irriderò)"
+  ],
+  "ledere": [
+   "S1: lederà (others imply lederò)"
+  ],
+  "malvolere": [
+   "S1: malvorrà (others imply malvorrò)"
+  ],
+  "mingere": [
+   "S1: mingerà (others imply mingerò)"
+  ],
+  "molcere": [
+   "S1: molcerà (others imply molcerò)"
+  ],
+  "mordere": [
+   "S1: morderà (others imply morderò)"
+  ],
+  "mungere": [
+   "S1: mungerà (others imply mungerò)"
+  ],
+  "nascondere": [
+   "S1: nasconderà (others imply nasconderò)"
+  ],
+  "negligere": [
+   "S1: negligerà (others imply negligerò)"
+  ],
+  "offendere": [
+   "S1: offenderà (others imply offenderò)"
+  ],
+  "opprimere": [
+   "S1: opprimerà (others imply opprimerò)"
+  ],
+  "ottundere": [
+   "S1: ottunderà (others imply ottunderò)"
+  ],
+  "pascere": [
+   "S1: pascerà (others imply pascerò)"
+  ],
+  "pendere": [
+   "S1: penderà (others imply penderò)"
+  ],
+  "persistere": [
+   "S1: persisterà (others imply persisterò)"
+  ],
+  "piangere": [
+   "S1: piangerà (others imply piangerò)"
+  ],
+  "piovere": [
+   "S1: pioverà (others imply pioverò)"
+  ],
+  "plaudere": [
+   "S1: plauderà (others imply plauderò)"
+  ],
+  "porgere": [
+   "S1: porgerà (others imply porgerò)"
+  ],
+  "posporre": [
+   "S1: posporrà (others imply posporrò)"
+  ],
+  "precomprimere": [
+   "S1: precomprimerà (others imply precomprimerò)"
+  ],
+  "preconoscere": [
+   "S1: preconoscerà (others imply preconoscerò)"
+  ],
+  "preesistere": [
+   "S1: preesisterà (others imply preesisterò)"
+  ],
+  "prefiggere": [
+   "S1: prefiggerà (others imply prefiggerò)"
+  ],
+  "preludere": [
+   "S1: preluderà (others imply preluderò)"
+  ],
+  "premere": [
+   "S1: premerà (others imply premerò)"
+  ],
+  "prenascere": [
+   "S1: prenascerà (others imply prenascerò)"
+  ],
+  "prendere": [
+   "S1: prenderà (others imply prenderò)"
+  ],
+  "prescegliere": [
+   "S1: presceglierà (others imply presceglierò)"
+  ],
+  "presiedere": [
+   "S1: presiederà (others imply presiederò)"
+  ],
+  "pretendere": [
+   "S1: pretenderà (others imply pretenderò)"
+  ],
+  "procombere": [
+   "S1: procomberà (others imply procomberò)"
+  ],
+  "propendere": [
+   "S1: propenderà (others imply propenderò)"
+  ],
+  "proteggere": [
+   "S1: proteggerà (others imply proteggerò)"
+  ],
+  "protendere": [
+   "S1: protenderà (others imply protenderò)"
+  ],
+  "prudere": [
+   "S1: pruderà (others imply pruderò)"
+  ],
+  "pungere": [
+   "S1: pungerà (others imply pungerò)"
+  ],
+  "radere": [
+   "S1: raderà (others imply raderò)"
+  ],
+  "radioassistere": [
+   "S1: radioassisterà (others imply radioassisterò)"
+  ],
+  "rapprendere": [
+   "S1: rapprenderà (others imply rapprenderò)"
+  ],
+  "rattenere": [
+   "S1: ratterrà (others imply ratterrò)"
+  ],
+  "ravvedere": [
+   "S1: ravvedrà (others imply ravvedrò)"
+  ],
+  "ravvolgere": [
+   "S1: ravvolgerà (others imply ravvolgerò)"
+  ],
+  "recedere": [
+   "S1: recederà (others imply recederò)"
+  ],
+  "recingere": [
+   "S1: recingerà (others imply recingerò)"
+  ],
+  "redigere": [
+   "S1: redigerà (others imply redigerò)"
+  ],
+  "redimere": [
+   "S1: redimerà (others imply redimerò)"
+  ],
+  "reiscrivere": [
+   "S1: reiscriverà (others imply reiscriverò)"
+  ],
+  "rendere": [
+   "S1: renderà (others imply renderò)"
+  ],
+  "repellere": [
+   "S1: repellerà (others imply repellerò)"
+  ],
+  "resistere": [
+   "S1: resisterà (others imply resisterò)"
+  ],
+  "retrocedere": [
+   "S1: retrocederà (others imply retrocederò)"
+  ],
+  "riaccendere": [
+   "S1: riaccenderà (others imply riaccenderò)"
+  ],
+  "riannettere": [
+   "S1: riannetterà (others imply riannetterò)"
+  ],
+  "riavvolgere": [
+   "S1: riavvolgerà (others imply riavvolgerò)"
+  ],
+  "ricedere": [
+   "S1: ricederà (others imply ricederò)"
+  ],
+  "ricevere": [
+   "S1: riceverà (others imply riceverò)"
+  ],
+  "ricogliere": [
+   "S1: ricoglierà (others imply ricoglierò)"
+  ],
+  "ricomprendere": [
+   "S1: ricomprenderà (others imply ricomprenderò)"
+  ],
+  "ricongiungere": [
+   "S1: ricongiungerà (others imply ricongiungerò)"
+  ],
+  "riconnettere": [
+   "S1: riconnetterà (others imply riconnetterò)"
+  ],
+  "ricorreggere": [
+   "S1: ricorreggerà (others imply ricorreggerò)"
+  ],
+  "ricuocere": [
+   "S1: ricuocerà (others imply ricuocerò)"
+  ],
+  "ricrescere": [
+   "S1: ricrescerà (others imply ricrescerò)"
+  ],
+  "ridipingere": [
+   "S1: ridipingerà (others imply ridipingerò)"
+  ],
+  "ridiscendere": [
+   "S1: ridiscenderà (others imply ridiscenderò)"
+  ],
+  "ridiscorrere": [
+   "S1: ridiscorrerà (others imply ridiscorrerò)"
+  ],
+  "ridiscutere": [
+   "S1: ridiscuterà (others imply ridiscuterò)"
+  ],
+  "rieleggere": [
+   "S1: rieleggerà (others imply rieleggerò)"
+  ],
+  "riempiere": [
+   "S1: riempierà (others imply riempierò)"
+  ],
+  "riesplodere": [
+   "S1: riesploderà (others imply riesploderò)"
+  ],
+  "rifrangere": [
+   "S1: rifrangerà (others imply rifrangerò)"
+  ],
+  "rifriggere": [
+   "S1: rifriggerà (others imply rifriggerò)"
+  ],
+  "rifulgere": [
+   "S1: rifulgerà (others imply rifulgerò)"
+  ],
+  "rilucere": [
+   "S1: rilucerà (others imply rilucerò)"
+  ],
+  "rimordere": [
+   "S1: rimorderà (others imply rimorderò)"
+  ],
+  "rimpiangere": [
+   "S1: rimpiangerà (others imply rimpiangerò)"
+  ],
+  "rincrescere": [
+   "S1: rincrescerà (others imply rincrescerò)"
+  ],
+  "rinvolgere": [
+   "S1: rinvolgerà (others imply rinvolgerò)"
+  ],
+  "riottenere": [
+   "S1: riotterrà (others imply riotterrò)"
+  ],
+  "ripiovere": [
+   "S1: ripioverà (others imply ripioverò)"
+  ],
+  "riprendere": [
+   "S1: riprenderà (others imply riprenderò)"
+  ],
+  "ripungere": [
+   "S1: ripungerà (others imply ripungerò)"
+  ],
+  "riscegliere": [
+   "S1: risceglierà (others imply risceglierò)"
+  ],
+  "risciogliere": [
+   "S1: riscioglierà (others imply riscioglierò)"
+  ],
+  "riscorrere": [
+   "S1: riscorrerà (others imply riscorrerò)"
+  ],
+  "risiedere": [
+   "S1: risiederà (others imply risiederò)"
+  ],
+  "risospingere": [
+   "S1: risospingerà (others imply risospingerò)"
+  ],
+  "risostenere": [
+   "S1: risosterrà (others imply risosterrò)"
+  ],
+  "risplendere": [
+   "S1: risplenderà (others imply risplenderò)"
+  ],
+  "rispondere": [
+   "S1: risponderà (others imply risponderò)"
+  ],
+  "ristringere": [
+   "S1: ristringerà (others imply ristringerò)"
+  ],
+  "ritingere": [
+   "S1: ritingerà (others imply ritingerò)"
+  ],
+  "ritogliere": [
+   "S1: ritoglierà (others imply ritoglierò)"
+  ],
+  "rivincere": [
+   "S1: rivincerà (others imply rivincerò)"
+  ],
+  "scegliere": [
+   "S1: sceglierà (others imply sceglierò)"
+  ],
+  "scendere": [
+   "S1: scenderà (others imply scenderò)"
+  ],
+  "scernere": [
+   "S1: scernerà (others imply scernerò)"
+  ],
+  "schiudere": [
+   "S1: schiuderà (others imply schiuderò)"
+  ],
+  "sconfiggere": [
+   "S1: sconfiggerà (others imply sconfiggerò)"
+  ],
+  "sconnettere": [
+   "S1: sconnetterà (others imply sconnetterò)"
+  ],
+  "sconoscere": [
+   "S1: sconoscerà (others imply sconoscerò)"
+  ],
+  "scoscendere": [
+   "S1: scoscenderà (others imply scoscenderò)"
+  ],
+  "scuocere": [
+   "S1: scuocerà (others imply scuocerò)"
+  ],
+  "scucire": [
+   "S1: scucirà (others imply scucirò)"
+  ],
+  "secernere": [
+   "S1: secernerà (others imply secernerò)"
+  ],
+  "smungere": [
+   "S1: smungerà (others imply smungerò)"
+  ],
+  "soccombere": [
+   "S1: soccomberà (others imply soccomberò)"
+  ],
+  "soccorrere": [
+   "S1: soccorrerà (others imply soccorrerò)"
+  ],
+  "soffriggere": [
+   "S1: soffriggerà (others imply soffriggerò)"
+  ],
+  "sommuovere": [
+   "S1: sommuoverà (others imply sommuoverò)"
+  ],
+  "sopradescrivere": [
+   "S1: sopradescriverà (others imply sopradescriverò)"
+  ],
+  "soprammettere": [
+   "S1: soprammetterà (others imply soprammetterò)"
+  ],
+  "soprintendere": [
+   "S1: soprintenderà (others imply soprintenderò)"
+  ],
+  "sorprendere": [
+   "S1: sorprenderà (others imply sorprenderò)"
+  ],
+  "sorreggere": [
+   "S1: sorreggerà (others imply sorreggerò)"
+  ],
+  "sospendere": [
+   "S1: sospenderà (others imply sospenderò)"
+  ],
+  "sottendere": [
+   "S1: sottenderà (others imply sottenderò)"
+  ],
+  "sottintendere": [
+   "S1: sottintenderà (others imply sottintenderò)"
+  ],
+  "sovrintendere": [
+   "S1: sovrintenderà (others imply sovrintenderò)"
+  ],
+  "spandere": [
+   "S1: spanderà (others imply spanderò)"
+  ],
+  "spegnere": [
+   "S1: spegnerà (others imply spegnerò)"
+  ],
+  "spendere": [
+   "S1: spenderà (others imply spenderò)"
+  ],
+  "spengere": [
+   "S1: spengerà (others imply spengerò)"
+  ],
+  "sperdere": [
+   "S1: sperderà (others imply sperderò)"
+  ],
+  "spiovere": [
+   "S1: spioverà (others imply spioverò)"
+  ],
+  "splendere": [
+   "S1: splenderà (others imply splenderò)"
+  ],
+  "sporgere": [
+   "S1: sporgerà (others imply sporgerò)"
+  ],
+  "spremere": [
+   "S1: spremerà (others imply spremerò)"
+  ],
+  "sprovvedere": [
+   "S1: sprovvedrà (others imply sprovvedrò)"
+  ],
+  "stendere": [
+   "S1: stenderà (others imply stenderò)"
+  ],
+  "stracuocere": [
+   "S1: stracuocerà (others imply stracuocerò)"
+  ],
+  "stravolgere": [
+   "S1: stravolgerà (others imply stravolgerò)"
+  ],
+  "stridere": [
+   "S1: striderà (others imply striderò)"
+  ],
+  "struggere": [
+   "S1: struggerà (others imply struggerò)"
+  ],
+  "succidere": [
+   "S1: succiderà (others imply succiderò)"
+  ],
+  "succingere": [
+   "S1: succingerà (others imply succingerò)"
+  ],
+  "superproteggere": [
+   "S1: superproteggerà (others imply superproteggerò)"
+  ],
+  "sussistere": [
+   "S1: sussisterà (others imply sussisterò)"
+  ],
+  "temere": [
+   "S1: temerà (others imply temerò)"
+  ],
+  "tendere": [
+   "S1: tenderà (others imply tenderò)"
+  ],
+  "tergere": [
+   "S1: tergerà (others imply tergerò)"
+  ],
+  "trafiggere": [
+   "S1: trafiggerà (others imply trafiggerò)"
+  ],
+  "tralucere": [
+   "S1: tralucerà (others imply tralucerò)"
+  ],
+  "transigere": [
+   "S1: transigerà (others imply transigerò)"
+  ],
+  "trapungere": [
+   "S1: trapungerà (others imply trapungerò)"
+  ],
+  "trascegliere": [
+   "S1: trasceglierà (others imply trasceglierò)"
+  ],
+  "trascendere": [
+   "S1: trascenderà (others imply trascenderò)"
+  ],
+  "trasdurre": [
+   "S1: trasdurrà (others imply trasdurrò)"
+  ],
+  "travedere": [
+   "S1: travedrà (others imply travedrò)"
+  ],
+  "turbocomprimere": [
+   "S1: turbocomprimerà (others imply turbocomprimerò)"
+  ],
+  "ungere": [
+   "S1: ungerà (others imply ungerò)"
+  ],
+  "vigere": [
+   "S1: vigerà (others imply vigerò)"
+  ],
+  "vilipendere": [
+   "S1: vilipenderà (others imply vilipenderò)"
+  ]
+ }
+}

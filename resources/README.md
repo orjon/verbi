@@ -36,71 +36,151 @@ The `-rre` verbs are not a fourth type. They are `-ere` verbs whose infinitive
 contracted long ago: *porre* was *ponere*, *condurre* was *conducere*. The older
 stem reappears in the forms (*ponevo*, *conducevo*), which is why they cannot be
 built from the infinitive and have to be stored in full.
+## The seven types of error
 
-## Problem 1: the infinitive is often wrong
+Every defect falls into one of these. Counts are for the file as shipped.
 
-**2,219 of 6,120 (36%) store the wrong infinitive.**
+### 1. Clitic forms in a single-slot field — 3,428
 
-`parlare` has its infinitive stored as `parlarvi`, which means "to speak to
-you". Italian attaches pronouns to the end of an infinitive, making one word,
-so *parlarvi* is a real word — just not the plain infinitive.
+Italian attaches pronouns to the end of an infinitive or gerund, making one
+word. Morph-it records these correctly and labels them:
 
-This happened because the converter had one slot for the infinitive and many
-candidates to put in it (*parlare*, *parlarmi*, *parlarti*, *parlarvi*), with
-no rule for choosing. The last one processed won.
+```
+abbagliare      abbagliare   VER:inf+pres
+abbagliarli     abbagliare   VER:inf+pres+li      <- carries "li"
+abbagliando     abbagliare   VER:ger+pres
+abbagliandoci   abbagliare   VER:ger+pres+ci      <- carries "ci"
+```
 
-Every one of the 2,219 is the verb plus one or two pronouns. None is a
-different word, so nothing is truly lost.
+The JSON has one slot for `inf.pres` and one for `ger.pres`. All four
+candidates compete for two slots, the `+li`/`+ci` tag is ignored, and whichever
+is read last wins — leaving `abbagliarli` and `abbagliandoci`.
 
-**What to do:** use the dictionary key. The key is always the correct
-infinitive, because it was never overwritten.
+**2,219 infinitives, 1,209 gerunds.** This is the only type the converter
+caused: the correct form was present and tagged, and was discarded.
 
-## Problem 2: the gerund is often wrong
+**Fix:** take the infinitive from the dictionary key. Cut the gerund at
+`-ando`/`-endo`.
 
-**1,209 of 6,087 (20%) have a pronoun attached**, the same fault as above —
-`parlandosi` instead of `parlando`.
+### 2. A form tagged as the wrong kind of word — 19
 
-**What to do:** cut the word at `-ando` or `-endo` and discard the rest. This
-recovers 6,077 of the 6,087 gerunds, irregular ones included (`bevendosi` →
-`bevendo`, `facendovi` → `facendo`).
+Morph-it sometimes files a form under a category it does not belong to:
 
-### The 10 that cannot be repaired
+```
+addicevo    addire   VER:ger+pres              <- an imperfect, not a gerund
+siedevo     sedere   VER:ger+pres
+siedevo     sedere   VER:part+pres+s+m         <- and as a participle
+```
 
-For these, a form from a different tense landed in the gerund slot. `sedere`
-holds *siedevo* ("I was sitting") where *sedendo* belongs.
+*Addicevo* and *siedevo* are imperfect indicatives. The tag is wrong upstream
+and the converter copied it faithfully.
 
-| Verb | Stored | Should be |
+**10 gerunds, 9 present participles.** For `sedere` both the correct *sedevo*
+and the wrong *siedevo* carry the same tag, so this is a slot collision too —
+but between a right answer and a wrong one.
+
+**Fix:** reject any gerund not ending `-ando`/`-endo` and any present
+participle not ending `-ante`/`-ente`, then build from the infinitive.
+
+### 3. One form claiming two persons — 302
+
+```
+accenderai    accendere   VER:ind+fut+2+s
+accenderà     accendere   VER:ind+fut+1+s     <- wrong
+accenderà     accendere   VER:ind+fut+3+s     <- right
+```
+
+*Accenderà* is third person, tagged as first person as well. The correct
+*accenderò* does not exist anywhere in morph-it, so the first-person slot has
+one candidate and it is the wrong one.
+
+**302 verbs, 301 of them in `S1`.**
+
+**Fix:** by rule, not from data. The Italian future takes the endings
+`-ò -ai -à -emo -ete -anno` on one stem for every verb without exception, so
+recover the stem from the other slots and rebuild the broken one.
+
+### 4. Truncated words — 2
+
+```
+calerebber    calere       VER:cond+pres+3+p    <- missing final "o"
+presenton     presentire   VER:ind+pres+3+p     <- missing final "o"
+```
+
+Should be *calerebbero* and *presentono*. Probably corpus artifacts.
+
+**Fix:** by hand; there are only two.
+
+### 5. A whole paradigm from the wrong mood — 6
+
+```
+soglia      solere   VER:cond+pres+1+s
+soglia      solere   VER:cond+pres+2+s
+sogliamo    solere   VER:cond+pres+1+p
+```
+
+All six of `solere`'s conditional forms are its present subjunctive. The
+conditional would be *solerei, soleresti, solerebbe*.
+
+**One verb.** Unlike the others this is systematic rather than a stray slot —
+an entire paradigm misfiled upstream.
+
+### 6. A clitic form promoted to a headword — 2
+
+```
+dimmi       dimmi       VER:impr+pres+2+s+mi
+rimontati   rimontar    VER:inf+pres+ti
+```
+
+*Dimmi* is `dire` + `mi`; *rimontati* is `rimontare` + `ti`. Morph-it made each
+its own lemma rather than a form of the real verb, so the dictionary gains two
+entries that are not verbs.
+
+**Fix:** drop them. Both real verbs are present and correct separately.
+
+### 7. A typo in a tag, creating a phantom mood — 1
+
+```
+mossoci     muovere     VER:past+past+s+m+ci
+```
+
+`past+past`, where every other participle reads `part+past` — a transposed
+letter upstream. The converter did not recognise `past` as a mood and stored
+the entry under the key `null`:
+
+```json
+"muovere": { "null": { "past": { "S": "mossoci" } } }
+```
+
+**Fix:** ignore any mood that is not `ind`, `sub`, `cond`, `impr`, `inf`,
+`part` or `ger`.
+
+## Where the blame lies
+
+Every stored value was checked against morph-it under its matching tag.
+
+| Type | Count | Origin |
 | --- | --- | --- |
-| `addire` | addicevo | addicendo |
-| `disdire` | disdicevo | disdicendo |
-| `percuotere` | percuotevo | percuotendo |
-| `possedere` | possiedevo | possedendo |
-| `ripercuotere` | ripercuotevo | ripercuotendo |
-| `riscuotere` | riscuotevo | riscuotendo |
-| `risedere` | risiedevo | risedendo |
-| `scuotere` | scuotevo | scuotendo |
-| `sedere` | siedevo | sedendo |
-| `soprassedere` | soprassiedevo | soprassedendo |
+| 1. Clitic in a single slot | 3,428 | converter discarded the right answer |
+| 2. Wrong kind of word | 19 | morph-it |
+| 3. One form, two persons | 302 | morph-it |
+| 4. Truncated | 2 | morph-it |
+| 5. Wrong mood | 6 | morph-it |
+| 6. Clitic as a headword | 2 | morph-it |
+| 7. Typo in a tag | 1 | morph-it |
 
-**What to do:** reject any gerund that does not end `-ando` or `-endo`.
+Six of the seven are upstream, and are what you would expect of a lexicon built
+by tagging a corpus automatically. Type 1 is 91% of the damage and the only one
+that was avoidable — the information needed to reject those forms was in the
+tag and went unused.
 
-## Problem 3: two entries are not verbs
+A faithful rebuild from morph-it would therefore fix 3,428 of the 3,760
+defects. The remaining 332 need generating by rule or correcting by hand
+whichever route you take.
 
-| Key | Holds | What it really is |
-| --- | --- | --- |
-| `dimmi` | an imperative, *dimmi* | "tell me" — a form of `dire`, not a verb |
-| `rimontar` | an imperative, *rimontati* | a shortened spelling of `rimontare` |
+## Things that are not errors
 
-Both real Italian, neither a headword. `dire` and `rimontare` are both present
-and correct, so these two can be dropped.
-
-## Problem 4: one stray key
-
-`muovere` carries an extra mood named `null`, holding `{"past": {"S":
-"mossoci"}}`. Its real forms are fine. Ignore any mood that is not one of
-`ind`, `sub`, `cond`, `impr`, `inf`, `part`, `ger`.
-
-## Problem 5: reflexive verbs are mostly missing
+### Reflexive verbs are mostly missing
 
 This one is **not a bug**. Reflexives like *lavarsi* are two words in use —
 *mi lavo* — so a list of single words has nowhere to put them. Common
@@ -122,7 +202,7 @@ sbracciarsi, sbronzarsi, scapicollarsi, sgolarsi
 All 46 have their base verb in the dictionary, so a reflexive can always be
 resolved: strip `-si`, add `-e`, conjugate that, and add the pronoun yourself.
 
-## Problem 6: 14 verbs have missing tenses
+### Fourteen verbs have missing tenses
 
 These are **correct**, not errors. Verbs like *vigere* and *dirimere* genuinely
 have no past participle in Italian, so no compound tense can be built from them.
@@ -143,7 +223,6 @@ have no past participle in Italian, so no compound tense can be built from them.
 | `sonare` | PASSATO_PROSSIMO, IMPERFETTO |
 | `spengere` | PASSATO_PROSSIMO |
 | `vigere` | PASSATO_PROSSIMO |
-
 ## What the app excludes
 
 48 of the 6,122 entries are skipped, leaving **6,074** verbs. The list lives
@@ -3693,6 +3772,325 @@ The same overwrite. All four gender/number slots hold the same wrong word.
 | `sedere` | siedevo | sedente |
 | `soprassedere` | soprassiedevo | soprassedente |
 
+### Wrong person in the future (302)
+
+The Italian future has the same endings for every verb, so these are
+detectable and repairable: recover the stem from the other slots and rebuild
+the broken one. Almost always the third-person form has landed in the
+first-person slot.
+
+| Key | Slot | Stored | Should be |
+| --- | --- | --- | --- |
+| `accendere` | `S1` | accenderà | accenderò |
+| `accondiscendere` | `S1` | accondiscenderà | accondiscenderò |
+| `addivenire` | `P1` | addiverrò | addiverremo |
+| `adempiere` | `S1` | adempierà | adempierò |
+| `adergere` | `S1` | adergerà | adergerò |
+| `affiggere` | `S1` | affiggerà | affiggerò |
+| `affliggere` | `S1` | affliggerà | affliggerò |
+| `annettere` | `S1` | annetterà | annetterò |
+| `appendere` | `S1` | appenderà | appenderò |
+| `apprendere` | `S1` | apprenderà | apprenderò |
+| `ardere` | `S1` | arderà | arderò |
+| `arrendere` | `S1` | arrenderà | arrenderò |
+| `arridere` | `S1` | arriderà | arriderò |
+| `ascendere` | `S1` | ascenderà | ascenderò |
+| `ascondere` | `S1` | asconderà | asconderò |
+| `aspergere` | `S1` | aspergerà | aspergerò |
+| `assidere` | `S1` | assiderà | assiderò |
+| `astringere` | `S1` | astringerà | astringerò |
+| `attendere` | `S1` | attenderà | attenderò |
+| `attingere` | `S1` | attingerà | attingerò |
+| `attorcere` | `S1` | attorcerà | attorcerò |
+| `autoassolvere` | `S1` | autoassolverà | autoassolverò |
+| `autocompiacere` | `S1` | autocompiacerà | autocompiacerò |
+| `autoconvincere` | `S1` | autoconvincerà | autoconvincerò |
+| `autocorreggere` | `S1` | autocorreggerà | autocorreggerò |
+| `autodifendere` | `S1` | autodifenderà | autodifenderò |
+| `autodirigere` | `S1` | autodirigerà | autodirigerò |
+| `autodistruggere` | `S1` | autodistruggerà | autodistruggerò |
+| `autoerigere` | `S1` | autoerigerà | autoerigerò |
+| `autoescludere` | `S1` | autoescluderà | autoescluderò |
+| `autoinfliggere` | `S1` | autoinfliggerà | autoinfliggerò |
+| `autoprodurre` | `S1` | autoprodurrà | autoprodurrò |
+| `autopromuovere` | `S1` | autopromuoverà | autopromuoverò |
+| `autoproporre` | `S1` | autoproporrà | autoproporrò |
+| `autoredimere` | `S1` | autoredimerà | autoredimerò |
+| `autoridurre` | `S1` | autoridurrà | autoridurrò |
+| `autoriprodurre` | `S1` | autoriprodurrà | autoriprodurrò |
+| `autoritrasmettere` | `S1` | autoritrasmetterà | autoritrasmetterò |
+| `autosciogliere` | `S1` | autoscioglierà | autoscioglierò |
+| `autosospendere` | `S1` | autosospenderà | autosospenderò |
+| `autosostenere` | `S1` | autososterrà | autososterrò |
+| `autospendere` | `S1` | autospenderà | autospenderò |
+| `avellere` | `S1` | avellerà | avellerò |
+| `circonfondere` | `S1` | circonfonderà | circonfonderò |
+| `co-presiedere` | `S1` | co-presiederà | co-presiederò |
+| `co-produrre` | `S1` | co-produrrà | co-produrrò |
+| `coesistere` | `S1` | coesisterà | coesisterò |
+| `collidere` | `S1` | colliderà | colliderò |
+| `compiangere` | `S1` | compiangerà | compiangerò |
+| `compravendere` | `S1` | compravenderà | compravenderò |
+| `comprendere` | `S1` | comprenderà | comprenderò |
+| `compungere` | `S1` | compungerà | compungerò |
+| `condiscendere` | `S1` | condiscenderà | condiscenderò |
+| `condolere` | `S1` | condolerà | condolerò |
+| `configgere` | `S1` | configgerà | configgerò |
+| `confliggere` | `S1` | confliggerà | confliggerò |
+| `connettere` | `S1` | connetterà | connetterò |
+| `conquidere` | `S1` | conquiderà | conquiderò |
+| `contendere` | `S1` | contenderà | contenderò |
+| `contraddistinguere` | `S1` | contraddistinguerà | contraddistinguerò |
+| `contundere` | `S1` | contunderà | contunderò |
+| `convergere` | `S1` | convergerà | convergerò |
+| `convivere` | `S1` | convivrà | convivrò |
+| `coprodurre` | `S1` | coprodurrà | coprodurrò |
+| `corrispondere` | `S1` | corrisponderà | corrisponderò |
+| `coscrivere` | `S1` | coscriverà | coscriverò |
+| `crocefiggere` | `S1` | crocefiggerà | crocefiggerò |
+| `crocifiggere` | `S1` | crocifiggerà | crocifiggerò |
+| `dattiloscrivere` | `S1` | dattiloscriverà | dattiloscriverò |
+| `decomprimere` | `S1` | decomprimerà | decomprimerò |
+| `decrescere` | `S1` | decrescerà | decrescerò |
+| `defiggere` | `S1` | defiggerà | defiggerò |
+| `deflettere` | `S1` | defletterà | defletterò |
+| `demordere` | `S1` | demorderà | demorderò |
+| `detergere` | `S1` | detergerà | detergerò |
+| `devolvere` | `S1` | devolverà | devolverò |
+| `difendere` | `S1` | difenderà | difenderò |
+| `dipendere` | `S1` | dipenderà | dipenderò |
+| `dirimere` | `S1` | dirimerà | dirimerò |
+| `disattendere` | `S1` | disattenderà | disattenderò |
+| `discendere` | `S1` | discenderà | discenderò |
+| `discernere` | `S1` | discernerà | discernerò |
+| `discingere` | `S1` | discingerà | discingerò |
+| `disciogliere` | `S1` | discioglierà | discioglierò |
+| `disconnettere` | `S1` | disconnetterà | disconnetterò |
+| `disconoscere` | `S1` | disconoscerà | disconoscerò |
+| `discutere` | `S1` | discuterà | discuterò |
+| `dismettere` | `S1` | dismetterà | dismetterò |
+| `disperdere` | `S1` | disperderà | disperderò |
+| `distendere` | `S1` | distenderà | distenderò |
+| `disvolere` | `S1` | disvorrà | disvorrò |
+| `divedere` | `S1` | divedrà | divedrò |
+| `divergere` | `S1` | divergerà | divergerò |
+| `dolere` | `S1` | dolerà | dolerò |
+| `eccedere` | `S1` | eccederà | eccederò |
+| `eccellere` | `S1` | eccellerà | eccellerò |
+| `elidere` | `S1` | eliderà | eliderò |
+| `empiere` | `S1` | empierà | empierò |
+| `erigere` | `S1` | erigerà | erigerò |
+| `ergere` | `S1` | ergerà | ergerò |
+| `esigere` | `S1` | esigerà | esigerò |
+| `espandere` | `S1` | espanderà | espanderò |
+| `espellere` | `S1` | espellerà | espellerò |
+| `espungere` | `S1` | espungerà | espungerò |
+| `estendere` | `S1` | estenderà | estenderò |
+| `estrovertere` | `S1` | estroverterà | estroverterò |
+| `estrudere` | `S1` | estruderà | estruderò |
+| `evolvere` | `S1` | evolverà | evolverò |
+| `fendere` | `S1` | fenderà | fenderò |
+| `fingere` | `S1` | fingerà | fingerò |
+| `flettere` | `S1` | fletterà | fletterò |
+| `fraintendere` | `S1` | fraintenderà | fraintenderò |
+| `frammettere` | `S1` | frammetterà | frammetterò |
+| `frangere` | `S1` | frangerà | frangerò |
+| `fremere` | `S1` | fremerà | fremerò |
+| `friggere` | `S1` | friggerà | friggerò |
+| `fulgere` | `S1` | fulgerà | fulgerò |
+| `fungere` | `S1` | fungerà | fungerò |
+| `gemere` | `S1` | gemerà | gemerò |
+| `genuflettere` | `S1` | genufletterà | genufletterò |
+| `godere` | `S1` | goderà | goderò |
+| `imbevere` | `S1` | imbeverà | imbeverò |
+| `imprendere` | `S1` | imprenderà | imprenderò |
+| `incedere` | `S1` | incederà | incederò |
+| `incombere` | `S1` | incomberà | incomberò |
+| `increscere` | `S1` | increscerà | increscerò |
+| `incutere` | `S1` | incuterà | incuterò |
+| `indisporre` | `S1` | indisporrà | indisporrò |
+| `indulgere` | `S1` | indulgerà | indulgerò |
+| `infiggere` | `S1` | infiggerà | infiggerò |
+| `infingere` | `S1` | infingerà | infingerò |
+| `infliggere` | `S1` | infliggerà | infliggerò |
+| `inframmettere` | `S1` | inframmetterà | inframmetterò |
+| `infrangere` | `S1` | infrangerà | infrangerò |
+| `insistere` | `S1` | insisterà | insisterò |
+| `intendere` | `S1` | intenderà | intenderò |
+| `intercedere` | `S1` | intercederà | intercederò |
+| `intraprendere` | `S1` | intraprenderà | intraprenderò |
+| `intravvedere` | `S1` | intravvedrà | intravvedrò |
+| `intridere` | `S1` | intriderà | intriderò |
+| `intromettere` | `S1` | intrometterà | intrometterò |
+| `intrudere` | `S1` | intruderà | intruderò |
+| `invalere` | `S1` | invarrà | invarrò |
+| `involgere` | `S1` | involgerà | involgerò |
+| `involvere` | `S1` | involverà | involverò |
+| `irridere` | `S1` | irriderà | irriderò |
+| `ledere` | `S1` | lederà | lederò |
+| `malvolere` | `S1` | malvorrà | malvorrò |
+| `mingere` | `S1` | mingerà | mingerò |
+| `molcere` | `S1` | molcerà | molcerò |
+| `mordere` | `S1` | morderà | morderò |
+| `mungere` | `S1` | mungerà | mungerò |
+| `nascondere` | `S1` | nasconderà | nasconderò |
+| `negligere` | `S1` | negligerà | negligerò |
+| `offendere` | `S1` | offenderà | offenderò |
+| `opprimere` | `S1` | opprimerà | opprimerò |
+| `ottundere` | `S1` | ottunderà | ottunderò |
+| `pascere` | `S1` | pascerà | pascerò |
+| `pendere` | `S1` | penderà | penderò |
+| `persistere` | `S1` | persisterà | persisterò |
+| `piangere` | `S1` | piangerà | piangerò |
+| `piovere` | `S1` | pioverà | pioverò |
+| `plaudere` | `S1` | plauderà | plauderò |
+| `porgere` | `S1` | porgerà | porgerò |
+| `posporre` | `S1` | posporrà | posporrò |
+| `possedere` | `S1` | possiederà | possiederò |
+| `precomprimere` | `S1` | precomprimerà | precomprimerò |
+| `preconoscere` | `S1` | preconoscerà | preconoscerò |
+| `preesistere` | `S1` | preesisterà | preesisterò |
+| `prefiggere` | `S1` | prefiggerà | prefiggerò |
+| `preludere` | `S1` | preluderà | preluderò |
+| `premere` | `S1` | premerà | premerò |
+| `prenascere` | `S1` | prenascerà | prenascerò |
+| `prendere` | `S1` | prenderà | prenderò |
+| `prescegliere` | `S1` | presceglierà | presceglierò |
+| `presiedere` | `S1` | presiederà | presiederò |
+| `pretendere` | `S1` | pretenderà | pretenderò |
+| `procombere` | `S1` | procomberà | procomberò |
+| `propendere` | `S1` | propenderà | propenderò |
+| `proteggere` | `S1` | proteggerà | proteggerò |
+| `protendere` | `S1` | protenderà | protenderò |
+| `prudere` | `S1` | pruderà | pruderò |
+| `pungere` | `S1` | pungerà | pungerò |
+| `radere` | `S1` | raderà | raderò |
+| `radioassistere` | `S1` | radioassisterà | radioassisterò |
+| `rapprendere` | `S1` | rapprenderà | rapprenderò |
+| `rattenere` | `S1` | ratterrà | ratterrò |
+| `ravvedere` | `S1` | ravvedrà | ravvedrò |
+| `ravvolgere` | `S1` | ravvolgerà | ravvolgerò |
+| `recedere` | `S1` | recederà | recederò |
+| `recingere` | `S1` | recingerà | recingerò |
+| `redigere` | `S1` | redigerà | redigerò |
+| `redimere` | `S1` | redimerà | redimerò |
+| `reiscrivere` | `S1` | reiscriverà | reiscriverò |
+| `rendere` | `S1` | renderà | renderò |
+| `repellere` | `S1` | repellerà | repellerò |
+| `resistere` | `S1` | resisterà | resisterò |
+| `retrocedere` | `S1` | retrocederà | retrocederò |
+| `riaccendere` | `S1` | riaccenderà | riaccenderò |
+| `riannettere` | `S1` | riannetterà | riannetterò |
+| `riavvolgere` | `S1` | riavvolgerà | riavvolgerò |
+| `ricedere` | `S1` | ricederà | ricederò |
+| `ricevere` | `S1` | riceverà | riceverò |
+| `ricogliere` | `S1` | ricoglierà | ricoglierò |
+| `ricomprendere` | `S1` | ricomprenderà | ricomprenderò |
+| `ricongiungere` | `S1` | ricongiungerà | ricongiungerò |
+| `riconnettere` | `S1` | riconnetterà | riconnetterò |
+| `ricorreggere` | `S1` | ricorreggerà | ricorreggerò |
+| `ricuocere` | `S1` | ricuocerà | ricuocerò |
+| `ricrescere` | `S1` | ricrescerà | ricrescerò |
+| `ridipingere` | `S1` | ridipingerà | ridipingerò |
+| `ridiscendere` | `S1` | ridiscenderà | ridiscenderò |
+| `ridiscorrere` | `S1` | ridiscorrerà | ridiscorrerò |
+| `ridiscutere` | `S1` | ridiscuterà | ridiscuterò |
+| `rieleggere` | `S1` | rieleggerà | rieleggerò |
+| `riempiere` | `S1` | riempierà | riempierò |
+| `riesplodere` | `S1` | riesploderà | riesploderò |
+| `rifrangere` | `S1` | rifrangerà | rifrangerò |
+| `rifriggere` | `S1` | rifriggerà | rifriggerò |
+| `rifulgere` | `S1` | rifulgerà | rifulgerò |
+| `rilucere` | `S1` | rilucerà | rilucerò |
+| `rimordere` | `S1` | rimorderà | rimorderò |
+| `rimpiangere` | `S1` | rimpiangerà | rimpiangerò |
+| `rincrescere` | `S1` | rincrescerà | rincrescerò |
+| `rinvolgere` | `S1` | rinvolgerà | rinvolgerò |
+| `riottenere` | `S1` | riotterrà | riotterrò |
+| `ripiovere` | `S1` | ripioverà | ripioverò |
+| `riprendere` | `S1` | riprenderà | riprenderò |
+| `ripungere` | `S1` | ripungerà | ripungerò |
+| `riscegliere` | `S1` | risceglierà | risceglierò |
+| `risciogliere` | `S1` | riscioglierà | riscioglierò |
+| `riscorrere` | `S1` | riscorrerà | riscorrerò |
+| `risedere` | `S1` | risiederà | risiederò |
+| `risiedere` | `S1` | risiederà | risiederò |
+| `risospingere` | `S1` | risospingerà | risospingerò |
+| `risostenere` | `S1` | risosterrà | risosterrò |
+| `risplendere` | `S1` | risplenderà | risplenderò |
+| `rispondere` | `S1` | risponderà | risponderò |
+| `ristringere` | `S1` | ristringerà | ristringerò |
+| `ritingere` | `S1` | ritingerà | ritingerò |
+| `ritogliere` | `S1` | ritoglierà | ritoglierò |
+| `rivincere` | `S1` | rivincerà | rivincerò |
+| `scegliere` | `S1` | sceglierà | sceglierò |
+| `scendere` | `S1` | scenderà | scenderò |
+| `scernere` | `S1` | scernerà | scernerò |
+| `schiudere` | `S1` | schiuderà | schiuderò |
+| `sconfiggere` | `S1` | sconfiggerà | sconfiggerò |
+| `sconnettere` | `S1` | sconnetterà | sconnetterò |
+| `sconoscere` | `S1` | sconoscerà | sconoscerò |
+| `scoscendere` | `S1` | scoscenderà | scoscenderò |
+| `scuocere` | `S1` | scuocerà | scuocerò |
+| `scucire` | `S1` | scucirà | scucirò |
+| `secernere` | `S1` | secernerà | secernerò |
+| `smungere` | `S1` | smungerà | smungerò |
+| `soccombere` | `S1` | soccomberà | soccomberò |
+| `soccorrere` | `S1` | soccorrerà | soccorrerò |
+| `soffriggere` | `S1` | soffriggerà | soffriggerò |
+| `sommuovere` | `S1` | sommuoverà | sommuoverò |
+| `sopradescrivere` | `S1` | sopradescriverà | sopradescriverò |
+| `soprammettere` | `S1` | soprammetterà | soprammetterò |
+| `soprassedere` | `S1` | soprassiederà | soprassiederò |
+| `soprintendere` | `S1` | soprintenderà | soprintenderò |
+| `sorprendere` | `S1` | sorprenderà | sorprenderò |
+| `sorreggere` | `S1` | sorreggerà | sorreggerò |
+| `sospendere` | `S1` | sospenderà | sospenderò |
+| `sottendere` | `S1` | sottenderà | sottenderò |
+| `sottintendere` | `S1` | sottintenderà | sottintenderò |
+| `sovrintendere` | `S1` | sovrintenderà | sovrintenderò |
+| `spandere` | `S1` | spanderà | spanderò |
+| `spegnere` | `S1` | spegnerà | spegnerò |
+| `spendere` | `S1` | spenderà | spenderò |
+| `spengere` | `S1` | spengerà | spengerò |
+| `sperdere` | `S1` | sperderà | sperderò |
+| `spiovere` | `S1` | spioverà | spioverò |
+| `splendere` | `S1` | splenderà | splenderò |
+| `sporgere` | `S1` | sporgerà | sporgerò |
+| `spremere` | `S1` | spremerà | spremerò |
+| `sprovvedere` | `S1` | sprovvedrà | sprovvedrò |
+| `stendere` | `S1` | stenderà | stenderò |
+| `stracuocere` | `S1` | stracuocerà | stracuocerò |
+| `stravolgere` | `S1` | stravolgerà | stravolgerò |
+| `stridere` | `S1` | striderà | striderò |
+| `struggere` | `S1` | struggerà | struggerò |
+| `succidere` | `S1` | succiderà | succiderò |
+| `succingere` | `S1` | succingerà | succingerò |
+| `superproteggere` | `S1` | superproteggerà | superproteggerò |
+| `sussistere` | `S1` | sussisterà | sussisterò |
+| `temere` | `S1` | temerà | temerò |
+| `tendere` | `S1` | tenderà | tenderò |
+| `tergere` | `S1` | tergerà | tergerò |
+| `trafiggere` | `S1` | trafiggerà | trafiggerò |
+| `tralucere` | `S1` | tralucerà | tralucerò |
+| `transigere` | `S1` | transigerà | transigerò |
+| `trapungere` | `S1` | trapungerà | trapungerò |
+| `trascegliere` | `S1` | trasceglierà | trasceglierò |
+| `trascendere` | `S1` | trascenderà | trascenderò |
+| `trasdurre` | `S1` | trasdurrà | trasdurrò |
+| `travedere` | `S1` | travedrà | travedrò |
+| `turbocomprimere` | `S1` | turbocomprimerà | turbocomprimerò |
+| `ungere` | `S1` | ungerà | ungerò |
+| `vigere` | `S1` | vigerà | vigerò |
+| `vilipendere` | `S1` | vilipenderà | vilipenderò |
+
+### Other misplaced or truncated forms (3)
+
+| Key | Field | Stored | Should be |
+| --- | --- | --- | --- |
+| `calere` | `cond.pres.P3` | calerebber | calerebbero |
+| `presentire` | `ind.pres.P3` | presenton | presentono |
+| `solere` | `cond.pres` (all six) | soglia, sogliamo… | a conditional, not a present subjunctive |
 ### Entries that are not verbs (2)
 
 | Key | Stored | What it really is |
@@ -3708,12 +4106,25 @@ The same overwrite. All four gender/number slots hold the same wrong word.
 
 ## Summary
 
-| Field | Trust it? |
-| --- | --- |
-| The key (infinitive) | Always |
-| `ind`, `sub`, `cond`, `impr` | Yes |
-| `part` | Yes |
-| `inf.pres` | **No** — use the key |
-| `ger.pres` | **Only after trimming** at `-ando`/`-endo` |
+| Field | Trust it? | Why |
+| --- | --- | --- |
+| The key (infinitive) | **Always** | Never overwritten |
+| `ind.pres`, `ind.impf`, `ind.past` | Yes | 2 truncated forms in 6,122 verbs |
+| `sub`, `impr` | Yes | No faults found |
+| `part.past` | Yes | No faults found |
+| `cond.pres` | Yes, nearly | 2 verbs wrong (`calere`, `solere`) |
+| `ind.fut` | **Check `S1`** | 302 verbs hold a third-person form there |
+| `part.pres` | **Check the ending** | 9 verbs hold an imperfect indicative |
+| `ger.pres` | **Trim** at `-ando`/`-endo` | 1,209 carry a pronoun, 10 are not gerunds |
+| `inf.pres` | **Never** — use the key | 2,219 carry a pronoun |
+
+The pattern is consistent: a field is unreliable wherever the converter had one
+slot and several candidate forms to put in it. That is why `inf` and `ger` are
+the worst, and why the damage in person-keyed fields is confined to single
+slots rather than whole paradigms.
+
+Two invariants held across all 6,122 verbs, which is a useful sanity check when
+testing: the present subjunctive always has `S1` = `S2` = `S3`, and the future
+always uses the endings `-ò -ai -à -emo -ete -anno` on one stem.
 
 Counts were measured against `italian-verbs-dict` 3.4.0.
