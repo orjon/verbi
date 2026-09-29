@@ -384,6 +384,34 @@
   }
  },
  "adempire": {
+  "ger.pres": {
+   "selected": "adempiendo",
+   "rejected": ["adempendo"]
+  },
+  "part.past.P": {
+   "selected": "adempiuti",
+   "alternatives": {
+    "common": ["adempiti"]
+   }
+  },
+  "part.past.PF": {
+   "selected": "adempiute",
+   "alternatives": {
+    "common": ["adempite"]
+   }
+  },
+  "part.past.S": {
+   "selected": "adempiuto",
+   "alternatives": {
+    "common": ["adempito"]
+   }
+  },
+  "part.past.SF": {
+   "selected": "adempiuta",
+   "alternatives": {
+    "common": ["adempita"]
+   }
+  },
   "part.pres.P": {
    "selected": "adempienti",
    "rejected": ["adempenti"]
@@ -402,9 +430,248 @@
   }
  },
  "adempiere": {
+  "cond.pres.P1": {
+   "selected": "adempiremmo",
+   "rejected": ["adempieremmo"]
+  },
+  "cond.pres.P2": {
+   "selected": "adempireste",
+   "rejected": ["adempiereste"]
+  },
+  "cond.pres.P3": {
+   "selected": "adempirebbero",
+   "rejected": ["adempierebbero"],
+   "alternatives": {
+    "clipped_poetic": ["adempirebber"]
+   }
+  },
+  "cond.pres.S1": {
+   "selected": "adempirei",
+   "rejected": ["adempierei"]
+  },
+  "cond.pres.S2": {
+   "selected": "adempiresti",
+   "rejected": ["adempieresti"]
+  },
+  "cond.pres.S3": {
+   "selected": "adempirebbe",
+   "rejected": ["adempierebbe"]
+  },
+  "ger.pres": {
+   "selected": "adempiendo"
+  },
+  "impr.pres.P1": {
+   "selected": "adempiamo",
+   "rejected": ["adempiiamo"]
+  },
+  "impr.pres.P2": {
+   "selected": "adempite",
+   "rejected": ["adempiete"]
+  },
+  "impr.pres.S2": {
+   "selected": "adempi",
+   "rejected": ["adempii"],
+   "alternatives": {
+    "common": ["adempisci"]
+   }
+  },
+  "ind.fut.P1": {
+   "selected": "adempiremo",
+   "rejected": ["adempieremo"]
+  },
+  "ind.fut.P2": {
+   "selected": "adempirete",
+   "rejected": ["adempierete"]
+  },
+  "ind.fut.P3": {
+   "selected": "adempiranno",
+   "rejected": ["adempieranno"],
+   "alternatives": {
+    "clipped_poetic": ["adempiran"]
+   }
+  },
   "ind.fut.S1": {
-   "selected": "adempierò",
+   "selected": "adempirò",
    "rejected": ["adempierà"]
+  },
+  "ind.fut.S2": {
+   "selected": "adempirai",
+   "rejected": ["adempierai"]
+  },
+  "ind.fut.S3": {
+   "selected": "adempirà",
+   "rejected": ["adempierà"]
+  },
+  "ind.impf.P1": {
+   "selected": "adempivamo",
+   "rejected": ["adempievamo"]
+  },
+  "ind.impf.P2": {
+   "selected": "adempivate",
+   "rejected": ["adempievate"]
+  },
+  "ind.impf.P3": {
+   "selected": "adempivano",
+   "rejected": ["adempievano"],
+   "alternatives": {
+    "clipped_poetic": ["adempivan"]
+   }
+  },
+  "ind.impf.S1": {
+   "selected": "adempivo",
+   "rejected": ["adempievo"]
+  },
+  "ind.impf.S2": {
+   "selected": "adempivi",
+   "rejected": ["adempievi"]
+  },
+  "ind.impf.S3": {
+   "selected": "adempiva",
+   "rejected": ["adempieva"]
+  },
+  "ind.past.P1": {
+   "selected": "adempimmo",
+   "rejected": ["adempiemmo"]
+  },
+  "ind.past.P2": {
+   "selected": "adempiste",
+   "rejected": ["adempieste"]
+  },
+  "ind.past.P3": {
+   "selected": "adempirono",
+   "rejected": ["adempierono"],
+   "alternatives": {
+    "clipped_poetic": ["adempiron"]
+   }
+  },
+  "ind.past.S1": {
+   "selected": "adempii",
+   "rejected": ["adempiei"]
+  },
+  "ind.past.S2": {
+   "selected": "adempisti",
+   "rejected": ["adempiesti"]
+  },
+  "ind.past.S3": {
+   "selected": "adempì"
+  },
+  "ind.pres.P1": {
+   "selected": "adempiamo",
+   "rejected": ["adempiiamo"]
+  },
+  "ind.pres.P2": {
+   "selected": "adempite",
+   "rejected": ["adempiete"]
+  },
+  "ind.pres.P3": {
+   "selected": "adempiono",
+   "alternatives": {
+    "common": ["adempiscono"],
+    "clipped_poetic": ["adempion"]
+   }
+  },
+  "ind.pres.S1": {
+   "selected": "adempio",
+   "alternatives": {
+    "common": ["adempisco"]
+   }
+  },
+  "ind.pres.S2": {
+   "selected": "adempi",
+   "rejected": ["adempii"],
+   "alternatives": {
+    "common": ["adempisci"]
+   }
+  },
+  "ind.pres.S3": {
+   "selected": "adempie",
+   "alternatives": {
+    "common": ["adempisce"]
+   }
+  },
+  "part.past.P": {
+   "selected": "adempiuti",
+   "alternatives": {
+    "common": ["adempiti"]
+   }
+  },
+  "part.past.PF": {
+   "selected": "adempiute",
+   "alternatives": {
+    "common": ["adempite"]
+   }
+  },
+  "part.past.S": {
+   "selected": "adempiuto",
+   "alternatives": {
+    "common": ["adempito"]
+   }
+  },
+  "part.past.SF": {
+   "selected": "adempiuta",
+   "alternatives": {
+    "common": ["adempita"]
+   }
+  },
+  "sub.impf.P1": {
+   "selected": "adempissimo",
+   "rejected": ["adempiessimo"]
+  },
+  "sub.impf.P2": {
+   "selected": "adempiste",
+   "rejected": ["adempieste"]
+  },
+  "sub.impf.P3": {
+   "selected": "adempissero",
+   "rejected": ["adempiessero"],
+   "alternatives": {
+    "clipped_poetic": ["adempisser"]
+   }
+  },
+  "sub.impf.S1": {
+   "selected": "adempissi",
+   "rejected": ["adempiessi"]
+  },
+  "sub.impf.S2": {
+   "selected": "adempissi",
+   "rejected": ["adempiessi"]
+  },
+  "sub.impf.S3": {
+   "selected": "adempisse",
+   "rejected": ["adempiesse"]
+  },
+  "sub.pres.P1": {
+   "selected": "adempiamo",
+   "rejected": ["adempiiamo"]
+  },
+  "sub.pres.P2": {
+   "selected": "adempiate",
+   "rejected": ["adempiiate"]
+  },
+  "sub.pres.P3": {
+   "selected": "adempiano",
+   "alternatives": {
+    "common": ["adempiscano"],
+    "clipped_poetic": ["adempian"]
+   }
+  },
+  "sub.pres.S1": {
+   "selected": "adempia",
+   "alternatives": {
+    "common": ["adempisca"]
+   }
+  },
+  "sub.pres.S2": {
+   "selected": "adempia",
+   "alternatives": {
+    "common": ["adempisca"]
+   }
+  },
+  "sub.pres.S3": {
+   "selected": "adempia",
+   "alternatives": {
+    "common": ["adempisca"]
+   }
   }
  },
  "adergere": {
@@ -2947,6 +3214,26 @@
   }
  },
  "compire": {
+  "ger.pres": {
+   "selected": "compiendo",
+   "rejected": ["compendo"]
+  },
+  "part.past.P": {
+   "selected": "compiuti",
+   "rejected": ["compiti"]
+  },
+  "part.past.PF": {
+   "selected": "compiute",
+   "rejected": ["compite"]
+  },
+  "part.past.S": {
+   "selected": "compiuto",
+   "rejected": ["compito"]
+  },
+  "part.past.SF": {
+   "selected": "compiuta",
+   "rejected": ["compita"]
+  },
   "part.pres.P": {
    "selected": "compienti",
    "rejected": ["compenti"]
@@ -2990,9 +3277,229 @@
   }
  },
  "compiere": {
+  "cond.pres.P1": {
+   "selected": "compiremmo",
+   "rejected": ["compieremmo"]
+  },
+  "cond.pres.P2": {
+   "selected": "compireste",
+   "rejected": ["compiereste"]
+  },
+  "cond.pres.P3": {
+   "selected": "compirebbero",
+   "rejected": ["compierebber", "compierebbero"],
+   "alternatives": {
+    "clipped_poetic": ["compirebber"]
+   }
+  },
+  "cond.pres.S1": {
+   "selected": "compirei",
+   "rejected": ["compierei"]
+  },
+  "cond.pres.S2": {
+   "selected": "compiresti",
+   "rejected": ["compieresti"]
+  },
+  "cond.pres.S3": {
+   "selected": "compirebbe",
+   "rejected": ["compierebbe"]
+  },
+  "ger.pres": {
+   "selected": "compiendo"
+  },
+  "impr.pres.P1": {
+   "selected": "compiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "compite"
+  },
+  "impr.pres.S2": {
+   "selected": "compi",
+   "alternatives": {
+    "common": ["compisci"]
+   }
+  },
+  "ind.fut.P1": {
+   "selected": "compiremo",
+   "rejected": ["compieremo"]
+  },
+  "ind.fut.P2": {
+   "selected": "compirete",
+   "rejected": ["compierete"]
+  },
+  "ind.fut.P3": {
+   "selected": "compiranno",
+   "rejected": ["compieran", "compieranno"],
+   "alternatives": {
+    "clipped_poetic": ["compiran"]
+   }
+  },
+  "ind.fut.S1": {
+   "selected": "compirò",
+   "rejected": ["compierò"]
+  },
+  "ind.fut.S2": {
+   "selected": "compirai",
+   "rejected": ["compierai"]
+  },
+  "ind.fut.S3": {
+   "selected": "compirà",
+   "rejected": ["compierà"]
+  },
+  "ind.impf.P1": {
+   "selected": "compivamo",
+   "rejected": ["compievamo"]
+  },
+  "ind.impf.P2": {
+   "selected": "compivate",
+   "rejected": ["compievate"]
+  },
+  "ind.impf.P3": {
+   "selected": "compivano",
+   "rejected": ["compievan", "compievano"],
+   "alternatives": {
+    "clipped_poetic": ["compivan"]
+   }
+  },
+  "ind.impf.S1": {
+   "selected": "compivo",
+   "rejected": ["compievo"]
+  },
+  "ind.impf.S2": {
+   "selected": "compivi",
+   "rejected": ["compievi"]
+  },
+  "ind.impf.S3": {
+   "selected": "compiva",
+   "rejected": ["compieva"]
+  },
+  "ind.past.P1": {
+   "selected": "compimmo",
+   "rejected": ["compiemmo"]
+  },
+  "ind.past.P2": {
+   "selected": "compiste",
+   "rejected": ["compieste"]
+  },
+  "ind.past.P3": {
+   "selected": "compirono",
+   "rejected": ["compieron", "compierono"],
+   "alternatives": {
+    "clipped_poetic": ["compiron"]
+   }
+  },
+  "ind.past.S1": {
+   "selected": "compii",
+   "rejected": ["compiei"]
+  },
+  "ind.past.S2": {
+   "selected": "compisti",
+   "rejected": ["compiesti"]
+  },
   "ind.past.S3": {
-   "selected": "compié",
+   "selected": "compì",
    "rejected": ["compiè"]
+  },
+  "ind.pres.P1": {
+   "selected": "compiamo"
+  },
+  "ind.pres.P2": {
+   "selected": "compite"
+  },
+  "ind.pres.P3": {
+   "selected": "compiono",
+   "alternatives": {
+    "common": ["compiscono"],
+    "clipped_poetic": ["compion"]
+   }
+  },
+  "ind.pres.S1": {
+   "selected": "compio",
+   "alternatives": {
+    "common": ["compisco"]
+   }
+  },
+  "ind.pres.S2": {
+   "selected": "compi",
+   "alternatives": {
+    "common": ["compisci"]
+   }
+  },
+  "ind.pres.S3": {
+   "selected": "compie",
+   "alternatives": {
+    "common": ["compisce"]
+   }
+  },
+  "part.past.P": {
+   "selected": "compiuti"
+  },
+  "part.past.PF": {
+   "selected": "compiute"
+  },
+  "part.past.S": {
+   "selected": "compiuto"
+  },
+  "part.past.SF": {
+   "selected": "compiuta"
+  },
+  "sub.impf.P1": {
+   "selected": "compissimo",
+   "rejected": ["compiessimo"]
+  },
+  "sub.impf.P2": {
+   "selected": "compiste",
+   "rejected": ["compieste"]
+  },
+  "sub.impf.P3": {
+   "selected": "compissero",
+   "rejected": ["compiesser", "compiessero"],
+   "alternatives": {
+    "clipped_poetic": ["compisser"]
+   }
+  },
+  "sub.impf.S1": {
+   "selected": "compissi",
+   "rejected": ["compiessi"]
+  },
+  "sub.impf.S2": {
+   "selected": "compissi",
+   "rejected": ["compiessi"]
+  },
+  "sub.impf.S3": {
+   "selected": "compisse",
+   "rejected": ["compiesse"]
+  },
+  "sub.pres.P1": {
+   "selected": "compiamo"
+  },
+  "sub.pres.P2": {
+   "selected": "compiate"
+  },
+  "sub.pres.P3": {
+   "selected": "compiano",
+   "alternatives": {
+    "common": ["compiscano"],
+    "clipped_poetic": ["compian"]
+   }
+  },
+  "sub.pres.S1": {
+   "selected": "compia",
+   "alternatives": {
+    "common": ["compisca"]
+   }
+  },
+  "sub.pres.S2": {
+   "selected": "compia",
+   "alternatives": {
+    "common": ["compisca"]
+   }
+  },
+  "sub.pres.S3": {
+   "selected": "compia",
+   "alternatives": {
+    "common": ["compisca"]
+   }
   }
  },
  "compiangere": {
@@ -5628,6 +6135,33 @@
   }
  },
  "empire": {
+  "ger.pres": {
+   "selected": "empiendo"
+  },
+  "part.past.P": {
+   "selected": "empiuti",
+   "alternatives": {
+    "common": ["empiti"]
+   }
+  },
+  "part.past.PF": {
+   "selected": "empiute",
+   "alternatives": {
+    "common": ["empite"]
+   }
+  },
+  "part.past.S": {
+   "selected": "empiuto",
+   "alternatives": {
+    "common": ["empito"]
+   }
+  },
+  "part.past.SF": {
+   "selected": "empiuta",
+   "alternatives": {
+    "common": ["empita"]
+   }
+  },
   "part.pres.P": {
    "selected": "empienti",
    "rejected": ["empenti"]
@@ -5646,9 +6180,225 @@
   }
  },
  "empiere": {
+  "cond.pres.P1": {
+   "selected": "empiremmo",
+   "rejected": ["empieremmo"]
+  },
+  "cond.pres.P2": {
+   "selected": "empireste",
+   "rejected": ["empiereste"]
+  },
+  "cond.pres.P3": {
+   "selected": "empirebbero",
+   "rejected": ["empierebbero"],
+   "alternatives": {
+    "clipped_poetic": ["empirebber"]
+   }
+  },
+  "cond.pres.S1": {
+   "selected": "empirei",
+   "rejected": ["empierei"]
+  },
+  "cond.pres.S2": {
+   "selected": "empiresti",
+   "rejected": ["empieresti"]
+  },
+  "cond.pres.S3": {
+   "selected": "empirebbe",
+   "rejected": ["empierebbe"]
+  },
+  "ger.pres": {
+   "selected": "empiendo"
+  },
+  "impr.pres.P1": {
+   "selected": "empiamo",
+   "rejected": ["empiiamo"]
+  },
+  "impr.pres.P2": {
+   "selected": "empite",
+   "rejected": ["empiete"]
+  },
+  "impr.pres.S2": {
+   "selected": "empi",
+   "rejected": ["empii"]
+  },
+  "ind.fut.P1": {
+   "selected": "empiremo",
+   "rejected": ["empieremo"]
+  },
+  "ind.fut.P2": {
+   "selected": "empirete",
+   "rejected": ["empierete"]
+  },
+  "ind.fut.P3": {
+   "selected": "empiranno",
+   "rejected": ["empieranno"],
+   "alternatives": {
+    "clipped_poetic": ["empiran"]
+   }
+  },
   "ind.fut.S1": {
-   "selected": "empierò",
+   "selected": "empirò",
    "rejected": ["empierà"]
+  },
+  "ind.fut.S2": {
+   "selected": "empirai",
+   "rejected": ["empierai"]
+  },
+  "ind.fut.S3": {
+   "selected": "empirà",
+   "rejected": ["empierà"]
+  },
+  "ind.impf.P1": {
+   "selected": "empivamo",
+   "rejected": ["empievamo"]
+  },
+  "ind.impf.P2": {
+   "selected": "empivate",
+   "rejected": ["empievate"]
+  },
+  "ind.impf.P3": {
+   "selected": "empivano",
+   "rejected": ["empievano"],
+   "alternatives": {
+    "clipped_poetic": ["empivan"]
+   }
+  },
+  "ind.impf.S1": {
+   "selected": "empivo",
+   "rejected": ["empievo"]
+  },
+  "ind.impf.S2": {
+   "selected": "empivi",
+   "rejected": ["empievi"]
+  },
+  "ind.impf.S3": {
+   "selected": "empiva",
+   "rejected": ["empieva"]
+  },
+  "ind.past.P1": {
+   "selected": "empimmo",
+   "rejected": ["empiemmo"]
+  },
+  "ind.past.P2": {
+   "selected": "empiste",
+   "rejected": ["empieste"]
+  },
+  "ind.past.P3": {
+   "selected": "empirono",
+   "rejected": ["empierono"],
+   "alternatives": {
+    "clipped_poetic": ["empiron"]
+   }
+  },
+  "ind.past.S1": {
+   "selected": "empii",
+   "rejected": ["empiei"]
+  },
+  "ind.past.S2": {
+   "selected": "empisti",
+   "rejected": ["empiesti"]
+  },
+  "ind.past.S3": {
+   "selected": "empì"
+  },
+  "ind.pres.P1": {
+   "selected": "empiamo",
+   "rejected": ["empiiamo"]
+  },
+  "ind.pres.P2": {
+   "selected": "empite",
+   "rejected": ["empiete"]
+  },
+  "ind.pres.P3": {
+   "selected": "empiono",
+   "alternatives": {
+    "clipped_poetic": ["empion"]
+   }
+  },
+  "ind.pres.S1": {
+   "selected": "empio"
+  },
+  "ind.pres.S2": {
+   "selected": "empi",
+   "rejected": ["empii"]
+  },
+  "ind.pres.S3": {
+   "selected": "empie"
+  },
+  "part.past.P": {
+   "selected": "empiuti",
+   "alternatives": {
+    "common": ["empiti"]
+   }
+  },
+  "part.past.PF": {
+   "selected": "empiute",
+   "alternatives": {
+    "common": ["empite"]
+   }
+  },
+  "part.past.S": {
+   "selected": "empiuto",
+   "alternatives": {
+    "common": ["empito"]
+   }
+  },
+  "part.past.SF": {
+   "selected": "empiuta",
+   "alternatives": {
+    "common": ["empita"]
+   }
+  },
+  "sub.impf.P1": {
+   "selected": "empissimo",
+   "rejected": ["empiessimo"]
+  },
+  "sub.impf.P2": {
+   "selected": "empiste",
+   "rejected": ["empieste"]
+  },
+  "sub.impf.P3": {
+   "selected": "empissero",
+   "rejected": ["empiessero"],
+   "alternatives": {
+    "clipped_poetic": ["empisser"]
+   }
+  },
+  "sub.impf.S1": {
+   "selected": "empissi",
+   "rejected": ["empiessi"]
+  },
+  "sub.impf.S2": {
+   "selected": "empissi",
+   "rejected": ["empiessi"]
+  },
+  "sub.impf.S3": {
+   "selected": "empisse",
+   "rejected": ["empiesse"]
+  },
+  "sub.pres.P1": {
+   "selected": "empiamo",
+   "rejected": ["empiiamo"]
+  },
+  "sub.pres.P2": {
+   "selected": "empiate",
+   "rejected": ["empiiate"]
+  },
+  "sub.pres.P3": {
+   "selected": "empiano",
+   "alternatives": {
+    "clipped_poetic": ["empian"]
+   }
+  },
+  "sub.pres.S1": {
+   "selected": "empia"
+  },
+  "sub.pres.S2": {
+   "selected": "empia"
+  },
+  "sub.pres.S3": {
+   "selected": "empia"
   }
  },
  "equidistare": {
@@ -11864,20 +12614,16 @@
  },
  "restringere": {
   "part.past.P": {
-   "selected": "restretti",
-   "rejected": ["ristretti"]
+   "selected": "ristretti"
   },
   "part.past.PF": {
-   "selected": "restrette",
-   "rejected": ["ristrette"]
+   "selected": "ristrette"
   },
   "part.past.S": {
-   "selected": "restretto",
-   "rejected": ["ristretto"]
+   "selected": "ristretto"
   },
   "part.past.SF": {
-   "selected": "restretta",
-   "rejected": ["ristretta"]
+   "selected": "ristretta"
   }
  },
  "retrocedere": {
@@ -12247,10 +12993,260 @@
    "rejected": ["rieleggerà"]
   }
  },
+ "riempire": {
+  "ger.pres": {
+   "selected": "riempiendo",
+   "rejected": ["riempendo"]
+  },
+  "ind.pres.S3": {
+   "selected": "riempie",
+   "rejected": ["riempe"]
+  },
+  "part.past.P": {
+   "selected": "riempiuti",
+   "alternatives": {
+    "common": ["riempiti"]
+   }
+  },
+  "part.past.PF": {
+   "selected": "riempiute",
+   "alternatives": {
+    "common": ["riempite"]
+   }
+  },
+  "part.past.S": {
+   "selected": "riempiuto",
+   "alternatives": {
+    "common": ["riempito"]
+   }
+  },
+  "part.past.SF": {
+   "selected": "riempiuta",
+   "alternatives": {
+    "common": ["riempita"]
+   }
+  }
+ },
  "riempiere": {
+  "cond.pres.P1": {
+   "selected": "riempiremmo",
+   "rejected": ["riempieremmo"]
+  },
+  "cond.pres.P2": {
+   "selected": "riempireste",
+   "rejected": ["riempiereste"]
+  },
+  "cond.pres.P3": {
+   "selected": "riempirebbero",
+   "rejected": ["riempierebbero"],
+   "alternatives": {
+    "clipped_poetic": ["riempirebber"]
+   }
+  },
+  "cond.pres.S1": {
+   "selected": "riempirei",
+   "rejected": ["riempierei"]
+  },
+  "cond.pres.S2": {
+   "selected": "riempiresti",
+   "rejected": ["riempieresti"]
+  },
+  "cond.pres.S3": {
+   "selected": "riempirebbe",
+   "rejected": ["riempierebbe"]
+  },
+  "ger.pres": {
+   "selected": "riempiendo"
+  },
+  "impr.pres.P1": {
+   "selected": "riempiamo",
+   "rejected": ["riempiiamo"]
+  },
+  "impr.pres.P2": {
+   "selected": "riempite",
+   "rejected": ["riempiete"]
+  },
+  "impr.pres.S2": {
+   "selected": "riempi",
+   "rejected": ["riempii"]
+  },
+  "ind.fut.P1": {
+   "selected": "riempiremo",
+   "rejected": ["riempieremo"]
+  },
+  "ind.fut.P2": {
+   "selected": "riempirete",
+   "rejected": ["riempierete"]
+  },
+  "ind.fut.P3": {
+   "selected": "riempiranno",
+   "rejected": ["riempieranno"],
+   "alternatives": {
+    "clipped_poetic": ["riempiran"]
+   }
+  },
   "ind.fut.S1": {
-   "selected": "riempierò",
+   "selected": "riempirò",
    "rejected": ["riempierà"]
+  },
+  "ind.fut.S2": {
+   "selected": "riempirai",
+   "rejected": ["riempierai"]
+  },
+  "ind.fut.S3": {
+   "selected": "riempirà",
+   "rejected": ["riempierà"]
+  },
+  "ind.impf.P1": {
+   "selected": "riempivamo",
+   "rejected": ["riempievamo"]
+  },
+  "ind.impf.P2": {
+   "selected": "riempivate",
+   "rejected": ["riempievate"]
+  },
+  "ind.impf.P3": {
+   "selected": "riempivano",
+   "rejected": ["riempievano"],
+   "alternatives": {
+    "clipped_poetic": ["riempivan"]
+   }
+  },
+  "ind.impf.S1": {
+   "selected": "riempivo",
+   "rejected": ["riempievo"]
+  },
+  "ind.impf.S2": {
+   "selected": "riempivi",
+   "rejected": ["riempievi"]
+  },
+  "ind.impf.S3": {
+   "selected": "riempiva",
+   "rejected": ["riempieva"]
+  },
+  "ind.past.P1": {
+   "selected": "riempimmo",
+   "rejected": ["riempiemmo"]
+  },
+  "ind.past.P2": {
+   "selected": "riempiste",
+   "rejected": ["riempieste"]
+  },
+  "ind.past.P3": {
+   "selected": "riempirono",
+   "rejected": ["riempierono"],
+   "alternatives": {
+    "clipped_poetic": ["riempiron"]
+   }
+  },
+  "ind.past.S1": {
+   "selected": "riempii",
+   "rejected": ["riempiei"]
+  },
+  "ind.past.S2": {
+   "selected": "riempisti",
+   "rejected": ["riempiesti"]
+  },
+  "ind.past.S3": {
+   "selected": "riempì"
+  },
+  "ind.pres.P1": {
+   "selected": "riempiamo",
+   "rejected": ["riempiiamo"]
+  },
+  "ind.pres.P2": {
+   "selected": "riempite",
+   "rejected": ["riempiete"]
+  },
+  "ind.pres.P3": {
+   "selected": "riempiono",
+   "alternatives": {
+    "clipped_poetic": ["riempion"]
+   }
+  },
+  "ind.pres.S1": {
+   "selected": "riempio"
+  },
+  "ind.pres.S2": {
+   "selected": "riempi",
+   "rejected": ["riempii"]
+  },
+  "ind.pres.S3": {
+   "selected": "riempie"
+  },
+  "part.past.P": {
+   "selected": "riempiuti",
+   "alternatives": {
+    "common": ["riempiti"]
+   }
+  },
+  "part.past.PF": {
+   "selected": "riempiute",
+   "alternatives": {
+    "common": ["riempite"]
+   }
+  },
+  "part.past.S": {
+   "selected": "riempiuto",
+   "alternatives": {
+    "common": ["riempito"]
+   }
+  },
+  "part.past.SF": {
+   "selected": "riempiuta",
+   "alternatives": {
+    "common": ["riempita"]
+   }
+  },
+  "sub.impf.P1": {
+   "selected": "riempissimo",
+   "rejected": ["riempiessimo"]
+  },
+  "sub.impf.P2": {
+   "selected": "riempiste",
+   "rejected": ["riempieste"]
+  },
+  "sub.impf.P3": {
+   "selected": "riempissero",
+   "rejected": ["riempiessero"],
+   "alternatives": {
+    "clipped_poetic": ["riempisser"]
+   }
+  },
+  "sub.impf.S1": {
+   "selected": "riempissi",
+   "rejected": ["riempiessi"]
+  },
+  "sub.impf.S2": {
+   "selected": "riempissi",
+   "rejected": ["riempiessi"]
+  },
+  "sub.impf.S3": {
+   "selected": "riempisse",
+   "rejected": ["riempiesse"]
+  },
+  "sub.pres.P1": {
+   "selected": "riempiamo",
+   "rejected": ["riempiiamo"]
+  },
+  "sub.pres.P2": {
+   "selected": "riempiate",
+   "rejected": ["riempiiate"]
+  },
+  "sub.pres.P3": {
+   "selected": "riempiano",
+   "alternatives": {
+    "clipped_poetic": ["riempian"]
+   }
+  },
+  "sub.pres.S1": {
+   "selected": "riempia"
+  },
+  "sub.pres.S2": {
+   "selected": "riempia"
+  },
+  "sub.pres.S3": {
+   "selected": "riempia"
   }
  },
  "riessere": {
@@ -13751,6 +14747,27 @@
    "rejected": ["roti"]
   }
  },
+ "sapere": {
+  "part.pres": {
+   "selected": null
+  },
+  "part.pres.P": {
+   "selected": null,
+   "rejected": ["sapienti"]
+  },
+  "part.pres.PF": {
+   "selected": null,
+   "rejected": ["sapienti"]
+  },
+  "part.pres.S": {
+   "selected": null,
+   "rejected": ["sapiente"]
+  },
+  "part.pres.SF": {
+   "selected": null,
+   "rejected": ["sapiente"]
+  }
+ },
  "sbattere": {
   "ind.past.S3": {
    "selected": "sbatté",
@@ -14413,28 +15430,8 @@
   }
  },
  "serpere": {
-  "ind.past.P1": {
-   "selected": null,
-   "rejected": ["serpemmo"]
-  },
-  "ind.past.P2": {
-   "selected": null,
-   "rejected": ["serpeste"]
-  },
-  "ind.past.P3": {
-   "selected": null,
-   "rejected": ["serperon", "serperono"]
-  },
-  "ind.past.S1": {
-   "selected": null,
-   "rejected": ["serpei"]
-  },
-  "ind.past.S2": {
-   "selected": null,
-   "rejected": ["serpesti"]
-  },
   "ind.past.S3": {
-   "selected": null,
+   "selected": "serpé",
    "rejected": ["serpè"]
   },
   "part.past": {

@@ -123,8 +123,11 @@ const NO_PRESENT_PARTICIPLE = new Set<string>([
   // gioire, perire, riessere, risapere, risentire. Five more have a genuine
   // rare/archaic/literary alternate kept in resources/fixed-alternatives.json
   // instead of being lost: esperire, percepire, presentire, punire, tornire.
-  // sapere is deliberately left out — its "sapiente" is now purely an
-  // adjective/noun, and that needs a decision, not a silent removal.
+  // sapere added 2026-09-29, decided by Orjon (source: ChatGPT): "sapiente"
+  // has fully detached from the verb — it can no longer be used verbally
+  // ("la persona sapiente la verità" is not valid; only "la persona che sa
+  // la verità"), so keeping it would be historical clutter, not a living
+  // present participle.
   "ambire",
   "compatire",
   "deperire",
@@ -137,6 +140,7 @@ const NO_PRESENT_PARTICIPLE = new Set<string>([
   "riessere",
   "risapere",
   "risentire",
+  "sapere",
   "tornire",
 ])
 

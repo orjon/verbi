@@ -7,6 +7,101 @@
       }
     }
   },
+  "adempiere": {
+    "ger": {
+      "pres": "adempiendo"
+    },
+    "part": {
+      "past": {
+        "S": "adempiuto",
+        "SF": "adempiuta",
+        "P": "adempiuti",
+        "PF": "adempiute"
+      }
+    },
+    "ind": {
+      "pres": {
+        "S1": "adempio",
+        "S2": "adempi",
+        "S3": "adempie",
+        "P1": "adempiamo",
+        "P2": "adempite",
+        "P3": "adempiono"
+      },
+      "impf": {
+        "S1": "adempivo",
+        "S2": "adempivi",
+        "S3": "adempiva",
+        "P1": "adempivamo",
+        "P2": "adempivate",
+        "P3": "adempivano"
+      },
+      "past": {
+        "S1": "adempii",
+        "S2": "adempisti",
+        "S3": "adempì",
+        "P1": "adempimmo",
+        "P2": "adempiste",
+        "P3": "adempirono"
+      },
+      "fut": {
+        "S1": "adempirò",
+        "S2": "adempirai",
+        "S3": "adempirà",
+        "P1": "adempiremo",
+        "P2": "adempirete",
+        "P3": "adempiranno"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "adempia",
+        "S2": "adempia",
+        "S3": "adempia",
+        "P1": "adempiamo",
+        "P2": "adempiate",
+        "P3": "adempiano"
+      },
+      "impf": {
+        "S1": "adempissi",
+        "S2": "adempissi",
+        "S3": "adempisse",
+        "P1": "adempissimo",
+        "P2": "adempiste",
+        "P3": "adempissero"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "adempirei",
+        "S2": "adempiresti",
+        "S3": "adempirebbe",
+        "P1": "adempiremmo",
+        "P2": "adempireste",
+        "P3": "adempirebbero"
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": "adempi",
+        "P1": "adempiamo",
+        "P2": "adempite"
+      }
+    }
+  },
+  "adempire": {
+    "ger": {
+      "pres": "adempiendo"
+    },
+    "part": {
+      "past": {
+        "S": "adempiuto",
+        "SF": "adempiuta",
+        "P": "adempiuti",
+        "PF": "adempiute"
+      }
+    }
+  },
   "affare": {
     "impr": null
   },
@@ -375,6 +470,101 @@
         "SF": "collisa",
         "P": "collisi",
         "PF": "collise"
+      }
+    }
+  },
+  "compiere": {
+    "ger": {
+      "pres": "compiendo"
+    },
+    "part": {
+      "past": {
+        "S": "compiuto",
+        "SF": "compiuta",
+        "P": "compiuti",
+        "PF": "compiute"
+      }
+    },
+    "ind": {
+      "pres": {
+        "S1": "compio",
+        "S2": "compi",
+        "S3": "compie",
+        "P1": "compiamo",
+        "P2": "compite",
+        "P3": "compiono"
+      },
+      "impf": {
+        "S1": "compivo",
+        "S2": "compivi",
+        "S3": "compiva",
+        "P1": "compivamo",
+        "P2": "compivate",
+        "P3": "compivano"
+      },
+      "past": {
+        "S1": "compii",
+        "S2": "compisti",
+        "S3": "compì",
+        "P1": "compimmo",
+        "P2": "compiste",
+        "P3": "compirono"
+      },
+      "fut": {
+        "S1": "compirò",
+        "S2": "compirai",
+        "S3": "compirà",
+        "P1": "compiremo",
+        "P2": "compirete",
+        "P3": "compiranno"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "compia",
+        "S2": "compia",
+        "S3": "compia",
+        "P1": "compiamo",
+        "P2": "compiate",
+        "P3": "compiano"
+      },
+      "impf": {
+        "S1": "compissi",
+        "S2": "compissi",
+        "S3": "compisse",
+        "P1": "compissimo",
+        "P2": "compiste",
+        "P3": "compissero"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "compirei",
+        "S2": "compiresti",
+        "S3": "compirebbe",
+        "P1": "compiremmo",
+        "P2": "compireste",
+        "P3": "compirebbero"
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": "compi",
+        "P1": "compiamo",
+        "P2": "compite"
+      }
+    }
+  },
+  "compire": {
+    "ger": {
+      "pres": "compiendo"
+    },
+    "part": {
+      "past": {
+        "S": "compiuto",
+        "SF": "compiuta",
+        "P": "compiuti",
+        "PF": "compiute"
       }
     }
   },
@@ -953,6 +1143,101 @@
         "SF": "elisa",
         "P": "elisi",
         "PF": "elise"
+      }
+    }
+  },
+  "empiere": {
+    "ger": {
+      "pres": "empiendo"
+    },
+    "part": {
+      "past": {
+        "S": "empiuto",
+        "SF": "empiuta",
+        "P": "empiuti",
+        "PF": "empiute"
+      }
+    },
+    "ind": {
+      "pres": {
+        "S1": "empio",
+        "S2": "empi",
+        "S3": "empie",
+        "P1": "empiamo",
+        "P2": "empite",
+        "P3": "empiono"
+      },
+      "impf": {
+        "S1": "empivo",
+        "S2": "empivi",
+        "S3": "empiva",
+        "P1": "empivamo",
+        "P2": "empivate",
+        "P3": "empivano"
+      },
+      "past": {
+        "S1": "empii",
+        "S2": "empisti",
+        "S3": "empì",
+        "P1": "empimmo",
+        "P2": "empiste",
+        "P3": "empirono"
+      },
+      "fut": {
+        "S1": "empirò",
+        "S2": "empirai",
+        "S3": "empirà",
+        "P1": "empiremo",
+        "P2": "empirete",
+        "P3": "empiranno"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "empia",
+        "S2": "empia",
+        "S3": "empia",
+        "P1": "empiamo",
+        "P2": "empiate",
+        "P3": "empiano"
+      },
+      "impf": {
+        "S1": "empissi",
+        "S2": "empissi",
+        "S3": "empisse",
+        "P1": "empissimo",
+        "P2": "empiste",
+        "P3": "empissero"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "empirei",
+        "S2": "empiresti",
+        "S3": "empirebbe",
+        "P1": "empiremmo",
+        "P2": "empireste",
+        "P3": "empirebbero"
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": "empi",
+        "P1": "empiamo",
+        "P2": "empite"
+      }
+    }
+  },
+  "empire": {
+    "ger": {
+      "pres": "empiendo"
+    },
+    "part": {
+      "past": {
+        "S": "empiuto",
+        "SF": "empiuta",
+        "P": "empiuti",
+        "PF": "empiute"
       }
     }
   },
@@ -1743,10 +2028,10 @@
   "restringere": {
     "part": {
       "past": {
-        "S": "restretto",
-        "SF": "restretta",
-        "P": "restretti",
-        "PF": "restrette"
+        "S": "ristretto",
+        "SF": "ristretta",
+        "P": "ristretti",
+        "PF": "ristrette"
       }
     }
   },
@@ -1788,6 +2073,106 @@
     "impr": {
       "pres": {
         "S2": "ridi'"
+      }
+    }
+  },
+  "riempiere": {
+    "ger": {
+      "pres": "riempiendo"
+    },
+    "part": {
+      "past": {
+        "S": "riempiuto",
+        "SF": "riempiuta",
+        "P": "riempiuti",
+        "PF": "riempiute"
+      }
+    },
+    "ind": {
+      "pres": {
+        "S1": "riempio",
+        "S2": "riempi",
+        "S3": "riempie",
+        "P1": "riempiamo",
+        "P2": "riempite",
+        "P3": "riempiono"
+      },
+      "impf": {
+        "S1": "riempivo",
+        "S2": "riempivi",
+        "S3": "riempiva",
+        "P1": "riempivamo",
+        "P2": "riempivate",
+        "P3": "riempivano"
+      },
+      "past": {
+        "S1": "riempii",
+        "S2": "riempisti",
+        "S3": "riempì",
+        "P1": "riempimmo",
+        "P2": "riempiste",
+        "P3": "riempirono"
+      },
+      "fut": {
+        "S1": "riempirò",
+        "S2": "riempirai",
+        "S3": "riempirà",
+        "P1": "riempiremo",
+        "P2": "riempirete",
+        "P3": "riempiranno"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "riempia",
+        "S2": "riempia",
+        "S3": "riempia",
+        "P1": "riempiamo",
+        "P2": "riempiate",
+        "P3": "riempiano"
+      },
+      "impf": {
+        "S1": "riempissi",
+        "S2": "riempissi",
+        "S3": "riempisse",
+        "P1": "riempissimo",
+        "P2": "riempiste",
+        "P3": "riempissero"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "riempirei",
+        "S2": "riempiresti",
+        "S3": "riempirebbe",
+        "P1": "riempiremmo",
+        "P2": "riempireste",
+        "P3": "riempirebbero"
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": "riempi",
+        "P1": "riempiamo",
+        "P2": "riempite"
+      }
+    }
+  },
+  "riempire": {
+    "ger": {
+      "pres": "riempiendo"
+    },
+    "part": {
+      "past": {
+        "S": "riempiuto",
+        "SF": "riempiuta",
+        "P": "riempiuti",
+        "PF": "riempiute"
+      }
+    },
+    "ind": {
+      "pres": {
+        "S3": "riempie"
       }
     }
   },
@@ -2029,18 +2414,6 @@
         "SF": "sedente",
         "P": "sedenti",
         "PF": "sedenti"
-      }
-    }
-  },
-  "serpere": {
-    "ind": {
-      "past": {
-        "S1": null,
-        "S2": null,
-        "S3": null,
-        "P1": null,
-        "P2": null,
-        "P3": null
       }
     }
   },

@@ -4,6 +4,61 @@
    "literary": ["accrescei"]
   }
  },
+ "adempire": {
+  "part.past.P": {
+   "common": ["adempiti"]
+  },
+  "part.past.PF": {
+   "common": ["adempite"]
+  },
+  "part.past.S": {
+   "common": ["adempito"]
+  },
+  "part.past.SF": {
+   "common": ["adempita"]
+  }
+ },
+ "adempiere": {
+  "impr.pres.S2": {
+   "common": ["adempisci"]
+  },
+  "ind.pres.P3": {
+   "common": ["adempiscono"]
+  },
+  "ind.pres.S1": {
+   "common": ["adempisco"]
+  },
+  "ind.pres.S2": {
+   "common": ["adempisci"]
+  },
+  "ind.pres.S3": {
+   "common": ["adempisce"]
+  },
+  "part.past.P": {
+   "common": ["adempiti"]
+  },
+  "part.past.PF": {
+   "common": ["adempite"]
+  },
+  "part.past.S": {
+   "common": ["adempito"]
+  },
+  "part.past.SF": {
+   "common": ["adempita"]
+  },
+  "sub.pres.P3": {
+   "common": ["adempiscano"]
+  },
+  "sub.pres.S1": {
+   "common": ["adempisca"]
+  },
+  "sub.pres.S2": {
+   "common": ["adempisca"]
+  },
+  "sub.pres.S3": {
+   "common": ["adempisca"]
+  }
+ },
  "affocare": {
   "impr.pres.S2": {
    "literary": ["affoca"]
@@ -239,6 +294,35 @@
   },
   "ind.past.S3": {
    "common": ["coesisté"]
+  }
+ },
+ "compiere": {
+  "impr.pres.S2": {
+   "common": ["compisci"]
+  },
+  "ind.pres.P3": {
+   "common": ["compiscono"]
+  },
+  "ind.pres.S1": {
+   "common": ["compisco"]
+  },
+  "ind.pres.S2": {
+   "common": ["compisci"]
+  },
+  "ind.pres.S3": {
+   "common": ["compisce"]
+  },
+  "sub.pres.P3": {
+   "common": ["compiscano"]
+  },
+  "sub.pres.S1": {
+   "common": ["compisca"]
+  },
+  "sub.pres.S2": {
+   "common": ["compisca"]
+  },
+  "sub.pres.S3": {
+   "common": ["compisca"]
   }
  },
  "concedere": {
@@ -517,6 +601,34 @@
  "eccedere": {
   "ind.past.S3": {
    "common": ["eccedé"]
+  }
+ },
+ "empire": {
+  "part.past.P": {
+   "common": ["empiti"]
+  },
+  "part.past.PF": {
+   "common": ["empite"]
+  },
+  "part.past.S": {
+   "common": ["empito"]
+  },
+  "part.past.SF": {
+   "common": ["empita"]
+  }
+ },
+ "empiere": {
+  "part.past.P": {
+   "common": ["empiti"]
+  },
+  "part.past.PF": {
+   "common": ["empite"]
+  },
+  "part.past.S": {
+   "common": ["empito"]
+  },
+  "part.past.SF": {
+   "common": ["empita"]
   }
  },
  "esigere": {
@@ -1356,6 +1468,34 @@
  "ridire": {
   "impr.pres.S2": {
    "colloquial": ["ridici"]
+  }
+ },
+ "riempire": {
+  "part.past.P": {
+   "common": ["riempiti"]
+  },
+  "part.past.PF": {
+   "common": ["riempite"]
+  },
+  "part.past.S": {
+   "common": ["riempito"]
+  },
+  "part.past.SF": {
+   "common": ["riempita"]
+  }
+ },
+ "riempiere": {
+  "part.past.P": {
+   "common": ["riempiti"]
+  },
+  "part.past.PF": {
+   "common": ["riempite"]
+  },
+  "part.past.S": {
+   "common": ["riempito"]
+  },
+  "part.past.SF": {
+   "common": ["riempita"]
   }
  },
  "riesplodere": {

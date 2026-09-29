@@ -20,9 +20,12 @@ import type { ItalianAux } from '../../types/index.ts';
  * *Auxiliary verbs* in notes/to-verify.md.
  *
  * The block below the original list (`abbiosciare` on) was added 2026-09-29
- * from a comparison against English Wiktionary's own auxiliary data alone —
- * not individually cross-checked against Treccani for each verb, given the
- * scale (98 verbs). Flagged for the final recheck pass.
+ * from Wiktionary's auxiliary data, then rechecked against Treccani the same
+ * day (see *Auxiliary recheck* in notes/to-verify.md): `rampare` removed
+ * (Treccani: "aus. avere", not essere); `dilagare`, `rifluire`, `rimbalzare`
+ * moved to DUAL (Treccani gives both auxiliaries, not essere alone). A
+ * handful of verbs Treccani's site did not have a page for are listed as
+ * unconfirmed in the same note, not silently assumed correct.
  */
 const ESSERE = new Set<string>([
   // motion
@@ -54,14 +57,17 @@ const ESSERE = new Set<string>([
   'assurgere', 'baluginare', 'balzare', 'basire', 'bisognare',
   'capitombolare', 'cascare', 'conflagrare', 'consistere', 'constare',
   'convolare', 'crepare', 'cucciare', 'culminare', 'decedere', 'decorrere',
-  'decrescere', 'defluire', 'deperire', 'dilagare', 'dimagrire', 'disparire',
+  'decrescere', 'defluire', 'deperire', 'dimagrire', 'disparire',
   'divampare', 'emergere', 'fioccare', 'fluire', 'franare', 'fuoriuscire',
   'imbolsire', 'imbronciare', 'immigrare', 'incartapecorire', 'incorrere',
   'infreddolire', 'insorgere', 'invalere', 'inviperire', 'irrancidire',
+  // licere, pollare: Treccani gives no compound tenses in real use for these
+  // (pollare explicitly "non usato nei tempi comp."), so the auxiliary is
+  // moot; kept here rather than removed since it does no harm either way.
   'licere', 'muffire', 'pollare', 'preesistere', 'premorire', 'prenascere',
-  'rabbuiare', 'rampare', 'rampollare', 'rassegare', 'regredire', 'residuare',
+  'rabbuiare', 'rampollare', 'rassegare', 'regredire', 'residuare',
   'riammalare', 'riapparire', 'riboccare', 'ricascare', 'ricomparire',
-  'riemergere', 'riessere', 'rifluire', 'rimbalzare', 'rincasare', 'risedere',
+  'riemergere', 'riessere', 'rincasare', 'risedere',
   'risorgere', 'ristare', 'sbottare', 'scaturire', 'schiattare', 'sconvenire',
   'sedere', 'sfebbrare', 'sfiorire', 'sfrecciare', 'sgattaiolare', 'smemorare',
   'soggiacere', 'sottentrare', 'sottostare', 'spiacere', 'susseguire',
@@ -87,6 +93,10 @@ const DUAL: Record<string, ItalianAux> = {
   peggiorare: 'ESSERE', procedere: 'AVERE', salire: 'ESSERE',
   salpare: 'ESSERE', saltare: 'AVERE', scendere: 'ESSERE', servire: 'ESSERE',
   suonare: 'AVERE', trascorrere: 'ESSERE', volare: 'AVERE', vivere: 'AVERE',
+  // added 2026-09-29, Treccani-confirmed as taking either auxiliary (not
+  // pure essere, as first placed): dilagare "aus. avere o essere"; rifluire
+  // "aus. avere o essere"; rimbalzare "essere e anche avere"
+  dilagare: 'ESSERE', rifluire: 'ESSERE', rimbalzare: 'ESSERE',
   // weather, and the phases of daylight: both are standard (è piovuto, ha
   // piovuto); essere is the traditional choice
   albeggiare: 'ESSERE', annottare: 'ESSERE', diluviare: 'ESSERE',
