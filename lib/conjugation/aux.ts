@@ -14,25 +14,30 @@ import type { ItalianAux } from '../../types/index.ts';
  *
  * Not exhaustive — Italian has a long tail — but it covers the verbs a learner
  * meets. Anything absent falls back to `avere`, which is the majority case.
+ *
+ * `vigere`, `incombere` and `prudere` are on neither list: they have no past
+ * participle, so no compound tenses. Checked 2026-09-29 — see *Auxiliary verbs*
+ * in resources/to-verify.md.
  */
 const ESSERE = new Set<string>([
   // motion
-  'andare', 'arrivare', 'cadere', 'entrare', 'giungere', 'partire', 'fuggire',
-  'ricadere', 'rientrare', 'ripartire', 'ritornare', 'salpare', 'scappare',
-  'sopraggiungere', 'tornare', 'uscire', 'venire',
+  'accorrere', 'andare', 'arrivare', 'cadere', 'entrare', 'giungere', 'partire',
+  'fuggire', 'ricadere', 'rientrare', 'ripartire', 'ritornare', 'scappare',
+  'sopraggiungere', 'subentrare', 'tornare', 'uscire', 'venire',
   // arrival / origin compounds of venire
   'avvenire', 'convenire', 'divenire', 'intervenire', 'pervenire', 'provenire',
   'sopravvenire', 'svenire',
   // change of state
-  'diventare', 'guarire', 'impazzire', 'ingrassare', 'invecchiare', 'morire',
-  'nascere', 'perire', 'sbocciare', 'sparire', 'svanire', 'scomparire',
-  'comparire', 'apparire', 'sorgere',
+  'decadere', 'diventare', 'guarire', 'impazzire', 'ingrassare', 'invecchiare',
+  'morire', 'nascere', 'perire', 'ridiventare', 'rinascere', 'sbocciare',
+  'sparire', 'svanire', 'scomparire', 'comparire', 'apparire', 'sorgere',
   // remaining / staying
-  'restare', 'rimanere', 'stare', 'sostare',
+  'restare', 'rimanere', 'stare',
   // occurring / happening
-  'accadere', 'avvenire', 'capitare', 'occorrere', 'succedere', 'scadere',
+  'accadere', 'capitare', 'intercorrere', 'occorrere', 'succedere', 'scadere',
   // seeming / pleasing / mattering
-  'dispiacere', 'parere', 'piacere', 'sembrare', 'spettare',
+  'dispiacere', 'increscere', 'parere', 'piacere', 'rincrescere', 'sembrare',
+  'spettare',
   // existing / being
   'esistere', 'essere', 'coesistere',
   // misc intransitives
@@ -52,9 +57,16 @@ const DUAL: Record<string, ItalianAux> = {
   correre: 'AVERE', crescere: 'ESSERE', diminuire: 'ESSERE',
   durare: 'ESSERE', finire: 'ESSERE', iniziare: 'ESSERE',
   mancare: 'ESSERE', migliorare: 'ESSERE', passare: 'ESSERE',
-  peggiorare: 'ESSERE', procedere: 'ESSERE', salire: 'ESSERE',
-  saltare: 'AVERE', scendere: 'ESSERE', servire: 'ESSERE',
-  suonare: 'AVERE', volare: 'AVERE', vivere: 'AVERE',
+  peggiorare: 'ESSERE', procedere: 'AVERE', salire: 'ESSERE',
+  salpare: 'ESSERE', saltare: 'AVERE', scendere: 'ESSERE', servire: 'ESSERE',
+  suonare: 'AVERE', trascorrere: 'ESSERE', volare: 'AVERE', vivere: 'AVERE',
+  // weather, and the phases of daylight: both are standard (è piovuto, ha
+  // piovuto); essere is the traditional choice
+  albeggiare: 'ESSERE', annottare: 'ESSERE', diluviare: 'ESSERE',
+  grandinare: 'ESSERE', imbrunire: 'ESSERE', lampeggiare: 'ESSERE',
+  nevicare: 'ESSERE', nevischiare: 'ESSERE', piovere: 'ESSERE',
+  piovigginare: 'ESSERE', ripiovere: 'ESSERE', spiovere: 'ESSERE',
+  tuonare: 'ESSERE',
 };
 
 /** True when the verb is reflexive or pronominal (`lavarsi`, `accorgersi`). */

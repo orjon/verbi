@@ -132,3 +132,35 @@ export const ENDING = {
  * *è*) and the acute a closed one (*perché*, the past historic *batté*).
  */
 export const ACCENTS = { eGrave: "è", eAcute: "é" } as const
+
+/**
+ * The kinds of valid alternative to a standard form. `common` and
+ * `clipped_common` are equal to the standard and shown beside it; the others are
+ * a secondary tier. `archaic` has no forms yet.
+ *
+ *   common          an equal modern variant: fai beside fa'
+ *   colloquial      everyday speech, avoided in writing: disfo
+ *   formal          careful or official writing: debbono, possederò
+ *   literary        found mainly in literature: seggo, crescei
+ *   rare            correct but seldom used: coceva, possedente
+ *   archaic         old-fashioned, no longer used
+ *   sense           a different meaning of the verb: ripartisco ("I divide")
+ *   clipped_common  a clipped form in everyday use: han, vuol, aver
+ *   clipped_poetic  a clipped form found in poetry and song: parlan, furon
+ */
+export const ALTERNATIVES = [
+  "common",
+  "colloquial",
+  "formal",
+  "literary",
+  "rare",
+  "archaic",
+  "sense",
+  "clipped_common",
+  "clipped_poetic",
+] as const
+
+export type AlternativeKind = (typeof ALTERNATIVES)[number]
+
+/** Valid alternatives to one form, by kind: { common: ["fai"] }. */
+export type AlternativeForms = Partial<Record<AlternativeKind, string[]>>

@@ -10,6 +10,20 @@
   "affare": {
     "impr": null
   },
+  "andare": {
+    "impr": {
+      "pres": {
+        "S2": "va'"
+      }
+    }
+  },
+  "annettere": {
+    "ind": {
+      "past": {
+        "S1": "annessi"
+      }
+    }
+  },
   "calere": {
     "ind": {
       "pres": {
@@ -93,6 +107,16 @@
       "past": null
     }
   },
+  "consentire": {
+    "part": {
+      "pres": {
+        "S": "consentente",
+        "SF": "consentente",
+        "P": "consententi",
+        "PF": "consententi"
+      }
+    }
+  },
   "consumere": {
     "ger": null,
     "ind": {
@@ -139,6 +163,11 @@
       "pres": {
         "S1": "do",
         "S2": "dai"
+      },
+      "past": {
+        "S1": "diedi",
+        "S3": "diede",
+        "P3": "diedero"
       }
     },
     "impr": {
@@ -166,6 +195,13 @@
       }
     }
   },
+  "dire": {
+    "impr": {
+      "pres": {
+        "S2": "di'"
+      }
+    }
+  },
   "dirimere": {
     "part": {
       "past": null
@@ -181,6 +217,16 @@
       }
     }
   },
+  "disseppellire": {
+    "part": {
+      "past": {
+        "S": "dissepolto",
+        "SF": "dissepolta",
+        "P": "dissepolti",
+        "PF": "dissepolte"
+      }
+    }
+  },
   "divedere": {
     "ind": {
       "past": {
@@ -189,10 +235,22 @@
       }
     }
   },
+  "dovere": {
+    "ind": {
+      "pres": {
+        "P3": "devono"
+      }
+    }
+  },
   "essere": {
     "ind": {
       "pres": {
         "S3": "è"
+      }
+    },
+    "sub": {
+      "impf": {
+        "S3": "fosse"
       }
     }
   },
@@ -210,9 +268,49 @@
       }
     }
   },
+  "imbestialire": {
+    "ind": {
+      "pres": {
+        "S2": "imbestialisci"
+      }
+    }
+  },
+  "incartapecorire": {
+    "ind": {
+      "pres": {
+        "S1": "incartapecorisco",
+        "P3": "incartapecoriscono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "incartapecorisca",
+        "S2": "incartapecorisca",
+        "S3": "incartapecorisca",
+        "P3": "incartapecoriscano"
+      }
+    }
+  },
   "incombere": {
     "part": {
       "past": null
+    }
+  },
+  "inferire": {
+    "part": {
+      "past": {
+        "S": "inferito",
+        "SF": "inferita",
+        "P": "inferiti",
+        "PF": "inferite"
+      }
+    },
+    "ind": {
+      "past": {
+        "S1": "inferii",
+        "S3": "inferì",
+        "P3": "inferirono"
+      }
     }
   },
   "licere": {
@@ -279,6 +377,16 @@
       }
     }
   },
+  "perdere": {
+    "part": {
+      "past": {
+        "S": "perso",
+        "SF": "persa",
+        "P": "persi",
+        "PF": "perse"
+      }
+    }
+  },
   "plaudere": {
     "ind": {
       "pres": {
@@ -329,6 +437,20 @@
       }
     }
   },
+  "premorire": {
+    "ind": {
+      "pres": {
+        "S1": "premuoio",
+        "P3": "premuoiono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "premuoia",
+        "P3": "premuoiano"
+      }
+    }
+  },
   "presentire": {
     "ind": {
       "pres": {
@@ -354,6 +476,42 @@
       "past": null
     }
   },
+  "prudere": {
+    "part": {
+      "past": null
+    }
+  },
+  "putire": {
+    "ind": {
+      "pres": {
+        "S1": "putisco",
+        "S3": "putisce",
+        "P3": "putiscono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "putisca",
+        "S2": "putisca",
+        "S3": "putisca",
+        "P3": "putiscano"
+      }
+    }
+  },
+  "radioassistere": {
+    "ind": {
+      "past": {
+        "P3": "radioassistettero"
+      }
+    }
+  },
+  "rammollire": {
+    "impr": {
+      "pres": {
+        "S2": "rammollisci"
+      }
+    }
+  },
   "recere": {
     "ger": null,
     "ind": {
@@ -375,10 +533,48 @@
       "pres": null
     }
   },
+  "riandare": {
+    "impr": {
+      "pres": {
+        "S2": "riva'"
+      }
+    }
+  },
   "ridare": {
+    "impr": {
+      "pres": {
+        "S2": "ridai"
+      }
+    }
+  },
+  "ridire": {
+    "impr": {
+      "pres": {
+        "S2": "ridi'"
+      }
+    }
+  },
+  "rincivilire": {
+    "impr": {
+      "pres": {
+        "S2": "rincivilisci"
+      }
+    }
+  },
+  "ripartire": {
     "ind": {
       "pres": {
-        "S1": "rido"
+        "S1": "riparto",
+        "S3": "riparte",
+        "P3": "ripartono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "riparta",
+        "S2": "riparta",
+        "S3": "riparta",
+        "P3": "ripartano"
       }
     }
   },
@@ -409,6 +605,22 @@
         "SF": "risedente",
         "P": "risedenti",
         "PF": "risedenti"
+      }
+    }
+  },
+  "scompartire": {
+    "ind": {
+      "pres": {
+        "S1": "scompartisco",
+        "P3": "scompartiscono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "scompartisca",
+        "S2": "scompartisca",
+        "S3": "scompartisca",
+        "P3": "scompartiscano"
       }
     }
   },
@@ -526,6 +738,13 @@
       "pres": null
     }
   },
+  "sottostare": {
+    "impr": {
+      "pres": {
+        "S2": "sottosta'"
+      }
+    }
+  },
   "spengere": {
     "ind": {
       "pres": {
@@ -552,6 +771,38 @@
         "SF": "spenta",
         "P": "spenti",
         "PF": "spente"
+      }
+    }
+  },
+  "sperdere": {
+    "part": {
+      "past": {
+        "S": "sperso",
+        "SF": "spersa",
+        "P": "spersi",
+        "PF": "sperse"
+      }
+    }
+  },
+  "stare": {
+    "impr": {
+      "pres": {
+        "S2": "sta'"
+      }
+    }
+  },
+  "succedere": {
+    "part": {
+      "past": {
+        "S": "successo",
+        "SF": "successa",
+        "P": "successi",
+        "PF": "successe"
+      }
+    },
+    "ind": {
+      "past": {
+        "S1": "successi"
       }
     }
   },

@@ -6,7 +6,15 @@
  * tedious or misleading to write out one verb at a time.
  */
 import { regularForms } from "./regular.ts"
-import { ENDING, PATH, PERSON, PERSONS, formPath } from "./vocabulary.ts"
+import {
+  type AlternativeForms,
+  type AlternativeKind,
+  ENDING,
+  PATH,
+  PERSON,
+  PERSONS,
+  formPath,
+} from "./vocabulary.ts"
 
 /**
  * Entries to ignore: a form of another verb that Morph-it made a headword of
@@ -111,13 +119,80 @@ const NO_PRESENT_PARTICIPLE = new Set<string>([
 ])
 
 /**
+ * Verbs used only in the third person (monopersonali). Morph-it gives every verb
+ * all six persons, but these have no io, tu, noi or voi form in use; their third
+ * person singular and plural are kept. The three lists differ only in why.
+ */
+
+/**
+ * Weather, and the phases of daylight: no person can be their subject —
+ * *piove*, *nevica*, *albeggia*. The plural is kept for figurative uses such as
+ * *piovono critiche*. `tuonare` and `lampeggiare` have figurative personal uses
+ * (a voice thundering, a car's lights flashing), which are left out as a
+ * separate or rare sense.
+ */
+const WEATHER_VERBS = [
+  "albeggiare",
+  "annottare",
+  "diluviare",
+  "grandinare",
+  "imbrunire",
+  "lampeggiare",
+  "nevicare",
+  "nevischiare",
+  "piovere",
+  "piovigginare",
+  "ripiovere",
+  "spiovere",
+  "tuonare",
+]
+
+/** A state of affairs rather than an action: *vigono nuove leggi*. */
+const STATE_VERBS = ["vigere"]
+
+/**
+ * Sensation, where the person who feels it is an indirect pronoun and the cause
+ * is the subject: *mi prude il piede*, *mi prudono i piedi*.
+ */
+const SENSATION_VERBS = ["incombere", "increscere", "prudere", "rincrescere"]
+
+const THIRD_PERSON_ONLY = new Set<string>([
+  ...WEATHER_VERBS,
+  ...STATE_VERBS,
+  ...SENSATION_VERBS,
+])
+
+/** The tenses that have six persons. */
+const PERSON_TENSES = [
+  PATH.indi.pres,
+  PATH.indi.impf,
+  PATH.indi.past,
+  PATH.indi.futu,
+  PATH.cond.pres,
+  PATH.subj.pres,
+  PATH.subj.impf,
+]
+
+/**
  * Slots a verb is known not to have, beyond what overrides.json states.
  *
- * Returns paths to leave empty. Use for absences that affect too many verbs to
- * be worth writing out one at a time.
+ * Returns paths to leave empty: a whole tense (`part.pres`) or a single slot
+ * (`ind.pres.S1`). Use for absences that affect too many verbs to be worth
+ * writing out one at a time.
+ *
+ * For a THIRD_PERSON_ONLY verb: the io, tu, noi and voi of every tense, and the
+ * whole imperative, which has only those persons.
  */
 export function absentSlots(verb: string): string[] {
-  return NO_PRESENT_PARTICIPLE.has(verb) ? [PATH.part.pres] : []
+  const absent: string[] = []
+  if (NO_PRESENT_PARTICIPLE.has(verb)) absent.push(PATH.part.pres)
+  if (THIRD_PERSON_ONLY.has(verb)) {
+    for (const tense of PERSON_TENSES)
+      for (const person of [PERSON.s1, PERSON.s2, PERSON.p1, PERSON.p2])
+        absent.push(formPath(tense, person))
+    absent.push(PATH.impr.pres)
+  }
+  return absent
 }
 
 const FUTURE_S1 = formPath(PATH.indi.futu, PERSON.s1)
@@ -158,10 +233,20 @@ export const withFutureS1 = (
 
 /**
  * How a conflict is settled by one of the rules below: the form chosen, and
- * the other forms that are valid variants. Any form not listed in either is a
- * mistake, and data/adjusted.json lists it as rejected.
+ * the other forms that are valid variants, by kind. Any form not listed in
+ * either is a mistake, and data/adjusted.json lists it as rejected.
  */
-export type Resolution = { form: string; alternatives: string[] }
+export type Resolution = { form: string; alternatives: AlternativeForms }
+
+/** Groups [kind, form] pairs into AlternativeForms, dropping duplicates. */
+const byKind = (pairs: [AlternativeKind, string][]): AlternativeForms => {
+  const out: AlternativeForms = {}
+  for (const [kind, form] of pairs) {
+    const forms = (out[kind] ??= [])
+    if (!forms.includes(form)) forms.push(form)
+  }
+  return out
+}
 
 /** The tense a form path belongs to: "ind.pres.S1" → "ind.pres". */
 const tenseOf = (featurePath: string): string =>
@@ -207,7 +292,7 @@ export const resolveFareCompound = (
   candidates: string[],
   allForms: string[],
   fareForm: string | undefined,
-  fareAlternatives: string[],
+  fareAlternatives: AlternativeForms,
 ): Resolution | null => {
   if (infinitive === FARE || !infinitive.endsWith(FARE) || !fareForm)
     return null
@@ -223,11 +308,17 @@ export const resolveFareCompound = (
       : person
         ? (regularTense as Record<string, string> | undefined)?.[person]
         : undefined
-  const valid = new Set(fareAlternatives.map((a) => prefix + a))
+  // Each valid form, with its kind: fare's own alternatives keep their kind
+  // (*disfai*, common); the regular -are form is colloquial (*disfo*).
+  const valid = new Map<string, AlternativeKind>()
+  for (const [kind, forms] of Object.entries(fareAlternatives))
+    for (const f of forms ?? []) valid.set(prefix + f, kind as AlternativeKind)
   if (FARE_REGULAR_TENSES.includes(tenseOf(featurePath)) && regular)
-    valid.add(regular)
-  const alternatives = [...new Set(allForms)].filter(
-    (f) => f !== form && valid.has(f),
+    valid.set(regular, "colloquial")
+  const alternatives = byKind(
+    [...new Set(allForms)]
+      .filter((f) => f !== form && valid.has(f))
+      .map((f) => [valid.get(f)!, f]),
   )
   return { form, alternatives }
 }
@@ -256,6 +347,7 @@ const MOBILE_DIPHTHONG: Record<string, MobileDiphthong> = {
   cuocere: { plain: "coc", diphthong: "cuoc", keep: "always" },
   nuocere: { plain: "noc", diphthong: "nuoc", keep: "always" },
   percuotere: { plain: "percot", diphthong: "percuot", keep: "always" },
+  ripercuotere: { plain: "ripercot", diphthong: "ripercuot", keep: "always" },
   riscuotere: { plain: "riscot", diphthong: "riscuot", keep: "always" },
   scuotere: { plain: "scot", diphthong: "scuot", keep: "always" },
   possedere: {
@@ -340,10 +432,191 @@ export const resolveDiphthong = (
   const chosen = classified.find((c) => c.kind === want)
   if (!chosen) return null
 
-  const plainValid = keep && (stems.keep === "always" || keptTense)
-  const alternatives = classified
-    .filter((c) => c.f !== chosen.f)
-    .filter((c) => c.kind === "literary" || (c.kind === "plain" && plainValid))
-    .map((c) => c.f)
+  // The plain form is valid where the diphthong is chosen but the plain form
+  // is also in use: rare for the -uo- verbs, formal (traditional) in the future
+  // and conditional of the -ie- verbs.
+  const plainKind: AlternativeKind | undefined = !keep
+    ? undefined
+    : stems.keep === "always"
+      ? "rare"
+      : keptTense
+        ? "formal"
+        : undefined
+  const alternatives = byKind(
+    classified
+      .filter((c) => c.f !== chosen.f)
+      .flatMap((c): [AlternativeKind, string][] =>
+        c.kind === "literary"
+          ? [["literary", c.f]]
+          : c.kind === "plain" && plainKind
+            ? [[plainKind, c.f]]
+            : [],
+      ),
+  )
   return { form: chosen.f, alternatives }
 }
+
+/**
+ * Verbs whose future and conditional are built on the full infinitive stem
+ * (*premorirò*, *riudirò*), with Morph-it also giving a shortened stem
+ * (*premorrò*, *riudrò*). Both are in use; the full stem is chosen and the
+ * shortened one kept as a valid variant.
+ *
+ * Not a general rule: for many verbs the shortened stem is the standard one —
+ * *vedrò*, *verrò*, *vivrò*. So the verbs are listed.
+ */
+const FULL_FUTURE_STEM = new Set(["premorire", "riudire"])
+
+/**
+ * Settles a future or conditional conflict in a FULL_FUTURE_STEM verb: chooses
+ * the form built on the infinitive without its final -e (*premorir-*), and
+ * keeps the others as valid alternatives.
+ *
+ * Returns null for any other verb or tense, or when no form has the full stem.
+ */
+export const resolveFullFutureStem = (
+  infinitive: string,
+  featurePath: string,
+  candidates: string[],
+): Resolution | null => {
+  if (!FULL_FUTURE_STEM.has(infinitive)) return null
+  const tense = tenseOf(featurePath)
+  if (tense !== PATH.indi.futu && tense !== PATH.cond.pres) return null
+  const stem = infinitive.slice(0, -1)
+  const form = candidates.find((f) => f.startsWith(stem))
+  if (!form) return null
+  return {
+    form,
+    alternatives: byKind(
+      candidates.filter((f) => f !== form).map((f) => ["common", f]),
+    ),
+  }
+}
+
+/**
+ * The weak past historic endings, by person, for the three persons where a
+ * verb can also have a strong form. -ere verbs have two weak sets, -ei and
+ * -etti; -are and -ire verbs have one. `ei` holds the ending in the -ei set
+ * and `etti` the ending in the -etti set: for lui/lei, *é* and *ette*.
+ */
+const WEAK_PAST_ENDING: Record<string, Record<string, { ei: string; etti?: string }>> =
+  {
+    are: {
+      [PERSON.s1]: { ei: "ai" },
+      [PERSON.s3]: { ei: "ò" },
+      [PERSON.p3]: { ei: "arono" },
+    },
+    ere: {
+      [PERSON.s1]: { ei: "ei", etti: "etti" },
+      [PERSON.s3]: { ei: "é", etti: "ette" },
+      [PERSON.p3]: { ei: "erono", etti: "ettero" },
+    },
+    ire: {
+      [PERSON.s1]: { ei: "ii" },
+      [PERSON.s3]: { ei: "ì" },
+      [PERSON.p3]: { ei: "irono" },
+    },
+  }
+
+/** The endings of a strong past historic, by person: *crebbi, crebbe, crebbero*. */
+const STRONG_PAST_ENDING: Record<string, string> = {
+  [PERSON.s1]: "i",
+  [PERSON.s3]: "e",
+  [PERSON.p3]: "ero",
+}
+
+/**
+ * The kind of alternative a weak past historic form is, beside the strong form
+ * chosen, where it is not literary: both in common use (*concedetti*,
+ * *sparii*), or another sense of the verb (*succedetti*, "followed").
+ */
+const WEAK_BESIDE_STRONG: Record<string, AlternativeKind> = {
+  concedere: "common",
+  sparire: "common",
+  succedere: "sense",
+}
+
+/**
+ * The kind of a past historic form: in the weak -ei set, in the weak -etti
+ * set, or strong.
+ */
+type PastKind = "weakEi" | "weakEtti" | "strong"
+
+/**
+ * Settles a past historic conflict in the io, lui/lei or loro form, where
+ * Morph-it gives a verb's weak and strong forms, or its two weak sets.
+ *
+ * A form is weak only if it is exactly the stem plus a weak ending; otherwise it
+ * is strong if it ends as a strong form does for that person. So:
+ *
+ * - **Strong against weak: the strong form is chosen.** *crebbi* over
+ *   *crescei*, *connessi* over *connettei*, *concessi* over *concedetti*,
+ *   *diedi* over *detti*, *sparvi* over *sparii*. The weak form is kept as a
+ *   valid alternative.
+ * - **-ei against -etti: -etti is chosen** (*credetti* over *credei*), unless
+ *   the verb's other past historic forms already use the -ei set, in which case
+ *   -ei is chosen so the tense stays consistent (*godei, godé, goderono*). The
+ *   other is kept as a valid alternative.
+ *
+ * verbForms is the verb's forms from Morph-it, used to see which weak set its
+ * other persons use. Returns null for any other tense or person, or when the
+ * forms cannot all be classified.
+ */
+export const resolveStrongWeakPast = (
+  infinitive: string,
+  featurePath: string,
+  candidates: string[],
+  verbForms: Record<string, string[]>,
+): Resolution | null => {
+  const [mood, tense, person] = featurePath.split(".")
+  if (`${mood}.${tense}` !== PATH.indi.past || !(person in STRONG_PAST_ENDING))
+    return null
+  const group = infinitive.slice(-3)
+  const ending = WEAK_PAST_ENDING[group]?.[person]
+  if (!ending) return null
+  const stem = infinitive.slice(0, -3)
+
+  const kindOf = (f: string): PastKind | undefined =>
+    f === stem + ending.ei
+      ? "weakEi"
+      : ending.etti && f === stem + ending.etti
+        ? "weakEtti"
+        : f.endsWith(STRONG_PAST_ENDING[person])
+          ? "strong"
+          : undefined
+  const classified = candidates.map((f) => ({ f, kind: kindOf(f) }))
+  if (classified.some((c) => c.kind === undefined)) return null
+  const has = (k: PastKind) => classified.find((c) => c.kind === k)
+
+  let chosen = has("strong")
+  if (chosen && classified.filter((c) => c.kind === "strong").length > 1)
+    return null
+  if (!chosen) {
+    if (!has("weakEi") || !has("weakEtti")) return null
+    // Does the verb already use the -ei set in another person, on its own?
+    const eiElsewhere = Object.keys(STRONG_PAST_ENDING)
+      .filter((p) => p !== person)
+      .some((p) => {
+        const forms = [
+          ...new Set(verbForms[formPath(PATH.indi.past, p)] ?? []),
+        ]
+        const otherEnding = WEAK_PAST_ENDING[group][p]
+        return forms.length === 1 && forms[0] === stem + otherEnding.ei
+      })
+    chosen = has(eiElsewhere ? "weakEi" : "weakEtti")
+  }
+  // The weak form beside a strong one is literary, except for the verbs where
+  // both are in common use, and succedere, where the weak form is another
+  // sense ("to follow"). Between the two weak sets, the other set is common.
+  const kind: AlternativeKind =
+    chosen!.kind === "strong"
+      ? (WEAK_BESIDE_STRONG[infinitive] ?? "literary")
+      : "common"
+  return {
+    form: chosen!.f,
+    alternatives: byKind(
+      candidates.filter((f) => f !== chosen!.f).map((f) => [kind, f]),
+    ),
+  }
+}
+

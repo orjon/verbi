@@ -2,9 +2,16 @@
  * Rules that make one form of a verb from another form of the same verb.
  *
  * The build uses these to fill a slot that is still empty once Morph-it and
- * resources/overrides.json have been applied. They never replace a form.
+ * resources/overrides.json have been applied, and to make the clipped forms,
+ * which are alternatives. They never replace a form.
  */
-import { CONJUGATION, ENDING, PERSON } from "./vocabulary.ts"
+import {
+  CONJUGATION,
+  ENDING,
+  PATH,
+  PERSON,
+  formPath,
+} from "./vocabulary.ts"
 
 /**
  * Makes the gerund from the imperfect's `io` form. They share a stem:
@@ -92,7 +99,8 @@ export const gerundFromImperfect = (imperfect: string): string | null => {
  *
  *   avere, riavere, essere, riessere, sapere   abbi, sii, sappi — and their voi forms
  *   dare, malfare                              dai, malfa'
- *   imbestialire, rammollire, rincivilire      errors in Morph-it itself
+ *   imbestialire, rammollire, rincivilire      errors in Morph-it itself, now
+ *                                              corrected by override
  *
  * Returns null when the present form it needs is missing.
  */
@@ -110,4 +118,111 @@ export const imperativeFromPresent = (
   if (person === PERSON.p1) return present[PERSON.p1] ?? null
   if (person === PERSON.p2) return present[PERSON.p2] ?? null
   return null
+}
+
+/**
+ * The slots where every verb has a clipped form (apocope, troncamento): the
+ * infinitive, and the loro form of seven tenses. Each ends in a vowel that can
+ * be dropped — *parlare → parlar*, *parlano → parlan*.
+ */
+const CLIPPED_SLOTS: string[] = [
+  PATH.infi,
+  formPath(PATH.indi.pres, PERSON.p3),
+  formPath(PATH.indi.impf, PERSON.p3),
+  formPath(PATH.indi.past, PERSON.p3),
+  formPath(PATH.indi.futu, PERSON.p3),
+  formPath(PATH.cond.pres, PERSON.p3),
+  formPath(PATH.subj.pres, PERSON.p3),
+  formPath(PATH.subj.impf, PERSON.p3),
+]
+
+/**
+ * Clipped forms in everyday use, by verb and path. Every other clipped form is
+ * clipped_poetic. The present loro in -nno (*hanno → han*) is always common, so
+ * it is not listed; see clippedKind. `volere`'s present lui/lei (*vuol*) is the
+ * one clipped form outside CLIPPED_SLOTS, so listing it here also makes
+ * clippedForms clip that slot. Decided in resources/to-verify.md, item 8.
+ */
+const CLIPPED_COMMON: Record<string, string[]> = {
+  avere: [PATH.infi],
+  dire: [PATH.infi],
+  essere: [PATH.infi, formPath(PATH.indi.pres, PERSON.p3)],
+  fare: [PATH.infi],
+  sapere: [PATH.infi],
+  volere: [
+    formPath(PATH.indi.pres, PERSON.s3),
+    formPath(PATH.indi.pres, PERSON.p3),
+  ],
+}
+
+/**
+ * Clips a form: drops its final vowel, or -no from -nno, or -re from an
+ * infinitive in -rre.
+ *
+ *   parlano → parlan     avere → aver       vuole → vuol
+ *   parleranno → parleran   hanno → han     porre → por
+ *
+ * The -rre infinitives keep a single r (*por fine*, *trar vantaggio*); Morph-it
+ * gives *porr*, *trarr*, which are not Italian. Returns null for a form that
+ * does not end in -e or -o.
+ */
+export const clipForm = (form: string): string | null => {
+  if (form.endsWith("rre")) return form.slice(0, -2)
+  if (form.endsWith("nno")) return form.slice(0, -2)
+  if (/[eo]$/.test(form)) return form.slice(0, -1)
+  return null
+}
+
+/**
+ * The kind of a verb's clipped form at a path. It is common when:
+ *
+ *   - the verb and path are in CLIPPED_COMMON (*aver*, *son*, *vuol*)
+ *   - it is a present loro in -nno (*han*, *fan*)
+ *   - it is the infinitive of a -rre verb (*por*, *trar*, *condur* — every -rre
+ *     verb is a compound of porre, trarre or -durre, and these are in everyday
+ *     use: *por fine*, *trar vantaggio*)
+ *
+ * and poetic otherwise.
+ */
+export const clippedKind = (
+  infinitive: string,
+  featurePath: string,
+  standard: string,
+): "clipped_common" | "clipped_poetic" =>
+  CLIPPED_COMMON[infinitive]?.includes(featurePath) ||
+  (featurePath === formPath(PATH.indi.pres, PERSON.p3) &&
+    standard.endsWith("nno")) ||
+  (featurePath === PATH.infi && standard.endsWith("rre"))
+    ? "clipped_common"
+    : "clipped_poetic"
+
+/**
+ * Makes every clipped form of a verb from its finished standard forms, with its
+ * kind. A slot with no standard form — a defective verb, a third-person-only
+ * verb — has none.
+ *
+ * formAt returns the verb's standard form at a path, or undefined.
+ *
+ * Returns, for avere:
+ *   { "inf.pres": ["clipped_common", "aver"],
+ *     "ind.pres.P3": ["clipped_common", "han"],
+ *     "ind.impf.P3": ["clipped_poetic", "avevan"], ... }
+ */
+export const clippedForms = (
+  infinitive: string,
+  formAt: (featurePath: string) => string | undefined,
+): Record<string, ["clipped_common" | "clipped_poetic", string]> => {
+  const out: Record<string, ["clipped_common" | "clipped_poetic", string]> = {}
+  const paths = new Set([...CLIPPED_SLOTS, ...(CLIPPED_COMMON[infinitive] ?? [])])
+  for (const featurePath of paths) {
+    const standard = formAt(featurePath)
+    if (!standard) continue
+    const clipped = clipForm(standard)
+    if (clipped)
+      out[featurePath] = [
+        clippedKind(infinitive, featurePath, standard),
+        clipped,
+      ]
+  }
+  return out
 }

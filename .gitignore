@@ -40,11 +40,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# reference lexicon — 19 MB, fetched not committed
+# local reference files and working notes — kept locally, not published
+# Morph-it (ISO-8859-1, read with latin1):
 # https://raw.githubusercontent.com/RosaeNLG/rosaenlg/master/packages/italian-verbs-dict/resources/morph-it_048.txt
-# Note: the file is ISO-8859-1, not UTF-8. Read it with latin1.
-resources/morph-it_048.txt
-
-# private working notes — kept locally, not published
+# Wiktionary Italian extract (wiktextract / kaikki.org, 771 MB):
+# https://kaikki.org/dictionary/Italian/kaikki.org-dictionary-Italian.jsonl
+/resources/
 /parked/
 /notes/

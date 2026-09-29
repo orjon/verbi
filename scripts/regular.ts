@@ -1,4 +1,4 @@
-import { CONJUGATION, ENDING, PATH, PERSON, PERSONS } from './vocabulary.ts';
+import { CONJUGATION, ENDING, GENDER, PATH, PERSON, PERSONS } from './vocabulary.ts';
 
 /**
  * The regular Italian paradigms, as documented in resources/regular-verbs.md.
@@ -9,6 +9,7 @@ import { CONJUGATION, ENDING, PATH, PERSON, PERSONS } from './vocabulary.ts';
  */
 type Person = (typeof PERSONS)[number];
 type Row = Partial<Record<Person, string>>;
+type GenderRow = Partial<Record<(typeof GENDER)[keyof typeof GENDER], string>>;
 
 const { are, ere, ire } = CONJUGATION;
 
@@ -49,15 +50,30 @@ const REGULAR_INFINITIVE = new RegExp(`^(.*)(${are}|${ere}|${ire})$`);
 /**
  * Italian keeps a consonant's sound constant across a paradigm, which changes
  * the spelling before `e` and `i`.
+ *
+ * For an -iare verb, the stem's `i` merges with an ending that starts with `i`
+ * (*studi-* + *-i* → *studi*), and after `c` or `g` it is only there to soften
+ * the consonant, so it drops before `e` and `i` (*cominci-* + *-erò* →
+ * *comincerò*). Where the stem's `i` is stressed (stressedI) it is a vowel in
+ * its own right and stays: *avvii*, *avviino*, *scii*, *scierò*. It still merges
+ * with -iamo and -iate (*avviamo*). Which verbs have a stressed `i` cannot be
+ * told from the spelling, so the caller says.
  */
-function spell(stem: string, ending: string, infinitive: string): string {
+function spell(stem: string, ending: string, infinitive: string, stressedI = false): string {
   const frontVowel = /^[ei]/.test(ending);
   const iare = 'i' + are;
   if (/[cg]$/.test(stem) && infinitive.endsWith(are) && frontVowel) return `${stem}h${ending}`;
-  if (/[cg]i$/.test(stem) && infinitive.endsWith(iare) && frontVowel) return stem.slice(0, -1) + ending;
+  if (stressedI && infinitive.endsWith(iare) && (ending === 'i' || ending === 'ino')) return stem + ending;
+  if (!stressedI && /[cg]i$/.test(stem) && infinitive.endsWith(iare) && frontVowel) return stem.slice(0, -1) + ending;
   if (/i$/.test(stem) && infinitive.endsWith(iare) && /^i/.test(ending)) return stem + ending.slice(1);
   return stem + ending;
 }
+
+/** The four gender and number forms of a participle, from its stem and endings. */
+const participle = (stem: string, endings: string[]): GenderRow =>
+  Object.fromEntries(
+    [GENDER.m, GENDER.f, GENDER.mp, GENDER.fp].map((g, i) => [g, stem + endings[i]]),
+  ) as GenderRow;
 
 /**
  * The stem the future and conditional are built on: the infinitive without its
@@ -70,8 +86,16 @@ export function futureStem(infinitive: string): string | null {
   return infinitive.endsWith(CONJUGATION.rre) ? infinitive.slice(0, -1) : null;
 }
 
-/** Every regular form of a verb, or null if its infinitive is not one of the three. */
-export function regularForms(infinitive: string, isc = false): Record<string, Row | string> | null {
+/**
+ * Every regular form of a verb, or null if its infinitive is not one of the
+ * three. isc: an -ire verb of the finire type. stressedI: an -iare verb whose
+ * stem `i` is stressed (*avviare* → *avvii*); see spell.
+ */
+export function regularForms(
+  infinitive: string,
+  isc = false,
+  stressedI = false,
+): Record<string, Row | GenderRow | string> | null {
   const m = infinitive.match(REGULAR_INFINITIVE);
   if (!m) return null;
   const [, stem, group] = m;
@@ -83,11 +107,13 @@ export function regularForms(infinitive: string, isc = false): Record<string, Ro
         [PATH.subj.pres]: ['isca', 'isca', 'isca', 'iamo', 'iate', 'iscano'],
         impr: { [PERSON.s2]: 'isci', [PERSON.p1]: 'iamo', [PERSON.p2]: 'ite' } }
     : base;
-  const fs = futureStem(infinitive)!;
+  const fs = stressedI && /[cg]i$/.test(stem) && group === are
+    ? stem + 'er'
+    : futureStem(infinitive)!;
 
   const row = (endings: readonly string[], base?: string): Row =>
     Object.fromEntries(PERSONS.map((person, i) =>
-      [person, base ? base + endings[i] : spell(stem, endings[i], infinitive)],
+      [person, base ? base + endings[i] : spell(stem, endings[i], infinitive, stressedI)],
     )) as Row;
 
   return {
@@ -99,9 +125,13 @@ export function regularForms(infinitive: string, isc = false): Record<string, Ro
     [PATH.subj.pres]: row(e[PATH.subj.pres]),
     [PATH.subj.impf]: row(e[PATH.subj.impf]),
     [PATH.impr.pres]: Object.fromEntries(
-      Object.entries(e.impr).map(([person, end]) => [person, spell(stem, end, infinitive)]),
+      Object.entries(e.impr).map(([person, end]) => [person, spell(stem, end, infinitive, stressedI)]),
     ) as Row,
-    [PATH.geru]: spell(stem, e.ger, infinitive),
+    [PATH.geru]: spell(stem, e.ger, infinitive, stressedI),
     [PATH.infi]: infinitive,
+    // The present participle has one singular and one plural for both genders
+    // (*parlante*, *parlanti*); the past participle has four (*parlato*, -a, -i, -e).
+    [PATH.part.pres]: participle(stem + e.partPres.slice(0, -1), ['e', 'e', 'i', 'i']),
+    [PATH.part.past]: participle(stem + e.partPast.slice(0, -1), ['o', 'a', 'i', 'e']),
   };
 }

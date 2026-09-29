@@ -1,926 +1,1608 @@
 {
- "assuefare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "assuefai"
-    ]
-   }
+ "accrescere": {
+  "ind.past.S1": {
+   "literary": ["accrescei"]
   }
  },
- "confare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "confai"
-    ]
-   }
+ "andare": {
+  "impr.pres.S2": {
+   "common": ["vai"]
+  }
+ },
+ "annettere": {
+  "ind.past.P3": {
+   "literary": ["annetterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["annettei"]
+  },
+  "ind.past.S3": {
+   "literary": ["annetté"]
+  }
+ },
+ "assistere": {
+  "ind.past.P3": {
+   "common": ["assisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["assistei"]
+  },
+  "ind.past.S3": {
+   "common": ["assisté"]
+  }
+ },
+ "assuefare": {
+  "impr.pres.S2": {
+   "common": ["assuefai"]
+  }
+ },
+ "co-presiedere": {
+  "ind.past.S3": {
+   "common": ["co-presiedette"]
   }
  },
  "cuocere": {
-  "ind": {
-   "past": {
-    "P1": [
-     "cocemmo"
-    ],
-    "P2": [
-     "coceste"
-    ],
-    "S2": [
-     "cocesti"
-    ]
-   },
-   "fut": {
-    "S2": [
-     "cocerai"
-    ],
-    "P3": [
-     "coceranno"
-    ],
-    "P1": [
-     "coceremo"
-    ],
-    "P2": [
-     "cocerete"
-    ],
-    "S3": [
-     "cocerà"
-    ],
-    "S1": [
-     "cocerò"
-    ]
-   },
-   "impf": {
-    "S3": [
-     "coceva"
-    ],
-    "P1": [
-     "cocevamo"
-    ],
-    "P3": [
-     "cocevano"
-    ],
-    "P2": [
-     "cocevate"
-    ],
-    "S2": [
-     "cocevi"
-    ],
-    "S1": [
-     "cocevo"
-    ]
-   }
+  "cond.pres.P1": {
+   "rare": ["coceremmo"]
   },
-  "ger": {
-   "pres": [
-    "cocendo"
-   ]
+  "cond.pres.P2": {
+   "rare": ["cocereste"]
   },
-  "cond": {
-   "pres": {
-    "S3": [
-     "cocerebbe"
-    ],
-    "P3": [
-     "cocerebbero"
-    ],
-    "S1": [
-     "cocerei"
-    ],
-    "P1": [
-     "coceremmo"
-    ],
-    "P2": [
-     "cocereste"
-    ],
-    "S2": [
-     "coceresti"
-    ]
-   }
+  "cond.pres.P3": {
+   "rare": ["cocerebbero"]
   },
-  "sub": {
-   "impf": {
-    "S3": [
-     "cocesse"
-    ],
-    "P3": [
-     "cocessero"
-    ],
-    "S1": [
-     "cocessi"
-    ],
-    "S2": [
-     "cocessi"
-    ],
-    "P1": [
-     "cocessimo"
-    ],
-    "P2": [
-     "coceste"
-    ]
-   },
-   "pres": {
-    "P1": [
-     "cociamo"
-    ],
-    "P2": [
-     "cociate"
-    ]
-   }
+  "cond.pres.S1": {
+   "rare": ["cocerei"]
   },
-  "impr": {
-   "pres": {
-    "P2": [
-     "cocete"
-    ],
-    "P1": [
-     "cociamo"
-    ]
-   }
+  "cond.pres.S2": {
+   "rare": ["coceresti"]
+  },
+  "cond.pres.S3": {
+   "rare": ["cocerebbe"]
+  },
+  "ger.pres": {
+   "rare": ["cocendo"]
+  },
+  "impr.pres.P1": {
+   "rare": ["cociamo"]
+  },
+  "impr.pres.P2": {
+   "rare": ["cocete"]
+  },
+  "ind.fut.P1": {
+   "rare": ["coceremo"]
+  },
+  "ind.fut.P2": {
+   "rare": ["cocerete"]
+  },
+  "ind.fut.P3": {
+   "rare": ["coceranno"]
+  },
+  "ind.fut.S1": {
+   "rare": ["cocerò"]
+  },
+  "ind.fut.S2": {
+   "rare": ["cocerai"]
+  },
+  "ind.fut.S3": {
+   "rare": ["cocerà"]
+  },
+  "ind.impf.P1": {
+   "rare": ["cocevamo"]
+  },
+  "ind.impf.P2": {
+   "rare": ["cocevate"]
+  },
+  "ind.impf.P3": {
+   "rare": ["cocevano"]
+  },
+  "ind.impf.S1": {
+   "rare": ["cocevo"]
+  },
+  "ind.impf.S2": {
+   "rare": ["cocevi"]
+  },
+  "ind.impf.S3": {
+   "rare": ["coceva"]
+  },
+  "ind.past.P1": {
+   "rare": ["cocemmo"]
+  },
+  "ind.past.P2": {
+   "rare": ["coceste"]
+  },
+  "ind.past.S2": {
+   "rare": ["cocesti"]
+  },
+  "sub.impf.P1": {
+   "rare": ["cocessimo"]
+  },
+  "sub.impf.P2": {
+   "rare": ["coceste"]
+  },
+  "sub.impf.P3": {
+   "rare": ["cocessero"]
+  },
+  "sub.impf.S1": {
+   "rare": ["cocessi"]
+  },
+  "sub.impf.S2": {
+   "rare": ["cocessi"]
+  },
+  "sub.impf.S3": {
+   "rare": ["cocesse"]
+  },
+  "sub.pres.P1": {
+   "rare": ["cociamo"]
+  },
+  "sub.pres.P2": {
+   "rare": ["cociate"]
+  }
+ },
+ "coesistere": {
+  "ind.past.P3": {
+   "common": ["coesisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["coesistei"]
+  },
+  "ind.past.S3": {
+   "common": ["coesisté"]
+  }
+ },
+ "concedere": {
+  "ind.past.P3": {
+   "common": ["concedettero"]
+  },
+  "ind.past.S1": {
+   "common": ["concedetti"]
+  },
+  "ind.past.S3": {
+   "common": ["concedette"]
+  }
+ },
+ "confare": {
+  "impr.pres.S2": {
+   "common": ["confai"]
+  }
+ },
+ "connettere": {
+  "ind.past.P3": {
+   "literary": ["connetterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["connettei"]
+  },
+  "ind.past.S3": {
+   "literary": ["connetté"]
+  }
+ },
+ "consentire": {
+  "part.pres.P": {
+   "common": ["consenzienti"]
+  },
+  "part.pres.PF": {
+   "common": ["consenzienti"]
+  },
+  "part.pres.S": {
+   "common": ["consenziente"]
+  },
+  "part.pres.SF": {
+   "common": ["consenziente"]
+  }
+ },
+ "consistere": {
+  "ind.past.P3": {
+   "common": ["consisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["consistei"]
+  },
+  "ind.past.S3": {
+   "common": ["consisté"]
+  }
+ },
+ "crescere": {
+  "ind.past.S1": {
+   "literary": ["crescei"]
+  }
+ },
+ "credere": {
+  "ind.past.P3": {
+   "common": ["crederono"]
+  },
+  "ind.past.S1": {
+   "common": ["credei"]
+  },
+  "ind.past.S3": {
+   "common": ["credé"]
   }
  },
  "dare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "da'"
-    ]
-   }
+  "impr.pres.S2": {
+   "common": ["da'"]
+  },
+  "ind.past.P3": {
+   "common": ["dettero"]
+  },
+  "ind.past.S1": {
+   "common": ["detti"]
+  },
+  "ind.past.S3": {
+   "common": ["dette"]
+  }
+ },
+ "dovere": {
+  "ind.past.P3": {
+   "common": ["doverono"]
+  },
+  "ind.past.S1": {
+   "common": ["dovei"]
+  },
+  "ind.past.S3": {
+   "common": ["dové"]
+  },
+  "ind.pres.P3": {
+   "formal": ["debbono"]
+  }
+ },
+ "decrescere": {
+  "ind.past.S1": {
+   "literary": ["decrescei"]
+  }
+ },
+ "deflettere": {
+  "ind.past.P3": {
+   "literary": ["defletterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["deflettei"]
+  },
+  "ind.past.S3": {
+   "literary": ["defletté"]
+  }
+ },
+ "desistere": {
+  "ind.past.P3": {
+   "common": ["desisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["desistei"]
+  },
+  "ind.past.S3": {
+   "common": ["desisté"]
+  }
+ },
+ "dirimere": {
+  "ind.past.P3": {
+   "common": ["dirimerono"]
+  },
+  "ind.past.S1": {
+   "common": ["dirimei"]
+  },
+  "ind.past.S3": {
+   "common": ["dirimé"]
+  }
+ },
+ "discernere": {
+  "ind.past.S3": {
+   "common": ["discernette"]
+  }
+ },
+ "disconnettere": {
+  "ind.past.P3": {
+   "literary": ["disconnetterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["disconnettei"]
+  },
+  "ind.past.S3": {
+   "literary": ["disconnetté"]
+  }
+ },
+ "discutere": {
+  "ind.past.P3": {
+   "literary": ["discuterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["discutei"]
+  },
+  "ind.past.S3": {
+   "literary": ["discuté"]
   }
  },
  "disfare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "disfa",
-     "disfai"
-    ],
-    "P1": [
-     "disfiamo"
-    ]
-   }
+  "cond.pres.P1": {
+   "colloquial": ["disferemmo"]
   },
-  "sub": {
-   "pres": {
-    "S1": [
-     "disfi"
-    ],
-    "S2": [
-     "disfi"
-    ],
-    "S3": [
-     "disfi"
-    ],
-    "P1": [
-     "disfiamo"
-    ],
-    "P3": [
-     "disfino"
-    ],
-    "P2": [
-     "disfiate"
-    ]
-   }
+  "cond.pres.P2": {
+   "colloquial": ["disfereste"]
   },
-  "ind": {
-   "pres": {
-    "P1": [
-     "disfiamo"
-    ],
-    "S1": [
-     "disfo"
-    ],
-    "S2": [
-     "disfi"
-    ],
-    "P3": [
-     "disfano"
-    ]
-   },
-   "fut": {
-    "S2": [
-     "disferai"
-    ],
-    "P3": [
-     "disferanno"
-    ],
-    "P1": [
-     "disferemo"
-    ],
-    "P2": [
-     "disferete"
-    ],
-    "S3": [
-     "disferà"
-    ],
-    "S1": [
-     "disferò"
-    ]
-   }
+  "cond.pres.P3": {
+   "colloquial": ["disferebbero"]
   },
-  "cond": {
-   "pres": {
-    "S3": [
-     "disferebbe"
-    ],
-    "P3": [
-     "disferebbero"
-    ],
-    "S1": [
-     "disferei"
-    ],
-    "P1": [
-     "disferemmo"
-    ],
-    "P2": [
-     "disfereste"
-    ],
-    "S2": [
-     "disferesti"
-    ]
-   }
+  "cond.pres.S1": {
+   "colloquial": ["disferei"]
+  },
+  "cond.pres.S2": {
+   "colloquial": ["disferesti"]
+  },
+  "cond.pres.S3": {
+   "colloquial": ["disferebbe"]
+  },
+  "impr.pres.P1": {
+   "colloquial": ["disfiamo"]
+  },
+  "impr.pres.S2": {
+   "common": ["disfai"],
+   "colloquial": ["disfa"]
+  },
+  "ind.fut.P1": {
+   "colloquial": ["disferemo"]
+  },
+  "ind.fut.P2": {
+   "colloquial": ["disferete"]
+  },
+  "ind.fut.P3": {
+   "colloquial": ["disferanno"]
+  },
+  "ind.fut.S1": {
+   "colloquial": ["disferò"]
+  },
+  "ind.fut.S2": {
+   "colloquial": ["disferai"]
+  },
+  "ind.fut.S3": {
+   "colloquial": ["disferà"]
+  },
+  "ind.pres.P1": {
+   "colloquial": ["disfiamo"]
+  },
+  "ind.pres.P3": {
+   "colloquial": ["disfano"]
+  },
+  "ind.pres.S1": {
+   "colloquial": ["disfo"]
+  },
+  "ind.pres.S2": {
+   "colloquial": ["disfi"]
+  },
+  "sub.pres.P1": {
+   "colloquial": ["disfiamo"]
+  },
+  "sub.pres.P2": {
+   "colloquial": ["disfiate"]
+  },
+  "sub.pres.P3": {
+   "colloquial": ["disfino"]
+  },
+  "sub.pres.S1": {
+   "colloquial": ["disfi"]
+  },
+  "sub.pres.S2": {
+   "colloquial": ["disfi"]
+  },
+  "sub.pres.S3": {
+   "colloquial": ["disfi"]
+  }
+ },
+ "disseppellire": {
+  "part.past.P": {
+   "common": ["disseppelliti"]
+  },
+  "part.past.PF": {
+   "common": ["disseppellite"]
+  },
+  "part.past.S": {
+   "common": ["disseppellito"]
+  },
+  "part.past.SF": {
+   "common": ["disseppellita"]
+  }
+ },
+ "eccedere": {
+  "ind.past.S3": {
+   "common": ["eccedé"]
+  }
+ },
+ "esigere": {
+  "ind.past.P3": {
+   "common": ["esigerono"]
+  },
+  "ind.past.S1": {
+   "common": ["esigei"]
+  },
+  "ind.past.S3": {
+   "common": ["esigé"]
+  }
+ },
+ "esistere": {
+  "ind.past.P3": {
+   "common": ["esisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["esistei"]
+  },
+  "ind.past.S3": {
+   "common": ["esisté"]
   }
  },
  "fare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "fai"
-    ]
-   }
+  "impr.pres.S2": {
+   "common": ["fai"]
+  }
+ },
+ "flettere": {
+  "ind.past.P3": {
+   "literary": ["fletterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["flettei"]
+  },
+  "ind.past.S3": {
+   "literary": ["fletté"]
+  }
+ },
+ "genuflettere": {
+  "ind.past.P3": {
+   "literary": ["genufletterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["genuflettei"]
+  },
+  "ind.past.S3": {
+   "literary": ["genufletté"]
+  }
+ },
+ "godere": {
+  "ind.past.S3": {
+   "common": ["godette"]
+  }
+ },
+ "incartapecorire": {
+  "ind.pres.P3": {
+   "common": ["incartapecorono"]
+  },
+  "ind.pres.S1": {
+   "common": ["incartapecoro"]
+  },
+  "sub.pres.P3": {
+   "common": ["incartapecorano"]
+  },
+  "sub.pres.S1": {
+   "common": ["incartapecora"]
+  },
+  "sub.pres.S2": {
+   "common": ["incartapecora"]
+  },
+  "sub.pres.S3": {
+   "common": ["incartapecora"]
+  }
+ },
+ "incedere": {
+  "ind.past.S3": {
+   "common": ["incedé"]
+  }
+ },
+ "incombere": {
+  "ind.past.P3": {
+   "common": ["incomberono"]
+  },
+  "ind.past.S3": {
+   "common": ["incombé"]
+  }
+ },
+ "incutere": {
+  "ind.past.P3": {
+   "literary": ["incuterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["incutei"]
+  },
+  "ind.past.S3": {
+   "literary": ["incuté"]
+  }
+ },
+ "inferire": {
+  "ind.past.P3": {
+   "sense": ["infersero"]
+  },
+  "ind.past.S1": {
+   "sense": ["infersi"]
+  },
+  "ind.past.S3": {
+   "sense": ["inferse"]
+  },
+  "part.past.P": {
+   "sense": ["inferti"]
+  },
+  "part.past.PF": {
+   "sense": ["inferte"]
+  },
+  "part.past.S": {
+   "sense": ["inferto"]
+  },
+  "part.past.SF": {
+   "sense": ["inferta"]
+  }
+ },
+ "insistere": {
+  "ind.past.P3": {
+   "common": ["insisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["insistei"]
+  },
+  "ind.past.S3": {
+   "common": ["insisté"]
+  }
+ },
+ "intercedere": {
+  "ind.past.S3": {
+   "common": ["intercedé"]
   }
  },
  "liquefare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "liquefai"
-    ]
-   }
+  "impr.pres.S2": {
+   "common": ["liquefai"]
   }
  },
  "nuocere": {
-  "part": {
-   "past": {
-    "S": [
-     "nuociuto"
-    ]
-   }
+  "impr.pres.P1": {
+   "rare": ["nociamo"]
   },
-  "sub": {
-   "pres": {
-    "S1": [
-     "noccia"
-    ],
-    "S2": [
-     "noccia"
-    ],
-    "S3": [
-     "noccia"
-    ],
-    "P3": [
-     "nocciano"
-    ],
-    "P1": [
-     "nociamo"
-    ],
-    "P2": [
-     "nociate"
-    ]
-   }
+  "impr.pres.P2": {
+   "rare": ["nocete"]
   },
-  "ind": {
-   "pres": {
-    "S1": [
-     "noccio"
-    ],
-    "P3": [
-     "nocciono"
-    ],
-    "P2": [
-     "nocete"
-    ],
-    "P1": [
-     "nociamo"
-    ]
-   },
-   "past": {
-    "P1": [
-     "nocemmo"
-    ],
-    "P2": [
-     "noceste"
-    ],
-    "S2": [
-     "nocesti"
-    ]
-   }
+  "ind.past.P1": {
+   "rare": ["nocemmo"]
   },
-  "impr": {
-   "pres": {
-    "P2": [
-     "nocete"
-    ],
-    "P1": [
-     "nociamo"
-    ]
-   }
+  "ind.past.P2": {
+   "rare": ["noceste"]
+  },
+  "ind.past.S2": {
+   "rare": ["nocesti"]
+  },
+  "ind.pres.P1": {
+   "rare": ["nociamo"]
+  },
+  "ind.pres.P2": {
+   "rare": ["nocete"]
+  },
+  "ind.pres.P3": {
+   "rare": ["nocciono"]
+  },
+  "ind.pres.S1": {
+   "rare": ["noccio"]
+  },
+  "part.past.S": {
+   "rare": ["nuociuto"]
+  },
+  "sub.pres.P1": {
+   "rare": ["nociamo"]
+  },
+  "sub.pres.P2": {
+   "rare": ["nociate"]
+  },
+  "sub.pres.P3": {
+   "rare": ["nocciano"]
+  },
+  "sub.pres.S1": {
+   "rare": ["noccia"]
+  },
+  "sub.pres.S2": {
+   "rare": ["noccia"]
+  },
+  "sub.pres.S3": {
+   "rare": ["noccia"]
+  }
+ },
+ "pascere": {
+  "ind.past.P3": {
+   "common": ["pascerono"]
+  },
+  "ind.past.S1": {
+   "common": ["pascei"]
+  },
+  "ind.past.S3": {
+   "common": ["pascé"]
+  }
+ },
+ "pendere": {
+  "ind.past.P3": {
+   "common": ["penderono"]
+  },
+  "ind.past.S1": {
+   "common": ["pendei"]
+  },
+  "ind.past.S3": {
+   "common": ["pendé"]
   }
  },
  "percuotere": {
-  "ind": {
-   "pres": {
-    "P2": [
-     "percotete"
-    ],
-    "P1": [
-     "percotiamo"
-    ]
-   },
-   "past": {
-    "P1": [
-     "percotemmo"
-    ],
-    "P2": [
-     "percoteste"
-    ],
-    "S2": [
-     "percotesti"
-    ]
-   },
-   "impf": {
-    "S3": [
-     "percoteva"
-    ],
-    "P1": [
-     "percotevamo"
-    ],
-    "P3": [
-     "percotevano"
-    ],
-    "P2": [
-     "percotevate"
-    ],
-    "S2": [
-     "percotevi"
-    ],
-    "S1": [
-     "percotevo"
-    ]
-   }
+  "impr.pres.P1": {
+   "rare": ["percotiamo"]
   },
-  "impr": {
-   "pres": {
-    "P2": [
-     "percotete"
-    ],
-    "P1": [
-     "percotiamo"
-    ]
-   }
+  "impr.pres.P2": {
+   "rare": ["percotete"]
   },
-  "sub": {
-   "impf": {
-    "S3": [
-     "percotesse"
-    ],
-    "P3": [
-     "percotessero"
-    ],
-    "S1": [
-     "percotessi"
-    ],
-    "S2": [
-     "percotessi"
-    ],
-    "P1": [
-     "percotessimo"
-    ],
-    "P2": [
-     "percoteste"
-    ]
-   },
-   "pres": {
-    "P1": [
-     "percotiamo"
-    ],
-    "P2": [
-     "percotiate"
-    ]
-   }
+  "ind.impf.P1": {
+   "rare": ["percotevamo"]
+  },
+  "ind.impf.P2": {
+   "rare": ["percotevate"]
+  },
+  "ind.impf.P3": {
+   "rare": ["percotevano"]
+  },
+  "ind.impf.S1": {
+   "rare": ["percotevo"]
+  },
+  "ind.impf.S2": {
+   "rare": ["percotevi"]
+  },
+  "ind.impf.S3": {
+   "rare": ["percoteva"]
+  },
+  "ind.past.P1": {
+   "rare": ["percotemmo"]
+  },
+  "ind.past.P2": {
+   "rare": ["percoteste"]
+  },
+  "ind.past.S2": {
+   "rare": ["percotesti"]
+  },
+  "ind.pres.P1": {
+   "rare": ["percotiamo"]
+  },
+  "ind.pres.P2": {
+   "rare": ["percotete"]
+  },
+  "sub.impf.P1": {
+   "rare": ["percotessimo"]
+  },
+  "sub.impf.P2": {
+   "rare": ["percoteste"]
+  },
+  "sub.impf.P3": {
+   "rare": ["percotessero"]
+  },
+  "sub.impf.S1": {
+   "rare": ["percotessi"]
+  },
+  "sub.impf.S2": {
+   "rare": ["percotessi"]
+  },
+  "sub.impf.S3": {
+   "rare": ["percotesse"]
+  },
+  "sub.pres.P1": {
+   "rare": ["percotiamo"]
+  },
+  "sub.pres.P2": {
+   "rare": ["percotiate"]
+  }
+ },
+ "perdere": {
+  "part.past.P": {
+   "common": ["perduti"]
+  },
+  "part.past.PF": {
+   "common": ["perdute"]
+  },
+  "part.past.S": {
+   "common": ["perduto"]
+  },
+  "part.past.SF": {
+   "common": ["perduta"]
+  }
+ },
+ "persistere": {
+  "ind.past.P3": {
+   "common": ["persisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["persistei"]
+  },
+  "ind.past.S3": {
+   "common": ["persisté"]
   }
  },
  "possedere": {
-  "part": {
-   "pres": {
-    "S": [
-     "possedente"
-    ],
-    "SF": [
-     "possedente"
-    ],
-    "P": [
-     "possedenti"
-    ],
-    "PF": [
-     "possedenti"
-    ]
-   }
+  "cond.pres.P1": {
+   "formal": ["possederemmo"]
   },
-  "sub": {
-   "pres": {
-    "P3": [
-     "posseggano"
-    ],
-    "S3": [
-     "possegga"
-    ]
-   }
+  "cond.pres.P2": {
+   "formal": ["possedereste"]
   },
-  "ind": {
-   "fut": {
-    "S2": [
-     "possederai"
-    ],
-    "P3": [
-     "possederanno"
-    ],
-    "P1": [
-     "possederemo"
-    ],
-    "P2": [
-     "possederete"
-    ],
-    "S1": [
-     "possederò"
-    ],
-    "S3": [
-     "possederà"
-    ]
-   },
-   "pres": {
-    "S1": [
-     "posseggo"
-    ],
-    "P3": [
-     "posseggono"
-    ]
-   }
+  "cond.pres.P3": {
+   "formal": ["possederebbero"]
   },
-  "cond": {
-   "pres": {
-    "S3": [
-     "possederebbe"
-    ],
-    "P3": [
-     "possederebbero"
-    ],
-    "S1": [
-     "possederei"
-    ],
-    "P1": [
-     "possederemmo"
-    ],
-    "P2": [
-     "possedereste"
-    ],
-    "S2": [
-     "possederesti"
-    ]
-   }
+  "cond.pres.S1": {
+   "formal": ["possederei"]
+  },
+  "cond.pres.S2": {
+   "formal": ["possederesti"]
+  },
+  "cond.pres.S3": {
+   "formal": ["possederebbe"]
+  },
+  "ind.fut.P1": {
+   "formal": ["possederemo"]
+  },
+  "ind.fut.P2": {
+   "formal": ["possederete"]
+  },
+  "ind.fut.P3": {
+   "formal": ["possederanno"]
+  },
+  "ind.fut.S1": {
+   "formal": ["possederò"]
+  },
+  "ind.fut.S2": {
+   "formal": ["possederai"]
+  },
+  "ind.fut.S3": {
+   "formal": ["possederà"]
+  },
+  "ind.pres.P3": {
+   "literary": ["posseggono"]
+  },
+  "ind.pres.S1": {
+   "literary": ["posseggo"]
+  },
+  "part.pres.P": {
+   "rare": ["possedenti"]
+  },
+  "part.pres.PF": {
+   "rare": ["possedenti"]
+  },
+  "part.pres.S": {
+   "rare": ["possedente"]
+  },
+  "part.pres.SF": {
+   "rare": ["possedente"]
+  },
+  "sub.pres.P3": {
+   "literary": ["posseggano"]
+  },
+  "sub.pres.S3": {
+   "literary": ["possegga"]
+  }
+ },
+ "preesistere": {
+  "ind.past.P3": {
+   "common": ["preesisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["preesistei"]
+  },
+  "ind.past.S3": {
+   "common": ["preesisté"]
+  }
+ },
+ "premere": {
+  "ind.past.P3": {
+   "common": ["premerono"]
+  },
+  "ind.past.S1": {
+   "common": ["premei"]
+  }
+ },
+ "premorire": {
+  "cond.pres.P1": {
+   "common": ["premorremmo"]
+  },
+  "cond.pres.P2": {
+   "common": ["premorreste"]
+  },
+  "cond.pres.P3": {
+   "common": ["premorrebbero"]
+  },
+  "cond.pres.S1": {
+   "common": ["premorrei"]
+  },
+  "cond.pres.S2": {
+   "common": ["premorresti"]
+  },
+  "cond.pres.S3": {
+   "common": ["premorrebbe"]
+  },
+  "ind.fut.P1": {
+   "common": ["premorremo"]
+  },
+  "ind.fut.P2": {
+   "common": ["premorrete"]
+  },
+  "ind.fut.P3": {
+   "common": ["premorranno"]
+  },
+  "ind.fut.S1": {
+   "common": ["premorrò"]
+  },
+  "ind.fut.S2": {
+   "common": ["premorrai"]
+  },
+  "ind.fut.S3": {
+   "common": ["premorrà"]
+  },
+  "ind.pres.P3": {
+   "common": ["premorono"]
+  },
+  "ind.pres.S1": {
+   "common": ["premoro"]
+  },
+  "sub.pres.P3": {
+   "common": ["premorano"]
+  },
+  "sub.pres.S1": {
+   "common": ["premora"]
+  }
+ },
+ "presiedere": {
+  "ind.past.S3": {
+   "common": ["presiedé"]
+  }
+ },
+ "procombere": {
+  "ind.past.P3": {
+   "common": ["procomberono"]
+  },
+  "ind.past.S1": {
+   "common": ["procombei"]
+  },
+  "ind.past.S3": {
+   "common": ["procombé"]
+  }
+ },
+ "prudere": {
+  "ind.past.S3": {
+   "common": ["prudette"]
+  }
+ },
+ "putire": {
+  "ind.pres.P3": {
+   "common": ["putono"]
+  },
+  "ind.pres.S1": {
+   "common": ["puto"]
+  },
+  "ind.pres.S3": {
+   "common": ["pute"]
+  },
+  "sub.pres.P3": {
+   "common": ["putano"]
+  },
+  "sub.pres.S1": {
+   "common": ["puta"]
+  },
+  "sub.pres.S2": {
+   "common": ["puta"]
+  },
+  "sub.pres.S3": {
+   "common": ["puta"]
   }
  },
  "putrefare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "putrefai"
-    ]
-   }
+  "impr.pres.S2": {
+   "common": ["putrefai"]
+  }
+ },
+ "radioassistere": {
+  "ind.past.P3": {
+   "common": ["radioassisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["radioassistei"]
+  },
+  "ind.past.S3": {
+   "common": ["radioassisté"]
   }
  },
  "rarefare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "rarefai"
-    ]
-   }
+  "impr.pres.S2": {
+   "common": ["rarefai"]
+  }
+ },
+ "recedere": {
+  "ind.past.S3": {
+   "common": ["recedé"]
+  }
+ },
+ "redigere": {
+  "ind.past.P3": {
+   "literary": ["redigerono"]
+  },
+  "ind.past.S1": {
+   "literary": ["redigei"]
+  },
+  "ind.past.S3": {
+   "literary": ["redigé"]
+  }
+ },
+ "resistere": {
+  "ind.past.P3": {
+   "common": ["resisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["resistei"]
+  },
+  "ind.past.S3": {
+   "common": ["resisté"]
+  }
+ },
+ "retrocedere": {
+  "ind.past.S3": {
+   "common": ["retrocedé"]
+  }
+ },
+ "riandare": {
+  "impr.pres.S2": {
+   "common": ["rivai"]
+  }
+ },
+ "riannettere": {
+  "ind.past.P3": {
+   "literary": ["riannetterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["riannettei"]
+  },
+  "ind.past.S3": {
+   "literary": ["riannetté"]
+  }
+ },
+ "ricedere": {
+  "ind.past.S3": {
+   "common": ["ricedé"]
+  }
+ },
+ "ricevere": {
+  "ind.past.P3": {
+   "common": ["riceverono"]
+  },
+  "ind.past.S1": {
+   "common": ["ricevei"]
+  },
+  "ind.past.S3": {
+   "common": ["ricevé"]
+  }
+ },
+ "riconnettere": {
+  "ind.past.P3": {
+   "literary": ["riconnetterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["riconnettei"]
+  },
+  "ind.past.S3": {
+   "literary": ["riconnetté"]
+  }
+ },
+ "ricuocere": {
+  "ind.past.P3": {
+   "literary": ["ricuocerono"]
+  },
+  "ind.past.S1": {
+   "literary": ["ricuocei"]
+  },
+  "ind.past.S3": {
+   "literary": ["ricuocé"]
+  }
+ },
+ "ricrescere": {
+  "ind.past.S1": {
+   "literary": ["ricrescei"]
+  }
+ },
+ "ricredere": {
+  "ind.past.P3": {
+   "common": ["ricrederono"]
+  },
+  "ind.past.S1": {
+   "common": ["ricredei"]
+  },
+  "ind.past.S3": {
+   "common": ["ricredé"]
+  }
+ },
+ "ridare": {
+  "impr.pres.S2": {
+   "common": ["rida'"]
+  }
+ },
+ "ridire": {
+  "impr.pres.S2": {
+   "colloquial": ["ridici"]
+  }
+ },
+ "riesplodere": {
+  "ind.past.P3": {
+   "literary": ["riesploderono"]
+  },
+  "ind.past.S1": {
+   "literary": ["riesplodei"]
+  },
+  "ind.past.S3": {
+   "literary": ["riesplodé"]
   }
  },
  "rifare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "rifai"
-    ]
-   }
+  "impr.pres.S2": {
+   "common": ["rifai"]
+  }
+ },
+ "riudire": {
+  "cond.pres.P1": {
+   "common": ["riudremmo"]
+  },
+  "cond.pres.P2": {
+   "common": ["riudreste"]
+  },
+  "cond.pres.P3": {
+   "common": ["riudrebbero"]
+  },
+  "cond.pres.S1": {
+   "common": ["riudrei"]
+  },
+  "cond.pres.S2": {
+   "common": ["riudresti"]
+  },
+  "cond.pres.S3": {
+   "common": ["riudrebbe"]
+  },
+  "ind.fut.P1": {
+   "common": ["riudremo"]
+  },
+  "ind.fut.P2": {
+   "common": ["riudrete"]
+  },
+  "ind.fut.P3": {
+   "common": ["riudranno"]
+  },
+  "ind.fut.S1": {
+   "common": ["riudrò"]
+  },
+  "ind.fut.S2": {
+   "common": ["riudrai"]
+  },
+  "ind.fut.S3": {
+   "common": ["riudrà"]
+  }
+ },
+ "ripartire": {
+  "ind.pres.P3": {
+   "sense": ["ripartiscono"]
+  },
+  "ind.pres.S1": {
+   "sense": ["ripartisco"]
+  },
+  "ind.pres.S3": {
+   "sense": ["ripartisce"]
+  },
+  "sub.pres.P3": {
+   "sense": ["ripartiscano"]
+  },
+  "sub.pres.S1": {
+   "sense": ["ripartisca"]
+  },
+  "sub.pres.S2": {
+   "sense": ["ripartisca"]
+  },
+  "sub.pres.S3": {
+   "sense": ["ripartisca"]
+  }
+ },
+ "ripercuotere": {
+  "ind.past.P1": {
+   "rare": ["ripercotemmo"]
   }
  },
  "riscuotere": {
-  "ind": {
-   "pres": {
-    "P2": [
-     "riscotete"
-    ],
-    "P1": [
-     "riscotiamo"
-    ]
-   },
-   "past": {
-    "P1": [
-     "riscotemmo"
-    ],
-    "P2": [
-     "riscoteste"
-    ],
-    "S2": [
-     "riscotesti"
-    ]
-   },
-   "impf": {
-    "S3": [
-     "riscoteva"
-    ],
-    "P1": [
-     "riscotevamo"
-    ],
-    "P3": [
-     "riscotevano"
-    ],
-    "P2": [
-     "riscotevate"
-    ],
-    "S2": [
-     "riscotevi"
-    ],
-    "S1": [
-     "riscotevo"
-    ]
-   }
+  "impr.pres.P1": {
+   "rare": ["riscotiamo"]
   },
-  "impr": {
-   "pres": {
-    "P2": [
-     "riscotete"
-    ],
-    "P1": [
-     "riscotiamo"
-    ]
-   }
+  "impr.pres.P2": {
+   "rare": ["riscotete"]
   },
-  "sub": {
-   "impf": {
-    "S3": [
-     "riscotesse"
-    ],
-    "P3": [
-     "riscotessero"
-    ],
-    "S1": [
-     "riscotessi"
-    ],
-    "S2": [
-     "riscotessi"
-    ],
-    "P1": [
-     "riscotessimo"
-    ],
-    "P2": [
-     "riscoteste"
-    ]
-   },
-   "pres": {
-    "P1": [
-     "riscotiamo"
-    ],
-    "P2": [
-     "riscotiate"
-    ]
-   }
+  "ind.impf.P1": {
+   "rare": ["riscotevamo"]
+  },
+  "ind.impf.P2": {
+   "rare": ["riscotevate"]
+  },
+  "ind.impf.P3": {
+   "rare": ["riscotevano"]
+  },
+  "ind.impf.S1": {
+   "rare": ["riscotevo"]
+  },
+  "ind.impf.S2": {
+   "rare": ["riscotevi"]
+  },
+  "ind.impf.S3": {
+   "rare": ["riscoteva"]
+  },
+  "ind.past.P1": {
+   "rare": ["riscotemmo"]
+  },
+  "ind.past.P2": {
+   "rare": ["riscoteste"]
+  },
+  "ind.past.S2": {
+   "rare": ["riscotesti"]
+  },
+  "ind.pres.P1": {
+   "rare": ["riscotiamo"]
+  },
+  "ind.pres.P2": {
+   "rare": ["riscotete"]
+  },
+  "sub.impf.P1": {
+   "rare": ["riscotessimo"]
+  },
+  "sub.impf.P2": {
+   "rare": ["riscoteste"]
+  },
+  "sub.impf.P3": {
+   "rare": ["riscotessero"]
+  },
+  "sub.impf.S1": {
+   "rare": ["riscotessi"]
+  },
+  "sub.impf.S2": {
+   "rare": ["riscotessi"]
+  },
+  "sub.impf.S3": {
+   "rare": ["riscotesse"]
+  },
+  "sub.pres.P1": {
+   "rare": ["riscotiamo"]
+  },
+  "sub.pres.P2": {
+   "rare": ["riscotiate"]
   }
  },
  "risedere": {
-  "ind": {
-   "fut": {
-    "S2": [
-     "risederai"
-    ],
-    "P3": [
-     "risederanno"
-    ],
-    "P1": [
-     "risederemo"
-    ],
-    "P2": [
-     "risederete"
-    ],
-    "S1": [
-     "risederò"
-    ],
-    "S3": [
-     "risederà"
-    ]
-   },
-   "pres": {
-    "S1": [
-     "riseggo"
-    ],
-    "P3": [
-     "riseggono"
-    ]
-   }
+  "cond.pres.P1": {
+   "formal": ["risederemmo"]
   },
-  "cond": {
-   "pres": {
-    "S3": [
-     "risederebbe"
-    ],
-    "P3": [
-     "risederebbero"
-    ],
-    "S1": [
-     "risederei"
-    ],
-    "P1": [
-     "risederemmo"
-    ],
-    "P2": [
-     "risedereste"
-    ],
-    "S2": [
-     "risederesti"
-    ]
-   }
+  "cond.pres.P2": {
+   "formal": ["risedereste"]
+  },
+  "cond.pres.P3": {
+   "formal": ["risederebbero"]
+  },
+  "cond.pres.S1": {
+   "formal": ["risederei"]
+  },
+  "cond.pres.S2": {
+   "formal": ["risederesti"]
+  },
+  "cond.pres.S3": {
+   "formal": ["risederebbe"]
+  },
+  "ind.fut.P1": {
+   "formal": ["risederemo"]
+  },
+  "ind.fut.P2": {
+   "formal": ["risederete"]
+  },
+  "ind.fut.P3": {
+   "formal": ["risederanno"]
+  },
+  "ind.fut.S1": {
+   "formal": ["risederò"]
+  },
+  "ind.fut.S2": {
+   "formal": ["risederai"]
+  },
+  "ind.fut.S3": {
+   "formal": ["risederà"]
+  },
+  "ind.pres.P3": {
+   "literary": ["riseggono"]
+  },
+  "ind.pres.S1": {
+   "literary": ["riseggo"]
+  }
+ },
+ "risiedere": {
+  "ind.past.S3": {
+   "common": ["risiedé"]
+  }
+ },
+ "risplendere": {
+  "ind.past.P3": {
+   "common": ["risplenderono"]
+  },
+  "ind.past.S1": {
+   "common": ["risplendei"]
+  },
+  "ind.past.S3": {
+   "common": ["risplendé"]
+  }
+ },
+ "scernere": {
+  "ind.past.S3": {
+   "common": ["scernette"]
+  }
+ },
+ "scompartire": {
+  "ind.pres.P3": {
+   "common": ["scompartono"]
+  },
+  "ind.pres.S1": {
+   "common": ["scomparto"]
+  },
+  "sub.pres.P3": {
+   "common": ["scompartano"]
+  },
+  "sub.pres.S1": {
+   "common": ["scomparta"]
+  },
+  "sub.pres.S2": {
+   "common": ["scomparta"]
+  },
+  "sub.pres.S3": {
+   "common": ["scomparta"]
+  }
+ },
+ "sconnettere": {
+  "ind.past.P3": {
+   "literary": ["sconnetterono"]
+  },
+  "ind.past.S1": {
+   "literary": ["sconnettei"]
+  },
+  "ind.past.S3": {
+   "literary": ["sconnetté"]
   }
  },
  "scuotere": {
-  "ind": {
-   "pres": {
-    "P2": [
-     "scotete"
-    ],
-    "P1": [
-     "scotiamo"
-    ]
-   },
-   "past": {
-    "P1": [
-     "scotemmo"
-    ],
-    "P2": [
-     "scoteste"
-    ],
-    "S2": [
-     "scotesti"
-    ]
-   },
-   "impf": {
-    "S3": [
-     "scoteva"
-    ],
-    "P1": [
-     "scotevamo"
-    ],
-    "P3": [
-     "scotevano"
-    ],
-    "P2": [
-     "scotevate"
-    ],
-    "S2": [
-     "scotevi"
-    ],
-    "S1": [
-     "scotevo"
-    ]
-   }
+  "impr.pres.P1": {
+   "rare": ["scotiamo"]
   },
-  "impr": {
-   "pres": {
-    "P2": [
-     "scotete"
-    ],
-    "P1": [
-     "scotiamo"
-    ]
-   }
+  "impr.pres.P2": {
+   "rare": ["scotete"]
   },
-  "sub": {
-   "impf": {
-    "S3": [
-     "scotesse"
-    ],
-    "P3": [
-     "scotessero"
-    ],
-    "S1": [
-     "scotessi"
-    ],
-    "S2": [
-     "scotessi"
-    ],
-    "P1": [
-     "scotessimo"
-    ],
-    "P2": [
-     "scoteste"
-    ]
-   },
-   "pres": {
-    "P1": [
-     "scotiamo"
-    ],
-    "P2": [
-     "scotiate"
-    ]
-   }
+  "ind.impf.P1": {
+   "rare": ["scotevamo"]
+  },
+  "ind.impf.P2": {
+   "rare": ["scotevate"]
+  },
+  "ind.impf.P3": {
+   "rare": ["scotevano"]
+  },
+  "ind.impf.S1": {
+   "rare": ["scotevo"]
+  },
+  "ind.impf.S2": {
+   "rare": ["scotevi"]
+  },
+  "ind.impf.S3": {
+   "rare": ["scoteva"]
+  },
+  "ind.past.P1": {
+   "rare": ["scotemmo"]
+  },
+  "ind.past.P2": {
+   "rare": ["scoteste"]
+  },
+  "ind.past.S2": {
+   "rare": ["scotesti"]
+  },
+  "ind.pres.P1": {
+   "rare": ["scotiamo"]
+  },
+  "ind.pres.P2": {
+   "rare": ["scotete"]
+  },
+  "sub.impf.P1": {
+   "rare": ["scotessimo"]
+  },
+  "sub.impf.P2": {
+   "rare": ["scoteste"]
+  },
+  "sub.impf.P3": {
+   "rare": ["scotessero"]
+  },
+  "sub.impf.S1": {
+   "rare": ["scotessi"]
+  },
+  "sub.impf.S2": {
+   "rare": ["scotessi"]
+  },
+  "sub.impf.S3": {
+   "rare": ["scotesse"]
+  },
+  "sub.pres.P1": {
+   "rare": ["scotiamo"]
+  },
+  "sub.pres.P2": {
+   "rare": ["scotiate"]
+  }
+ },
+ "secernere": {
+  "ind.past.S3": {
+   "common": ["secernette"]
   }
  },
  "sedere": {
-  "ind": {
-   "pres": {
-    "S1": [
-     "seggo"
-    ],
-    "P3": [
-     "seggono"
-    ]
-   }
+  "ind.pres.P3": {
+   "literary": ["seggono"]
+  },
+  "ind.pres.S1": {
+   "literary": ["seggo"]
+  }
+ },
+ "soccombere": {
+  "ind.past.P3": {
+   "common": ["soccomberono"]
+  },
+  "ind.past.S1": {
+   "common": ["soccombei"]
+  },
+  "ind.past.S3": {
+   "common": ["soccombé"]
   }
  },
  "soddisfare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "soddisfa",
-     "soddisfai"
-    ],
-    "P1": [
-     "soddisfiamo"
-    ]
-   }
+  "cond.pres.P1": {
+   "colloquial": ["soddisferemmo"]
   },
-  "sub": {
-   "pres": {
-    "S1": [
-     "soddisfi"
-    ],
-    "S2": [
-     "soddisfi"
-    ],
-    "S3": [
-     "soddisfi"
-    ],
-    "P1": [
-     "soddisfiamo"
-    ],
-    "P3": [
-     "soddisfino"
-    ],
-    "P2": [
-     "soddisfiate"
-    ]
-   }
+  "cond.pres.P2": {
+   "colloquial": ["soddisfereste"]
   },
-  "ind": {
-   "pres": {
-    "P1": [
-     "soddisfiamo"
-    ],
-    "S1": [
-     "soddisfo"
-    ],
-    "S2": [
-     "soddisfi"
-    ],
-    "P3": [
-     "soddisfano"
-    ]
-   },
-   "fut": {
-    "S2": [
-     "soddisferai"
-    ],
-    "P3": [
-     "soddisferanno"
-    ],
-    "P1": [
-     "soddisferemo"
-    ],
-    "P2": [
-     "soddisferete"
-    ],
-    "S3": [
-     "soddisferà"
-    ],
-    "S1": [
-     "soddisferò"
-    ]
-   }
+  "cond.pres.P3": {
+   "colloquial": ["soddisferebbero"]
   },
-  "cond": {
-   "pres": {
-    "S3": [
-     "soddisferebbe"
-    ],
-    "P3": [
-     "soddisferebbero"
-    ],
-    "S1": [
-     "soddisferei"
-    ],
-    "P1": [
-     "soddisferemmo"
-    ],
-    "P2": [
-     "soddisfereste"
-    ],
-    "S2": [
-     "soddisferesti"
-    ]
-   }
+  "cond.pres.S1": {
+   "colloquial": ["soddisferei"]
+  },
+  "cond.pres.S2": {
+   "colloquial": ["soddisferesti"]
+  },
+  "cond.pres.S3": {
+   "colloquial": ["soddisferebbe"]
+  },
+  "impr.pres.P1": {
+   "colloquial": ["soddisfiamo"]
+  },
+  "impr.pres.S2": {
+   "common": ["soddisfai"],
+   "colloquial": ["soddisfa"]
+  },
+  "ind.fut.P1": {
+   "colloquial": ["soddisferemo"]
+  },
+  "ind.fut.P2": {
+   "colloquial": ["soddisferete"]
+  },
+  "ind.fut.P3": {
+   "colloquial": ["soddisferanno"]
+  },
+  "ind.fut.S1": {
+   "colloquial": ["soddisferò"]
+  },
+  "ind.fut.S2": {
+   "colloquial": ["soddisferai"]
+  },
+  "ind.fut.S3": {
+   "colloquial": ["soddisferà"]
+  },
+  "ind.pres.P1": {
+   "colloquial": ["soddisfiamo"]
+  },
+  "ind.pres.P3": {
+   "colloquial": ["soddisfano"]
+  },
+  "ind.pres.S1": {
+   "colloquial": ["soddisfo"]
+  },
+  "ind.pres.S2": {
+   "colloquial": ["soddisfi"]
+  },
+  "sub.pres.P1": {
+   "colloquial": ["soddisfiamo"]
+  },
+  "sub.pres.P2": {
+   "colloquial": ["soddisfiate"]
+  },
+  "sub.pres.P3": {
+   "colloquial": ["soddisfino"]
+  },
+  "sub.pres.S1": {
+   "colloquial": ["soddisfi"]
+  },
+  "sub.pres.S2": {
+   "colloquial": ["soddisfi"]
+  },
+  "sub.pres.S3": {
+   "colloquial": ["soddisfi"]
   }
  },
  "sopraffare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "sopraffai"
-    ]
-   }
+  "impr.pres.S2": {
+   "common": ["sopraffai"]
   }
  },
  "soprassedere": {
-  "ind": {
-   "fut": {
-    "S2": [
-     "soprassederai"
-    ],
-    "P3": [
-     "soprassederanno"
-    ],
-    "P1": [
-     "soprassederemo"
-    ],
-    "P2": [
-     "soprassederete"
-    ],
-    "S1": [
-     "soprassederò"
-    ],
-    "S3": [
-     "soprassederà"
-    ]
-   },
-   "pres": {
-    "S1": [
-     "soprasseggo"
-    ],
-    "P3": [
-     "soprasseggono"
-    ]
-   }
+  "cond.pres.P1": {
+   "formal": ["soprassederemmo"]
   },
-  "cond": {
-   "pres": {
-    "S3": [
-     "soprassederebbe"
-    ],
-    "P3": [
-     "soprassederebbero"
-    ],
-    "S1": [
-     "soprassederei"
-    ],
-    "P1": [
-     "soprassederemmo"
-    ],
-    "P2": [
-     "soprassedereste"
-    ],
-    "S2": [
-     "soprassederesti"
-    ]
-   }
+  "cond.pres.P2": {
+   "formal": ["soprassedereste"]
+  },
+  "cond.pres.P3": {
+   "formal": ["soprassederebbero"]
+  },
+  "cond.pres.S1": {
+   "formal": ["soprassederei"]
+  },
+  "cond.pres.S2": {
+   "formal": ["soprassederesti"]
+  },
+  "cond.pres.S3": {
+   "formal": ["soprassederebbe"]
+  },
+  "ind.fut.P1": {
+   "formal": ["soprassederemo"]
+  },
+  "ind.fut.P2": {
+   "formal": ["soprassederete"]
+  },
+  "ind.fut.P3": {
+   "formal": ["soprassederanno"]
+  },
+  "ind.fut.S1": {
+   "formal": ["soprassederò"]
+  },
+  "ind.fut.S2": {
+   "formal": ["soprassederai"]
+  },
+  "ind.fut.S3": {
+   "formal": ["soprassederà"]
+  },
+  "ind.pres.P3": {
+   "literary": ["soprasseggono"]
+  },
+  "ind.pres.S1": {
+   "literary": ["soprasseggo"]
+  }
+ },
+ "sottostare": {
+  "impr.pres.S2": {
+   "common": ["sottostai"]
+  }
+ },
+ "sparire": {
+  "ind.past.P3": {
+   "common": ["sparirono"]
+  },
+  "ind.past.S1": {
+   "common": ["sparii"]
+  },
+  "ind.past.S3": {
+   "common": ["sparì"]
+  }
+ },
+ "sperdere": {
+  "part.past.P": {
+   "common": ["sperduti"]
+  },
+  "part.past.PF": {
+   "common": ["sperdute"]
+  },
+  "part.past.S": {
+   "common": ["sperduto"]
+  },
+  "part.past.SF": {
+   "common": ["sperduta"]
+  }
+ },
+ "splendere": {
+  "ind.past.P3": {
+   "common": ["splenderono"]
+  },
+  "ind.past.S1": {
+   "common": ["splendei"]
+  },
+  "ind.past.S3": {
+   "common": ["splendé"]
+  }
+ },
+ "spremere": {
+  "ind.past.P3": {
+   "common": ["spremerono"]
+  },
+  "ind.past.S1": {
+   "common": ["spremei"]
+  }
+ },
+ "stare": {
+  "impr.pres.S2": {
+   "common": ["stai"]
+  }
+ },
+ "stracuocere": {
+  "ind.past.P3": {
+   "literary": ["stracuocerono"]
+  },
+  "ind.past.S1": {
+   "literary": ["stracuocei"]
+  },
+  "ind.past.S3": {
+   "literary": ["stracuocé"]
   }
  },
  "strafare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "strafai"
-    ]
-   }
+  "impr.pres.S2": {
+   "common": ["strafai"]
   }
  },
  "stupefare": {
-  "impr": {
-   "pres": {
-    "S2": [
-     "stupefai"
-    ]
-   }
+  "impr.pres.S2": {
+   "common": ["stupefai"]
+  }
+ },
+ "succedere": {
+  "ind.past.P3": {
+   "sense": ["succedettero"]
+  },
+  "ind.past.S1": {
+   "sense": ["succedetti"],
+   "literary": ["succedei"]
+  },
+  "ind.past.S3": {
+   "sense": ["succedette"]
+  },
+  "part.past.P": {
+   "sense": ["succeduti"]
+  },
+  "part.past.PF": {
+   "sense": ["succedute"]
+  },
+  "part.past.S": {
+   "sense": ["succeduto"]
+  },
+  "part.past.SF": {
+   "sense": ["succeduta"]
+  }
+ },
+ "sussistere": {
+  "ind.past.P3": {
+   "common": ["sussisterono"]
+  },
+  "ind.past.S1": {
+   "common": ["sussistei"]
+  },
+  "ind.past.S3": {
+   "common": ["sussisté"]
+  }
+ },
+ "temere": {
+  "ind.past.P3": {
+   "common": ["temerono"]
+  },
+  "ind.past.S1": {
+   "common": ["temei"]
+  },
+  "ind.past.S3": {
+   "common": ["temé"]
+  }
+ },
+ "transigere": {
+  "ind.past.P3": {
+   "common": ["transigerono"]
+  },
+  "ind.past.S1": {
+   "common": ["transigei"]
+  },
+  "ind.past.S3": {
+   "common": ["transigé"]
   }
  }
 }
