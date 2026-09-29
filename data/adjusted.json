@@ -1,0 +1,7312 @@
+{
+ "abbattere": {
+  "ind.past.S3": {
+   "selected": "abbatté",
+   "rejected": [
+    "abbattè"
+   ]
+  }
+ },
+ "abboffare": {
+  "impr.pres.P1": {
+   "selected": "abboffiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "abboffate"
+  },
+  "impr.pres.S2": {
+   "selected": "abboffa"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "abbuffare": {
+  "impr.pres.P1": {
+   "selected": "abbuffiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "abbuffate"
+  },
+  "impr.pres.S2": {
+   "selected": "abbuffa"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "accaldare": {
+  "impr.pres.P1": {
+   "selected": "accaldiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "accaldate"
+  },
+  "impr.pres.S2": {
+   "selected": "accalda"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "accanire": {
+  "impr.pres.P1": {
+   "selected": "accaniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "accanite"
+  },
+  "impr.pres.S2": {
+   "selected": "accanisci"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "accapigliare": {
+  "impr.pres.P1": {
+   "selected": "accapigliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "accapigliate"
+  },
+  "impr.pres.S2": {
+   "selected": "accapiglia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "accendere": {
+  "ind.fut.S1": {
+   "selected": "accenderò",
+   "rejected": [
+    "accenderà"
+   ]
+  }
+ },
+ "accigliare": {
+  "impr.pres.P1": {
+   "selected": "accigliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "accigliate"
+  },
+  "impr.pres.S2": {
+   "selected": "acciglia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "accoccolare": {
+  "impr.pres.P1": {
+   "selected": "accoccoliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "accoccolate"
+  },
+  "impr.pres.S2": {
+   "selected": "accoccola"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "accondiscendere": {
+  "ind.fut.S1": {
+   "selected": "accondiscenderò",
+   "rejected": [
+    "accondiscenderà"
+   ]
+  }
+ },
+ "accorgere": {
+  "impr.pres.P1": {
+   "selected": "accorgiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "accorgete"
+  },
+  "impr.pres.S2": {
+   "selected": "accorgi"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "accosciare": {
+  "impr.pres.P1": {
+   "selected": "accosciamo"
+  },
+  "impr.pres.P2": {
+   "selected": "accosciate"
+  },
+  "impr.pres.S2": {
+   "selected": "accoscia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "accovacciare": {
+  "impr.pres.P1": {
+   "selected": "accovacciamo"
+  },
+  "impr.pres.P2": {
+   "selected": "accovacciate"
+  },
+  "impr.pres.S2": {
+   "selected": "accovaccia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "accucciare": {
+  "impr.pres.P1": {
+   "selected": "accucciamo"
+  },
+  "impr.pres.P2": {
+   "selected": "accucciate"
+  },
+  "impr.pres.S2": {
+   "selected": "accuccia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "addire": {
+  "ger.pres": {
+   "selected": "addicendo",
+   "rejected": [
+    "addicevo"
+   ]
+  }
+ },
+ "addivenire": {
+  "ind.fut.P1": {
+   "selected": "addiverremo",
+   "rejected": [
+    "addiverrò"
+   ]
+  },
+  "ind.fut.S1": {
+   "selected": "addiverrò"
+  }
+ },
+ "adempiere": {
+  "ind.fut.S1": {
+   "selected": "adempierò",
+   "rejected": [
+    "adempierà"
+   ]
+  }
+ },
+ "adergere": {
+  "ind.fut.S1": {
+   "selected": "adergerò",
+   "rejected": [
+    "adergerà"
+   ]
+  }
+ },
+ "adirare": {
+  "impr.pres.P1": {
+   "selected": "adiriamo"
+  },
+  "impr.pres.P2": {
+   "selected": "adirate"
+  },
+  "impr.pres.S2": {
+   "selected": "adira"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "adontare": {
+  "impr.pres.P1": {
+   "selected": "adontiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "adontate"
+  },
+  "impr.pres.S2": {
+   "selected": "adonta"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "affare": {
+  "impr": {
+   "selected": null
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "affiggere": {
+  "ind.fut.S1": {
+   "selected": "affiggerò",
+   "rejected": [
+    "affiggerà"
+   ]
+  }
+ },
+ "affliggere": {
+  "ind.fut.S1": {
+   "selected": "affliggerò",
+   "rejected": [
+    "affliggerà"
+   ]
+  }
+ },
+ "afflosciare": {
+  "impr.pres.P1": {
+   "selected": "afflosciamo"
+  },
+  "impr.pres.P2": {
+   "selected": "afflosciate"
+  },
+  "impr.pres.S2": {
+   "selected": "affloscia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "annettere": {
+  "ind.fut.S1": {
+   "selected": "annetterò",
+   "rejected": [
+    "annetterà"
+   ]
+  }
+ },
+ "appendere": {
+  "ind.fut.S1": {
+   "selected": "appenderò",
+   "rejected": [
+    "appenderà"
+   ]
+  }
+ },
+ "appigliare": {
+  "impr.pres.P1": {
+   "selected": "appigliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "appigliate"
+  },
+  "impr.pres.S2": {
+   "selected": "appiglia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "appisolare": {
+  "impr.pres.P1": {
+   "selected": "appisoliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "appisolate"
+  },
+  "impr.pres.S2": {
+   "selected": "appisola"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "appollaiare": {
+  "impr.pres.P1": {
+   "selected": "appollaiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "appollaiate"
+  },
+  "impr.pres.S2": {
+   "selected": "appollaia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "apprendere": {
+  "ind.fut.S1": {
+   "selected": "apprenderò",
+   "rejected": [
+    "apprenderà"
+   ]
+  }
+ },
+ "ardere": {
+  "ind.fut.S1": {
+   "selected": "arderò",
+   "rejected": [
+    "arderà"
+   ]
+  }
+ },
+ "arrabattare": {
+  "impr.pres.P1": {
+   "selected": "arrabattiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "arrabattate"
+  },
+  "impr.pres.S2": {
+   "selected": "arrabatta"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "arrendere": {
+  "ind.fut.S1": {
+   "selected": "arrenderò",
+   "rejected": [
+    "arrenderà"
+   ]
+  }
+ },
+ "arridere": {
+  "ind.fut.S1": {
+   "selected": "arriderò",
+   "rejected": [
+    "arriderà"
+   ]
+  }
+ },
+ "ascendere": {
+  "ind.fut.S1": {
+   "selected": "ascenderò",
+   "rejected": [
+    "ascenderà"
+   ]
+  }
+ },
+ "ascondere": {
+  "ind.fut.S1": {
+   "selected": "asconderò",
+   "rejected": [
+    "asconderà"
+   ]
+  }
+ },
+ "aspergere": {
+  "ind.fut.S1": {
+   "selected": "aspergerò",
+   "rejected": [
+    "aspergerà"
+   ]
+  }
+ },
+ "assentare": {
+  "impr.pres.P1": {
+   "selected": "assentiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "assentate"
+  },
+  "impr.pres.S2": {
+   "selected": "assenta"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "assidere": {
+  "ind.fut.S1": {
+   "selected": "assiderò",
+   "rejected": [
+    "assiderà"
+   ]
+  }
+ },
+ "assuefare": {
+  "impr.pres.S2": {
+   "selected": "assuefa'",
+   "alternatives": [
+    "assuefai"
+   ]
+  }
+ },
+ "astringere": {
+  "ind.fut.S1": {
+   "selected": "astringerò",
+   "rejected": [
+    "astringerà"
+   ]
+  }
+ },
+ "attagliare": {
+  "impr.pres.P1": {
+   "selected": "attagliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "attagliate"
+  },
+  "impr.pres.S2": {
+   "selected": "attaglia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "attendare": {
+  "impr.pres.P1": {
+   "selected": "attendiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "attendate"
+  },
+  "impr.pres.S2": {
+   "selected": "attenda"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "attendere": {
+  "ind.fut.S1": {
+   "selected": "attenderò",
+   "rejected": [
+    "attenderà"
+   ]
+  }
+ },
+ "attingere": {
+  "ind.fut.S1": {
+   "selected": "attingerò",
+   "rejected": [
+    "attingerà"
+   ]
+  }
+ },
+ "attorcere": {
+  "ind.fut.S1": {
+   "selected": "attorcerò",
+   "rejected": [
+    "attorcerà"
+   ]
+  }
+ },
+ "autoassolvere": {
+  "ind.fut.S1": {
+   "selected": "autoassolverò",
+   "rejected": [
+    "autoassolverà"
+   ]
+  }
+ },
+ "autocandidare": {
+  "impr.pres.P1": {
+   "selected": "autocandidiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "autocandidate"
+  },
+  "impr.pres.S2": {
+   "selected": "autocandida"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "autocompiacere": {
+  "ind.fut.S1": {
+   "selected": "autocompiacerò",
+   "rejected": [
+    "autocompiacerà"
+   ]
+  }
+ },
+ "autoconvincere": {
+  "ind.fut.S1": {
+   "selected": "autoconvincerò",
+   "rejected": [
+    "autoconvincerà"
+   ]
+  }
+ },
+ "autocorreggere": {
+  "ind.fut.S1": {
+   "selected": "autocorreggerò",
+   "rejected": [
+    "autocorreggerà"
+   ]
+  }
+ },
+ "autodifendere": {
+  "ind.fut.S1": {
+   "selected": "autodifenderò",
+   "rejected": [
+    "autodifenderà"
+   ]
+  }
+ },
+ "autodirigere": {
+  "ind.fut.S1": {
+   "selected": "autodirigerò",
+   "rejected": [
+    "autodirigerà"
+   ]
+  }
+ },
+ "autodistruggere": {
+  "ind.fut.S1": {
+   "selected": "autodistruggerò",
+   "rejected": [
+    "autodistruggerà"
+   ]
+  }
+ },
+ "autoerigere": {
+  "ind.fut.S1": {
+   "selected": "autoerigerò",
+   "rejected": [
+    "autoerigerà"
+   ]
+  }
+ },
+ "autoescludere": {
+  "ind.fut.S1": {
+   "selected": "autoescluderò",
+   "rejected": [
+    "autoescluderà"
+   ]
+  }
+ },
+ "autoinfliggere": {
+  "ind.fut.S1": {
+   "selected": "autoinfliggerò",
+   "rejected": [
+    "autoinfliggerà"
+   ]
+  }
+ },
+ "autoprodurre": {
+  "ind.fut.S1": {
+   "selected": "autoprodurrò",
+   "rejected": [
+    "autoprodurrà"
+   ]
+  }
+ },
+ "autopromuovere": {
+  "ind.fut.S1": {
+   "selected": "autopromuoverò",
+   "rejected": [
+    "autopromuoverà"
+   ]
+  }
+ },
+ "autoproporre": {
+  "ind.fut.S1": {
+   "selected": "autoproporrò",
+   "rejected": [
+    "autoproporrà"
+   ]
+  }
+ },
+ "autoredimere": {
+  "ind.fut.S1": {
+   "selected": "autoredimerò",
+   "rejected": [
+    "autoredimerà"
+   ]
+  }
+ },
+ "autoridurre": {
+  "ind.fut.S1": {
+   "selected": "autoridurrò",
+   "rejected": [
+    "autoridurrà"
+   ]
+  }
+ },
+ "autoriprodurre": {
+  "ind.fut.S1": {
+   "selected": "autoriprodurrò",
+   "rejected": [
+    "autoriprodurrà"
+   ]
+  }
+ },
+ "autoritrasmettere": {
+  "ind.fut.S1": {
+   "selected": "autoritrasmetterò",
+   "rejected": [
+    "autoritrasmetterà"
+   ]
+  }
+ },
+ "autosciogliere": {
+  "ind.fut.S1": {
+   "selected": "autoscioglierò",
+   "rejected": [
+    "autoscioglierà"
+   ]
+  }
+ },
+ "autosospendere": {
+  "ind.fut.S1": {
+   "selected": "autosospenderò",
+   "rejected": [
+    "autosospenderà"
+   ]
+  }
+ },
+ "autosostenere": {
+  "ind.fut.S1": {
+   "selected": "autososterrò",
+   "rejected": [
+    "autososterrà"
+   ]
+  }
+ },
+ "autospendere": {
+  "ind.fut.S1": {
+   "selected": "autospenderò",
+   "rejected": [
+    "autospenderà"
+   ]
+  }
+ },
+ "avellere": {
+  "ind.fut.S1": {
+   "selected": "avellerò",
+   "rejected": [
+    "avellerà"
+   ]
+  }
+ },
+ "avvalere": {
+  "impr.pres.P1": {
+   "selected": "avvaliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "avvalete"
+  },
+  "impr.pres.S2": {
+   "selected": "avvali"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "avvedere": {
+  "impr.pres.P1": {
+   "selected": "avvediamo"
+  },
+  "impr.pres.P2": {
+   "selected": "avvedete"
+  },
+  "impr.pres.S2": {
+   "selected": "avvedi"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "barcamenare": {
+  "impr.pres.P1": {
+   "selected": "barcameniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "barcamenate"
+  },
+  "impr.pres.S2": {
+   "selected": "barcamena"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "battere": {
+  "ind.past.S3": {
+   "selected": "batté",
+   "rejected": [
+    "battè"
+   ]
+  }
+ },
+ "calere": {
+  "cond": {
+   "selected": null
+  },
+  "cond.pres.P3": {
+   "selected": null,
+   "rejected": [
+    "calerebber"
+   ]
+  },
+  "cond.pres.S3": {
+   "selected": null,
+   "rejected": [
+    "calerebbe"
+   ]
+  },
+  "impr": {
+   "selected": null
+  },
+  "impr.pres.P2": {
+   "selected": null,
+   "rejected": [
+    "calete"
+   ]
+  },
+  "impr.pres.S2": {
+   "selected": null,
+   "rejected": [
+    "cali"
+   ]
+  },
+  "ind.fut": {
+   "selected": null
+  },
+  "ind.impf.P1": {
+   "selected": null,
+   "rejected": [
+    "calevamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": null,
+   "rejected": [
+    "calevate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": null,
+   "rejected": [
+    "calevan",
+    "calevano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": null,
+   "rejected": [
+    "calevo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": null,
+   "rejected": [
+    "calevi"
+   ]
+  },
+  "ind.past.P1": {
+   "selected": null,
+   "rejected": [
+    "calemmo"
+   ]
+  },
+  "ind.past.P2": {
+   "selected": null,
+   "rejected": [
+    "caleste"
+   ]
+  },
+  "ind.past.P3": {
+   "selected": null,
+   "rejected": [
+    "caleron",
+    "calerono"
+   ]
+  },
+  "ind.past.S1": {
+   "selected": null,
+   "rejected": [
+    "calei"
+   ]
+  },
+  "ind.past.S2": {
+   "selected": null,
+   "rejected": [
+    "calesti"
+   ]
+  },
+  "ind.past.S3": {
+   "selected": "calse",
+   "rejected": [
+    "calè"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": null
+  },
+  "ind.pres.P2": {
+   "selected": null,
+   "rejected": [
+    "calete"
+   ]
+  },
+  "ind.pres.P3": {
+   "selected": null,
+   "rejected": [
+    "calon",
+    "calono"
+   ]
+  },
+  "ind.pres.S1": {
+   "selected": null
+  },
+  "ind.pres.S2": {
+   "selected": null,
+   "rejected": [
+    "cali"
+   ]
+  },
+  "part.past.P": {
+   "selected": null,
+   "rejected": [
+    "caluti"
+   ]
+  },
+  "part.past.PF": {
+   "selected": null,
+   "rejected": [
+    "calute"
+   ]
+  },
+  "part.past.SF": {
+   "selected": null,
+   "rejected": [
+    "caluta"
+   ]
+  },
+  "part.pres": {
+   "selected": null
+  },
+  "part.pres.P": {
+   "selected": null,
+   "rejected": [
+    "calenti"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": null,
+   "rejected": [
+    "calenti"
+   ]
+  },
+  "part.pres.S": {
+   "selected": null,
+   "rejected": [
+    "calente"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": null,
+   "rejected": [
+    "calente"
+   ]
+  },
+  "sub.impf.P1": {
+   "selected": null,
+   "rejected": [
+    "calessimo"
+   ]
+  },
+  "sub.impf.P2": {
+   "selected": null,
+   "rejected": [
+    "caleste"
+   ]
+  },
+  "sub.impf.P3": {
+   "selected": null,
+   "rejected": [
+    "calesser",
+    "calessero"
+   ]
+  },
+  "sub.impf.S1": {
+   "selected": null,
+   "rejected": [
+    "calessi"
+   ]
+  },
+  "sub.impf.S2": {
+   "selected": null,
+   "rejected": [
+    "calessi"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": null
+  },
+  "sub.pres.P2": {
+   "selected": null
+  },
+  "sub.pres.P3": {
+   "selected": null
+  },
+  "sub.pres.S1": {
+   "selected": null
+  },
+  "sub.pres.S2": {
+   "selected": null
+  },
+  "sub.pres.S3": {
+   "selected": "calga"
+  }
+ },
+ "capere": {
+  "ind.past.S3": {
+   "selected": "capé",
+   "rejected": [
+    "capè"
+   ]
+  }
+ },
+ "cerchiare": {
+  "impr.pres.P1": {
+   "selected": "cerchiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "cerchiate"
+  },
+  "ind.pres.P1": {
+   "selected": "cerchiamo"
+  },
+  "ind.pres.P2": {
+   "selected": "cerchiate"
+  },
+  "ind.pres.S2": {
+   "selected": "cerchi"
+  },
+  "part.past.PF": {
+   "selected": "cerchiate"
+  },
+  "sub.pres.P1": {
+   "selected": "cerchiamo"
+  },
+  "sub.pres.P2": {
+   "selected": "cerchiate"
+  },
+  "sub.pres.P3": {
+   "selected": "cerchino"
+  },
+  "sub.pres.S1": {
+   "selected": "cerchi"
+  },
+  "sub.pres.S2": {
+   "selected": "cerchi"
+  },
+  "sub.pres.S3": {
+   "selected": "cerchi"
+  }
+ },
+ "cernere": {
+  "ind.past.S3": {
+   "selected": "cerné",
+   "rejected": [
+    "cernè"
+   ]
+  }
+ },
+ "circonfondere": {
+  "ind.fut.S1": {
+   "selected": "circonfonderò",
+   "rejected": [
+    "circonfonderà"
+   ]
+  }
+ },
+ "co-presiedere": {
+  "ind.fut.S1": {
+   "selected": "co-presiederò",
+   "rejected": [
+    "co-presiederà"
+   ]
+  }
+ },
+ "co-produrre": {
+  "ind.fut.S1": {
+   "selected": "co-produrrò",
+   "rejected": [
+    "co-produrrà"
+   ]
+  }
+ },
+ "cuocere": {
+  "cond.pres.P1": {
+   "selected": "cuoceremmo",
+   "alternatives": [
+    "coceremmo"
+   ]
+  },
+  "cond.pres.P2": {
+   "selected": "cuocereste",
+   "alternatives": [
+    "cocereste"
+   ]
+  },
+  "cond.pres.P3": {
+   "selected": "cuocerebbero",
+   "rejected": [
+    "cocerebber",
+    "cuocerebber"
+   ],
+   "alternatives": [
+    "cocerebbero"
+   ]
+  },
+  "cond.pres.S1": {
+   "selected": "cuocerei",
+   "alternatives": [
+    "cocerei"
+   ]
+  },
+  "cond.pres.S2": {
+   "selected": "cuoceresti",
+   "alternatives": [
+    "coceresti"
+   ]
+  },
+  "cond.pres.S3": {
+   "selected": "cuocerebbe",
+   "alternatives": [
+    "cocerebbe"
+   ]
+  },
+  "ger.pres": {
+   "selected": "cuocendo",
+   "alternatives": [
+    "cocendo"
+   ]
+  },
+  "impr.pres.P1": {
+   "selected": "cuociamo",
+   "alternatives": [
+    "cociamo"
+   ]
+  },
+  "impr.pres.P2": {
+   "selected": "cuocete",
+   "alternatives": [
+    "cocete"
+   ]
+  },
+  "ind.fut.P1": {
+   "selected": "cuoceremo",
+   "alternatives": [
+    "coceremo"
+   ]
+  },
+  "ind.fut.P2": {
+   "selected": "cuocerete",
+   "alternatives": [
+    "cocerete"
+   ]
+  },
+  "ind.fut.P3": {
+   "selected": "cuoceranno",
+   "rejected": [
+    "coceran",
+    "cuoceran"
+   ],
+   "alternatives": [
+    "coceranno"
+   ]
+  },
+  "ind.fut.S1": {
+   "selected": "cuocerò",
+   "alternatives": [
+    "cocerò"
+   ]
+  },
+  "ind.fut.S2": {
+   "selected": "cuocerai",
+   "alternatives": [
+    "cocerai"
+   ]
+  },
+  "ind.fut.S3": {
+   "selected": "cuocerà",
+   "alternatives": [
+    "cocerà"
+   ]
+  },
+  "ind.impf.P1": {
+   "selected": "cuocevamo",
+   "alternatives": [
+    "cocevamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": "cuocevate",
+   "alternatives": [
+    "cocevate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": "cuocevano",
+   "rejected": [
+    "cocevan",
+    "cuocevan"
+   ],
+   "alternatives": [
+    "cocevano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": "cuocevo",
+   "alternatives": [
+    "cocevo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": "cuocevi",
+   "alternatives": [
+    "cocevi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": "cuoceva",
+   "alternatives": [
+    "coceva"
+   ]
+  },
+  "ind.past.P1": {
+   "selected": "cuocemmo",
+   "alternatives": [
+    "cocemmo"
+   ]
+  },
+  "ind.past.P2": {
+   "selected": "cuoceste",
+   "alternatives": [
+    "coceste"
+   ]
+  },
+  "ind.past.P3": {
+   "selected": "cossero",
+   "rejected": [
+    "cosser",
+    "cuoceron",
+    "cuocerono"
+   ]
+  },
+  "ind.past.S1": {
+   "selected": "cossi",
+   "rejected": [
+    "cuocei"
+   ]
+  },
+  "ind.past.S2": {
+   "selected": "cuocesti",
+   "alternatives": [
+    "cocesti"
+   ]
+  },
+  "ind.past.S3": {
+   "selected": "cosse",
+   "rejected": [
+    "cuocè"
+   ]
+  },
+  "sub.impf.P1": {
+   "selected": "cuocessimo",
+   "alternatives": [
+    "cocessimo"
+   ]
+  },
+  "sub.impf.P2": {
+   "selected": "cuoceste",
+   "alternatives": [
+    "coceste"
+   ]
+  },
+  "sub.impf.P3": {
+   "selected": "cuocessero",
+   "rejected": [
+    "cocesser",
+    "cuocesser"
+   ],
+   "alternatives": [
+    "cocessero"
+   ]
+  },
+  "sub.impf.S1": {
+   "selected": "cuocessi",
+   "alternatives": [
+    "cocessi"
+   ]
+  },
+  "sub.impf.S2": {
+   "selected": "cuocessi",
+   "alternatives": [
+    "cocessi"
+   ]
+  },
+  "sub.impf.S3": {
+   "selected": "cuocesse",
+   "alternatives": [
+    "cocesse"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "cuociamo",
+   "alternatives": [
+    "cociamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "cuociate",
+   "alternatives": [
+    "cociate"
+   ]
+  }
+ },
+ "coesistere": {
+  "ind.fut.S1": {
+   "selected": "coesisterò",
+   "rejected": [
+    "coesisterà"
+   ]
+  }
+ },
+ "collidere": {
+  "ind.fut.S1": {
+   "selected": "colliderò",
+   "rejected": [
+    "colliderà"
+   ]
+  }
+ },
+ "combattere": {
+  "ind.past.S3": {
+   "selected": "combatté",
+   "rejected": [
+    "combattè"
+   ]
+  }
+ },
+ "competere": {
+  "ind.past.S3": {
+   "selected": "competé",
+   "rejected": [
+    "competè"
+   ]
+  }
+ },
+ "compiere": {
+  "ind.past.S3": {
+   "selected": "compié",
+   "rejected": [
+    "compiè"
+   ]
+  }
+ },
+ "compiangere": {
+  "ind.fut.S1": {
+   "selected": "compiangerò",
+   "rejected": [
+    "compiangerà"
+   ]
+  }
+ },
+ "compravendere": {
+  "ind.fut.S1": {
+   "selected": "compravenderò",
+   "rejected": [
+    "compravenderà"
+   ]
+  }
+ },
+ "comprendere": {
+  "ind.fut.S1": {
+   "selected": "comprenderò",
+   "rejected": [
+    "comprenderà"
+   ]
+  }
+ },
+ "compungere": {
+  "ind.fut.S1": {
+   "selected": "compungerò",
+   "rejected": [
+    "compungerà"
+   ]
+  }
+ },
+ "concernere": {
+  "ind.past.S3": {
+   "selected": "concerné",
+   "rejected": [
+    "concernè"
+   ]
+  },
+  "part.past": {
+   "selected": null
+  }
+ },
+ "condiscendere": {
+  "ind.fut.S1": {
+   "selected": "condiscenderò",
+   "rejected": [
+    "condiscenderà"
+   ]
+  }
+ },
+ "condolere": {
+  "ind.fut.S1": {
+   "selected": "condolerò",
+   "rejected": [
+    "condolerà"
+   ]
+  }
+ },
+ "confare": {
+  "impr.pres.S2": {
+   "selected": "confa'",
+   "alternatives": [
+    "confai"
+   ]
+  }
+ },
+ "configgere": {
+  "ind.fut.S1": {
+   "selected": "configgerò",
+   "rejected": [
+    "configgerà"
+   ]
+  }
+ },
+ "confliggere": {
+  "ind.fut.S1": {
+   "selected": "confliggerò",
+   "rejected": [
+    "confliggerà"
+   ]
+  }
+ },
+ "congenere": {
+  "ind.past.S3": {
+   "selected": "congené",
+   "rejected": [
+    "congenè"
+   ]
+  }
+ },
+ "congratulare": {
+  "impr.pres.P1": {
+   "selected": "congratuliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "congratulate"
+  },
+  "impr.pres.S2": {
+   "selected": "congratula"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "connettere": {
+  "ind.fut.S1": {
+   "selected": "connetterò",
+   "rejected": [
+    "connetterà"
+   ]
+  }
+ },
+ "conquidere": {
+  "ind.fut.S1": {
+   "selected": "conquiderò",
+   "rejected": [
+    "conquiderà"
+   ]
+  }
+ },
+ "consumere": {
+  "cond": {
+   "selected": null
+  },
+  "ger": {
+   "selected": null
+  },
+  "ger.pres": {
+   "selected": null,
+   "rejected": [
+    "consumendo"
+   ]
+  },
+  "impr": {
+   "selected": null
+  },
+  "impr.pres.P2": {
+   "selected": null,
+   "rejected": [
+    "consumete"
+   ]
+  },
+  "ind.fut": {
+   "selected": null
+  },
+  "ind.impf": {
+   "selected": null
+  },
+  "ind.impf.P1": {
+   "selected": null,
+   "rejected": [
+    "consumevamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": null,
+   "rejected": [
+    "consumevate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": null,
+   "rejected": [
+    "consumevan",
+    "consumevano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": null,
+   "rejected": [
+    "consumevo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": null,
+   "rejected": [
+    "consumevi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": null,
+   "rejected": [
+    "consumeva"
+   ]
+  },
+  "ind.past.P3": {
+   "selected": "consunsero",
+   "rejected": [
+    "consumeron"
+   ]
+  },
+  "ind.past.S1": {
+   "selected": "consunsi",
+   "rejected": [
+    "consumei"
+   ]
+  },
+  "ind.past.S3": {
+   "selected": "consunse",
+   "rejected": [
+    "consumè"
+   ]
+  },
+  "ind.pres": {
+   "selected": null
+  },
+  "ind.pres.P2": {
+   "selected": null,
+   "rejected": [
+    "consumete"
+   ]
+  },
+  "ind.pres.P3": {
+   "selected": null,
+   "rejected": [
+    "consumon",
+    "consumono"
+   ]
+  },
+  "ind.pres.S3": {
+   "selected": null,
+   "rejected": [
+    "consume"
+   ]
+  },
+  "part.past.P": {
+   "selected": "consunti",
+   "rejected": [
+    "consumuti"
+   ]
+  },
+  "part.past.PF": {
+   "selected": "consunte",
+   "rejected": [
+    "consumute"
+   ]
+  },
+  "part.past.S": {
+   "selected": "consunto",
+   "rejected": [
+    "consumuto"
+   ]
+  },
+  "part.past.SF": {
+   "selected": "consunta",
+   "rejected": [
+    "consumuta"
+   ]
+  },
+  "part.pres": {
+   "selected": null
+  },
+  "part.pres.P": {
+   "selected": null,
+   "rejected": [
+    "consumenti"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": null,
+   "rejected": [
+    "consumenti"
+   ]
+  },
+  "part.pres.S": {
+   "selected": null,
+   "rejected": [
+    "consumente"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": null,
+   "rejected": [
+    "consumente"
+   ]
+  },
+  "sub": {
+   "selected": null
+  },
+  "sub.impf.P1": {
+   "selected": null,
+   "rejected": [
+    "consumessimo"
+   ]
+  },
+  "sub.impf.P2": {
+   "selected": null,
+   "rejected": [
+    "consumeste"
+   ]
+  },
+  "sub.impf.P3": {
+   "selected": null,
+   "rejected": [
+    "consumesser",
+    "consumessero"
+   ]
+  },
+  "sub.impf.S1": {
+   "selected": null,
+   "rejected": [
+    "consumessi"
+   ]
+  },
+  "sub.impf.S2": {
+   "selected": null,
+   "rejected": [
+    "consumessi"
+   ]
+  },
+  "sub.impf.S3": {
+   "selected": null,
+   "rejected": [
+    "consumesse"
+   ]
+  }
+ },
+ "contendere": {
+  "ind.fut.S1": {
+   "selected": "contenderò",
+   "rejected": [
+    "contenderà"
+   ]
+  }
+ },
+ "contessere": {
+  "ind.past.S3": {
+   "selected": "contessé",
+   "rejected": [
+    "contessè"
+   ]
+  }
+ },
+ "contraddistinguere": {
+  "ind.fut.S1": {
+   "selected": "contraddistinguerò",
+   "rejected": [
+    "contraddistinguerà"
+   ]
+  }
+ },
+ "controbattere": {
+  "ind.past.S3": {
+   "selected": "controbatté",
+   "rejected": [
+    "controbattè"
+   ]
+  }
+ },
+ "controvertere": {
+  "ind.past.S3": {
+   "selected": "controverté",
+   "rejected": [
+    "controvertè"
+   ]
+  }
+ },
+ "contundere": {
+  "ind.fut.S1": {
+   "selected": "contunderò",
+   "rejected": [
+    "contunderà"
+   ]
+  }
+ },
+ "convergere": {
+  "ind.fut.S1": {
+   "selected": "convergerò",
+   "rejected": [
+    "convergerà"
+   ]
+  }
+ },
+ "convivere": {
+  "ind.fut.S1": {
+   "selected": "convivrò",
+   "rejected": [
+    "convivrà"
+   ]
+  }
+ },
+ "coprodurre": {
+  "ind.fut.S1": {
+   "selected": "coprodurrò",
+   "rejected": [
+    "coprodurrà"
+   ]
+  }
+ },
+ "corrispondere": {
+  "ind.fut.S1": {
+   "selected": "corrisponderò",
+   "rejected": [
+    "corrisponderà"
+   ]
+  }
+ },
+ "coscrivere": {
+  "ind.fut.S1": {
+   "selected": "coscriverò",
+   "rejected": [
+    "coscriverà"
+   ]
+  }
+ },
+ "crocefiggere": {
+  "ind.fut.S1": {
+   "selected": "crocefiggerò",
+   "rejected": [
+    "crocefiggerà"
+   ]
+  }
+ },
+ "crocifiggere": {
+  "ind.fut.S1": {
+   "selected": "crocifiggerò",
+   "rejected": [
+    "crocifiggerà"
+   ]
+  }
+ },
+ "dare": {
+  "impr.pres.S2": {
+   "selected": "dai",
+   "rejected": [
+    "dài"
+   ],
+   "alternatives": [
+    "da'"
+   ]
+  },
+  "ind.pres.S1": {
+   "selected": "do",
+   "rejected": [
+    "dò"
+   ]
+  },
+  "ind.pres.S2": {
+   "selected": "dai",
+   "rejected": [
+    "dài"
+   ]
+  }
+ },
+ "dannare": {
+  "ind.pres.S1": {
+   "selected": "danno"
+  }
+ },
+ "dattiloscrivere": {
+  "ind.fut.S1": {
+   "selected": "dattiloscriverò",
+   "rejected": [
+    "dattiloscriverà"
+   ]
+  }
+ },
+ "decomprimere": {
+  "ind.fut.S1": {
+   "selected": "decomprimerò",
+   "rejected": [
+    "decomprimerà"
+   ]
+  }
+ },
+ "decrescere": {
+  "ind.fut.S1": {
+   "selected": "decrescerò",
+   "rejected": [
+    "decrescerà"
+   ]
+  }
+ },
+ "defaticare": {
+  "impr.pres.P1": {
+   "selected": "defatichiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "defaticate"
+  },
+  "impr.pres.S2": {
+   "selected": "defatica"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "defiggere": {
+  "ind.fut.S1": {
+   "selected": "defiggerò",
+   "rejected": [
+    "defiggerà"
+   ]
+  }
+ },
+ "deflettere": {
+  "ind.fut.S1": {
+   "selected": "defletterò",
+   "rejected": [
+    "defletterà"
+   ]
+  }
+ },
+ "delinquere": {
+  "ind.past.S3": {
+   "selected": "delinqué",
+   "rejected": [
+    "delinquè"
+   ]
+  },
+  "part.past": {
+   "selected": null
+  }
+ },
+ "demordere": {
+  "ind.fut.S1": {
+   "selected": "demorderò",
+   "rejected": [
+    "demorderà"
+   ]
+  }
+ },
+ "detergere": {
+  "ind.fut.S1": {
+   "selected": "detergerò",
+   "rejected": [
+    "detergerà"
+   ]
+  }
+ },
+ "devolvere": {
+  "ind.fut.S1": {
+   "selected": "devolverò",
+   "rejected": [
+    "devolverà"
+   ]
+  }
+ },
+ "dibattere": {
+  "ind.past.S3": {
+   "selected": "dibatté",
+   "rejected": [
+    "dibattè"
+   ]
+  }
+ },
+ "dicare": {
+  "impr.pres.S2": {
+   "selected": null
+  },
+  "ind.pres.P3": {
+   "selected": null
+  },
+  "ind.pres.S1": {
+   "selected": null
+  },
+  "ind.pres.S3": {
+   "selected": null
+  }
+ },
+ "difendere": {
+  "ind.fut.S1": {
+   "selected": "difenderò",
+   "rejected": [
+    "difenderà"
+   ]
+  }
+ },
+ "dipendere": {
+  "ind.fut.S1": {
+   "selected": "dipenderò",
+   "rejected": [
+    "dipenderà"
+   ]
+  }
+ },
+ "dirimere": {
+  "ind.fut.S1": {
+   "selected": "dirimerò",
+   "rejected": [
+    "dirimerà"
+   ]
+  },
+  "part.past": {
+   "selected": null
+  }
+ },
+ "disattendere": {
+  "ind.fut.S1": {
+   "selected": "disattenderò",
+   "rejected": [
+    "disattenderà"
+   ]
+  }
+ },
+ "discendere": {
+  "ind.fut.S1": {
+   "selected": "discenderò",
+   "rejected": [
+    "discenderà"
+   ]
+  }
+ },
+ "discernere": {
+  "ind.fut.S1": {
+   "selected": "discernerò",
+   "rejected": [
+    "discernerà"
+   ]
+  }
+ },
+ "discingere": {
+  "ind.fut.S1": {
+   "selected": "discingerò",
+   "rejected": [
+    "discingerà"
+   ]
+  }
+ },
+ "disciogliere": {
+  "ind.fut.S1": {
+   "selected": "discioglierò",
+   "rejected": [
+    "discioglierà"
+   ]
+  }
+ },
+ "disconnettere": {
+  "ind.fut.S1": {
+   "selected": "disconnetterò",
+   "rejected": [
+    "disconnetterà"
+   ]
+  }
+ },
+ "disconoscere": {
+  "ind.fut.S1": {
+   "selected": "disconoscerò",
+   "rejected": [
+    "disconoscerà"
+   ]
+  }
+ },
+ "discutere": {
+  "ind.fut.S1": {
+   "selected": "discuterò",
+   "rejected": [
+    "discuterà"
+   ]
+  }
+ },
+ "disdire": {
+  "ger.pres": {
+   "selected": "disdicendo",
+   "rejected": [
+    "disdicevo"
+   ]
+  },
+  "part.pres.P": {
+   "selected": "disdicenti",
+   "rejected": [
+    "disdicevo"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": "disdicenti",
+   "rejected": [
+    "disdicevo"
+   ]
+  },
+  "part.pres.S": {
+   "selected": "disdicente",
+   "rejected": [
+    "disdicevo"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": "disdicente",
+   "rejected": [
+    "disdicevo"
+   ]
+  }
+ },
+ "disfare": {
+  "cond.pres.P1": {
+   "selected": "disfaremmo",
+   "alternatives": [
+    "disferemmo"
+   ]
+  },
+  "cond.pres.P2": {
+   "selected": "disfareste",
+   "alternatives": [
+    "disfereste"
+   ]
+  },
+  "cond.pres.P3": {
+   "selected": "disfarebbero",
+   "rejected": [
+    "disfarebber",
+    "disferebber"
+   ],
+   "alternatives": [
+    "disferebbero"
+   ]
+  },
+  "cond.pres.S1": {
+   "selected": "disfarei",
+   "alternatives": [
+    "disferei"
+   ]
+  },
+  "cond.pres.S2": {
+   "selected": "disfaresti",
+   "alternatives": [
+    "disferesti"
+   ]
+  },
+  "cond.pres.S3": {
+   "selected": "disfarebbe",
+   "alternatives": [
+    "disferebbe"
+   ]
+  },
+  "ger.pres": {
+   "selected": "disfacendo",
+   "rejected": [
+    "disfando"
+   ]
+  },
+  "impr.pres.P1": {
+   "selected": "disfacciamo",
+   "alternatives": [
+    "disfiamo"
+   ]
+  },
+  "impr.pres.S2": {
+   "selected": "disfa'",
+   "alternatives": [
+    "disfa",
+    "disfai"
+   ]
+  },
+  "ind.fut.P1": {
+   "selected": "disfaremo",
+   "alternatives": [
+    "disferemo"
+   ]
+  },
+  "ind.fut.P2": {
+   "selected": "disfarete",
+   "alternatives": [
+    "disferete"
+   ]
+  },
+  "ind.fut.P3": {
+   "selected": "disfaranno",
+   "rejected": [
+    "disfaran",
+    "disferan"
+   ],
+   "alternatives": [
+    "disferanno"
+   ]
+  },
+  "ind.fut.S1": {
+   "selected": "disfarò",
+   "alternatives": [
+    "disferò"
+   ]
+  },
+  "ind.fut.S2": {
+   "selected": "disfarai",
+   "alternatives": [
+    "disferai"
+   ]
+  },
+  "ind.fut.S3": {
+   "selected": "disfarà",
+   "alternatives": [
+    "disferà"
+   ]
+  },
+  "ind.impf.P1": {
+   "selected": "disfacevamo",
+   "rejected": [
+    "disfavamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": "disfacevate",
+   "rejected": [
+    "disfavate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": "disfacevano",
+   "rejected": [
+    "disfacevan",
+    "disfavan",
+    "disfavano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": "disfacevo",
+   "rejected": [
+    "disfavo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": "disfacevi",
+   "rejected": [
+    "disfavi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": "disfaceva",
+   "rejected": [
+    "disfava"
+   ]
+  },
+  "ind.past.P1": {
+   "selected": "disfacemmo",
+   "rejected": [
+    "disfammo"
+   ]
+  },
+  "ind.past.P2": {
+   "selected": "disfaceste",
+   "rejected": [
+    "disfaste"
+   ]
+  },
+  "ind.past.P3": {
+   "selected": "disfecero",
+   "rejected": [
+    "disfaron",
+    "disfarono",
+    "disfecer"
+   ]
+  },
+  "ind.past.S1": {
+   "selected": "disfeci",
+   "rejected": [
+    "disfai"
+   ]
+  },
+  "ind.past.S2": {
+   "selected": "disfacesti",
+   "rejected": [
+    "disfasti"
+   ]
+  },
+  "ind.past.S3": {
+   "selected": "disfece",
+   "rejected": [
+    "disfò"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "disfacciamo",
+   "alternatives": [
+    "disfiamo"
+   ]
+  },
+  "ind.pres.P3": {
+   "selected": "disfanno",
+   "rejected": [
+    "disfan"
+   ],
+   "alternatives": [
+    "disfano"
+   ]
+  },
+  "ind.pres.S1": {
+   "selected": "disfaccio",
+   "alternatives": [
+    "disfo"
+   ]
+  },
+  "ind.pres.S2": {
+   "selected": "disfai",
+   "alternatives": [
+    "disfi"
+   ]
+  },
+  "part.past.P": {
+   "selected": "disfatti",
+   "rejected": [
+    "disfati"
+   ]
+  },
+  "part.past.PF": {
+   "selected": "disfatte",
+   "rejected": [
+    "disfate"
+   ]
+  },
+  "part.past.S": {
+   "selected": "disfatto",
+   "rejected": [
+    "disfato"
+   ]
+  },
+  "part.past.SF": {
+   "selected": "disfatta",
+   "rejected": [
+    "disfata"
+   ]
+  },
+  "part.pres.P": {
+   "selected": "disfacenti",
+   "rejected": [
+    "disfanti"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": "disfacenti",
+   "rejected": [
+    "disfanti"
+   ]
+  },
+  "part.pres.S": {
+   "selected": "disfacente",
+   "rejected": [
+    "disfante"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": "disfacente",
+   "rejected": [
+    "disfante"
+   ]
+  },
+  "sub.impf.P1": {
+   "selected": "disfacessimo",
+   "rejected": [
+    "disfassimo"
+   ]
+  },
+  "sub.impf.P2": {
+   "selected": "disfaceste",
+   "rejected": [
+    "disfaste"
+   ]
+  },
+  "sub.impf.P3": {
+   "selected": "disfacessero",
+   "rejected": [
+    "disfacesser",
+    "disfasser",
+    "disfassero"
+   ]
+  },
+  "sub.impf.S1": {
+   "selected": "disfacessi",
+   "rejected": [
+    "disfassi"
+   ]
+  },
+  "sub.impf.S2": {
+   "selected": "disfacessi",
+   "rejected": [
+    "disfassi"
+   ]
+  },
+  "sub.impf.S3": {
+   "selected": "disfacesse",
+   "rejected": [
+    "disfasse"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "disfacciamo",
+   "alternatives": [
+    "disfiamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "disfacciate",
+   "alternatives": [
+    "disfiate"
+   ]
+  },
+  "sub.pres.P3": {
+   "selected": "disfacciano",
+   "rejected": [
+    "disfaccian",
+    "disfin"
+   ],
+   "alternatives": [
+    "disfino"
+   ]
+  },
+  "sub.pres.S1": {
+   "selected": "disfaccia",
+   "alternatives": [
+    "disfi"
+   ]
+  },
+  "sub.pres.S2": {
+   "selected": "disfaccia",
+   "alternatives": [
+    "disfi"
+   ]
+  },
+  "sub.pres.S3": {
+   "selected": "disfaccia",
+   "alternatives": [
+    "disfi"
+   ]
+  }
+ },
+ "dismettere": {
+  "ind.fut.S1": {
+   "selected": "dismetterò",
+   "rejected": [
+    "dismetterà"
+   ]
+  }
+ },
+ "disperdere": {
+  "ind.fut.S1": {
+   "selected": "disperderò",
+   "rejected": [
+    "disperderà"
+   ]
+  }
+ },
+ "distendere": {
+  "ind.fut.S1": {
+   "selected": "distenderò",
+   "rejected": [
+    "distenderà"
+   ]
+  }
+ },
+ "disvolere": {
+  "ind.fut.S1": {
+   "selected": "disvorrò",
+   "rejected": [
+    "disvorrà"
+   ]
+  }
+ },
+ "divedere": {
+  "ind.fut.S1": {
+   "selected": "divedrò",
+   "rejected": [
+    "divedrà"
+   ]
+  },
+  "ind.past.S1": {
+   "selected": null
+  },
+  "ind.past.S3": {
+   "selected": null
+  }
+ },
+ "divergere": {
+  "ind.fut.S1": {
+   "selected": "divergerò",
+   "rejected": [
+    "divergerà"
+   ]
+  }
+ },
+ "dolere": {
+  "ind.fut.S1": {
+   "selected": "dolerò",
+   "rejected": [
+    "dolerà"
+   ]
+  }
+ },
+ "eccedere": {
+  "ind.fut.S1": {
+   "selected": "eccederò",
+   "rejected": [
+    "eccederà"
+   ]
+  }
+ },
+ "eccellere": {
+  "ind.fut.S1": {
+   "selected": "eccellerò",
+   "rejected": [
+    "eccellerà"
+   ]
+  }
+ },
+ "elidere": {
+  "ind.fut.S1": {
+   "selected": "eliderò",
+   "rejected": [
+    "eliderà"
+   ]
+  }
+ },
+ "empiere": {
+  "ind.fut.S1": {
+   "selected": "empierò",
+   "rejected": [
+    "empierà"
+   ]
+  }
+ },
+ "essere": {
+  "ind.pres.S3": {
+   "selected": "è",
+   "rejected": [
+    "é"
+   ]
+  }
+ },
+ "erigere": {
+  "ind.fut.S1": {
+   "selected": "erigerò",
+   "rejected": [
+    "erigerà"
+   ]
+  }
+ },
+ "ergere": {
+  "ind.fut.S1": {
+   "selected": "ergerò",
+   "rejected": [
+    "ergerà"
+   ]
+  }
+ },
+ "esigere": {
+  "ind.fut.S1": {
+   "selected": "esigerò",
+   "rejected": [
+    "esigerà"
+   ]
+  }
+ },
+ "escrescere": {
+  "ind.past.S3": {
+   "selected": "escrescé",
+   "rejected": [
+    "escrescè"
+   ]
+  }
+ },
+ "escutere": {
+  "ind.past.S3": {
+   "selected": "escuté",
+   "rejected": [
+    "escutè"
+   ]
+  }
+ },
+ "esimere": {
+  "ind.past.S3": {
+   "selected": "esimé",
+   "rejected": [
+    "esimè"
+   ]
+  }
+ },
+ "espandere": {
+  "ind.fut.S1": {
+   "selected": "espanderò",
+   "rejected": [
+    "espanderà"
+   ]
+  }
+ },
+ "espellere": {
+  "ind.fut.S1": {
+   "selected": "espellerò",
+   "rejected": [
+    "espellerà"
+   ]
+  }
+ },
+ "espungere": {
+  "ind.fut.S1": {
+   "selected": "espungerò",
+   "rejected": [
+    "espungerà"
+   ]
+  }
+ },
+ "estendere": {
+  "ind.fut.S1": {
+   "selected": "estenderò",
+   "rejected": [
+    "estenderà"
+   ]
+  }
+ },
+ "estrovertere": {
+  "ind.fut.S1": {
+   "selected": "estroverterò",
+   "rejected": [
+    "estroverterà"
+   ]
+  }
+ },
+ "estrudere": {
+  "ind.fut.S1": {
+   "selected": "estruderò",
+   "rejected": [
+    "estruderà"
+   ]
+  }
+ },
+ "evolvere": {
+  "ind.fut.S1": {
+   "selected": "evolverò",
+   "rejected": [
+    "evolverà"
+   ]
+  }
+ },
+ "fare": {
+  "impr.pres.S2": {
+   "selected": "fa'",
+   "alternatives": [
+    "fai"
+   ]
+  }
+ },
+ "fendere": {
+  "ind.fut.S1": {
+   "selected": "fenderò",
+   "rejected": [
+    "fenderà"
+   ]
+  }
+ },
+ "fervere": {
+  "ind.past.S3": {
+   "selected": "fervé",
+   "rejected": [
+    "fervè"
+   ]
+  }
+ },
+ "figgere": {
+  "ind.past.S3": {
+   "selected": "fisse",
+   "rejected": [
+    "fissè"
+   ]
+  }
+ },
+ "fingere": {
+  "ind.fut.S1": {
+   "selected": "fingerò",
+   "rejected": [
+    "fingerà"
+   ]
+  }
+ },
+ "flettere": {
+  "ind.fut.S1": {
+   "selected": "fletterò",
+   "rejected": [
+    "fletterà"
+   ]
+  }
+ },
+ "fottere": {
+  "ind.past.S3": {
+   "selected": "fotté",
+   "rejected": [
+    "fottè"
+   ]
+  }
+ },
+ "fraintendere": {
+  "ind.fut.S1": {
+   "selected": "fraintenderò",
+   "rejected": [
+    "fraintenderà"
+   ]
+  }
+ },
+ "frammettere": {
+  "ind.fut.S1": {
+   "selected": "frammetterò",
+   "rejected": [
+    "frammetterà"
+   ]
+  }
+ },
+ "frangere": {
+  "ind.fut.S1": {
+   "selected": "frangerò",
+   "rejected": [
+    "frangerà"
+   ]
+  }
+ },
+ "fremere": {
+  "ind.fut.S1": {
+   "selected": "fremerò",
+   "rejected": [
+    "fremerà"
+   ]
+  }
+ },
+ "friggere": {
+  "ind.fut.S1": {
+   "selected": "friggerò",
+   "rejected": [
+    "friggerà"
+   ]
+  }
+ },
+ "fulgere": {
+  "ind.fut.S1": {
+   "selected": "fulgerò",
+   "rejected": [
+    "fulgerà"
+   ]
+  }
+ },
+ "fungere": {
+  "ind.fut.S1": {
+   "selected": "fungerò",
+   "rejected": [
+    "fungerà"
+   ]
+  }
+ },
+ "gemere": {
+  "ind.fut.S1": {
+   "selected": "gemerò",
+   "rejected": [
+    "gemerà"
+   ]
+  }
+ },
+ "genuflettere": {
+  "ind.fut.S1": {
+   "selected": "genufletterò",
+   "rejected": [
+    "genufletterà"
+   ]
+  }
+ },
+ "godere": {
+  "ind.fut.S1": {
+   "selected": "goderò",
+   "rejected": [
+    "goderà"
+   ]
+  }
+ },
+ "imbattere": {
+  "impr.pres.P1": {
+   "selected": "imbattiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "imbattete"
+  },
+  "impr.pres.S2": {
+   "selected": "imbatti"
+  },
+  "ind.past.S3": {
+   "selected": "imbatté",
+   "rejected": [
+    "imbattè"
+   ]
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "imbevere": {
+  "ind.fut.S1": {
+   "selected": "imbeverò",
+   "rejected": [
+    "imbeverà"
+   ]
+  }
+ },
+ "immusonire": {
+  "impr.pres.P1": {
+   "selected": "immusoniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "immusonite"
+  },
+  "impr.pres.S2": {
+   "selected": "immusonisci"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "impadronire": {
+  "impr.pres.P1": {
+   "selected": "impadroniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "impadronite"
+  },
+  "impr.pres.S2": {
+   "selected": "impadronisci"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "impancare": {
+  "impr.pres.P1": {
+   "selected": "impanchiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "impancate"
+  },
+  "impr.pres.S2": {
+   "selected": "impanca"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "impaperare": {
+  "impr.pres.P1": {
+   "selected": "impaperiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "impaperate"
+  },
+  "impr.pres.S2": {
+   "selected": "impapera"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "impelagare": {
+  "impr.pres.P1": {
+   "selected": "impelaghiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "impelagate"
+  },
+  "impr.pres.S2": {
+   "selected": "impelaga"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "impipare": {
+  "impr.pres.P1": {
+   "selected": "impipiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "impipate"
+  },
+  "impr.pres.S2": {
+   "selected": "impipa"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "impossessare": {
+  "impr.pres.P1": {
+   "selected": "impossessiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "impossessate"
+  },
+  "impr.pres.S2": {
+   "selected": "impossessa"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "imprendere": {
+  "ind.fut.S1": {
+   "selected": "imprenderò",
+   "rejected": [
+    "imprenderà"
+   ]
+  }
+ },
+ "incaponire": {
+  "impr.pres.P1": {
+   "selected": "incaponiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "incaponite"
+  },
+  "impr.pres.S2": {
+   "selected": "incaponisci"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "incapricciare": {
+  "impr.pres.P1": {
+   "selected": "incapricciamo"
+  },
+  "impr.pres.P2": {
+   "selected": "incapricciate"
+  },
+  "impr.pres.S2": {
+   "selected": "incapriccia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "incavolare": {
+  "impr.pres.P1": {
+   "selected": "incavoliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "incavolate"
+  },
+  "impr.pres.S2": {
+   "selected": "incavola"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "incazzare": {
+  "impr.pres.P1": {
+   "selected": "incazziamo"
+  },
+  "impr.pres.P2": {
+   "selected": "incazzate"
+  },
+  "impr.pres.S2": {
+   "selected": "incazza"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "incedere": {
+  "ind.fut.S1": {
+   "selected": "incederò",
+   "rejected": [
+    "incederà"
+   ]
+  }
+ },
+ "incombere": {
+  "ind.fut.S1": {
+   "selected": "incomberò",
+   "rejected": [
+    "incomberà"
+   ]
+  },
+  "part.past": {
+   "selected": null
+  }
+ },
+ "increscere": {
+  "ind.fut.S1": {
+   "selected": "increscerò",
+   "rejected": [
+    "increscerà"
+   ]
+  }
+ },
+ "incrodare": {
+  "impr.pres.P1": {
+   "selected": "incrodiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "incrodate"
+  },
+  "impr.pres.S2": {
+   "selected": "incroda"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "incutere": {
+  "ind.fut.S1": {
+   "selected": "incuterò",
+   "rejected": [
+    "incuterà"
+   ]
+  }
+ },
+ "indisporre": {
+  "ind.fut.S1": {
+   "selected": "indisporrò",
+   "rejected": [
+    "indisporrà"
+   ]
+  }
+ },
+ "indulgere": {
+  "ind.fut.S1": {
+   "selected": "indulgerò",
+   "rejected": [
+    "indulgerà"
+   ]
+  }
+ },
+ "industriare": {
+  "impr.pres.P1": {
+   "selected": "industriamo"
+  },
+  "impr.pres.P2": {
+   "selected": "industriate"
+  },
+  "impr.pres.S2": {
+   "selected": "industria"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "inerpicare": {
+  "impr.pres.P1": {
+   "selected": "inerpichiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "inerpicate"
+  },
+  "impr.pres.S2": {
+   "selected": "inerpica"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "infiggere": {
+  "ind.fut.S1": {
+   "selected": "infiggerò",
+   "rejected": [
+    "infiggerà"
+   ]
+  }
+ },
+ "infingere": {
+  "ind.fut.S1": {
+   "selected": "infingerò",
+   "rejected": [
+    "infingerà"
+   ]
+  }
+ },
+ "infischiare": {
+  "impr.pres.P1": {
+   "selected": "infischiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "infischiate"
+  },
+  "impr.pres.S2": {
+   "selected": "infischia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "infliggere": {
+  "ind.fut.S1": {
+   "selected": "infliggerò",
+   "rejected": [
+    "infliggerà"
+   ]
+  }
+ },
+ "infognare": {
+  "impr.pres.P1": {
+   "selected": "infogniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "infognate"
+  },
+  "impr.pres.S2": {
+   "selected": "infogna"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "infortunare": {
+  "impr.pres.P1": {
+   "selected": "infortuniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "infortunate"
+  },
+  "impr.pres.S2": {
+   "selected": "infortuna"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "inframmettere": {
+  "ind.fut.S1": {
+   "selected": "inframmetterò",
+   "rejected": [
+    "inframmetterà"
+   ]
+  }
+ },
+ "infrangere": {
+  "ind.fut.S1": {
+   "selected": "infrangerò",
+   "rejected": [
+    "infrangerà"
+   ]
+  }
+ },
+ "ingegnare": {
+  "impr.pres.P1": {
+   "selected": "ingegniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "ingegnate"
+  },
+  "impr.pres.S2": {
+   "selected": "ingegna"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "inginocchiare": {
+  "impr.pres.P1": {
+   "selected": "inginocchiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "inginocchiate"
+  },
+  "impr.pres.S2": {
+   "selected": "inginocchia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "insistere": {
+  "ind.fut.S1": {
+   "selected": "insisterò",
+   "rejected": [
+    "insisterà"
+   ]
+  }
+ },
+ "intendere": {
+  "ind.fut.S1": {
+   "selected": "intenderò",
+   "rejected": [
+    "intenderà"
+   ]
+  }
+ },
+ "intercedere": {
+  "ind.fut.S1": {
+   "selected": "intercederò",
+   "rejected": [
+    "intercederà"
+   ]
+  }
+ },
+ "interconnettere": {
+  "ind.past.S3": {
+   "selected": "interconnetté",
+   "rejected": [
+    "interconnettè"
+   ]
+  }
+ },
+ "intessere": {
+  "ind.past.S3": {
+   "selected": "intessé",
+   "rejected": [
+    "intessè"
+   ]
+  }
+ },
+ "intestardire": {
+  "impr.pres.P1": {
+   "selected": "intestardiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "intestardite"
+  },
+  "impr.pres.S2": {
+   "selected": "intestardisci"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "intraprendere": {
+  "ind.fut.S1": {
+   "selected": "intraprenderò",
+   "rejected": [
+    "intraprenderà"
+   ]
+  }
+ },
+ "intravvedere": {
+  "ind.fut.S1": {
+   "selected": "intravvedrò",
+   "rejected": [
+    "intravvedrà"
+   ]
+  }
+ },
+ "intridere": {
+  "ind.fut.S1": {
+   "selected": "intriderò",
+   "rejected": [
+    "intriderà"
+   ]
+  }
+ },
+ "intromettere": {
+  "ind.fut.S1": {
+   "selected": "intrometterò",
+   "rejected": [
+    "intrometterà"
+   ]
+  }
+ },
+ "intrudere": {
+  "ind.fut.S1": {
+   "selected": "intruderò",
+   "rejected": [
+    "intruderà"
+   ]
+  }
+ },
+ "inurbare": {
+  "impr.pres.P1": {
+   "selected": "inurbiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "inurbate"
+  },
+  "impr.pres.S2": {
+   "selected": "inurba"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "invalere": {
+  "ind.fut.S1": {
+   "selected": "invarrò",
+   "rejected": [
+    "invarrà"
+   ]
+  }
+ },
+ "involgere": {
+  "ind.fut.S1": {
+   "selected": "involgerò",
+   "rejected": [
+    "involgerà"
+   ]
+  }
+ },
+ "involvere": {
+  "ind.fut.S1": {
+   "selected": "involverò",
+   "rejected": [
+    "involverà"
+   ]
+  }
+ },
+ "irridere": {
+  "ind.fut.S1": {
+   "selected": "irriderò",
+   "rejected": [
+    "irriderà"
+   ]
+  }
+ },
+ "lagnare": {
+  "impr.pres.P1": {
+   "selected": "lagniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "lagnate"
+  },
+  "impr.pres.S2": {
+   "selected": "lagna"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "licere": {
+  "cond": {
+   "selected": null
+  },
+  "ger": {
+   "selected": null
+  },
+  "impr": {
+   "selected": null
+  },
+  "ind.fut": {
+   "selected": null
+  },
+  "ind.impf.P1": {
+   "selected": null
+  },
+  "ind.impf.P2": {
+   "selected": null
+  },
+  "ind.impf.S1": {
+   "selected": null
+  },
+  "ind.impf.S2": {
+   "selected": null
+  },
+  "ind.past": {
+   "selected": null
+  },
+  "ind.pres.P1": {
+   "selected": null
+  },
+  "ind.pres.P2": {
+   "selected": null
+  },
+  "ind.pres.P3": {
+   "selected": null
+  },
+  "ind.pres.S1": {
+   "selected": null
+  },
+  "ind.pres.S2": {
+   "selected": null
+  },
+  "part.pres": {
+   "selected": null
+  },
+  "sub.impf.P1": {
+   "selected": null
+  },
+  "sub.impf.P2": {
+   "selected": null
+  },
+  "sub.impf.S1": {
+   "selected": null
+  },
+  "sub.impf.S2": {
+   "selected": null
+  },
+  "sub.pres": {
+   "selected": null
+  }
+ },
+ "ledere": {
+  "ind.fut.S1": {
+   "selected": "lederò",
+   "rejected": [
+    "lederà"
+   ]
+  }
+ },
+ "liquefare": {
+  "impr.pres.S2": {
+   "selected": "liquefa'",
+   "alternatives": [
+    "liquefai"
+   ]
+  }
+ },
+ "lucere": {
+  "ind.past.S3": {
+   "selected": "lucé",
+   "rejected": [
+    "lucè"
+   ]
+  }
+ },
+ "malvolere": {
+  "ind.fut.S1": {
+   "selected": "malvorrò",
+   "rejected": [
+    "malvorrà"
+   ]
+  }
+ },
+ "mescere": {
+  "ind.past.S3": {
+   "selected": "mescé",
+   "rejected": [
+    "mescè"
+   ]
+  }
+ },
+ "mietere": {
+  "ind.past.S3": {
+   "selected": "mieté",
+   "rejected": [
+    "mietè"
+   ]
+  }
+ },
+ "mingere": {
+  "ind.fut.S1": {
+   "selected": "mingerò",
+   "rejected": [
+    "mingerà"
+   ]
+  }
+ },
+ "molcere": {
+  "ind.fut.S1": {
+   "selected": "molcerò",
+   "rejected": [
+    "molcerà"
+   ]
+  },
+  "part.past": {
+   "selected": null
+  }
+ },
+ "mordere": {
+  "ind.fut.S1": {
+   "selected": "morderò",
+   "rejected": [
+    "morderà"
+   ]
+  }
+ },
+ "mungere": {
+  "ind.fut.S1": {
+   "selected": "mungerò",
+   "rejected": [
+    "mungerà"
+   ]
+  }
+ },
+ "nascondere": {
+  "ind.fut.S1": {
+   "selected": "nasconderò",
+   "rejected": [
+    "nasconderà"
+   ]
+  }
+ },
+ "negligere": {
+  "ind.fut.S1": {
+   "selected": "negligerò",
+   "rejected": [
+    "negligerà"
+   ]
+  }
+ },
+ "nuocere": {
+  "impr.pres.P1": {
+   "selected": "nuociamo",
+   "alternatives": [
+    "nociamo"
+   ]
+  },
+  "impr.pres.P2": {
+   "selected": "nuocete",
+   "alternatives": [
+    "nocete"
+   ]
+  },
+  "ind.past.P1": {
+   "selected": "nuocemmo",
+   "alternatives": [
+    "nocemmo"
+   ]
+  },
+  "ind.past.P2": {
+   "selected": "nuoceste",
+   "alternatives": [
+    "noceste"
+   ]
+  },
+  "ind.past.S2": {
+   "selected": "nuocesti",
+   "alternatives": [
+    "nocesti"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "nuociamo",
+   "alternatives": [
+    "nociamo"
+   ]
+  },
+  "ind.pres.P2": {
+   "selected": "nuocete",
+   "alternatives": [
+    "nocete"
+   ]
+  },
+  "ind.pres.P3": {
+   "selected": "nuocciono",
+   "alternatives": [
+    "nocciono"
+   ]
+  },
+  "ind.pres.S1": {
+   "selected": "nuoccio",
+   "alternatives": [
+    "noccio"
+   ]
+  },
+  "part.past.P": {
+   "selected": "nociuti",
+   "rejected": [
+    "nociuto",
+    "nuociuto"
+   ]
+  },
+  "part.past.PF": {
+   "selected": "nociute",
+   "rejected": [
+    "nociuto",
+    "nuociuto"
+   ]
+  },
+  "part.past.S": {
+   "selected": "nociuto",
+   "alternatives": [
+    "nuociuto"
+   ]
+  },
+  "part.past.SF": {
+   "selected": "nociuta",
+   "rejected": [
+    "nociuto",
+    "nuociuto"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "nuociamo",
+   "alternatives": [
+    "nociamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "nuociate",
+   "alternatives": [
+    "nociate"
+   ]
+  },
+  "sub.pres.P3": {
+   "selected": "nuocciano",
+   "alternatives": [
+    "nocciano"
+   ]
+  },
+  "sub.pres.S1": {
+   "selected": "nuoccia",
+   "alternatives": [
+    "noccia"
+   ]
+  },
+  "sub.pres.S2": {
+   "selected": "nuoccia",
+   "alternatives": [
+    "noccia"
+   ]
+  },
+  "sub.pres.S3": {
+   "selected": "nuoccia",
+   "alternatives": [
+    "noccia"
+   ]
+  }
+ },
+ "offendere": {
+  "ind.fut.S1": {
+   "selected": "offenderò",
+   "rejected": [
+    "offenderà"
+   ]
+  }
+ },
+ "opprimere": {
+  "ind.fut.S1": {
+   "selected": "opprimerò",
+   "rejected": [
+    "opprimerà"
+   ]
+  }
+ },
+ "ostinare": {
+  "impr.pres.P1": {
+   "selected": "ostiniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "ostinate"
+  },
+  "impr.pres.S2": {
+   "selected": "ostina"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "ottundere": {
+  "ind.fut.S1": {
+   "selected": "ottunderò",
+   "rejected": [
+    "ottunderà"
+   ]
+  }
+ },
+ "pascere": {
+  "ind.fut.S1": {
+   "selected": "pascerò",
+   "rejected": [
+    "pascerà"
+   ]
+  }
+ },
+ "pavoneggiare": {
+  "impr.pres.P1": {
+   "selected": "pavoneggiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "pavoneggiate"
+  },
+  "impr.pres.S2": {
+   "selected": "pavoneggia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "pendere": {
+  "ind.fut.S1": {
+   "selected": "penderò",
+   "rejected": [
+    "penderà"
+   ]
+  }
+ },
+ "pentire": {
+  "impr.pres.P1": {
+   "selected": "pentiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "pentite"
+  },
+  "impr.pres.S2": {
+   "selected": "penti"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "percuotere": {
+  "ger.pres": {
+   "selected": "percuotendo",
+   "rejected": [
+    "percotevo",
+    "percuotevo"
+   ]
+  },
+  "impr.pres.P1": {
+   "selected": "percuotiamo",
+   "alternatives": [
+    "percotiamo"
+   ]
+  },
+  "impr.pres.P2": {
+   "selected": "percuotete",
+   "rejected": [
+    "percuotiamo"
+   ],
+   "alternatives": [
+    "percotete"
+   ]
+  },
+  "ind.impf.P1": {
+   "selected": "percuotevamo",
+   "alternatives": [
+    "percotevamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": "percuotevate",
+   "alternatives": [
+    "percotevate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": "percuotevano",
+   "alternatives": [
+    "percotevano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": "percuotevo",
+   "alternatives": [
+    "percotevo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": "percuotevi",
+   "alternatives": [
+    "percotevi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": "percuoteva",
+   "alternatives": [
+    "percoteva"
+   ]
+  },
+  "ind.past.P1": {
+   "selected": "percuotemmo",
+   "alternatives": [
+    "percotemmo"
+   ]
+  },
+  "ind.past.P2": {
+   "selected": "percuoteste",
+   "alternatives": [
+    "percoteste"
+   ]
+  },
+  "ind.past.S2": {
+   "selected": "percuotesti",
+   "alternatives": [
+    "percotesti"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "percuotiamo",
+   "alternatives": [
+    "percotiamo"
+   ]
+  },
+  "ind.pres.P2": {
+   "selected": "percuotete",
+   "rejected": [
+    "percuotiamo"
+   ],
+   "alternatives": [
+    "percotete"
+   ]
+  },
+  "part.pres": {
+   "selected": null
+  },
+  "part.pres.P": {
+   "selected": null,
+   "rejected": [
+    "percotevo",
+    "percuotevo"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": null,
+   "rejected": [
+    "percotevo",
+    "percuotevo"
+   ]
+  },
+  "part.pres.S": {
+   "selected": null,
+   "rejected": [
+    "percotevo",
+    "percuotevo"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": null,
+   "rejected": [
+    "percotevo",
+    "percuotevo"
+   ]
+  },
+  "sub.impf.P1": {
+   "selected": "percuotessimo",
+   "alternatives": [
+    "percotessimo"
+   ]
+  },
+  "sub.impf.P2": {
+   "selected": "percuoteste",
+   "alternatives": [
+    "percoteste"
+   ]
+  },
+  "sub.impf.P3": {
+   "selected": "percuotessero",
+   "alternatives": [
+    "percotessero"
+   ]
+  },
+  "sub.impf.S1": {
+   "selected": "percuotessi",
+   "alternatives": [
+    "percotessi"
+   ]
+  },
+  "sub.impf.S2": {
+   "selected": "percuotessi",
+   "alternatives": [
+    "percotessi"
+   ]
+  },
+  "sub.impf.S3": {
+   "selected": "percuotesse",
+   "alternatives": [
+    "percotesse"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "percuotiamo",
+   "alternatives": [
+    "percotiamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "percuotiate",
+   "alternatives": [
+    "percotiate"
+   ]
+  }
+ },
+ "peritare": {
+  "impr.pres.P1": {
+   "selected": "peritiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "peritate"
+  },
+  "impr.pres.S2": {
+   "selected": "perita"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "persistere": {
+  "ind.fut.S1": {
+   "selected": "persisterò",
+   "rejected": [
+    "persisterà"
+   ]
+  }
+ },
+ "piangere": {
+  "ind.fut.S1": {
+   "selected": "piangerò",
+   "rejected": [
+    "piangerà"
+   ]
+  }
+ },
+ "piccare": {
+  "impr.pres.P1": {
+   "selected": "picchiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "piccate"
+  },
+  "impr.pres.S2": {
+   "selected": "picca"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "piovere": {
+  "ind.fut.S1": {
+   "selected": "pioverò",
+   "rejected": [
+    "pioverà"
+   ]
+  }
+ },
+ "plaudere": {
+  "ger.pres": {
+   "selected": "plaudendo"
+  },
+  "impr.pres.P1": {
+   "selected": "plaudiamo"
+  },
+  "impr.pres.S2": {
+   "selected": "plaudi"
+  },
+  "ind.fut.S1": {
+   "selected": "plauderò",
+   "rejected": [
+    "plauderà"
+   ]
+  },
+  "ind.past.P1": {
+   "selected": "plaudemmo"
+  },
+  "ind.past.P3": {
+   "selected": "plaudettero",
+   "rejected": [
+    "plauderono"
+   ]
+  },
+  "ind.past.S3": {
+   "selected": "plaudette",
+   "rejected": [
+    "plaudé"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "plaudiamo"
+  },
+  "ind.pres.P3": {
+   "selected": "plaudono"
+  },
+  "ind.pres.S1": {
+   "selected": "plaudo"
+  },
+  "ind.pres.S2": {
+   "selected": "plaudi"
+  },
+  "ind.pres.S3": {
+   "selected": "plaude"
+  },
+  "part.past.P": {
+   "selected": "plauditi"
+  },
+  "part.past.PF": {
+   "selected": "plaudite"
+  },
+  "part.past.S": {
+   "selected": "plaudito"
+  },
+  "part.past.SF": {
+   "selected": "plaudita"
+  },
+  "part.pres.P": {
+   "selected": "plaudenti"
+  },
+  "part.pres.PF": {
+   "selected": "plaudenti"
+  },
+  "part.pres.S": {
+   "selected": "plaudente"
+  },
+  "part.pres.SF": {
+   "selected": "plaudente"
+  },
+  "sub.pres.P1": {
+   "selected": "plaudiamo"
+  },
+  "sub.pres.P2": {
+   "selected": "plaudiate"
+  },
+  "sub.pres.P3": {
+   "selected": "plaudano"
+  },
+  "sub.pres.S1": {
+   "selected": "plauda"
+  },
+  "sub.pres.S2": {
+   "selected": "plauda"
+  },
+  "sub.pres.S3": {
+   "selected": "plauda"
+  }
+ },
+ "porgere": {
+  "ind.fut.S1": {
+   "selected": "porgerò",
+   "rejected": [
+    "porgerà"
+   ]
+  }
+ },
+ "posporre": {
+  "ind.fut.S1": {
+   "selected": "posporrò",
+   "rejected": [
+    "posporrà"
+   ]
+  }
+ },
+ "potere": {
+  "ind.past.S3": {
+   "selected": "poté",
+   "rejected": [
+    "potè"
+   ]
+  }
+ },
+ "possedere": {
+  "cond.pres.P1": {
+   "selected": "possiederemmo",
+   "alternatives": [
+    "possederemmo"
+   ]
+  },
+  "cond.pres.P2": {
+   "selected": "possiedereste",
+   "alternatives": [
+    "possedereste"
+   ]
+  },
+  "cond.pres.P3": {
+   "selected": "possiederebbero",
+   "alternatives": [
+    "possederebbero"
+   ]
+  },
+  "cond.pres.S1": {
+   "selected": "possiederei",
+   "alternatives": [
+    "possederei"
+   ]
+  },
+  "cond.pres.S2": {
+   "selected": "possiederesti",
+   "alternatives": [
+    "possederesti"
+   ]
+  },
+  "cond.pres.S3": {
+   "selected": "possiederebbe",
+   "alternatives": [
+    "possederebbe"
+   ]
+  },
+  "ger.pres": {
+   "selected": "possedendo",
+   "rejected": [
+    "possedevo",
+    "possiedevo"
+   ]
+  },
+  "impr.pres.P1": {
+   "selected": "possediamo",
+   "rejected": [
+    "possiediamo"
+   ]
+  },
+  "impr.pres.P2": {
+   "selected": "possedete",
+   "rejected": [
+    "possiedete"
+   ]
+  },
+  "ind.fut.P1": {
+   "selected": "possiederemo",
+   "alternatives": [
+    "possederemo"
+   ]
+  },
+  "ind.fut.P2": {
+   "selected": "possiederete",
+   "alternatives": [
+    "possederete"
+   ]
+  },
+  "ind.fut.P3": {
+   "selected": "possiederanno",
+   "alternatives": [
+    "possederanno"
+   ]
+  },
+  "ind.fut.S1": {
+   "selected": "possiederò",
+   "rejected": [
+    "possederà",
+    "possiederà"
+   ],
+   "alternatives": [
+    "possederò"
+   ]
+  },
+  "ind.fut.S2": {
+   "selected": "possiederai",
+   "alternatives": [
+    "possederai"
+   ]
+  },
+  "ind.fut.S3": {
+   "selected": "possiederà",
+   "alternatives": [
+    "possederà"
+   ]
+  },
+  "ind.impf.P1": {
+   "selected": "possedevamo",
+   "rejected": [
+    "possiedevamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": "possedevate",
+   "rejected": [
+    "possiedevate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": "possedevano",
+   "rejected": [
+    "possiedevano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": "possedevo",
+   "rejected": [
+    "possiedevo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": "possedevi",
+   "rejected": [
+    "possiedevi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": "possedeva",
+   "rejected": [
+    "possiedeva"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "possediamo",
+   "rejected": [
+    "possiediamo"
+   ]
+  },
+  "ind.pres.P2": {
+   "selected": "possedete",
+   "rejected": [
+    "possiedete"
+   ]
+  },
+  "ind.pres.P3": {
+   "selected": "possiedono",
+   "alternatives": [
+    "posseggono"
+   ]
+  },
+  "ind.pres.S1": {
+   "selected": "possiedo",
+   "alternatives": [
+    "posseggo"
+   ]
+  },
+  "part.pres.P": {
+   "selected": "possidenti",
+   "rejected": [
+    "possedevo",
+    "possiedevo"
+   ],
+   "alternatives": [
+    "possedenti"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": "possidenti",
+   "rejected": [
+    "possedevo",
+    "possiedevo"
+   ],
+   "alternatives": [
+    "possedenti"
+   ]
+  },
+  "part.pres.S": {
+   "selected": "possidente",
+   "rejected": [
+    "possedevo",
+    "possiedevo"
+   ],
+   "alternatives": [
+    "possedente"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": "possidente",
+   "rejected": [
+    "possedevo",
+    "possiedevo"
+   ],
+   "alternatives": [
+    "possedente"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "possediamo",
+   "rejected": [
+    "possiediamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "possediate",
+   "rejected": [
+    "possiediate"
+   ]
+  },
+  "sub.pres.P3": {
+   "selected": "possiedano",
+   "rejected": [
+    "possedano"
+   ],
+   "alternatives": [
+    "posseggano"
+   ]
+  },
+  "sub.pres.S3": {
+   "selected": "possieda",
+   "alternatives": [
+    "possegga"
+   ]
+  }
+ },
+ "precomprimere": {
+  "ind.fut.S1": {
+   "selected": "precomprimerò",
+   "rejected": [
+    "precomprimerà"
+   ]
+  }
+ },
+ "preconoscere": {
+  "ind.fut.S1": {
+   "selected": "preconoscerò",
+   "rejected": [
+    "preconoscerà"
+   ]
+  }
+ },
+ "preesistere": {
+  "ind.fut.S1": {
+   "selected": "preesisterò",
+   "rejected": [
+    "preesisterà"
+   ]
+  }
+ },
+ "prefiggere": {
+  "ind.fut.S1": {
+   "selected": "prefiggerò",
+   "rejected": [
+    "prefiggerà"
+   ]
+  }
+ },
+ "preludere": {
+  "ind.fut.S1": {
+   "selected": "preluderò",
+   "rejected": [
+    "preluderà"
+   ]
+  }
+ },
+ "premere": {
+  "ind.fut.S1": {
+   "selected": "premerò",
+   "rejected": [
+    "premerà"
+   ]
+  }
+ },
+ "prenascere": {
+  "ind.fut.S1": {
+   "selected": "prenascerò",
+   "rejected": [
+    "prenascerà"
+   ]
+  }
+ },
+ "prendere": {
+  "ind.fut.S1": {
+   "selected": "prenderò",
+   "rejected": [
+    "prenderà"
+   ]
+  }
+ },
+ "prepotere": {
+  "ind.past.S3": {
+   "selected": "prepoté",
+   "rejected": [
+    "prepotè"
+   ]
+  }
+ },
+ "prescegliere": {
+  "ind.fut.S1": {
+   "selected": "presceglierò",
+   "rejected": [
+    "presceglierà"
+   ]
+  }
+ },
+ "presentire": {
+  "impr.pres.P1": {
+   "selected": "presentiamo"
+  },
+  "impr.pres.S2": {
+   "selected": "presenti"
+  },
+  "ind.pres.P1": {
+   "selected": "presentiamo"
+  },
+  "ind.pres.P3": {
+   "selected": "presentono",
+   "rejected": [
+    "presenton"
+   ]
+  },
+  "ind.pres.S1": {
+   "selected": "presento"
+  },
+  "ind.pres.S2": {
+   "selected": "presenti"
+  },
+  "sub.pres.P1": {
+   "selected": "presentiamo"
+  },
+  "sub.pres.P2": {
+   "selected": "presentiate"
+  },
+  "sub.pres.P3": {
+   "selected": "presentano"
+  },
+  "sub.pres.S1": {
+   "selected": "presenta"
+  },
+  "sub.pres.S2": {
+   "selected": "presenta"
+  },
+  "sub.pres.S3": {
+   "selected": "presenta"
+  }
+ },
+ "presiedere": {
+  "ind.fut.S1": {
+   "selected": "presiederò",
+   "rejected": [
+    "presiederà"
+   ]
+  }
+ },
+ "pretendere": {
+  "ind.fut.S1": {
+   "selected": "pretenderò",
+   "rejected": [
+    "pretenderà"
+   ]
+  }
+ },
+ "procombere": {
+  "ind.fut.S1": {
+   "selected": "procomberò",
+   "rejected": [
+    "procomberà"
+   ]
+  },
+  "part.past": {
+   "selected": null
+  }
+ },
+ "propendere": {
+  "ind.fut.S1": {
+   "selected": "propenderò",
+   "rejected": [
+    "propenderà"
+   ]
+  }
+ },
+ "proteggere": {
+  "ind.fut.S1": {
+   "selected": "proteggerò",
+   "rejected": [
+    "proteggerà"
+   ]
+  }
+ },
+ "protendere": {
+  "ind.fut.S1": {
+   "selected": "protenderò",
+   "rejected": [
+    "protenderà"
+   ]
+  }
+ },
+ "provenire": {
+  "ger.pres": {
+   "selected": "provenendo",
+   "rejected": [
+    "proveniendo"
+   ]
+  }
+ },
+ "prudere": {
+  "ind.fut.S1": {
+   "selected": "pruderò",
+   "rejected": [
+    "pruderà"
+   ]
+  }
+ },
+ "pungere": {
+  "ind.fut.S1": {
+   "selected": "pungerò",
+   "rejected": [
+    "pungerà"
+   ]
+  }
+ },
+ "putrefare": {
+  "impr.pres.S2": {
+   "selected": "putrefa'",
+   "alternatives": [
+    "putrefai"
+   ]
+  }
+ },
+ "radere": {
+  "ind.fut.S1": {
+   "selected": "raderò",
+   "rejected": [
+    "raderà"
+   ]
+  }
+ },
+ "radioassistere": {
+  "ind.fut.S1": {
+   "selected": "radioassisterò",
+   "rejected": [
+    "radioassisterà"
+   ]
+  }
+ },
+ "rapprendere": {
+  "ind.fut.S1": {
+   "selected": "rapprenderò",
+   "rejected": [
+    "rapprenderà"
+   ]
+  }
+ },
+ "rarefare": {
+  "impr.pres.S2": {
+   "selected": "rarefa'",
+   "alternatives": [
+    "rarefai"
+   ]
+  }
+ },
+ "rattenere": {
+  "ind.fut.S1": {
+   "selected": "ratterrò",
+   "rejected": [
+    "ratterrà"
+   ]
+  }
+ },
+ "ravvedere": {
+  "ind.fut.S1": {
+   "selected": "ravvedrò",
+   "rejected": [
+    "ravvedrà"
+   ]
+  }
+ },
+ "ravvolgere": {
+  "ind.fut.S1": {
+   "selected": "ravvolgerò",
+   "rejected": [
+    "ravvolgerà"
+   ]
+  }
+ },
+ "recere": {
+  "cond": {
+   "selected": null
+  },
+  "ger": {
+   "selected": null
+  },
+  "impr": {
+   "selected": null
+  },
+  "ind.fut": {
+   "selected": null
+  },
+  "ind.impf": {
+   "selected": null
+  },
+  "ind.past": {
+   "selected": null
+  },
+  "ind.pres.P1": {
+   "selected": null
+  },
+  "ind.pres.P2": {
+   "selected": null
+  },
+  "ind.pres.P3": {
+   "selected": null
+  },
+  "ind.pres.S1": {
+   "selected": null
+  },
+  "ind.pres.S2": {
+   "selected": null
+  },
+  "part.pres": {
+   "selected": null
+  },
+  "sub": {
+   "selected": null
+  }
+ },
+ "recedere": {
+  "ind.fut.S1": {
+   "selected": "recederò",
+   "rejected": [
+    "recederà"
+   ]
+  }
+ },
+ "recingere": {
+  "ind.fut.S1": {
+   "selected": "recingerò",
+   "rejected": [
+    "recingerà"
+   ]
+  }
+ },
+ "redigere": {
+  "ind.fut.S1": {
+   "selected": "redigerò",
+   "rejected": [
+    "redigerà"
+   ]
+  }
+ },
+ "redimere": {
+  "ind.fut.S1": {
+   "selected": "redimerò",
+   "rejected": [
+    "redimerà"
+   ]
+  }
+ },
+ "reiscrivere": {
+  "ind.fut.S1": {
+   "selected": "reiscriverò",
+   "rejected": [
+    "reiscriverà"
+   ]
+  }
+ },
+ "rendere": {
+  "ind.fut.S1": {
+   "selected": "renderò",
+   "rejected": [
+    "renderà"
+   ]
+  }
+ },
+ "repellere": {
+  "ind.fut.S1": {
+   "selected": "repellerò",
+   "rejected": [
+    "repellerà"
+   ]
+  }
+ },
+ "resistere": {
+  "ind.fut.S1": {
+   "selected": "resisterò",
+   "rejected": [
+    "resisterà"
+   ]
+  }
+ },
+ "retrocedere": {
+  "ind.fut.S1": {
+   "selected": "retrocederò",
+   "rejected": [
+    "retrocederà"
+   ]
+  }
+ },
+ "riabbattere": {
+  "ind.past.S3": {
+   "selected": "riabbatté",
+   "rejected": [
+    "riabbattè"
+   ]
+  }
+ },
+ "riaccendere": {
+  "ind.fut.S1": {
+   "selected": "riaccenderò",
+   "rejected": [
+    "riaccenderà"
+   ]
+  }
+ },
+ "riannettere": {
+  "ind.fut.S1": {
+   "selected": "riannetterò",
+   "rejected": [
+    "riannetterà"
+   ]
+  }
+ },
+ "riappropriare": {
+  "impr.pres.P1": {
+   "selected": "riappropriamo"
+  },
+  "impr.pres.P2": {
+   "selected": "riappropriate"
+  },
+  "impr.pres.S2": {
+   "selected": "riappropria"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "riavvolgere": {
+  "ind.fut.S1": {
+   "selected": "riavvolgerò",
+   "rejected": [
+    "riavvolgerà"
+   ]
+  }
+ },
+ "ribattere": {
+  "ind.past.S3": {
+   "selected": "ribatté",
+   "rejected": [
+    "ribattè"
+   ]
+  }
+ },
+ "ricedere": {
+  "ind.fut.S1": {
+   "selected": "ricederò",
+   "rejected": [
+    "ricederà"
+   ]
+  }
+ },
+ "ricevere": {
+  "ind.fut.S1": {
+   "selected": "riceverò",
+   "rejected": [
+    "riceverà"
+   ]
+  }
+ },
+ "ricogliere": {
+  "ind.fut.S1": {
+   "selected": "ricoglierò",
+   "rejected": [
+    "ricoglierà"
+   ]
+  }
+ },
+ "ricomprendere": {
+  "ind.fut.S1": {
+   "selected": "ricomprenderò",
+   "rejected": [
+    "ricomprenderà"
+   ]
+  }
+ },
+ "ricongiungere": {
+  "ind.fut.S1": {
+   "selected": "ricongiungerò",
+   "rejected": [
+    "ricongiungerà"
+   ]
+  }
+ },
+ "riconnettere": {
+  "ind.fut.S1": {
+   "selected": "riconnetterò",
+   "rejected": [
+    "riconnetterà"
+   ]
+  }
+ },
+ "ricorreggere": {
+  "ind.fut.S1": {
+   "selected": "ricorreggerò",
+   "rejected": [
+    "ricorreggerà"
+   ]
+  }
+ },
+ "ricuocere": {
+  "ind.fut.S1": {
+   "selected": "ricuocerò",
+   "rejected": [
+    "ricuocerà"
+   ]
+  }
+ },
+ "ricrescere": {
+  "ind.fut.S1": {
+   "selected": "ricrescerò",
+   "rejected": [
+    "ricrescerà"
+   ]
+  }
+ },
+ "ridare": {
+  "ind.pres.S1": {
+   "selected": "rido",
+   "rejected": [
+    "ridò"
+   ]
+  }
+ },
+ "ridipingere": {
+  "ind.fut.S1": {
+   "selected": "ridipingerò",
+   "rejected": [
+    "ridipingerà"
+   ]
+  }
+ },
+ "ridiscendere": {
+  "ind.fut.S1": {
+   "selected": "ridiscenderò",
+   "rejected": [
+    "ridiscenderà"
+   ]
+  }
+ },
+ "ridiscorrere": {
+  "ind.fut.S1": {
+   "selected": "ridiscorrerò",
+   "rejected": [
+    "ridiscorrerà"
+   ]
+  }
+ },
+ "ridiscutere": {
+  "ind.fut.S1": {
+   "selected": "ridiscuterò",
+   "rejected": [
+    "ridiscuterà"
+   ]
+  }
+ },
+ "rieleggere": {
+  "ind.fut.S1": {
+   "selected": "rieleggerò",
+   "rejected": [
+    "rieleggerà"
+   ]
+  }
+ },
+ "riempiere": {
+  "ind.fut.S1": {
+   "selected": "riempierò",
+   "rejected": [
+    "riempierà"
+   ]
+  }
+ },
+ "riesplodere": {
+  "ind.fut.S1": {
+   "selected": "riesploderò",
+   "rejected": [
+    "riesploderà"
+   ]
+  }
+ },
+ "rifare": {
+  "impr.pres.S2": {
+   "selected": "rifa'",
+   "alternatives": [
+    "rifai"
+   ]
+  }
+ },
+ "riflettere": {
+  "ind.past.S3": {
+   "selected": "rifletté",
+   "rejected": [
+    "riflettè"
+   ]
+  }
+ },
+ "rifrangere": {
+  "ind.fut.S1": {
+   "selected": "rifrangerò",
+   "rejected": [
+    "rifrangerà"
+   ]
+  }
+ },
+ "rifriggere": {
+  "ind.fut.S1": {
+   "selected": "rifriggerò",
+   "rejected": [
+    "rifriggerà"
+   ]
+  }
+ },
+ "rifulgere": {
+  "ind.fut.S1": {
+   "selected": "rifulgerò",
+   "rejected": [
+    "rifulgerà"
+   ]
+  }
+ },
+ "rilucere": {
+  "ind.fut.S1": {
+   "selected": "rilucerò",
+   "rejected": [
+    "rilucerà"
+   ]
+  }
+ },
+ "rimordere": {
+  "ind.fut.S1": {
+   "selected": "rimorderò",
+   "rejected": [
+    "rimorderà"
+   ]
+  }
+ },
+ "rimpiangere": {
+  "ind.fut.S1": {
+   "selected": "rimpiangerò",
+   "rejected": [
+    "rimpiangerà"
+   ]
+  }
+ },
+ "rimpossessare": {
+  "impr.pres.P1": {
+   "selected": "rimpossessiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "rimpossessate"
+  },
+  "impr.pres.S2": {
+   "selected": "rimpossessa"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "rincagnare": {
+  "impr.pres.P1": {
+   "selected": "rincagniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "rincagnate"
+  },
+  "impr.pres.S2": {
+   "selected": "rincagna"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "rincrescere": {
+  "ind.fut.S1": {
+   "selected": "rincrescerò",
+   "rejected": [
+    "rincrescerà"
+   ]
+  }
+ },
+ "rinvolgere": {
+  "ind.fut.S1": {
+   "selected": "rinvolgerò",
+   "rejected": [
+    "rinvolgerà"
+   ]
+  }
+ },
+ "riottenere": {
+  "ind.fut.S1": {
+   "selected": "riotterrò",
+   "rejected": [
+    "riotterrà"
+   ]
+  }
+ },
+ "ripentire": {
+  "impr.pres.P1": {
+   "selected": "ripentiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "ripentite"
+  },
+  "impr.pres.S2": {
+   "selected": "ripenti"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "ripercuotere": {
+  "ger.pres": {
+   "selected": "ripercuotendo",
+   "rejected": [
+    "ripercuotevo"
+   ]
+  },
+  "part.pres": {
+   "selected": null
+  },
+  "part.pres.P": {
+   "selected": null,
+   "rejected": [
+    "ripercuotevo"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": null,
+   "rejected": [
+    "ripercuotevo"
+   ]
+  },
+  "part.pres.S": {
+   "selected": null,
+   "rejected": [
+    "ripercuotevo"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": null,
+   "rejected": [
+    "ripercuotevo"
+   ]
+  }
+ },
+ "ripiovere": {
+  "ind.fut.S1": {
+   "selected": "ripioverò",
+   "rejected": [
+    "ripioverà"
+   ]
+  }
+ },
+ "riprendere": {
+  "ind.fut.S1": {
+   "selected": "riprenderò",
+   "rejected": [
+    "riprenderà"
+   ]
+  }
+ },
+ "ripungere": {
+  "ind.fut.S1": {
+   "selected": "ripungerò",
+   "rejected": [
+    "ripungerà"
+   ]
+  }
+ },
+ "riscegliere": {
+  "ind.fut.S1": {
+   "selected": "risceglierò",
+   "rejected": [
+    "risceglierà"
+   ]
+  }
+ },
+ "risciogliere": {
+  "ind.fut.S1": {
+   "selected": "riscioglierò",
+   "rejected": [
+    "riscioglierà"
+   ]
+  }
+ },
+ "riscorrere": {
+  "ind.fut.S1": {
+   "selected": "riscorrerò",
+   "rejected": [
+    "riscorrerà"
+   ]
+  }
+ },
+ "riscuotere": {
+  "ger.pres": {
+   "selected": "riscuotendo",
+   "rejected": [
+    "riscotevo",
+    "riscuotevo"
+   ]
+  },
+  "impr.pres.P1": {
+   "selected": "riscuotiamo",
+   "alternatives": [
+    "riscotiamo"
+   ]
+  },
+  "impr.pres.P2": {
+   "selected": "riscuotete",
+   "rejected": [
+    "riscuotiamo"
+   ],
+   "alternatives": [
+    "riscotete"
+   ]
+  },
+  "ind.impf.P1": {
+   "selected": "riscuotevamo",
+   "alternatives": [
+    "riscotevamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": "riscuotevate",
+   "alternatives": [
+    "riscotevate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": "riscuotevano",
+   "alternatives": [
+    "riscotevano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": "riscuotevo",
+   "alternatives": [
+    "riscotevo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": "riscuotevi",
+   "alternatives": [
+    "riscotevi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": "riscuoteva",
+   "alternatives": [
+    "riscoteva"
+   ]
+  },
+  "ind.past.P1": {
+   "selected": "riscuotemmo",
+   "alternatives": [
+    "riscotemmo"
+   ]
+  },
+  "ind.past.P2": {
+   "selected": "riscuoteste",
+   "alternatives": [
+    "riscoteste"
+   ]
+  },
+  "ind.past.S2": {
+   "selected": "riscuotesti",
+   "alternatives": [
+    "riscotesti"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "riscuotiamo",
+   "alternatives": [
+    "riscotiamo"
+   ]
+  },
+  "ind.pres.P2": {
+   "selected": "riscuotete",
+   "rejected": [
+    "riscuotiamo"
+   ],
+   "alternatives": [
+    "riscotete"
+   ]
+  },
+  "part.pres": {
+   "selected": null
+  },
+  "part.pres.P": {
+   "selected": null,
+   "rejected": [
+    "riscotevo",
+    "riscuotevo"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": null,
+   "rejected": [
+    "riscotevo",
+    "riscuotevo"
+   ]
+  },
+  "part.pres.S": {
+   "selected": null,
+   "rejected": [
+    "riscotevo",
+    "riscuotevo"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": null,
+   "rejected": [
+    "riscotevo",
+    "riscuotevo"
+   ]
+  },
+  "sub.impf.P1": {
+   "selected": "riscuotessimo",
+   "alternatives": [
+    "riscotessimo"
+   ]
+  },
+  "sub.impf.P2": {
+   "selected": "riscuoteste",
+   "alternatives": [
+    "riscoteste"
+   ]
+  },
+  "sub.impf.P3": {
+   "selected": "riscuotessero",
+   "alternatives": [
+    "riscotessero"
+   ]
+  },
+  "sub.impf.S1": {
+   "selected": "riscuotessi",
+   "alternatives": [
+    "riscotessi"
+   ]
+  },
+  "sub.impf.S2": {
+   "selected": "riscuotessi",
+   "alternatives": [
+    "riscotessi"
+   ]
+  },
+  "sub.impf.S3": {
+   "selected": "riscuotesse",
+   "alternatives": [
+    "riscotesse"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "riscuotiamo",
+   "alternatives": [
+    "riscotiamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "riscuotiate",
+   "alternatives": [
+    "riscotiate"
+   ]
+  }
+ },
+ "risedere": {
+  "cond.pres.P1": {
+   "selected": "risiederemmo",
+   "alternatives": [
+    "risederemmo"
+   ]
+  },
+  "cond.pres.P2": {
+   "selected": "risiedereste",
+   "alternatives": [
+    "risedereste"
+   ]
+  },
+  "cond.pres.P3": {
+   "selected": "risiederebbero",
+   "alternatives": [
+    "risederebbero"
+   ]
+  },
+  "cond.pres.S1": {
+   "selected": "risiederei",
+   "alternatives": [
+    "risederei"
+   ]
+  },
+  "cond.pres.S2": {
+   "selected": "risiederesti",
+   "alternatives": [
+    "risederesti"
+   ]
+  },
+  "cond.pres.S3": {
+   "selected": "risiederebbe",
+   "alternatives": [
+    "risederebbe"
+   ]
+  },
+  "ger.pres": {
+   "selected": "risedendo",
+   "rejected": [
+    "risedevo",
+    "risiedevo"
+   ]
+  },
+  "impr.pres.P1": {
+   "selected": "risediamo",
+   "rejected": [
+    "risiediamo"
+   ]
+  },
+  "impr.pres.P2": {
+   "selected": "risedete",
+   "rejected": [
+    "risiedete"
+   ]
+  },
+  "ind.fut.P1": {
+   "selected": "risiederemo",
+   "alternatives": [
+    "risederemo"
+   ]
+  },
+  "ind.fut.P2": {
+   "selected": "risiederete",
+   "alternatives": [
+    "risederete"
+   ]
+  },
+  "ind.fut.P3": {
+   "selected": "risiederanno",
+   "alternatives": [
+    "risederanno"
+   ]
+  },
+  "ind.fut.S1": {
+   "selected": "risiederò",
+   "rejected": [
+    "risederà",
+    "risiederà"
+   ],
+   "alternatives": [
+    "risederò"
+   ]
+  },
+  "ind.fut.S2": {
+   "selected": "risiederai",
+   "alternatives": [
+    "risederai"
+   ]
+  },
+  "ind.fut.S3": {
+   "selected": "risiederà",
+   "alternatives": [
+    "risederà"
+   ]
+  },
+  "ind.impf.P1": {
+   "selected": "risedevamo",
+   "rejected": [
+    "risiedevamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": "risedevate",
+   "rejected": [
+    "risiedevate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": "risedevano",
+   "rejected": [
+    "risiedevano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": "risedevo",
+   "rejected": [
+    "risiedevo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": "risedevi",
+   "rejected": [
+    "risiedevi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": "risedeva",
+   "rejected": [
+    "risiedeva"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "risediamo",
+   "rejected": [
+    "risiediamo"
+   ]
+  },
+  "ind.pres.P2": {
+   "selected": "risedete",
+   "rejected": [
+    "risiedete"
+   ]
+  },
+  "ind.pres.P3": {
+   "selected": "risiedono",
+   "alternatives": [
+    "riseggono"
+   ]
+  },
+  "ind.pres.S1": {
+   "selected": "risiedo",
+   "alternatives": [
+    "riseggo"
+   ]
+  },
+  "part.pres.P": {
+   "selected": "risedenti",
+   "rejected": [
+    "risedevo",
+    "risiedevo"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": "risedenti",
+   "rejected": [
+    "risedevo",
+    "risiedevo"
+   ]
+  },
+  "part.pres.S": {
+   "selected": "risedente",
+   "rejected": [
+    "risedevo",
+    "risiedevo"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": "risedente",
+   "rejected": [
+    "risedevo",
+    "risiedevo"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "risediamo",
+   "rejected": [
+    "risiediamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "risediate",
+   "rejected": [
+    "risiediate"
+   ]
+  },
+  "sub.pres.P3": {
+   "selected": "risiedano",
+   "rejected": [
+    "risedano"
+   ]
+  }
+ },
+ "risiedere": {
+  "ind.fut.S1": {
+   "selected": "risiederò",
+   "rejected": [
+    "risiederà"
+   ]
+  }
+ },
+ "risospingere": {
+  "ind.fut.S1": {
+   "selected": "risospingerò",
+   "rejected": [
+    "risospingerà"
+   ]
+  }
+ },
+ "risostenere": {
+  "ind.fut.S1": {
+   "selected": "risosterrò",
+   "rejected": [
+    "risosterrà"
+   ]
+  }
+ },
+ "risplendere": {
+  "ind.fut.S1": {
+   "selected": "risplenderò",
+   "rejected": [
+    "risplenderà"
+   ]
+  }
+ },
+ "rispondere": {
+  "ind.fut.S1": {
+   "selected": "risponderò",
+   "rejected": [
+    "risponderà"
+   ]
+  }
+ },
+ "ristringere": {
+  "ind.fut.S1": {
+   "selected": "ristringerò",
+   "rejected": [
+    "ristringerà"
+   ]
+  }
+ },
+ "ritingere": {
+  "ind.fut.S1": {
+   "selected": "ritingerò",
+   "rejected": [
+    "ritingerà"
+   ]
+  }
+ },
+ "ritogliere": {
+  "ind.fut.S1": {
+   "selected": "ritoglierò",
+   "rejected": [
+    "ritoglierà"
+   ]
+  }
+ },
+ "rivalere": {
+  "impr.pres.P1": {
+   "selected": "rivaliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "rivalete"
+  },
+  "impr.pres.S2": {
+   "selected": "rivali"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "rivincere": {
+  "ind.fut.S1": {
+   "selected": "rivincerò",
+   "rejected": [
+    "rivincerà"
+   ]
+  }
+ },
+ "sbattere": {
+  "ind.past.S3": {
+   "selected": "sbatté",
+   "rejected": [
+    "sbattè"
+   ]
+  }
+ },
+ "sbellicare": {
+  "impr.pres.P1": {
+   "selected": "sbellichiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "sbellicate"
+  },
+  "impr.pres.S2": {
+   "selected": "sbellica"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "sbracciare": {
+  "impr.pres.P1": {
+   "selected": "sbracciamo"
+  },
+  "impr.pres.P2": {
+   "selected": "sbracciate"
+  },
+  "impr.pres.S2": {
+   "selected": "sbraccia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "sbronzare": {
+  "impr.pres.P1": {
+   "selected": "sbronziamo"
+  },
+  "impr.pres.P2": {
+   "selected": "sbronzate"
+  },
+  "impr.pres.S2": {
+   "selected": "sbronza"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "scalmanare": {
+  "impr.pres.P1": {
+   "selected": "scalmaniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "scalmanate"
+  },
+  "impr.pres.S2": {
+   "selected": "scalmana"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "scamiciare": {
+  "impr.pres.P1": {
+   "selected": "scamiciamo"
+  },
+  "impr.pres.P2": {
+   "selected": "scamiciate"
+  },
+  "impr.pres.S2": {
+   "selected": "scamicia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "scapicollare": {
+  "impr.pres.P1": {
+   "selected": "scapicolliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "scapicollate"
+  },
+  "impr.pres.S2": {
+   "selected": "scapicolla"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "scegliere": {
+  "ind.fut.S1": {
+   "selected": "sceglierò",
+   "rejected": [
+    "sceglierà"
+   ]
+  }
+ },
+ "scendere": {
+  "ind.fut.S1": {
+   "selected": "scenderò",
+   "rejected": [
+    "scenderà"
+   ]
+  }
+ },
+ "scernere": {
+  "ind.fut.S1": {
+   "selected": "scernerò",
+   "rejected": [
+    "scernerà"
+   ]
+  }
+ },
+ "scervellare": {
+  "impr.pres.P1": {
+   "selected": "scervelliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "scervellate"
+  },
+  "impr.pres.S2": {
+   "selected": "scervella"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "schiudere": {
+  "ind.fut.S1": {
+   "selected": "schiuderò",
+   "rejected": [
+    "schiuderà"
+   ]
+  }
+ },
+ "scollacciare": {
+  "impr.pres.P1": {
+   "selected": "scollacciamo"
+  },
+  "impr.pres.P2": {
+   "selected": "scollacciate"
+  },
+  "impr.pres.S2": {
+   "selected": "scollaccia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "sconfiggere": {
+  "ind.fut.S1": {
+   "selected": "sconfiggerò",
+   "rejected": [
+    "sconfiggerà"
+   ]
+  }
+ },
+ "sconnettere": {
+  "ind.fut.S1": {
+   "selected": "sconnetterò",
+   "rejected": [
+    "sconnetterà"
+   ]
+  }
+ },
+ "sconoscere": {
+  "ind.fut.S1": {
+   "selected": "sconoscerò",
+   "rejected": [
+    "sconoscerà"
+   ]
+  }
+ },
+ "scoscendere": {
+  "ind.fut.S1": {
+   "selected": "scoscenderò",
+   "rejected": [
+    "scoscenderà"
+   ]
+  }
+ },
+ "scuotere": {
+  "ger.pres": {
+   "selected": "scuotendo",
+   "rejected": [
+    "scotevo",
+    "scuotevo"
+   ]
+  },
+  "impr.pres.P1": {
+   "selected": "scuotiamo",
+   "alternatives": [
+    "scotiamo"
+   ]
+  },
+  "impr.pres.P2": {
+   "selected": "scuotete",
+   "rejected": [
+    "scuotiamo"
+   ],
+   "alternatives": [
+    "scotete"
+   ]
+  },
+  "ind.impf.P1": {
+   "selected": "scuotevamo",
+   "alternatives": [
+    "scotevamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": "scuotevate",
+   "alternatives": [
+    "scotevate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": "scuotevano",
+   "alternatives": [
+    "scotevano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": "scuotevo",
+   "alternatives": [
+    "scotevo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": "scuotevi",
+   "alternatives": [
+    "scotevi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": "scuoteva",
+   "alternatives": [
+    "scoteva"
+   ]
+  },
+  "ind.past.P1": {
+   "selected": "scuotemmo",
+   "alternatives": [
+    "scotemmo"
+   ]
+  },
+  "ind.past.P2": {
+   "selected": "scuoteste",
+   "alternatives": [
+    "scoteste"
+   ]
+  },
+  "ind.past.S2": {
+   "selected": "scuotesti",
+   "alternatives": [
+    "scotesti"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "scuotiamo",
+   "alternatives": [
+    "scotiamo"
+   ]
+  },
+  "ind.pres.P2": {
+   "selected": "scuotete",
+   "rejected": [
+    "scuotiamo"
+   ],
+   "alternatives": [
+    "scotete"
+   ]
+  },
+  "part.pres.P": {
+   "selected": "scuotenti",
+   "rejected": [
+    "scotevo",
+    "scuotevo"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": "scuotenti",
+   "rejected": [
+    "scotevo",
+    "scuotevo"
+   ]
+  },
+  "part.pres.S": {
+   "selected": "scuotente",
+   "rejected": [
+    "scotevo",
+    "scuotevo"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": "scuotente",
+   "rejected": [
+    "scotevo",
+    "scuotevo"
+   ]
+  },
+  "sub.impf.P1": {
+   "selected": "scuotessimo",
+   "alternatives": [
+    "scotessimo"
+   ]
+  },
+  "sub.impf.P2": {
+   "selected": "scuoteste",
+   "alternatives": [
+    "scoteste"
+   ]
+  },
+  "sub.impf.P3": {
+   "selected": "scuotessero",
+   "alternatives": [
+    "scotessero"
+   ]
+  },
+  "sub.impf.S1": {
+   "selected": "scuotessi",
+   "alternatives": [
+    "scotessi"
+   ]
+  },
+  "sub.impf.S2": {
+   "selected": "scuotessi",
+   "alternatives": [
+    "scotessi"
+   ]
+  },
+  "sub.impf.S3": {
+   "selected": "scuotesse",
+   "alternatives": [
+    "scotesse"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "scuotiamo",
+   "alternatives": [
+    "scotiamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "scuotiate",
+   "alternatives": [
+    "scotiate"
+   ]
+  }
+ },
+ "scuocere": {
+  "ind.fut.S1": {
+   "selected": "scuocerò",
+   "rejected": [
+    "scuocerà"
+   ]
+  }
+ },
+ "scucire": {
+  "ind.fut.S1": {
+   "selected": "scucirò",
+   "rejected": [
+    "scucirà"
+   ]
+  }
+ },
+ "secernere": {
+  "ind.fut.S1": {
+   "selected": "secernerò",
+   "rejected": [
+    "secernerà"
+   ]
+  }
+ },
+ "sedere": {
+  "ger.pres": {
+   "selected": "sedendo",
+   "rejected": [
+    "sedevo",
+    "siedevo"
+   ]
+  },
+  "impr.pres.P1": {
+   "selected": "sediamo",
+   "rejected": [
+    "siediamo"
+   ]
+  },
+  "impr.pres.P2": {
+   "selected": "sedete",
+   "rejected": [
+    "siedete"
+   ]
+  },
+  "ind.fut.S1": {
+   "selected": "siederò"
+  },
+  "ind.impf.P1": {
+   "selected": "sedevamo",
+   "rejected": [
+    "siedevamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": "sedevate",
+   "rejected": [
+    "siedevate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": "sedevano",
+   "rejected": [
+    "siedevano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": "sedevo",
+   "rejected": [
+    "siedevo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": "sedevi",
+   "rejected": [
+    "siedevi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": "sedeva",
+   "rejected": [
+    "siedeva"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "sediamo",
+   "rejected": [
+    "siediamo"
+   ]
+  },
+  "ind.pres.P2": {
+   "selected": "sedete",
+   "rejected": [
+    "siedete"
+   ]
+  },
+  "ind.pres.P3": {
+   "selected": "siedono",
+   "alternatives": [
+    "seggono"
+   ]
+  },
+  "ind.pres.S1": {
+   "selected": "siedo",
+   "alternatives": [
+    "seggo"
+   ]
+  },
+  "part.pres.P": {
+   "selected": "sedenti",
+   "rejected": [
+    "sedevo",
+    "siedevo"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": "sedenti",
+   "rejected": [
+    "sedevo",
+    "siedevo"
+   ]
+  },
+  "part.pres.S": {
+   "selected": "sedente",
+   "rejected": [
+    "sedevo",
+    "siedevo"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": "sedente",
+   "rejected": [
+    "sedevo",
+    "siedevo"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "sediamo",
+   "rejected": [
+    "siediamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "sediate",
+   "rejected": [
+    "siediate"
+   ]
+  }
+ },
+ "serpere": {
+  "ind.past.S3": {
+   "selected": "serpé",
+   "rejected": [
+    "serpè"
+   ]
+  }
+ },
+ "sfegatare": {
+  "impr.pres.P1": {
+   "selected": "sfegatiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "sfegatate"
+  },
+  "impr.pres.S2": {
+   "selected": "sfegata"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "sfottere": {
+  "ind.past.S3": {
+   "selected": "sfotté",
+   "rejected": [
+    "sfottè"
+   ]
+  }
+ },
+ "sfratare": {
+  "impr.pres.P1": {
+   "selected": "sfratiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "sfratate"
+  },
+  "impr.pres.S2": {
+   "selected": "sfrata"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "sgolare": {
+  "impr.pres.P1": {
+   "selected": "sgoliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "sgolate"
+  },
+  "impr.pres.S2": {
+   "selected": "sgola"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "smungere": {
+  "ind.fut.S1": {
+   "selected": "smungerò",
+   "rejected": [
+    "smungerà"
+   ]
+  }
+ },
+ "soccombere": {
+  "ind.fut.S1": {
+   "selected": "soccomberò",
+   "rejected": [
+    "soccomberà"
+   ]
+  },
+  "part.past": {
+   "selected": null
+  }
+ },
+ "soccorrere": {
+  "ind.fut.S1": {
+   "selected": "soccorrerò",
+   "rejected": [
+    "soccorrerà"
+   ]
+  }
+ },
+ "soddisfare": {
+  "cond.pres.P1": {
+   "selected": "soddisfaremmo",
+   "alternatives": [
+    "soddisferemmo"
+   ]
+  },
+  "cond.pres.P2": {
+   "selected": "soddisfareste",
+   "alternatives": [
+    "soddisfereste"
+   ]
+  },
+  "cond.pres.P3": {
+   "selected": "soddisfarebbero",
+   "rejected": [
+    "soddisfarebber",
+    "soddisferebber"
+   ],
+   "alternatives": [
+    "soddisferebbero"
+   ]
+  },
+  "cond.pres.S1": {
+   "selected": "soddisfarei",
+   "alternatives": [
+    "soddisferei"
+   ]
+  },
+  "cond.pres.S2": {
+   "selected": "soddisfaresti",
+   "alternatives": [
+    "soddisferesti"
+   ]
+  },
+  "cond.pres.S3": {
+   "selected": "soddisfarebbe",
+   "alternatives": [
+    "soddisferebbe"
+   ]
+  },
+  "ger.pres": {
+   "selected": "soddisfacendo",
+   "rejected": [
+    "soddisfando"
+   ]
+  },
+  "impr.pres.P1": {
+   "selected": "soddisfacciamo",
+   "alternatives": [
+    "soddisfiamo"
+   ]
+  },
+  "impr.pres.S2": {
+   "selected": "soddisfa'",
+   "alternatives": [
+    "soddisfa",
+    "soddisfai"
+   ]
+  },
+  "ind.fut.P1": {
+   "selected": "soddisfaremo",
+   "alternatives": [
+    "soddisferemo"
+   ]
+  },
+  "ind.fut.P2": {
+   "selected": "soddisfarete",
+   "alternatives": [
+    "soddisferete"
+   ]
+  },
+  "ind.fut.P3": {
+   "selected": "soddisfaranno",
+   "rejected": [
+    "soddisfaran",
+    "soddisferan"
+   ],
+   "alternatives": [
+    "soddisferanno"
+   ]
+  },
+  "ind.fut.S1": {
+   "selected": "soddisfarò",
+   "alternatives": [
+    "soddisferò"
+   ]
+  },
+  "ind.fut.S2": {
+   "selected": "soddisfarai",
+   "alternatives": [
+    "soddisferai"
+   ]
+  },
+  "ind.fut.S3": {
+   "selected": "soddisfarà",
+   "alternatives": [
+    "soddisferà"
+   ]
+  },
+  "ind.impf.P1": {
+   "selected": "soddisfacevamo",
+   "rejected": [
+    "soddisfavamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": "soddisfacevate",
+   "rejected": [
+    "soddisfavate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": "soddisfacevano",
+   "rejected": [
+    "soddisfacevan",
+    "soddisfavan",
+    "soddisfavano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": "soddisfacevo",
+   "rejected": [
+    "soddisfavo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": "soddisfacevi",
+   "rejected": [
+    "soddisfavi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": "soddisfaceva",
+   "rejected": [
+    "soddisfava"
+   ]
+  },
+  "ind.past.P1": {
+   "selected": "soddisfacemmo",
+   "rejected": [
+    "soddisfammo"
+   ]
+  },
+  "ind.past.P2": {
+   "selected": "soddisfaceste",
+   "rejected": [
+    "soddisfaste"
+   ]
+  },
+  "ind.past.P3": {
+   "selected": "soddisfecero",
+   "rejected": [
+    "soddisfaron",
+    "soddisfarono",
+    "soddisfecer"
+   ]
+  },
+  "ind.past.S1": {
+   "selected": "soddisfeci",
+   "rejected": [
+    "soddisfai"
+   ]
+  },
+  "ind.past.S2": {
+   "selected": "soddisfacesti",
+   "rejected": [
+    "soddisfasti"
+   ]
+  },
+  "ind.past.S3": {
+   "selected": "soddisfece",
+   "rejected": [
+    "soddisfò"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "soddisfacciamo",
+   "alternatives": [
+    "soddisfiamo"
+   ]
+  },
+  "ind.pres.P3": {
+   "selected": "soddisfanno",
+   "rejected": [
+    "soddisfan"
+   ],
+   "alternatives": [
+    "soddisfano"
+   ]
+  },
+  "ind.pres.S1": {
+   "selected": "soddisfaccio",
+   "alternatives": [
+    "soddisfo"
+   ]
+  },
+  "ind.pres.S2": {
+   "selected": "soddisfai",
+   "alternatives": [
+    "soddisfi"
+   ]
+  },
+  "part.past.P": {
+   "selected": "soddisfatti",
+   "rejected": [
+    "soddisfati"
+   ]
+  },
+  "part.past.PF": {
+   "selected": "soddisfatte",
+   "rejected": [
+    "soddisfate"
+   ]
+  },
+  "part.past.S": {
+   "selected": "soddisfatto",
+   "rejected": [
+    "soddisfato"
+   ]
+  },
+  "part.past.SF": {
+   "selected": "soddisfatta",
+   "rejected": [
+    "soddisfata"
+   ]
+  },
+  "part.pres.P": {
+   "selected": "soddisfacenti",
+   "rejected": [
+    "soddisfanti"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": "soddisfacenti",
+   "rejected": [
+    "soddisfanti"
+   ]
+  },
+  "part.pres.S": {
+   "selected": "soddisfacente",
+   "rejected": [
+    "soddisfante"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": "soddisfacente",
+   "rejected": [
+    "soddisfante"
+   ]
+  },
+  "sub.impf.P1": {
+   "selected": "soddisfacessimo",
+   "rejected": [
+    "soddisfassimo"
+   ]
+  },
+  "sub.impf.P2": {
+   "selected": "soddisfaceste",
+   "rejected": [
+    "soddisfaste"
+   ]
+  },
+  "sub.impf.P3": {
+   "selected": "soddisfacessero",
+   "rejected": [
+    "soddisfacesser",
+    "soddisfasser",
+    "soddisfassero"
+   ]
+  },
+  "sub.impf.S1": {
+   "selected": "soddisfacessi",
+   "rejected": [
+    "soddisfassi"
+   ]
+  },
+  "sub.impf.S2": {
+   "selected": "soddisfacessi",
+   "rejected": [
+    "soddisfassi"
+   ]
+  },
+  "sub.impf.S3": {
+   "selected": "soddisfacesse",
+   "rejected": [
+    "soddisfasse"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "soddisfacciamo",
+   "alternatives": [
+    "soddisfiamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "soddisfacciate",
+   "alternatives": [
+    "soddisfiate"
+   ]
+  },
+  "sub.pres.P3": {
+   "selected": "soddisfacciano",
+   "rejected": [
+    "soddisfaccian",
+    "soddisfin"
+   ],
+   "alternatives": [
+    "soddisfino"
+   ]
+  },
+  "sub.pres.S1": {
+   "selected": "soddisfaccia",
+   "alternatives": [
+    "soddisfi"
+   ]
+  },
+  "sub.pres.S2": {
+   "selected": "soddisfaccia",
+   "alternatives": [
+    "soddisfi"
+   ]
+  },
+  "sub.pres.S3": {
+   "selected": "soddisfaccia",
+   "alternatives": [
+    "soddisfi"
+   ]
+  }
+ },
+ "soffriggere": {
+  "ind.fut.S1": {
+   "selected": "soffriggerò",
+   "rejected": [
+    "soffriggerà"
+   ]
+  }
+ },
+ "solere": {
+  "cond": {
+   "selected": null
+  },
+  "cond.pres.P1": {
+   "selected": null,
+   "rejected": [
+    "sogliamo"
+   ]
+  },
+  "cond.pres.P2": {
+   "selected": null,
+   "rejected": [
+    "sogliate"
+   ]
+  },
+  "cond.pres.P3": {
+   "selected": null,
+   "rejected": [
+    "sogliano"
+   ]
+  },
+  "cond.pres.S1": {
+   "selected": null,
+   "rejected": [
+    "soglia"
+   ]
+  },
+  "cond.pres.S2": {
+   "selected": null,
+   "rejected": [
+    "soglia"
+   ]
+  },
+  "cond.pres.S3": {
+   "selected": null,
+   "rejected": [
+    "soglia"
+   ]
+  },
+  "ind.fut": {
+   "selected": null
+  },
+  "ind.past": {
+   "selected": null
+  },
+  "sub.pres.P1": {
+   "selected": "sogliamo",
+   "rejected": [
+    "soliamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "sogliate",
+   "rejected": [
+    "soliate"
+   ]
+  },
+  "sub.pres.P3": {
+   "selected": "sogliano",
+   "rejected": [
+    "solano"
+   ]
+  },
+  "sub.pres.S1": {
+   "selected": "soglia",
+   "rejected": [
+    "sola"
+   ]
+  },
+  "sub.pres.S2": {
+   "selected": "soglia",
+   "rejected": [
+    "sola"
+   ]
+  },
+  "sub.pres.S3": {
+   "selected": "soglia",
+   "rejected": [
+    "sola"
+   ]
+  }
+ },
+ "sommuovere": {
+  "ind.fut.S1": {
+   "selected": "sommuoverò",
+   "rejected": [
+    "sommuoverà"
+   ]
+  }
+ },
+ "sonare": {
+  "ger.pres": {
+   "selected": "sonando"
+  },
+  "impr.pres.P2": {
+   "selected": "sonate"
+  },
+  "impr.pres.S2": {
+   "selected": "sona"
+  },
+  "ind.impf.P1": {
+   "selected": "sonavamo"
+  },
+  "ind.impf.P2": {
+   "selected": "sonavate"
+  },
+  "ind.impf.P3": {
+   "selected": "sonavano"
+  },
+  "ind.impf.S1": {
+   "selected": "sonavo"
+  },
+  "ind.impf.S2": {
+   "selected": "sonavi"
+  },
+  "ind.impf.S3": {
+   "selected": "sonava"
+  },
+  "ind.past.P1": {
+   "selected": "sonammo"
+  },
+  "ind.past.P2": {
+   "selected": "sonaste"
+  },
+  "ind.past.P3": {
+   "selected": "sonarono"
+  },
+  "ind.past.S1": {
+   "selected": "sonai"
+  },
+  "ind.past.S2": {
+   "selected": "sonasti"
+  },
+  "ind.pres.P2": {
+   "selected": "sonate"
+  },
+  "ind.pres.P3": {
+   "selected": "sonano"
+  },
+  "ind.pres.S1": {
+   "selected": "sono"
+  },
+  "ind.pres.S3": {
+   "selected": "sona"
+  },
+  "inf.pres": {
+   "selected": "sonare"
+  },
+  "part.past.P": {
+   "selected": "sonati"
+  },
+  "part.past.PF": {
+   "selected": "sonate"
+  },
+  "part.past.S": {
+   "selected": "sonato"
+  },
+  "part.past.SF": {
+   "selected": "sonata"
+  },
+  "part.pres.P": {
+   "selected": "sonanti"
+  },
+  "part.pres.PF": {
+   "selected": "sonanti"
+  },
+  "part.pres.S": {
+   "selected": "sonante"
+  },
+  "part.pres.SF": {
+   "selected": "sonante"
+  },
+  "sub.impf.P1": {
+   "selected": "sonassimo"
+  },
+  "sub.impf.P2": {
+   "selected": "sonaste"
+  },
+  "sub.impf.P3": {
+   "selected": "sonassero"
+  },
+  "sub.impf.S1": {
+   "selected": "sonassi"
+  },
+  "sub.impf.S2": {
+   "selected": "sonassi"
+  },
+  "sub.impf.S3": {
+   "selected": "sonasse"
+  }
+ },
+ "sopradescrivere": {
+  "ind.fut.S1": {
+   "selected": "sopradescriverò",
+   "rejected": [
+    "sopradescriverà"
+   ]
+  }
+ },
+ "sopraffare": {
+  "impr.pres.S2": {
+   "selected": "sopraffa'",
+   "alternatives": [
+    "sopraffai"
+   ]
+  }
+ },
+ "soprammettere": {
+  "ind.fut.S1": {
+   "selected": "soprammetterò",
+   "rejected": [
+    "soprammetterà"
+   ]
+  }
+ },
+ "soprassedere": {
+  "cond.pres.P1": {
+   "selected": "soprassiederemmo",
+   "alternatives": [
+    "soprassederemmo"
+   ]
+  },
+  "cond.pres.P2": {
+   "selected": "soprassiedereste",
+   "alternatives": [
+    "soprassedereste"
+   ]
+  },
+  "cond.pres.P3": {
+   "selected": "soprassiederebbero",
+   "alternatives": [
+    "soprassederebbero"
+   ]
+  },
+  "cond.pres.S1": {
+   "selected": "soprassiederei",
+   "alternatives": [
+    "soprassederei"
+   ]
+  },
+  "cond.pres.S2": {
+   "selected": "soprassiederesti",
+   "alternatives": [
+    "soprassederesti"
+   ]
+  },
+  "cond.pres.S3": {
+   "selected": "soprassiederebbe",
+   "alternatives": [
+    "soprassederebbe"
+   ]
+  },
+  "ger.pres": {
+   "selected": "soprassedendo",
+   "rejected": [
+    "soprassedevo",
+    "soprassiedevo"
+   ]
+  },
+  "impr.pres.P1": {
+   "selected": "soprassediamo",
+   "rejected": [
+    "soprassiediamo"
+   ]
+  },
+  "impr.pres.P2": {
+   "selected": "soprassedete",
+   "rejected": [
+    "soprassiedete"
+   ]
+  },
+  "ind.fut.P1": {
+   "selected": "soprassiederemo",
+   "alternatives": [
+    "soprassederemo"
+   ]
+  },
+  "ind.fut.P2": {
+   "selected": "soprassiederete",
+   "alternatives": [
+    "soprassederete"
+   ]
+  },
+  "ind.fut.P3": {
+   "selected": "soprassiederanno",
+   "alternatives": [
+    "soprassederanno"
+   ]
+  },
+  "ind.fut.S1": {
+   "selected": "soprassiederò",
+   "rejected": [
+    "soprassederà",
+    "soprassiederà"
+   ],
+   "alternatives": [
+    "soprassederò"
+   ]
+  },
+  "ind.fut.S2": {
+   "selected": "soprassiederai",
+   "alternatives": [
+    "soprassederai"
+   ]
+  },
+  "ind.fut.S3": {
+   "selected": "soprassiederà",
+   "alternatives": [
+    "soprassederà"
+   ]
+  },
+  "ind.impf.P1": {
+   "selected": "soprassedevamo",
+   "rejected": [
+    "soprassiedevamo"
+   ]
+  },
+  "ind.impf.P2": {
+   "selected": "soprassedevate",
+   "rejected": [
+    "soprassiedevate"
+   ]
+  },
+  "ind.impf.P3": {
+   "selected": "soprassedevano",
+   "rejected": [
+    "soprassiedevano"
+   ]
+  },
+  "ind.impf.S1": {
+   "selected": "soprassedevo",
+   "rejected": [
+    "soprassiedevo"
+   ]
+  },
+  "ind.impf.S2": {
+   "selected": "soprassedevi",
+   "rejected": [
+    "soprassiedevi"
+   ]
+  },
+  "ind.impf.S3": {
+   "selected": "soprassedeva",
+   "rejected": [
+    "soprassiedeva"
+   ]
+  },
+  "ind.pres.P1": {
+   "selected": "soprassediamo",
+   "rejected": [
+    "soprassiediamo"
+   ]
+  },
+  "ind.pres.P2": {
+   "selected": "soprassedete",
+   "rejected": [
+    "soprassiedete"
+   ]
+  },
+  "ind.pres.P3": {
+   "selected": "soprassiedono",
+   "alternatives": [
+    "soprasseggono"
+   ]
+  },
+  "ind.pres.S1": {
+   "selected": "soprassiedo",
+   "alternatives": [
+    "soprasseggo"
+   ]
+  },
+  "part.pres": {
+   "selected": null
+  },
+  "part.pres.P": {
+   "selected": null,
+   "rejected": [
+    "soprassedevo",
+    "soprassiedevo"
+   ]
+  },
+  "part.pres.PF": {
+   "selected": null,
+   "rejected": [
+    "soprassedevo",
+    "soprassiedevo"
+   ]
+  },
+  "part.pres.S": {
+   "selected": null,
+   "rejected": [
+    "soprassedevo",
+    "soprassiedevo"
+   ]
+  },
+  "part.pres.SF": {
+   "selected": null,
+   "rejected": [
+    "soprassedevo",
+    "soprassiedevo"
+   ]
+  },
+  "sub.pres.P1": {
+   "selected": "soprassediamo",
+   "rejected": [
+    "soprassiediamo"
+   ]
+  },
+  "sub.pres.P2": {
+   "selected": "soprassediate",
+   "rejected": [
+    "soprassiediate"
+   ]
+  },
+  "sub.pres.P3": {
+   "selected": "soprassiedano",
+   "rejected": [
+    "soprassedano"
+   ]
+  }
+ },
+ "soprintendere": {
+  "ind.fut.S1": {
+   "selected": "soprintenderò",
+   "rejected": [
+    "soprintenderà"
+   ]
+  }
+ },
+ "sorprendere": {
+  "ind.fut.S1": {
+   "selected": "sorprenderò",
+   "rejected": [
+    "sorprenderà"
+   ]
+  }
+ },
+ "sorreggere": {
+  "ind.fut.S1": {
+   "selected": "sorreggerò",
+   "rejected": [
+    "sorreggerà"
+   ]
+  }
+ },
+ "sospendere": {
+  "ind.fut.S1": {
+   "selected": "sospenderò",
+   "rejected": [
+    "sospenderà"
+   ]
+  }
+ },
+ "sottendere": {
+  "ind.fut.S1": {
+   "selected": "sottenderò",
+   "rejected": [
+    "sottenderà"
+   ]
+  }
+ },
+ "sottintendere": {
+  "ind.fut.S1": {
+   "selected": "sottintenderò",
+   "rejected": [
+    "sottintenderà"
+   ]
+  }
+ },
+ "sovrintendere": {
+  "ind.fut.S1": {
+   "selected": "sovrintenderò",
+   "rejected": [
+    "sovrintenderà"
+   ]
+  }
+ },
+ "spandere": {
+  "ind.fut.S1": {
+   "selected": "spanderò",
+   "rejected": [
+    "spanderà"
+   ]
+  }
+ },
+ "spaparacchiare": {
+  "impr.pres.P1": {
+   "selected": "spaparacchiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "spaparacchiate"
+  },
+  "impr.pres.S2": {
+   "selected": "spaparacchia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "spaparanzare": {
+  "impr.pres.P1": {
+   "selected": "spaparanziamo"
+  },
+  "impr.pres.P2": {
+   "selected": "spaparanzate"
+  },
+  "impr.pres.S2": {
+   "selected": "spaparanza"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "specchiare": {
+  "impr.pres.P1": {
+   "selected": "specchiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "specchiate"
+  },
+  "impr.pres.S2": {
+   "selected": "specchia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "spegnere": {
+  "ind.fut.S1": {
+   "selected": "spegnerò",
+   "rejected": [
+    "spegnerà"
+   ]
+  }
+ },
+ "spendere": {
+  "ind.fut.S1": {
+   "selected": "spenderò",
+   "rejected": [
+    "spenderà"
+   ]
+  }
+ },
+ "spengere": {
+  "ind.fut.S1": {
+   "selected": "spengerò",
+   "rejected": [
+    "spengerà"
+   ]
+  },
+  "ind.past.P3": {
+   "selected": "spensero"
+  },
+  "ind.past.S1": {
+   "selected": "spensi"
+  },
+  "ind.past.S3": {
+   "selected": "spense"
+  },
+  "ind.pres.P3": {
+   "selected": "spengono"
+  },
+  "ind.pres.S1": {
+   "selected": "spengo"
+  },
+  "part.past.P": {
+   "selected": "spenti"
+  },
+  "part.past.PF": {
+   "selected": "spente"
+  },
+  "part.past.S": {
+   "selected": "spento"
+  },
+  "part.past.SF": {
+   "selected": "spenta"
+  },
+  "sub.pres.P3": {
+   "selected": "spengano"
+  },
+  "sub.pres.S1": {
+   "selected": "spenga"
+  },
+  "sub.pres.S2": {
+   "selected": "spenga"
+  },
+  "sub.pres.S3": {
+   "selected": "spenga"
+  }
+ },
+ "sperdere": {
+  "ind.fut.S1": {
+   "selected": "sperderò",
+   "rejected": [
+    "sperderà"
+   ]
+  }
+ },
+ "spericolare": {
+  "impr.pres.P1": {
+   "selected": "spericoliamo"
+  },
+  "impr.pres.P2": {
+   "selected": "spericolate"
+  },
+  "impr.pres.S2": {
+   "selected": "spericola"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "spiovere": {
+  "ind.fut.S1": {
+   "selected": "spioverò",
+   "rejected": [
+    "spioverà"
+   ]
+  }
+ },
+ "splendere": {
+  "ind.fut.S1": {
+   "selected": "splenderò",
+   "rejected": [
+    "splenderà"
+   ]
+  }
+ },
+ "spolmonare": {
+  "impr.pres.P1": {
+   "selected": "spolmoniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "spolmonate"
+  },
+  "impr.pres.S2": {
+   "selected": "spolmona"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "sporgere": {
+  "ind.fut.S1": {
+   "selected": "sporgerò",
+   "rejected": [
+    "sporgerà"
+   ]
+  }
+ },
+ "spremere": {
+  "ind.fut.S1": {
+   "selected": "spremerò",
+   "rejected": [
+    "spremerà"
+   ]
+  }
+ },
+ "spretare": {
+  "impr.pres.P1": {
+   "selected": "spretiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "spretate"
+  },
+  "impr.pres.S2": {
+   "selected": "spreta"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "sprovvedere": {
+  "ind.fut.S1": {
+   "selected": "sprovvedrò",
+   "rejected": [
+    "sprovvedrà"
+   ]
+  }
+ },
+ "stempiare": {
+  "impr.pres.P1": {
+   "selected": "stempiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "stempiate"
+  },
+  "impr.pres.S2": {
+   "selected": "stempia"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "stendere": {
+  "ind.fut.S1": {
+   "selected": "stenderò",
+   "rejected": [
+    "stenderà"
+   ]
+  }
+ },
+ "stracuocere": {
+  "ind.fut.S1": {
+   "selected": "stracuocerò",
+   "rejected": [
+    "stracuocerà"
+   ]
+  }
+ },
+ "strafare": {
+  "impr.pres.S2": {
+   "selected": "strafa'",
+   "alternatives": [
+    "strafai"
+   ]
+  }
+ },
+ "strafottere": {
+  "ind.past.S3": {
+   "selected": "strafotté",
+   "rejected": [
+    "strafottè"
+   ]
+  }
+ },
+ "stravaccare": {
+  "impr.pres.P1": {
+   "selected": "stravacchiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "stravaccate"
+  },
+  "impr.pres.S2": {
+   "selected": "stravacca"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "stravolgere": {
+  "ind.fut.S1": {
+   "selected": "stravolgerò",
+   "rejected": [
+    "stravolgerà"
+   ]
+  }
+ },
+ "stridere": {
+  "ind.fut.S1": {
+   "selected": "striderò",
+   "rejected": [
+    "striderà"
+   ]
+  }
+ },
+ "struggere": {
+  "ind.fut.S1": {
+   "selected": "struggerò",
+   "rejected": [
+    "struggerà"
+   ]
+  }
+ },
+ "stupefare": {
+  "impr.pres.S2": {
+   "selected": "stupefa'",
+   "alternatives": [
+    "stupefai"
+   ]
+  }
+ },
+ "succidere": {
+  "ind.fut.S1": {
+   "selected": "succiderò",
+   "rejected": [
+    "succiderà"
+   ]
+  }
+ },
+ "succingere": {
+  "ind.fut.S1": {
+   "selected": "succingerò",
+   "rejected": [
+    "succingerà"
+   ]
+  }
+ },
+ "suggere": {
+  "ind.past.S3": {
+   "selected": "susse",
+   "rejected": [
+    "sussè"
+   ]
+  }
+ },
+ "suicidare": {
+  "impr.pres.P1": {
+   "selected": "suicidiamo"
+  },
+  "impr.pres.P2": {
+   "selected": "suicidate"
+  },
+  "impr.pres.S2": {
+   "selected": "suicida"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "superproteggere": {
+  "ind.fut.S1": {
+   "selected": "superproteggerò",
+   "rejected": [
+    "superproteggerà"
+   ]
+  }
+ },
+ "sussistere": {
+  "ind.fut.S1": {
+   "selected": "sussisterò",
+   "rejected": [
+    "sussisterà"
+   ]
+  }
+ },
+ "temere": {
+  "ind.fut.S1": {
+   "selected": "temerò",
+   "rejected": [
+    "temerà"
+   ]
+  }
+ },
+ "tendere": {
+  "ind.fut.S1": {
+   "selected": "tenderò",
+   "rejected": [
+    "tenderà"
+   ]
+  }
+ },
+ "tergere": {
+  "ind.fut.S1": {
+   "selected": "tergerò",
+   "rejected": [
+    "tergerà"
+   ]
+  }
+ },
+ "tessere": {
+  "ind.past.S3": {
+   "selected": "tessé",
+   "rejected": [
+    "tessè"
+   ]
+  }
+ },
+ "trafiggere": {
+  "ind.fut.S1": {
+   "selected": "trafiggerò",
+   "rejected": [
+    "trafiggerà"
+   ]
+  }
+ },
+ "tralucere": {
+  "ind.fut.S1": {
+   "selected": "tralucerò",
+   "rejected": [
+    "tralucerà"
+   ]
+  }
+ },
+ "transigere": {
+  "ind.fut.S1": {
+   "selected": "transigerò",
+   "rejected": [
+    "transigerà"
+   ]
+  }
+ },
+ "trapungere": {
+  "ind.fut.S1": {
+   "selected": "trapungerò",
+   "rejected": [
+    "trapungerà"
+   ]
+  }
+ },
+ "trascegliere": {
+  "ind.fut.S1": {
+   "selected": "trasceglierò",
+   "rejected": [
+    "trasceglierà"
+   ]
+  }
+ },
+ "trascendere": {
+  "ind.fut.S1": {
+   "selected": "trascenderò",
+   "rejected": [
+    "trascenderà"
+   ]
+  }
+ },
+ "trasdurre": {
+  "ind.fut.S1": {
+   "selected": "trasdurrò",
+   "rejected": [
+    "trasdurrà"
+   ]
+  }
+ },
+ "travedere": {
+  "ind.fut.S1": {
+   "selected": "travedrò",
+   "rejected": [
+    "travedrà"
+   ]
+  }
+ },
+ "turbocomprimere": {
+  "ind.fut.S1": {
+   "selected": "turbocomprimerò",
+   "rejected": [
+    "turbocomprimerà"
+   ]
+  }
+ },
+ "ungere": {
+  "ind.fut.S1": {
+   "selected": "ungerò",
+   "rejected": [
+    "ungerà"
+   ]
+  }
+ },
+ "urgere": {
+  "ind.past.S3": {
+   "selected": "urse",
+   "rejected": [
+    "ursè"
+   ]
+  }
+ },
+ "vanagloriare": {
+  "impr.pres.P1": {
+   "selected": "vanagloriamo"
+  },
+  "impr.pres.P2": {
+   "selected": "vanagloriate"
+  },
+  "impr.pres.S2": {
+   "selected": "vanagloria"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "venare": {
+  "impr.pres.P1": {
+   "selected": "veniamo"
+  },
+  "ind.pres.P1": {
+   "selected": "veniamo"
+  },
+  "sub.pres.P1": {
+   "selected": "veniamo"
+  },
+  "sub.pres.P2": {
+   "selected": "veniate"
+  }
+ },
+ "vergognare": {
+  "impr.pres.P1": {
+   "selected": "vergogniamo"
+  },
+  "impr.pres.P2": {
+   "selected": "vergognate"
+  },
+  "impr.pres.S2": {
+   "selected": "vergogna"
+  },
+  "part.pres": {
+   "selected": null
+  }
+ },
+ "vertere": {
+  "ind.past.S3": {
+   "selected": "verté",
+   "rejected": [
+    "vertè"
+   ]
+  }
+ },
+ "vigere": {
+  "ind.fut.S1": {
+   "selected": "vigerò",
+   "rejected": [
+    "vigerà"
+   ]
+  },
+  "part.past": {
+   "selected": null
+  }
+ },
+ "vilipendere": {
+  "ind.fut.S1": {
+   "selected": "vilipenderò",
+   "rejected": [
+    "vilipenderà"
+   ]
+  }
+ }
+}

@@ -7,46 +7,48 @@
  * weak `-ere` perfect is a closed vowel, so it takes the acute: `batté`,
  * `poté`, `ripeté`.
  *
- * Morph-it is inconsistent about this — it writes 42 of these with a grave and
- * 16 with an acute, and contradicts itself within one verb family (`cuocè` but
- * `ricuocé`). So the spelling is normalised here rather than taken from the
- * source.
+ * Morph-it is inconsistent about this: it writes 48 of these with a grave, and
+ * contradicts itself within one verb family (`cuocè` but `ricuocé`). So the
+ * spelling is corrected here rather than taken from the source. The decision is
+ * recorded as *Acute accent in the past historic* in resources/to-verify.md.
  */
+import { ACCENTS, PATH, PERSON, formPath } from "./vocabulary.ts"
 
-/** Persons of the passato remoto, as stored. */
-export interface PastTense {
-  S1?: string;
-  S2?: string;
-  S3?: string;
-  P1?: string;
-  P2?: string;
-  P3?: string;
-}
+const PAST_S1 = formPath(PATH.indi.past, PERSON.s1)
+const PAST_S3 = formPath(PATH.indi.past, PERSON.s3)
 
 /**
- * True when a passato remoto is *weak* — formed with the regular endings on the
+ * True when a past historic `io` form is weak — the regular endings on the
  * verb's own stem, as `temere` gives `temei` or `temetti`.
  *
  * A strong perfect (`presi`, `prese`, `presero`) changes the stem instead, and
  * its third singular ends in a plain unstressed `-e` with no accent, so the
- * rule below must not touch it.
+ * accent rule must not touch it.
  */
-export function isWeakPerfect(past: PastTense): boolean {
-  return /(?:ei|etti)$/.test(past.S1 ?? '');
-}
+export const isWeakPast = (s1: string): boolean => /(?:ei|etti)$/.test(s1)
 
 /**
- * Corrects the accent on a passato remoto third singular.
+ * Returns a verb's Morph-it forms with the past historic third singular
+ * corrected from a grave to an acute accent, where the verb's past historic is
+ * weak. The forms are otherwise unchanged; the input is not modified.
  *
- * Returns the form unchanged unless it is a weak perfect written with a grave
- * accent, in which case the accent is flipped to acute. Everything else — the
- * `-are` and `-ire` endings (`parlò`, `partì`), strong perfects, and forms that
- * are already acute — is left alone.
+ * A verb counts as weak when any of Morph-it's `io` forms is weak, so a verb
+ * with both a strong and a weak past historic (`cossi` / `cuocei`) has its
+ * weak third singular corrected (`cuocè` → `cuocé`) and its strong one left as
+ * it is (`cosse`).
+ *
+ *   { "ind.past.S1": ["battei"], "ind.past.S3": ["battè"] }
+ *   → { "ind.past.S1": ["battei"], "ind.past.S3": ["batté"] }
  */
-export function fixPastAccent(past: PastTense): { form: string | undefined; changed: boolean } {
-  const form = past.S3;
-  if (!form || !form.endsWith('è') || !isWeakPerfect(past)) {
-    return { form, changed: false };
+export const withAcutePast = (
+  verbForms: Record<string, string[]>,
+): Record<string, string[]> => {
+  const s3 = verbForms[PAST_S3]
+  const { eGrave, eAcute } = ACCENTS
+  if (!s3?.some((f) => f.endsWith(eGrave))) return verbForms
+  if (!(verbForms[PAST_S1] ?? []).some(isWeakPast)) return verbForms
+  return {
+    ...verbForms,
+    [PAST_S3]: s3.map((f) => (f.endsWith(eGrave) ? f.slice(0, -1) + eAcute : f)),
   }
-  return { form: `${form.slice(0, -1)}é`, changed: true };
 }

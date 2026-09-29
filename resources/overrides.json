@@ -1,19 +1,20 @@
 {
+  "addivenire": {
+    "ind": {
+      "fut": {
+        "S1": "addiverrò",
+        "P1": "addiverremo"
+      }
+    }
+  },
   "affare": {
     "impr": null
   },
   "calere": {
-    "inf": {
-      "pres": "calere"
-    },
-    "ger": {
-      "pres": "calendo"
-    },
     "ind": {
       "pres": {
         "S1": null,
         "S2": null,
-        "S3": "cale",
         "P1": null,
         "P2": null,
         "P3": null
@@ -21,7 +22,6 @@
       "impf": {
         "S1": null,
         "S2": null,
-        "S3": "caleva",
         "P1": null,
         "P2": null,
         "P3": null
@@ -49,7 +49,6 @@
       "impf": {
         "S1": null,
         "S2": null,
-        "S3": "calesse",
         "P1": null,
         "P2": null,
         "P3": null
@@ -59,7 +58,6 @@
     "part": {
       "pres": null,
       "past": {
-        "S": "caluto",
         "SF": null,
         "P": null,
         "PF": null
@@ -69,12 +67,9 @@
   "cerchiare": {
     "ind": {
       "pres": {
-        "S1": "cerchio",
         "S2": "cerchi",
-        "S3": "cerchia",
         "P1": "cerchiamo",
-        "P2": "cerchiate",
-        "P3": "cerchiano"
+        "P2": "cerchiate"
       }
     },
     "sub": {
@@ -87,26 +82,18 @@
         "P3": "cerchino"
       }
     },
-    "impr": {
-      "pres": {
-        "S2": "cerchia",
-        "P1": "cerchiamo",
-        "P2": "cerchiate"
-      }
-    },
     "part": {
       "past": {
-        "S": "cerchiato",
-        "SF": "cerchiata",
-        "P": "cerchiati",
         "PF": "cerchiate"
       }
     }
   },
+  "concernere": {
+    "part": {
+      "past": null
+    }
+  },
   "consumere": {
-    "inf": {
-      "pres": "consumere"
-    },
     "ger": null,
     "ind": {
       "pres": null,
@@ -114,10 +101,7 @@
       "fut": null,
       "past": {
         "S1": "consunsi",
-        "S2": "consumesti",
         "S3": "consunse",
-        "P1": "consumemmo",
-        "P2": "consumeste",
         "P3": "consunsero"
       }
     },
@@ -135,8 +119,19 @@
     }
   },
   "cuocere": {
-    "ger": {
-      "pres": "cuocendo"
+    "ind": {
+      "past": {
+        "S1": "cossi",
+        "S3": "cosse",
+        "P3": "cossero"
+      }
+    }
+  },
+  "dannare": {
+    "ind": {
+      "pres": {
+        "S1": "danno"
+      }
     }
   },
   "dare": {
@@ -152,6 +147,30 @@
       }
     }
   },
+  "delinquere": {
+    "part": {
+      "past": null
+    }
+  },
+  "dicare": {
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S3": null,
+        "P3": null
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": null
+      }
+    }
+  },
+  "dirimere": {
+    "part": {
+      "past": null
+    }
+  },
   "disdire": {
     "part": {
       "pres": {
@@ -162,9 +181,12 @@
       }
     }
   },
-  "disfare": {
-    "ger": {
-      "pres": "disfacendo"
+  "divedere": {
+    "ind": {
+      "past": {
+        "S1": null,
+        "S3": null
+      }
     }
   },
   "essere": {
@@ -174,16 +196,31 @@
       }
     }
   },
+  "fare": {
+    "impr": {
+      "pres": {
+        "S2": "fa'"
+      }
+    }
+  },
+  "figgere": {
+    "ind": {
+      "past": {
+        "S3": "fisse"
+      }
+    }
+  },
+  "incombere": {
+    "part": {
+      "past": null
+    }
+  },
   "licere": {
-    "inf": {
-      "pres": "licere"
-    },
     "ger": null,
     "ind": {
       "pres": {
         "S1": null,
         "S2": null,
-        "S3": "lice",
         "P1": null,
         "P2": null,
         "P3": null
@@ -191,10 +228,8 @@
       "impf": {
         "S1": null,
         "S2": null,
-        "S3": "liceva",
         "P1": null,
-        "P2": null,
-        "P3": "licevano"
+        "P2": null
       },
       "past": null,
       "fut": null
@@ -205,52 +240,57 @@
       "impf": {
         "S1": null,
         "S2": null,
-        "S3": "licesse",
         "P1": null,
-        "P2": null,
-        "P3": "licessero"
+        "P2": null
       }
     },
     "impr": null,
     "part": {
-      "pres": null,
+      "pres": null
+    }
+  },
+  "molcere": {
+    "part": {
+      "past": null
+    }
+  },
+  "nuocere": {
+    "part": {
       "past": {
-        "S": "lecito",
-        "SF": "lecita",
-        "P": "leciti",
-        "PF": "lecite"
+        "S": "nociuto",
+        "SF": "nociuta",
+        "P": "nociuti",
+        "PF": "nociute"
       }
     }
   },
   "percuotere": {
     "ind": {
-      "impf": {
-        "S1": "percuotevo"
+      "pres": {
+        "P2": "percuotete"
       }
     },
     "part": {
       "pres": null
+    },
+    "impr": {
+      "pres": {
+        "P2": "percuotete"
+      }
     }
   },
   "plaudere": {
-    "ger": {
-      "pres": "plaudendo"
-    },
     "ind": {
       "pres": {
         "S1": "plaudo",
         "S2": "plaudi",
         "S3": "plaude",
         "P1": "plaudiamo",
-        "P2": "plaudete",
         "P3": "plaudono"
       },
       "past": {
-        "S1": "plaudetti",
-        "S2": "plaudesti",
         "S3": "plaudette",
         "P1": "plaudemmo",
-        "P2": "plaudeste",
         "P3": "plaudettero"
       }
     },
@@ -262,13 +302,6 @@
         "P1": "plaudiamo",
         "P2": "plaudiate",
         "P3": "plaudano"
-      }
-    },
-    "impr": {
-      "pres": {
-        "S2": "plaudi",
-        "P1": "plaudiamo",
-        "P2": "plaudete"
       }
     },
     "part": {
@@ -287,11 +320,6 @@
     }
   },
   "possedere": {
-    "ind": {
-      "impf": {
-        "S1": "possedevo"
-      }
-    },
     "part": {
       "pres": {
         "S": "possidente",
@@ -306,9 +334,7 @@
       "pres": {
         "S1": "presento",
         "S2": "presenti",
-        "S3": "presente",
         "P1": "presentiamo",
-        "P2": "presentite",
         "P3": "presentono"
       }
     },
@@ -321,25 +347,19 @@
         "P2": "presentiate",
         "P3": "presentano"
       }
-    },
-    "impr": {
-      "pres": {
-        "S2": "presenti",
-        "P1": "presentiamo",
-        "P2": "presentite"
-      }
+    }
+  },
+  "procombere": {
+    "part": {
+      "past": null
     }
   },
   "recere": {
-    "inf": {
-      "pres": "recere"
-    },
     "ger": null,
     "ind": {
       "pres": {
         "S1": null,
         "S2": null,
-        "S3": "rece",
         "P1": null,
         "P2": null,
         "P3": null
@@ -352,13 +372,7 @@
     "sub": null,
     "impr": null,
     "part": {
-      "pres": null,
-      "past": {
-        "S": "reciuto",
-        "SF": "reciuta",
-        "P": "reciuti",
-        "PF": "reciute"
-      }
+      "pres": null
     }
   },
   "ridare": {
@@ -375,20 +389,20 @@
   },
   "riscuotere": {
     "ind": {
-      "impf": {
-        "S1": "riscuotevo"
+      "pres": {
+        "P2": "riscuotete"
       }
     },
     "part": {
       "pres": null
+    },
+    "impr": {
+      "pres": {
+        "P2": "riscuotete"
+      }
     }
   },
   "risedere": {
-    "ind": {
-      "impf": {
-        "S1": "risedevo"
-      }
-    },
     "part": {
       "pres": {
         "S": "risedente",
@@ -406,12 +420,22 @@
         "P": "scuotenti",
         "PF": "scuotenti"
       }
+    },
+    "ind": {
+      "pres": {
+        "P2": "scuotete"
+      }
+    },
+    "impr": {
+      "pres": {
+        "P2": "scuotete"
+      }
     }
   },
   "sedere": {
     "ind": {
-      "impf": {
-        "S1": "sedevo"
+      "fut": {
+        "S1": "siederò"
       }
     },
     "part": {
@@ -423,9 +447,9 @@
       }
     }
   },
-  "soddisfare": {
-    "ger": {
-      "pres": "soddisfacendo"
+  "soccombere": {
+    "part": {
+      "past": null
     }
   },
   "solere": {
@@ -449,15 +473,10 @@
     "inf": {
       "pres": "sonare"
     },
-    "ger": {
-      "pres": "sonando"
-    },
     "ind": {
       "pres": {
         "S1": "sono",
-        "S2": "soni",
         "S3": "sona",
-        "P1": "soniamo",
         "P2": "sonate",
         "P3": "sonano"
       },
@@ -472,7 +491,6 @@
       "past": {
         "S1": "sonai",
         "S2": "sonasti",
-        "S3": "sonò",
         "P1": "sonammo",
         "P2": "sonaste",
         "P3": "sonarono"
@@ -486,13 +504,6 @@
         "P1": "sonassimo",
         "P2": "sonaste",
         "P3": "sonassero"
-      }
-    },
-    "impr": {
-      "pres": {
-        "S2": "sona",
-        "P1": "soniamo",
-        "P2": "sonate"
       }
     },
     "part": {
@@ -511,11 +522,6 @@
     }
   },
   "soprassedere": {
-    "ind": {
-      "impf": {
-        "S1": "soprassedevo"
-      }
-    },
     "part": {
       "pres": null
     }
@@ -524,18 +530,11 @@
     "ind": {
       "pres": {
         "S1": "spengo",
-        "S2": "spengi",
-        "S3": "spenge",
-        "P1": "spengiamo",
-        "P2": "spengete",
         "P3": "spengono"
       },
       "past": {
         "S1": "spensi",
-        "S2": "spengesti",
         "S3": "spense",
-        "P1": "spengemmo",
-        "P2": "spengeste",
         "P3": "spensero"
       }
     },
@@ -544,8 +543,6 @@
         "S1": "spenga",
         "S2": "spenga",
         "S3": "spenga",
-        "P1": "spengiamo",
-        "P2": "spengiate",
         "P3": "spengano"
       }
     },
@@ -556,6 +553,38 @@
         "P": "spenti",
         "PF": "spente"
       }
+    }
+  },
+  "suggere": {
+    "ind": {
+      "past": {
+        "S3": "susse"
+      }
+    }
+  },
+  "urgere": {
+    "ind": {
+      "past": {
+        "S3": "urse"
+      }
+    }
+  },
+  "venare": {
+    "ind": {
+      "pres": {
+        "P1": "veniamo"
+      }
+    },
+    "sub": {
+      "pres": {
+        "P1": "veniamo",
+        "P2": "veniate"
+      }
+    }
+  },
+  "vigere": {
+    "part": {
+      "past": null
     }
   }
 }

@@ -1,4 +1,4 @@
-import { PERSON_SLOTS } from './slots.ts';
+import { CONJUGATION, ENDING, PATH, PERSON, PERSONS } from './vocabulary.ts';
 
 /**
  * The regular Italian paradigms, as documented in resources/regular-verbs.md.
@@ -7,42 +7,44 @@ import { PERSON_SLOTS } from './slots.ts';
  * cannot belong there. Generating is preferred to hard-coding a value: the rule
  * states its own reasoning and keeps working if the source changes.
  */
-type Slot = (typeof PERSON_SLOTS)[number];
-type Row = Partial<Record<Slot, string>>;
+type Person = (typeof PERSONS)[number];
+type Row = Partial<Record<Person, string>>;
 
+const { are, ere, ire } = CONJUGATION;
+
+/** The regular endings of each conjugation group, in person order S1 to P3. */
 const ENDINGS = {
-  are: {
-    'ind.pres': ['o', 'i', 'a', 'iamo', 'ate', 'ano'],
-    'ind.impf': ['avo', 'avi', 'ava', 'avamo', 'avate', 'avano'],
-    'ind.past': ['ai', 'asti', 'ò', 'ammo', 'aste', 'arono'],
-    'sub.pres': ['i', 'i', 'i', 'iamo', 'iate', 'ino'],
-    'sub.impf': ['assi', 'assi', 'asse', 'assimo', 'aste', 'assero'],
-    impr: { S2: 'a', P1: 'iamo', P2: 'ate' },
-    ger: 'ando', partPres: 'ante', partPast: 'ato',
+  [are]: {
+    [PATH.indi.pres]: ['o', 'i', 'a', 'iamo', 'ate', 'ano'],
+    [PATH.indi.impf]: ['avo', 'avi', 'ava', 'avamo', 'avate', 'avano'],
+    [PATH.indi.past]: ['ai', 'asti', 'ò', 'ammo', 'aste', 'arono'],
+    [PATH.subj.pres]: ['i', 'i', 'i', 'iamo', 'iate', 'ino'],
+    [PATH.subj.impf]: ['assi', 'assi', 'asse', 'assimo', 'aste', 'assero'],
+    impr: { [PERSON.s2]: 'a', [PERSON.p1]: 'iamo', [PERSON.p2]: 'ate' },
+    ger: ENDING.geru.are, partPres: ENDING.part.pres.are, partPast: ENDING.part.past.are,
   },
-  ere: {
-    'ind.pres': ['o', 'i', 'e', 'iamo', 'ete', 'ono'],
-    'ind.impf': ['evo', 'evi', 'eva', 'evamo', 'evate', 'evano'],
-    'ind.past': ['ei', 'esti', 'é', 'emmo', 'este', 'erono'],
-    'sub.pres': ['a', 'a', 'a', 'iamo', 'iate', 'ano'],
-    'sub.impf': ['essi', 'essi', 'esse', 'essimo', 'este', 'essero'],
-    impr: { S2: 'i', P1: 'iamo', P2: 'ete' },
-    ger: 'endo', partPres: 'ente', partPast: 'uto',
+  [ere]: {
+    [PATH.indi.pres]: ['o', 'i', 'e', 'iamo', 'ete', 'ono'],
+    [PATH.indi.impf]: ['evo', 'evi', 'eva', 'evamo', 'evate', 'evano'],
+    [PATH.indi.past]: ['ei', 'esti', 'é', 'emmo', 'este', 'erono'],
+    [PATH.subj.pres]: ['a', 'a', 'a', 'iamo', 'iate', 'ano'],
+    [PATH.subj.impf]: ['essi', 'essi', 'esse', 'essimo', 'este', 'essero'],
+    impr: { [PERSON.s2]: 'i', [PERSON.p1]: 'iamo', [PERSON.p2]: 'ete' },
+    ger: ENDING.geru.ere, partPres: ENDING.part.pres.ere, partPast: ENDING.part.past.ere,
   },
-  ire: {
-    'ind.pres': ['o', 'i', 'e', 'iamo', 'ite', 'ono'],
-    'ind.impf': ['ivo', 'ivi', 'iva', 'ivamo', 'ivate', 'ivano'],
-    'ind.past': ['ii', 'isti', 'ì', 'immo', 'iste', 'irono'],
-    'sub.pres': ['a', 'a', 'a', 'iamo', 'iate', 'ano'],
-    'sub.impf': ['issi', 'issi', 'isse', 'issimo', 'iste', 'issero'],
-    impr: { S2: 'i', P1: 'iamo', P2: 'ite' },
-    ger: 'endo', partPres: 'ente', partPast: 'ito',
+  [ire]: {
+    [PATH.indi.pres]: ['o', 'i', 'e', 'iamo', 'ite', 'ono'],
+    [PATH.indi.impf]: ['ivo', 'ivi', 'iva', 'ivamo', 'ivate', 'ivano'],
+    [PATH.indi.past]: ['ii', 'isti', 'ì', 'immo', 'iste', 'irono'],
+    [PATH.subj.pres]: ['a', 'a', 'a', 'iamo', 'iate', 'ano'],
+    [PATH.subj.impf]: ['issi', 'issi', 'isse', 'issimo', 'iste', 'issero'],
+    impr: { [PERSON.s2]: 'i', [PERSON.p1]: 'iamo', [PERSON.p2]: 'ite' },
+    ger: ENDING.geru.ire, partPres: ENDING.part.pres.ire, partPast: ENDING.part.past.ire,
   },
 } as const;
 
-/** Future and conditional endings, invariant for every Italian verb. */
-const FUTURE = ['ò', 'ai', 'à', 'emo', 'ete', 'anno'];
-const CONDITIONAL = ['ei', 'esti', 'ebbe', 'emmo', 'este', 'ebbero'];
+/** An infinitive of one of the three regular groups: its stem and its group. */
+const REGULAR_INFINITIVE = new RegExp(`^(.*)(${are}|${ere}|${ire})$`);
 
 /**
  * Italian keeps a consonant's sound constant across a paradigm, which changes
@@ -50,9 +52,10 @@ const CONDITIONAL = ['ei', 'esti', 'ebbe', 'emmo', 'este', 'ebbero'];
  */
 function spell(stem: string, ending: string, infinitive: string): string {
   const frontVowel = /^[ei]/.test(ending);
-  if (/[cg]$/.test(stem) && /are$/.test(infinitive) && frontVowel) return `${stem}h${ending}`;
-  if (/[cg]i$/.test(stem) && /iare$/.test(infinitive) && frontVowel) return stem.slice(0, -1) + ending;
-  if (/i$/.test(stem) && /iare$/.test(infinitive) && /^i/.test(ending)) return stem + ending.slice(1);
+  const iare = 'i' + are;
+  if (/[cg]$/.test(stem) && infinitive.endsWith(are) && frontVowel) return `${stem}h${ending}`;
+  if (/[cg]i$/.test(stem) && infinitive.endsWith(iare) && frontVowel) return stem.slice(0, -1) + ending;
+  if (/i$/.test(stem) && infinitive.endsWith(iare) && /^i/.test(ending)) return stem + ending.slice(1);
   return stem + ending;
 }
 
@@ -62,43 +65,43 @@ function spell(stem: string, ending: string, infinitive: string): string {
  * holds for the contracted `-rre` verbs, where `porre` gives `porr-`.
  */
 export function futureStem(infinitive: string): string | null {
-  const m = infinitive.match(/^(.*)(are|ere|ire)$/);
-  if (m) return m[2] === 'are' ? spell(m[1], 'er', infinitive) : infinitive.slice(0, -1);
-  return /rre$/.test(infinitive) ? infinitive.slice(0, -1) : null;
+  const m = infinitive.match(REGULAR_INFINITIVE);
+  if (m) return m[2] === are ? spell(m[1], 'er', infinitive) : infinitive.slice(0, -1);
+  return infinitive.endsWith(CONJUGATION.rre) ? infinitive.slice(0, -1) : null;
 }
 
 /** Every regular form of a verb, or null if its infinitive is not one of the three. */
 export function regularForms(infinitive: string, isc = false): Record<string, Row | string> | null {
-  const m = infinitive.match(/^(.*)(are|ere|ire)$/);
+  const m = infinitive.match(REGULAR_INFINITIVE);
   if (!m) return null;
   const [, stem, group] = m;
   const base = ENDINGS[group as keyof typeof ENDINGS];
   // -ire verbs of the finire type take -isc- in the present tenses
-  const e = isc && group === 'ire'
+  const e = isc && group === ire
     ? { ...base,
-        'ind.pres': ['isco', 'isci', 'isce', 'iamo', 'ite', 'iscono'],
-        'sub.pres': ['isca', 'isca', 'isca', 'iamo', 'iate', 'iscano'],
-        impr: { S2: 'isci', P1: 'iamo', P2: 'ite' } }
+        [PATH.indi.pres]: ['isco', 'isci', 'isce', 'iamo', 'ite', 'iscono'],
+        [PATH.subj.pres]: ['isca', 'isca', 'isca', 'iamo', 'iate', 'iscano'],
+        impr: { [PERSON.s2]: 'isci', [PERSON.p1]: 'iamo', [PERSON.p2]: 'ite' } }
     : base;
   const fs = futureStem(infinitive)!;
 
   const row = (endings: readonly string[], base?: string): Row =>
-    Object.fromEntries(PERSON_SLOTS.map((slot, i) =>
-      [slot, base ? base + endings[i] : spell(stem, endings[i], infinitive)],
+    Object.fromEntries(PERSONS.map((person, i) =>
+      [person, base ? base + endings[i] : spell(stem, endings[i], infinitive)],
     )) as Row;
 
   return {
-    'ind.pres': row(e['ind.pres']),
-    'ind.impf': row(e['ind.impf']),
-    'ind.past': row(e['ind.past']),
-    'ind.fut': row(FUTURE, fs),
-    'cond.pres': row(CONDITIONAL, fs),
-    'sub.pres': row(e['sub.pres']),
-    'sub.impf': row(e['sub.impf']),
-    'impr.pres': Object.fromEntries(
-      Object.entries(e.impr).map(([slot, end]) => [slot, spell(stem, end, infinitive)]),
+    [PATH.indi.pres]: row(e[PATH.indi.pres]),
+    [PATH.indi.impf]: row(e[PATH.indi.impf]),
+    [PATH.indi.past]: row(e[PATH.indi.past]),
+    [PATH.indi.futu]: row(ENDING.futu, fs),
+    [PATH.cond.pres]: row(ENDING.cond, fs),
+    [PATH.subj.pres]: row(e[PATH.subj.pres]),
+    [PATH.subj.impf]: row(e[PATH.subj.impf]),
+    [PATH.impr.pres]: Object.fromEntries(
+      Object.entries(e.impr).map(([person, end]) => [person, spell(stem, end, infinitive)]),
     ) as Row,
-    'ger.pres': spell(stem, e.ger, infinitive),
-    'inf.pres': infinitive,
+    [PATH.geru]: spell(stem, e.ger, infinitive),
+    [PATH.infi]: infinitive,
   };
 }

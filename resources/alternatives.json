@@ -1,0 +1,95 @@
+{
+  "dare": {
+    "impr": {
+      "pres": {
+        "S2": [
+          "da'"
+        ]
+      }
+    }
+  },
+  "fare": {
+    "impr": {
+      "pres": {
+        "S2": [
+          "fai"
+        ]
+      }
+    }
+  },
+  "nuocere": {
+    "part": {
+      "past": {
+        "S": [
+          "nuociuto"
+        ]
+      }
+    }
+  },
+  "percuotere": {
+    "ind": {
+      "pres": {
+        "P2": [
+          "percotete"
+        ]
+      }
+    },
+    "impr": {
+      "pres": {
+        "P2": [
+          "percotete"
+        ]
+      }
+    }
+  },
+  "possedere": {
+    "part": {
+      "pres": {
+        "S": [
+          "possedente"
+        ],
+        "SF": [
+          "possedente"
+        ],
+        "P": [
+          "possedenti"
+        ],
+        "PF": [
+          "possedenti"
+        ]
+      }
+    }
+  },
+  "riscuotere": {
+    "ind": {
+      "pres": {
+        "P2": [
+          "riscotete"
+        ]
+      }
+    },
+    "impr": {
+      "pres": {
+        "P2": [
+          "riscotete"
+        ]
+      }
+    }
+  },
+  "scuotere": {
+    "ind": {
+      "pres": {
+        "P2": [
+          "scotete"
+        ]
+      }
+    },
+    "impr": {
+      "pres": {
+        "P2": [
+          "scotete"
+        ]
+      }
+    }
+  }
+}

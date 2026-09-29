@@ -1,4 +1,4 @@
-import { PERSON_SLOTS } from './slots.ts';
+import { PATH, PERSONS } from './vocabulary.ts';
 
 /**
  * Chooses one form per slot from Morph-it's candidates. scripts/build.ts calls
@@ -6,11 +6,12 @@ import { PERSON_SLOTS } from './slots.ts';
  *
  * A slot whose forms are all rejected is left empty. The build then tries the
  * rules in scripts/derive.ts, and records any slot still empty in the
- * `emptied` section of data/temp-unresolved.json.
+ * `emptied` section of data/unresolved.json.
  *
- * There is no `ind.fut` rule: it would assume the future endings are the same
- * across all six persons, which is the open question in item 3a of
- * resources/to-verify.md. Every rule below was measured against the whole
+ * There is no `ind.fut` rule. The future endings are the same for every verb,
+ * and the one error Morph-it makes there — the `lui/lei` form filed in the `io`
+ * slot — is corrected before choosing, by `withFutureS1` in
+ * scripts/corrections.ts. Every rule below was measured against the whole
  * dictionary with no counter-example.
  *
  * ---
@@ -27,30 +28,29 @@ const PERSON_ENDINGS: Record<string, (RegExp | null)[]> = {
   // almost every verb but not all — `essere` gives ero/eri/era — and rejecting
   // a correct irregular form causes it to be replaced by an invented one.
   // Clipped variants are already removed by preferring the longest form.
-  // No ind.fut rule either. The endings below hold for every verb *if* the
-  // future stem is invariant across the six persons, which is item 3a of
-  // resources/to-verify.md and is not yet confirmed:
+  // No ind.fut rule either. The future endings are the same for every verb —
   //     S1 -ò   S2 -ai   S3 -à   P1 -emo   P2 -ete   P3 -anno
-  // scripts/build.ts reports where a verb's own persons disagree, without
-  // acting on it. Enforce this only once 3a is answered.
+  // — and Morph-it's one error there is corrected before choosing, by
+  // withFutureS1 in scripts/corrections.ts. scripts/build.ts reports any verb
+  // whose persons still disagree about their stem.
   //
   // Not every person of these is fixed, so only the reliable ones are listed.
   // Each was measured across the whole dictionary with no counter-example:
   // ind.pres P1/P3, sub.pres P1/P2, and ind.past S2/P1/P2.
-  'ind.pres': [null, null, null, /iamo$/, null, /no$/],
-  'sub.pres': [null, null, null, /iamo$/, /iate$/, null],
-  'ind.past': [null, /sti$/, null, /mmo$/, /ste$/, null],
+  [PATH.indi.pres]: [null, null, null, /iamo$/, null, /no$/],
+  [PATH.subj.pres]: [null, null, null, /iamo$/, /iate$/, null],
+  [PATH.indi.past]: [null, /sti$/, null, /mmo$/, /ste$/, null],
 };
 
 const SHAPE: Record<string, RegExp> = {
-  'ger.pres': /(ando|endo)$/,
-  'part.pres': /(ante|ente|anti|enti)$/,
-  'part.past': /[aeio]$/,
+  [PATH.geru]: /(ando|endo)$/,
+  [PATH.part.pres]: /(ante|ente|anti|enti)$/,
+  [PATH.part.past]: /[aeio]$/,
 };
 
 /** False when a form cannot belong in this slot. */
 export function plausible(path: string, form: string, verb: string): boolean {
-  if (path === 'inf.pres') return form === verb;
+  if (path === PATH.infi) return form === verb;
 
   const shape = SHAPE[path.split('.').slice(0, 2).join('.')];
   if (shape && !shape.test(form)) return false;
@@ -58,7 +58,7 @@ export function plausible(path: string, form: string, verb: string): boolean {
   const [mood, tense, slot] = path.split('.');
   const endings = PERSON_ENDINGS[`${mood}.${tense}`];
   if (endings && slot) {
-    const i = (PERSON_SLOTS as readonly string[]).indexOf(slot);
+    const i = (PERSONS as readonly string[]).indexOf(slot);
     const rule = i >= 0 ? endings[i] : null;
     if (rule && !rule.test(form)) return false;
   }

@@ -4,6 +4,7 @@
  * The build uses these to fill a slot that is still empty once Morph-it and
  * resources/overrides.json have been applied. They never replace a form.
  */
+import { CONJUGATION, ENDING, PERSON } from "./vocabulary.ts"
 
 /**
  * Makes the gerund from the imperfect's `io` form. They share a stem:
@@ -41,19 +42,72 @@
  *
  *   sìedo, but sedévo and sedèndo
  *
- *   - -ie- still follows this: sedendo, possedendo, risedendo, soprassedendo.
- *     `siedevo` and `siedendo` are wrong in modern Italian.
- *   - -uo- mostly no longer does: modern Italian keeps it in unstressed forms
- *     too, giving scuotendo, percuotendo, riscuotendo, cuocendo. Wiktionary
- *     marks `scotendo`, `percotendo` and `cocendo` as rare.
+ * How far modern Italian still follows that depends on the diphthong and the
+ * tense. Checked against Wiktionary's conjugation tables:
  *
- * So the two diphthongs go in opposite directions, and no single rule picks the
- * right form for both. Those verbs are set in resources/overrides.json: the
- * imperfect `io` form for the sedere and percuotere families (this rule then
- * makes their gerund), and the gerund itself for cuocere.
+ *   - -ie- in the imperfect, gerund and noi/voi present: still drops.
+ *     sedevo, sedendo, sediamo — `siedevo` and `siedendo` are wrong.
+ *   - -ie- in the future and conditional: now kept. Both forms are valid, but
+ *     Wiktionary marks `siederò` "now more common, especially in speech" and
+ *     `sederò` traditional, and Morph-it gives only the -ie- forms for sedere.
+ *     So the modern form is used: siederò, siederei.
+ *   - -uo-: kept in unstressed forms too — scuotendo, percuotevo, cuocerò.
+ *     Wiktionary marks `scotendo`, `percotevo` and `cocerò` as rare.
+ *   - -uo- in nuocere's past participle: the exception. `nociuto` leads and
+ *     `nuociuto` is marked rare.
+ *   - A syllable ending in a consonant never takes the diphthong, even under
+ *     stress: scossi, cossi, nocqui.
+ *
+ * So no single choice fits every verb — the diphthongs go different ways, and
+ * even -ie- differs by tense. Each verb's choice is set in `MOBILE_DIPHTHONG`
+ * and applied by `resolveDiphthong` in scripts/corrections.ts, which settles
+ * Morph-it's conflicts between the two stems. The one remaining override is
+ * `siederò` for sedere's future, a slot Morph-it left empty. Each decision is
+ * recorded in resources/to-verify.md, under *Gerunds and present participles*
+ * and *Two stems throughout, and the fare family*.
  */
 export const gerundFromImperfect = (imperfect: string): string | null => {
-  if (imperfect.endsWith("avo")) return imperfect.slice(0, -3) + "ando"
-  if (/[ei]vo$/.test(imperfect)) return imperfect.slice(0, -3) + "endo"
+  for (const group of [CONJUGATION.are, CONJUGATION.ere, CONJUGATION.ire]) {
+    const ending = ENDING.impf[group]
+    if (imperfect.endsWith(ending))
+      return imperfect.slice(0, -ending.length) + ENDING.geru[group]
+  }
+  return null
+}
+
+/**
+ * Makes one imperative slot from the present indicative of the same verb:
+ *
+ *   tu    -are verbs: the present lui/lei form   parlare → parla
+ *         other verbs: the present tu form        credere → credi, finire → finisci
+ *   noi   the present noi form                    parliamo
+ *   voi   the present voi form                    parlate
+ *
+ * Taking the forms from the present, rather than from the infinitive, carries
+ * over irregular stems and the -isc- of finire-type verbs without a list.
+ *
+ * Checked against every verb that has both tenses in Morph-it: it gives
+ * Morph-it's imperative for 17,911 of 17,926 slots. The 15 it does not fit
+ * already have an imperative, so this is never used for them:
+ *
+ *   avere, riavere, essere, riessere, sapere   abbi, sii, sappi — and their voi forms
+ *   dare, malfare                              dai, malfa'
+ *   imbestialire, rammollire, rincivilire      errors in Morph-it itself
+ *
+ * Returns null when the present form it needs is missing.
+ */
+export const imperativeFromPresent = (
+  infinitive: string,
+  present: Record<string, string>,
+  person: string,
+): string | null => {
+  if (person === PERSON.s2)
+    return (
+      (infinitive.endsWith(CONJUGATION.are)
+        ? present[PERSON.s3]
+        : present[PERSON.s2]) ?? null
+    )
+  if (person === PERSON.p1) return present[PERSON.p1] ?? null
+  if (person === PERSON.p2) return present[PERSON.p2] ?? null
   return null
 }
