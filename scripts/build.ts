@@ -3,17 +3,17 @@
  *
  * Four inputs, in this order. Each layer may overrule the one before it:
  *
- *   1. resources/morph-it_048.txt   the source, assumed correct
- *   2. scripts/validate.ts          choose between competing forms
- *   3. data/overrides.json          our corrections, per form
- *   4. scripts/corrections.ts       class-level rules
+ *   1. resources/external/morph-it_048.txt  the source, assumed correct
+ *   2. scripts/validate.ts                  choose between competing forms
+ *   3. resources/overrides.json             our corrections, per form
+ *   4. scripts/corrections.ts               class-level rules
  *
  * Writes:
  *
  *   data/verbs.json         the finished data
  *   data/unresolved.json    what it could not decide, for to-verify.md
  *   data/adjusted.json      every path changed or decided, with the form chosen
- *   data/alternatives.json  valid variants, copied from data/fixed-alternatives.json
+ *   data/alternatives.json  valid variants, copied from resources/fixed-alternatives.json
  *
  * Overrides are applied after validation, so validation cannot remove a form
  * the override file specifies.
@@ -27,13 +27,23 @@ import { choose, plausible } from "./validate.ts"
 import { withAcutePast } from "./accents.ts"
 import {
   absentSlots,
+  accentedCompound,
   IGNORED_ENTRIES,
   resolveDiphthong,
   resolveFareCompound,
   resolveFullFutureStem,
+  iscAlternatives,
+  resolveIsc,
+  resolveParticipleIente,
+  resolveStressedI,
   resolveStrongWeakPast,
   type Resolution,
   withFutureS1,
+  withIsc,
+  withFareForms,
+  withMobileDiphthongForms,
+  withParticipleIente,
+  withStressedI,
 } from "./corrections.ts"
 import {
   clippedForms,
@@ -54,7 +64,7 @@ import {
 } from "./vocabulary.ts"
 
 const OUT_DIR = "data"
-const OVERRIDES = "data/overrides.json"
+const OVERRIDES = "resources/overrides.json"
 
 type Slots = Record<string, string>
 type Tree = Record<string, any>
@@ -79,7 +89,7 @@ const verbFormOverrides: Tree = JSON.parse(fs.readFileSync(OVERRIDES, "utf8"))
 // form path → kind → forms. The conflict rules and the clipped forms add more
 // as the build runs.
 //   { "fare": { "impr.pres.S2": { "common": ["fai"] } } }
-const FIXED_ALTERNATIVES_FILE = "data/fixed-alternatives.json"
+const FIXED_ALTERNATIVES_FILE = "resources/fixed-alternatives.json"
 const verbFormAlternatives: Record<
   string,
   Record<string, AlternativeForms>
@@ -160,7 +170,7 @@ const overridePaths = (verb: string): string[] => {
  * The future uses one stem for all six persons. Morph-it's one error there is
  * corrected before choosing, by withFutureS1 in scripts/corrections.ts, so this
  * should find nothing. It is kept as a check: it reports, and changes nothing.
- * See *Future io form* under Resolved in resources/to-verify.md.
+ * See *Future io form* under Resolved in notes/to-verify.md.
  */
 const futureDisagreements = (verb: string, slots: Slots): string[] => {
   const stems: string[] = []
@@ -198,6 +208,12 @@ const newStats = () => ({
   fromDerivation: 0,
   accentCorrected: 0,
   futureCorrected: 0,
+  iscCorrected: 0,
+  stressedICorrected: 0,
+  ienteAdded: 0,
+  diphthongAdded: 0,
+  fareFormsAdded: 0,
+  accentAdded: 0,
   fromConflictRule: 0,
   clipped_common: 0,
   clipped_poetic: 0,
@@ -368,14 +384,30 @@ const buildVerb = (
   built: Tree,
   alternativesOut: Record<string, Record<string, AlternativeForms>>,
 ): Tree => {
-  // Morph-it's forms with its spelling errors corrected: the accent on the past
-  // historic (scripts/accents.ts) and the future io form (scripts/corrections.ts).
+  // Morph-it's forms with its errors corrected: the accent on the past historic
+  // (scripts/accents.ts), the future io form, the missing -isc- forms, the
+  // stressed-i forms and the fare forms of some compounds
+  // (scripts/corrections.ts).
   // The build chooses from these; morphItPaths keeps the originals, to compare
   // against.
   const accented = withAcutePast(morphItPaths)
   if (accented !== morphItPaths) stats.accentCorrected++
-  const featurePaths = withFutureS1(accented)
-  if (featurePaths !== accented) stats.futureCorrected++
+  const futureFixed = withFutureS1(accented)
+  if (futureFixed !== accented) stats.futureCorrected++
+  const iscFixed = withIsc(infinitive, futureFixed)
+  if (iscFixed !== futureFixed) stats.iscCorrected++
+  const stressedFixed = withStressedI(infinitive, iscFixed)
+  if (stressedFixed !== iscFixed) stats.stressedICorrected++
+  const ienteFixed = withParticipleIente(infinitive, stressedFixed)
+  if (ienteFixed !== stressedFixed) stats.ienteAdded++
+  const diphthongFixed = withMobileDiphthongForms(infinitive, ienteFixed)
+  if (diphthongFixed !== ienteFixed) stats.diphthongAdded++
+  const featurePaths = withFareForms(infinitive, diphthongFixed, (featurePath) => {
+    const [mood, tense, slot = null] = featurePath.split(".")
+    const form = getForm(built.fare ?? {}, { mood, tense, slot })
+    return typeof form === "string" ? form : undefined
+  })
+  if (featurePaths !== ienteFixed) stats.fareFormsAdded++
   const absent = new Set(absentSlots(infinitive))
   const verbEntry: Tree = {}
   // Valid alternatives produced by the conflict rules, by path.
@@ -434,9 +466,17 @@ const buildVerb = (
           getForm(built.fare ?? {}, features),
           fareAlternatives[featurePath] ?? {},
         ) ??
+        resolveIsc(infinitive, featurePath, candidates) ??
+        resolveParticipleIente(infinitive, featurePath, candidates) ??
+        resolveStressedI(infinitive, featurePath, candidates) ??
         resolveDiphthong(infinitive, featurePath, candidates) ??
         resolveFullFutureStem(infinitive, featurePath, candidates) ??
-        resolveStrongWeakPast(infinitive, featurePath, candidates, featurePaths),
+        resolveStrongWeakPast(
+          infinitive,
+          featurePath,
+          candidates,
+          featurePaths,
+        ),
     )
 
     switch (decision.source) {
@@ -515,6 +555,22 @@ const buildVerb = (
     }
   }
 
+  // Write the accent on a compound's one-syllable form: rifa → rifà.
+  for (const featurePath of slotPaths(infinitive, featurePaths)) {
+    const [mood, tense, slot = null] = featurePath.split(".")
+    const features: Features = { mood, tense, slot }
+    const form = getForm(verbEntry, features)
+    const accented = typeof form === "string" && accentedCompound(infinitive, featurePath, form)
+    if (!accented) continue
+    setForm(verbEntry, features, accented.form)
+    if (Object.keys(accented.alternatives).length)
+      ruleAlternatives.set(
+        featurePath,
+        mergeKinds(ruleAlternatives.get(featurePath) ?? {}, accented.alternatives),
+      )
+    stats.accentAdded++
+  }
+
   // Record the slots no rule has filled, so they can be checked by hand.
   for (const [features, featurePath, ambiguous] of conflictSlots) {
     if (getForm(verbEntry, features) !== undefined) continue
@@ -557,6 +613,12 @@ const buildVerb = (
     if (final !== (morphItForms.get(featurePath) ?? null))
       changed.add(featurePath)
   }
+  // The forms without -isc- of a verb that also uses them (aggrinzo).
+  for (const [featurePath, forms] of Object.entries(iscAlternatives(infinitive)))
+    ruleAlternatives.set(
+      featurePath,
+      mergeKinds(ruleAlternatives.get(featurePath) ?? {}, forms),
+    )
   // The verb's alternatives, by path: from the alternatives file and the
   // conflict rules — these list the path in data/adjusted.json — and the clipped
   // forms made from the finished forms by clippedForms (scripts/derive.ts),
@@ -641,7 +703,7 @@ const writeJson = (file: string, value: unknown) =>
  *   data/adjusted.json      { "sedere": { "ger.pres": { "selected": "sedendo", "rejected": ["sedevo", "siedevo"] }, ... }, ... }
  *   data/alternatives.json  { "fare": { "impr.pres.S2": { "common": ["fai"] } }, ... }
  *
- * The alternatives file is data/fixed-alternatives.json joined with the
+ * The alternatives file is resources/fixed-alternatives.json joined with the
  * alternatives the conflict rules produce. The clipped forms are not written:
  * the app makes them with clippedForms in scripts/derive.ts.
  */
@@ -674,8 +736,42 @@ const printStats = (s: Stats) => {
   console.log("    from Morph-it     :", s.fromMorphIt.toLocaleString())
   console.log("    from an override  :", s.fromOverride.toLocaleString())
   console.log("    from a derivation :", s.fromDerivation.toLocaleString())
-  console.log("  accent corrected in :", s.accentCorrected.toLocaleString(), "verbs")
-  console.log("  future io corrected:", s.futureCorrected.toLocaleString(), "verbs")
+  console.log(
+    "  accent corrected in :",
+    s.accentCorrected.toLocaleString(),
+    "verbs",
+  )
+  console.log(
+    "  future io corrected:",
+    s.futureCorrected.toLocaleString(),
+    "verbs",
+  )
+  console.log(
+    "  -isc- added in      :",
+    s.iscCorrected.toLocaleString(),
+    "verbs",
+  )
+  console.log(
+    "  stressed i added in :",
+    s.stressedICorrected.toLocaleString(),
+    "verbs",
+  )
+  console.log(
+    "  -iente added in     :",
+    s.ienteAdded.toLocaleString(),
+    "verbs",
+  )
+  console.log(
+    "  diphthong added in  :",
+    s.diphthongAdded.toLocaleString(),
+    "verbs",
+  )
+  console.log(
+    "  fare forms added in :",
+    s.fareFormsAdded.toLocaleString(),
+    "verbs",
+  )
+  console.log("  compound accents    :", s.accentAdded.toLocaleString())
   console.log("    from a conflict rule:", s.fromConflictRule.toLocaleString())
   console.log("  removed by override :", s.removedByOverride.toLocaleString())
   console.log("  removed by rule     :", s.removedByCorrection.toLocaleString())

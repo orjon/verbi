@@ -1,7 +1,7 @@
 import { CONJUGATION, ENDING, GENDER, PATH, PERSON, PERSONS } from './vocabulary.ts';
 
 /**
- * The regular Italian paradigms, as documented in resources/regular-verbs.md.
+ * The regular Italian paradigms, as documented in notes/regular-verbs.md.
  *
  * Used to fill a slot that Morph-it leaves empty or fills with something that
  * cannot belong there. Generating is preferred to hard-coding a value: the rule

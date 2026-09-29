@@ -2,7 +2,7 @@
  * The forms that have no person: infinitive, gerund and participles.
  *
  * These need care because the dictionary stores two of them badly. See
- * resources/README.md for the full account.
+ * notes/README.md for the full account.
  */
 import type { VerbsInfo } from 'italian-verbs-dict';
 import verbsJson from 'italian-verbs-dict/dist/verbs.json' with { type: 'json' };

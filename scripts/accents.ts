@@ -10,7 +10,7 @@
  * Morph-it is inconsistent about this: it writes 48 of these with a grave, and
  * contradicts itself within one verb family (`cuocè` but `ricuocé`). So the
  * spelling is corrected here rather than taken from the source. The decision is
- * recorded as *Acute accent in the past historic* in resources/to-verify.md.
+ * recorded as *Acute accent in the past historic* in notes/to-verify.md.
  */
 import { ACCENTS, PATH, PERSON, formPath } from "./vocabulary.ts"
 

@@ -14,7 +14,7 @@ import {
   personSlot,
 } from "./slots.ts"
 
-export const LEXICON = "resources/morph-it_048.txt"
+export const LEXICON = "resources/external/morph-it_048.txt"
 
 /**
  * The shape of the verb forms parsed from the lexicon.

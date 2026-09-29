@@ -15,9 +15,14 @@ import type { ItalianAux } from '../../types/index.ts';
  * Not exhaustive — Italian has a long tail — but it covers the verbs a learner
  * meets. Anything absent falls back to `avere`, which is the majority case.
  *
- * `vigere`, `incombere` and `prudere` are on neither list: they have no past
- * participle, so no compound tenses. Checked 2026-09-29 — see *Auxiliary verbs*
- * in resources/to-verify.md.
+ * `vigere`, `incombere`, `prudere` and 23 others are on neither list: they
+ * have no past participle, so no compound tenses. Checked 2026-09-29 — see
+ * *Auxiliary verbs* in notes/to-verify.md.
+ *
+ * The block below the original list (`abbiosciare` on) was added 2026-09-29
+ * from a comparison against English Wiktionary's own auxiliary data alone —
+ * not individually cross-checked against Treccani for each verb, given the
+ * scale (98 verbs). Flagged for the final recheck pass.
  */
 const ESSERE = new Set<string>([
   // motion
@@ -43,6 +48,28 @@ const ESSERE = new Set<string>([
   // misc intransitives
   'bastare', 'costare', 'dipendere', 'importare', 'risultare', 'riuscire',
   'sopravvivere', 'valere',
+  // added 2026-09-29 from Wiktionary's auxiliary data, single source
+  'abbiosciare', 'addivenire', 'affluire', 'aggettare', 'allibire',
+  'ammuffire', 'arenare', 'arrabbiare', 'arrampicare', 'arrossire',
+  'assurgere', 'baluginare', 'balzare', 'basire', 'bisognare',
+  'capitombolare', 'cascare', 'conflagrare', 'consistere', 'constare',
+  'convolare', 'crepare', 'cucciare', 'culminare', 'decedere', 'decorrere',
+  'decrescere', 'defluire', 'deperire', 'dilagare', 'dimagrire', 'disparire',
+  'divampare', 'emergere', 'fioccare', 'fluire', 'franare', 'fuoriuscire',
+  'imbolsire', 'imbronciare', 'immigrare', 'incartapecorire', 'incorrere',
+  'infreddolire', 'insorgere', 'invalere', 'inviperire', 'irrancidire',
+  'licere', 'muffire', 'pollare', 'preesistere', 'premorire', 'prenascere',
+  'rabbuiare', 'rampare', 'rampollare', 'rassegare', 'regredire', 'residuare',
+  'riammalare', 'riapparire', 'riboccare', 'ricascare', 'ricomparire',
+  'riemergere', 'riessere', 'rifluire', 'rimbalzare', 'rincasare', 'risedere',
+  'risorgere', 'ristare', 'sbottare', 'scaturire', 'schiattare', 'sconvenire',
+  'sedere', 'sfebbrare', 'sfiorire', 'sfrecciare', 'sgattaiolare', 'smemorare',
+  'soggiacere', 'sottentrare', 'sottostare', 'spiacere', 'susseguire',
+  'sussistere', 'svaporare', 'svignare', 'talentare', 'tombolare',
+  'tracollare', 'tramontare', 'transitare', 'trasparire', 'trasumanare',
+  // permanere: Treccani confirms "aus. essere", though compound tenses are
+  // rarely used in practice (its past participle is archaic-only)
+  'permanere',
 ]);
 
 /**

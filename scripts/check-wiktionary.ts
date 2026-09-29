@@ -4,7 +4,7 @@
  * Source: the Italian section of the English Wiktionary, as extracted by
  * wiktextract and published by kaikki.org — one JSON entry per line:
  *   https://kaikki.org/dictionary/Italian/kaikki.org-dictionary-Italian.jsonl
- * Saved as resources/kaikki-italian.jsonl (not committed, 771 MB).
+ * Saved as resources/external/kaikki-italian.jsonl (not committed, 771 MB).
  *
  * For every verb in data/verbs.json, and every form path Wiktionary's table
  * gives, it sorts the path into one status (see STATUS). It also compares the
@@ -12,8 +12,8 @@
  *
  * Writes:
  *
- *   reports/wiktionary/check.json   every path that does not agree, by status
- *   reports/wiktionary/check.md     the same, as tables
+ *   notes/reports/wiktionary/check.json   every path that does not agree, by status
+ *   notes/reports/wiktionary/check.md     the same, as tables
  *
  * Run with: node scripts/check-wiktionary.ts
  */
@@ -29,10 +29,10 @@ import {
 } from "./vocabulary.ts"
 import { getAux, isDualAux } from "../lib/conjugation/aux.ts"
 
-const KAIKKI_FILE = "resources/kaikki-italian.jsonl"
+const KAIKKI_FILE = "resources/external/kaikki-italian.jsonl"
 const VERBS_FILE = "data/verbs.json"
 const ALTERNATIVES_FILE = "data/alternatives.json"
-const OUT_DIR = "reports/wiktionary"
+const OUT_DIR = "notes/reports/wiktionary"
 
 /**
  * What a form path can be, once compared.

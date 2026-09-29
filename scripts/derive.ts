@@ -70,7 +70,7 @@ import {
  * and applied by `resolveDiphthong` in scripts/corrections.ts, which settles
  * Morph-it's conflicts between the two stems. The one remaining override is
  * `siederò` for sedere's future, a slot Morph-it left empty. Each decision is
- * recorded in resources/to-verify.md, under *Gerunds and present participles*
+ * recorded in notes/to-verify.md, under *Gerunds and present participles*
  * and *Two stems throughout, and the fare family*.
  */
 export const gerundFromImperfect = (imperfect: string): string | null => {
@@ -141,7 +141,7 @@ const CLIPPED_SLOTS: string[] = [
  * clipped_poetic. The present loro in -nno (*hanno → han*) is always common, so
  * it is not listed; see clippedKind. `volere`'s present lui/lei (*vuol*) is the
  * one clipped form outside CLIPPED_SLOTS, so listing it here also makes
- * clippedForms clip that slot. Decided in resources/to-verify.md, item 8.
+ * clippedForms clip that slot. Decided in notes/to-verify.md, item 8.
  */
 const CLIPPED_COMMON: Record<string, string[]> = {
   avere: [PATH.infi],

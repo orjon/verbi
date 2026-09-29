@@ -1,0 +1,2395 @@
+{
+  "addivenire": {
+    "ind": {
+      "fut": {
+        "S1": "addiverrò",
+        "P1": "addiverremo"
+      }
+    }
+  },
+  "affare": {
+    "impr": null
+  },
+  "aggradare": {
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "fut": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    },
+    "ger": {
+      "pres": null
+    },
+    "part": {
+      "pres": {
+        "S": null,
+        "SF": null,
+        "P": null,
+        "PF": null
+      },
+      "past": {
+        "S": null,
+        "SF": null,
+        "P": null,
+        "PF": null
+      }
+    }
+  },
+  "andare": {
+    "impr": {
+      "pres": {
+        "S2": "va'"
+      }
+    }
+  },
+  "annettere": {
+    "part": {
+      "past": {
+        "S": "annesso",
+        "SF": "annessa",
+        "P": "annessi",
+        "PF": "annesse"
+      }
+    }
+  },
+  "aspergere": {
+    "part": {
+      "past": {
+        "S": "asperso",
+        "SF": "aspersa",
+        "P": "aspersi",
+        "PF": "asperse"
+      }
+    }
+  },
+  "assentire": {
+    "part": {
+      "pres": {
+        "S": "assenziente",
+        "SF": "assenziente",
+        "P": "assenzienti",
+        "PF": "assenzienti"
+      }
+    }
+  },
+  "assidere": {
+    "ind": {
+      "past": {
+        "S1": "assisi",
+        "S3": "assise",
+        "P3": "assisero"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "assiso",
+        "SF": "assisa",
+        "P": "assisi",
+        "PF": "assise"
+      }
+    }
+  },
+  "astringere": {
+    "part": {
+      "past": {
+        "S": "astretto",
+        "SF": "astretta",
+        "P": "astretti",
+        "PF": "astrette"
+      }
+    }
+  },
+  "autoassolvere": {
+    "part": {
+      "past": {
+        "S": "autoassolto",
+        "SF": "autoassolta",
+        "P": "autoassolti",
+        "PF": "autoassolte"
+      }
+    }
+  },
+  "autoconvincere": {
+    "part": {
+      "past": {
+        "S": "autoconvinto",
+        "SF": "autoconvinta",
+        "P": "autoconvinti",
+        "PF": "autoconvinte"
+      }
+    }
+  },
+  "avellere": {
+    "part": {
+      "past": {
+        "S": "avulso",
+        "SF": "avulsa",
+        "P": "avulsi",
+        "PF": "avulse"
+      }
+    }
+  },
+  "benvolere": {
+    "impr": {
+      "pres": {
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    },
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "fut": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "ger": {
+      "pres": null
+    },
+    "part": {
+      "pres": {
+        "S": null,
+        "SF": null,
+        "P": null,
+        "PF": null
+      }
+    }
+  },
+  "calere": {
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": "calse",
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "fut": null
+    },
+    "cond": null,
+    "sub": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": "calga",
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "impr": null,
+    "part": {
+      "pres": null,
+      "past": {
+        "SF": null,
+        "P": null,
+        "PF": null
+      }
+    }
+  },
+  "cerchiare": {
+    "ind": {
+      "pres": {
+        "S2": "cerchi",
+        "P1": "cerchiamo",
+        "P2": "cerchiate"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "cerchi",
+        "S2": "cerchi",
+        "S3": "cerchi",
+        "P1": "cerchiamo",
+        "P2": "cerchiate",
+        "P3": "cerchino"
+      }
+    },
+    "part": {
+      "past": {
+        "PF": "cerchiate"
+      }
+    }
+  },
+  "cernere": {
+    "part": {
+      "past": {
+        "S": "cernito",
+        "SF": "cernita",
+        "P": "cerniti",
+        "PF": "cernite"
+      }
+    }
+  },
+  "collidere": {
+    "ind": {
+      "past": {
+        "S1": "collisi",
+        "S3": "collise",
+        "P3": "collisero"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "colliso",
+        "SF": "collisa",
+        "P": "collisi",
+        "PF": "collise"
+      }
+    }
+  },
+  "concedere": {
+    "part": {
+      "past": {
+        "S": "concesso",
+        "SF": "concessa",
+        "P": "concessi",
+        "PF": "concesse"
+      }
+    }
+  },
+  "concepire": {
+    "part": {
+      "pres": {
+        "S": "concipiente",
+        "SF": "concipiente",
+        "P": "concipienti",
+        "PF": "concipienti"
+      }
+    }
+  },
+  "concernere": {
+    "part": {
+      "past": null
+    },
+    "ind": {
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    }
+  },
+  "concupire": {
+    "part": {
+      "pres": {
+        "S": "concupiscente",
+        "SF": "concupiscente",
+        "P": "concupiscenti",
+        "PF": "concupiscenti"
+      }
+    }
+  },
+  "condolere": {
+    "ind": {
+      "pres": {
+        "S1": "condolgo",
+        "S2": "conduoli",
+        "S3": "conduole",
+        "P1": "condoliamo",
+        "P2": "condolete",
+        "P3": "condolgono"
+      },
+      "fut": {
+        "S1": "condorrò",
+        "S2": "condorrai",
+        "S3": "condorrà",
+        "P1": "condorremo",
+        "P2": "condorrete",
+        "P3": "condorranno"
+      },
+      "past": {
+        "S1": "condolsi",
+        "S2": "condolesti",
+        "S3": "condolse",
+        "P1": "condolemmo",
+        "P2": "condoleste",
+        "P3": "condolsero"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "condolga",
+        "S2": "condolga",
+        "S3": "condolga",
+        "P1": "condoliamo",
+        "P2": "condoliate",
+        "P3": "condolgano"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "condorrei",
+        "S2": "condorresti",
+        "S3": "condorrebbe",
+        "P1": "condorremmo",
+        "P2": "condorreste",
+        "P3": "condorrebbero"
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": "conduoli",
+        "P1": "condoliamo",
+        "P2": "condolete"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "condoluto",
+        "SF": "condoluta",
+        "P": "condoluti",
+        "PF": "condolute"
+      }
+    }
+  },
+  "conquidere": {
+    "ind": {
+      "past": {
+        "S1": "conquisi",
+        "S3": "conquise",
+        "P3": "conquisero"
+      }
+    }
+  },
+  "consentire": {
+    "part": {
+      "pres": {
+        "S": "consentente",
+        "SF": "consentente",
+        "P": "consententi",
+        "PF": "consententi"
+      }
+    }
+  },
+  "consumere": {
+    "ger": null,
+    "ind": {
+      "pres": null,
+      "impf": null,
+      "fut": null,
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "cond": null,
+    "sub": null,
+    "impr": null,
+    "part": {
+      "pres": null,
+      "past": {
+        "S": "consunto",
+        "SF": "consunta",
+        "P": "consunti",
+        "PF": "consunte"
+      }
+    }
+  },
+  "controvertere": {
+    "ind": {
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    }
+  },
+  "convergere": {
+    "part": {
+      "past": {
+        "S": "converso",
+        "SF": "conversa",
+        "P": "conversi",
+        "PF": "converse"
+      }
+    }
+  },
+  "cuocere": {
+    "ind": {
+      "past": {
+        "S1": "cossi",
+        "S3": "cosse",
+        "P3": "cossero"
+      }
+    }
+  },
+  "dannare": {
+    "ind": {
+      "pres": {
+        "S1": "danno"
+      }
+    }
+  },
+  "dare": {
+    "ind": {
+      "pres": {
+        "S1": "do",
+        "S2": "dai"
+      },
+      "past": {
+        "S1": "diedi",
+        "S3": "diede",
+        "P3": "diedero"
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": "dai"
+      }
+    }
+  },
+  "defiggere": {
+    "part": {
+      "past": {
+        "S": "defisso",
+        "SF": "defissa",
+        "P": "defissi",
+        "PF": "defisse"
+      }
+    }
+  },
+  "delinquere": {
+    "part": {
+      "past": null
+    },
+    "ind": {
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    }
+  },
+  "detergere": {
+    "part": {
+      "past": {
+        "S": "deterso",
+        "SF": "detersa",
+        "P": "detersi",
+        "PF": "deterse"
+      }
+    }
+  },
+  "devolvere": {
+    "part": {
+      "past": {
+        "S": "devoluto",
+        "SF": "devoluta",
+        "P": "devoluti",
+        "PF": "devolute"
+      }
+    }
+  },
+  "dicare": {
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S3": null,
+        "P3": null
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": null
+      }
+    }
+  },
+  "difendere": {
+    "ind": {
+      "past": {
+        "S3": "difese"
+      }
+    }
+  },
+  "dire": {
+    "impr": {
+      "pres": {
+        "S2": "di'"
+      }
+    }
+  },
+  "dirimere": {
+    "part": {
+      "past": null
+    }
+  },
+  "disconnettere": {
+    "part": {
+      "past": {
+        "S": "disconnesso",
+        "SF": "disconnessa",
+        "P": "disconnessi",
+        "PF": "disconnesse"
+      }
+    }
+  },
+  "discutere": {
+    "part": {
+      "past": {
+        "S": "discusso",
+        "SF": "discussa",
+        "P": "discussi",
+        "PF": "discusse"
+      }
+    }
+  },
+  "disdire": {
+    "part": {
+      "pres": {
+        "S": "disdicente",
+        "SF": "disdicente",
+        "P": "disdicenti",
+        "PF": "disdicenti"
+      }
+    }
+  },
+  "disparire": {
+    "ind": {
+      "pres": {
+        "S1": "dispaio",
+        "P3": "dispaiono"
+      },
+      "past": {
+        "S1": "disparvi",
+        "S3": "disparve",
+        "P3": "disparvero"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "dispaia",
+        "S2": "dispaia",
+        "S3": "dispaia",
+        "P3": "dispaiano"
+      }
+    }
+  },
+  "dissentire": {
+    "part": {
+      "pres": {
+        "S": "dissenziente",
+        "SF": "dissenziente",
+        "P": "dissenzienti",
+        "PF": "dissenzienti"
+      }
+    }
+  },
+  "disseppellire": {
+    "part": {
+      "past": {
+        "S": "dissepolto",
+        "SF": "dissepolta",
+        "P": "dissepolti",
+        "PF": "dissepolte"
+      }
+    }
+  },
+  "disvolere": {
+    "impr": {
+      "pres": {
+        "S2": "disvogli",
+        "P2": "disvogliate"
+      }
+    }
+  },
+  "divedere": {
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "fut": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    },
+    "ger": {
+      "pres": null
+    },
+    "part": {
+      "pres": {
+        "S": null,
+        "SF": null,
+        "P": null,
+        "PF": null
+      },
+      "past": {
+        "S": null,
+        "SF": null,
+        "P": null,
+        "PF": null
+      }
+    }
+  },
+  "divergere": {
+    "ind": {
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    }
+  },
+  "dolere": {
+    "ind": {
+      "pres": {
+        "S1": "dolgo",
+        "S2": "duoli",
+        "S3": "duole",
+        "P1": "doliamo",
+        "P2": "dolete",
+        "P3": "dolgono"
+      },
+      "fut": {
+        "S1": "dorrò",
+        "S2": "dorrai",
+        "S3": "dorrà",
+        "P1": "dorremo",
+        "P2": "dorrete",
+        "P3": "dorranno"
+      },
+      "past": {
+        "S1": "dolsi",
+        "S2": "dolesti",
+        "S3": "dolse",
+        "P1": "dolemmo",
+        "P2": "doleste",
+        "P3": "dolsero"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "dolga",
+        "S2": "dolga",
+        "S3": "dolga",
+        "P1": "doliamo",
+        "P2": "doliate",
+        "P3": "dolgano"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "dorrei",
+        "S2": "dorresti",
+        "S3": "dorrebbe",
+        "P1": "dorremmo",
+        "P2": "dorreste",
+        "P3": "dorrebbero"
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": "duoli",
+        "P1": "doliamo",
+        "P2": "dolete"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "doluto",
+        "SF": "doluta",
+        "P": "doluti",
+        "PF": "dolute"
+      }
+    }
+  },
+  "dovere": {
+    "ind": {
+      "pres": {
+        "P3": "devono"
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    }
+  },
+  "eccellere": {
+    "ind": {
+      "past": {
+        "S1": "eccelsi",
+        "P3": "eccelsero"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "eccelso",
+        "SF": "eccelsa",
+        "P": "eccelsi",
+        "PF": "eccelse"
+      }
+    }
+  },
+  "elidere": {
+    "ind": {
+      "past": {
+        "S1": "elisi",
+        "S3": "elise",
+        "P3": "elisero"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "eliso",
+        "SF": "elisa",
+        "P": "elisi",
+        "PF": "elise"
+      }
+    }
+  },
+  "escutere": {
+    "ind": {
+      "past": {
+        "S1": "escussi",
+        "S3": "escusse",
+        "P3": "escussero"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "escusso",
+        "SF": "escussa",
+        "P": "escussi",
+        "PF": "escusse"
+      }
+    }
+  },
+  "espandere": {
+    "ind": {
+      "past": {
+        "S1": "espansi",
+        "P3": "espansero"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "espanto",
+        "SF": "espanta",
+        "P": "espanti",
+        "PF": "espante"
+      }
+    }
+  },
+  "essere": {
+    "ind": {
+      "pres": {
+        "S3": "è"
+      }
+    },
+    "sub": {
+      "impf": {
+        "S3": "fosse"
+      }
+    }
+  },
+  "evolvere": {
+    "part": {
+      "past": {
+        "S": "evoluto",
+        "SF": "evoluta",
+        "P": "evoluti",
+        "PF": "evolute"
+      }
+    }
+  },
+  "fare": {
+    "impr": {
+      "pres": {
+        "S2": "fa'"
+      }
+    }
+  },
+  "fendere": {
+    "part": {
+      "past": {
+        "S": "fenduto",
+        "SF": "fenduta",
+        "P": "fenduti",
+        "PF": "fendute"
+      }
+    },
+    "ind": {
+      "past": {
+        "S1": "fendei",
+        "P3": "fenderono"
+      }
+    }
+  },
+  "figgere": {
+    "ind": {
+      "past": {
+        "S3": "fisse"
+      }
+    }
+  },
+  "giacere": {
+    "ind": {
+      "pres": {
+        "P1": "giacciamo"
+      }
+    },
+    "sub": {
+      "pres": {
+        "P1": "giacciamo",
+        "P2": "giacciate"
+      }
+    },
+    "impr": {
+      "pres": {
+        "P1": "giacciamo"
+      }
+    }
+  },
+  "godere": {
+    "ind": {
+      "fut": {
+        "S1": "godrò",
+        "S2": "godrai",
+        "S3": "godrà",
+        "P1": "godremo",
+        "P2": "godrete",
+        "P3": "godranno"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "godrei",
+        "S2": "godresti",
+        "S3": "godrebbe",
+        "P1": "godremmo",
+        "P2": "godreste",
+        "P3": "godrebbero"
+      }
+    }
+  },
+  "imbestialire": {
+    "ind": {
+      "pres": {
+        "S2": "imbestialisci"
+      }
+    }
+  },
+  "imbevere": {
+    "ind": {
+      "fut": {
+        "S1": "imberrò",
+        "S2": "imberrai",
+        "S3": "imberrà",
+        "P1": "imberremo",
+        "P2": "imberrete",
+        "P3": "imberranno"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "imberrei",
+        "S2": "imberresti",
+        "S3": "imberrebbe",
+        "P1": "imberremmo",
+        "P2": "imberreste",
+        "P3": "imberrebbero"
+      }
+    }
+  },
+  "incartapecorire": {
+    "ind": {
+      "pres": {
+        "S1": "incartapecorisco",
+        "P3": "incartapecoriscono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "incartapecorisca",
+        "S2": "incartapecorisca",
+        "S3": "incartapecorisca",
+        "P3": "incartapecoriscano"
+      }
+    }
+  },
+  "incollerire": {
+    "cond": {
+      "pres": {
+        "S1": "incollerirei"
+      }
+    }
+  },
+  "incombere": {
+    "part": {
+      "past": null
+    }
+  },
+  "incutere": {
+    "part": {
+      "past": {
+        "S": "incusso",
+        "SF": "incussa",
+        "P": "incussi",
+        "PF": "incusse"
+      }
+    }
+  },
+  "inferire": {
+    "part": {
+      "past": {
+        "S": "inferito",
+        "SF": "inferita",
+        "P": "inferiti",
+        "PF": "inferite"
+      }
+    },
+    "ind": {
+      "past": {
+        "S1": "inferii",
+        "S3": "inferì",
+        "P3": "inferirono"
+      }
+    }
+  },
+  "infiggere": {
+    "part": {
+      "past": {
+        "S": "infisso",
+        "SF": "infissa",
+        "P": "infissi",
+        "PF": "infisse"
+      }
+    }
+  },
+  "interconnettere": {
+    "part": {
+      "past": {
+        "S": "interconnesso",
+        "SF": "interconnessa",
+        "P": "interconnessi",
+        "PF": "interconnesse"
+      }
+    }
+  },
+  "interdire": {
+    "sub": {
+      "impf": {
+        "S1": "interdicessi",
+        "S2": "interdicessi",
+        "S3": "interdicesse"
+      }
+    }
+  },
+  "intravedere": {
+    "part": {
+      "past": {
+        "S": "intravisto",
+        "SF": "intravista",
+        "P": "intravisti",
+        "PF": "intraviste"
+      }
+    }
+  },
+  "intravvedere": {
+    "part": {
+      "past": {
+        "S": "intravvisto",
+        "SF": "intravvista",
+        "P": "intravvisti",
+        "PF": "intravviste"
+      }
+    }
+  },
+  "licere": {
+    "ger": null,
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "P1": null,
+        "P2": null
+      },
+      "past": null,
+      "fut": null
+    },
+    "cond": null,
+    "sub": {
+      "pres": null,
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    },
+    "impr": null,
+    "part": {
+      "pres": null
+    }
+  },
+  "malvolere": {
+    "impr": {
+      "pres": {
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    },
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "fut": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "ger": {
+      "pres": null
+    },
+    "part": {
+      "pres": {
+        "S": null,
+        "SF": null,
+        "P": null,
+        "PF": null
+      }
+    }
+  },
+  "molcere": {
+    "part": {
+      "pres": {
+        "S": null,
+        "SF": null,
+        "P": null,
+        "PF": null
+      }
+    },
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "fut": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    }
+  },
+  "negligere": {
+    "part": {
+      "past": {
+        "S": "negletto",
+        "SF": "negletta",
+        "P": "negletti",
+        "PF": "neglette"
+      }
+    },
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    }
+  },
+  "nuocere": {
+    "part": {
+      "past": {
+        "S": "nociuto",
+        "SF": "nociuta",
+        "P": "nociuti",
+        "PF": "nociute"
+      },
+      "pres": {
+        "S": "nocente",
+        "SF": "nocente",
+        "P": "nocenti",
+        "PF": "nocenti"
+      }
+    }
+  },
+  "offendere": {
+    "ind": {
+      "past": {
+        "S3": "offese"
+      }
+    }
+  },
+  "offrire": {
+    "part": {
+      "pres": {
+        "S": "offerente",
+        "SF": "offerente",
+        "P": "offerenti",
+        "PF": "offerenti"
+      }
+    }
+  },
+  "parere": {
+    "impr": {
+      "pres": {
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    }
+  },
+  "pendere": {
+    "part": {
+      "past": {
+        "S": "penduto",
+        "SF": "penduta",
+        "P": "penduti",
+        "PF": "pendute"
+      }
+    }
+  },
+  "percuotere": {
+    "ind": {
+      "pres": {
+        "P2": "percuotete"
+      }
+    },
+    "part": {
+      "pres": null
+    },
+    "impr": {
+      "pres": {
+        "P2": "percuotete"
+      }
+    }
+  },
+  "perdere": {
+    "part": {
+      "past": {
+        "S": "perso",
+        "SF": "persa",
+        "P": "persi",
+        "PF": "perse"
+      }
+    }
+  },
+  "permanere": {
+    "part": {
+      "past": {
+        "S": null,
+        "SF": null,
+        "P": null,
+        "PF": null
+      }
+    }
+  },
+  "plaudere": {
+    "ind": {
+      "pres": {
+        "S1": "plaudo",
+        "S2": "plaudi",
+        "S3": "plaude",
+        "P1": "plaudiamo",
+        "P3": "plaudono"
+      },
+      "past": {
+        "S1": "plaudii",
+        "S2": "plaudisti",
+        "S3": "plaudì",
+        "P1": "plaudimmo",
+        "P2": "plaudiste",
+        "P3": "plaudirono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "plauda",
+        "S2": "plauda",
+        "S3": "plauda",
+        "P1": "plaudiamo",
+        "P2": "plaudiate",
+        "P3": "plaudano"
+      }
+    },
+    "part": {
+      "pres": {
+        "S": "plaudente",
+        "SF": "plaudente",
+        "P": "plaudenti",
+        "PF": "plaudenti"
+      },
+      "past": {
+        "S": "plaudito",
+        "SF": "plaudita",
+        "P": "plauditi",
+        "PF": "plaudite"
+      }
+    }
+  },
+  "possedere": {
+    "part": {
+      "pres": {
+        "S": "possidente",
+        "SF": "possidente",
+        "P": "possidenti",
+        "PF": "possidenti"
+      }
+    }
+  },
+  "potere": {
+    "impr": {
+      "pres": {
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    }
+  },
+  "premorire": {
+    "ind": {
+      "pres": {
+        "S1": "premuoio",
+        "P3": "premuoiono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "premuoia",
+        "P3": "premuoiano"
+      }
+    }
+  },
+  "presentire": {
+    "ind": {
+      "pres": {
+        "S1": "presento",
+        "S2": "presenti",
+        "P1": "presentiamo",
+        "P3": "presentono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "presenta",
+        "S2": "presenta",
+        "S3": "presenta",
+        "P1": "presentiamo",
+        "P2": "presentiate",
+        "P3": "presentano"
+      }
+    }
+  },
+  "prevedere": {
+    "part": {
+      "past": {
+        "S": "previsto",
+        "SF": "prevista",
+        "P": "previsti",
+        "PF": "previste"
+      }
+    }
+  },
+  "procombere": {
+    "part": {
+      "past": null
+    }
+  },
+  "profferire": {
+    "part": {
+      "past": {
+        "S": "profferto",
+        "SF": "profferta",
+        "P": "profferti",
+        "PF": "profferte"
+      }
+    }
+  },
+  "propendere": {
+    "ind": {
+      "past": {
+        "S1": "propendei",
+        "S3": "propendé",
+        "P3": "propenderono"
+      }
+    }
+  },
+  "provvedere": {
+    "ind": {
+      "fut": {
+        "S1": "provvederò",
+        "S2": "provvederai",
+        "S3": "provvederà",
+        "P1": "provvederemo",
+        "P2": "provvederete",
+        "P3": "provvederanno"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "provvederei",
+        "S2": "provvederesti",
+        "S3": "provvederebbe",
+        "P1": "provvederemmo",
+        "P2": "provvedereste",
+        "P3": "provvederebbero"
+      }
+    }
+  },
+  "prudere": {
+    "part": {
+      "past": null
+    }
+  },
+  "putire": {
+    "ind": {
+      "pres": {
+        "S1": "putisco",
+        "S3": "putisce",
+        "P3": "putiscono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "putisca",
+        "S2": "putisca",
+        "S3": "putisca",
+        "P3": "putiscano"
+      }
+    }
+  },
+  "radioassistere": {
+    "ind": {
+      "past": {
+        "P3": "radioassistettero"
+      }
+    }
+  },
+  "rammollire": {
+    "impr": {
+      "pres": {
+        "S2": "rammollisci"
+      }
+    }
+  },
+  "recere": {
+    "ger": null,
+    "ind": {
+      "pres": {
+        "S1": null,
+        "S2": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      },
+      "impf": null,
+      "past": null,
+      "fut": null
+    },
+    "cond": null,
+    "sub": null,
+    "impr": null,
+    "part": {
+      "pres": null
+    }
+  },
+  "restringere": {
+    "part": {
+      "past": {
+        "S": "restretto",
+        "SF": "restretta",
+        "P": "restretti",
+        "PF": "restrette"
+      }
+    }
+  },
+  "retrocedere": {
+    "part": {
+      "past": {
+        "S": "retrocesso",
+        "SF": "retrocessa",
+        "P": "retrocessi",
+        "PF": "retrocesse"
+      }
+    }
+  },
+  "riandare": {
+    "impr": {
+      "pres": {
+        "S2": "riva'"
+      }
+    }
+  },
+  "riavere": {
+    "ind": {
+      "pres": {
+        "S1": "riò",
+        "S2": "riai",
+        "S3": "rià",
+        "P3": "rianno"
+      }
+    }
+  },
+  "ridare": {
+    "impr": {
+      "pres": {
+        "S2": "ridai"
+      }
+    }
+  },
+  "ridire": {
+    "impr": {
+      "pres": {
+        "S2": "ridi'"
+      }
+    }
+  },
+  "riesplodere": {
+    "part": {
+      "past": {
+        "S": "riesploso",
+        "SF": "riesplosa",
+        "P": "riesplosi",
+        "PF": "riesplose"
+      }
+    }
+  },
+  "rimpiccolire": {
+    "ind": {
+      "pres": {
+        "S3": "rimpiccolisce"
+      }
+    }
+  },
+  "rincivilire": {
+    "impr": {
+      "pres": {
+        "S2": "rincivilisci"
+      }
+    }
+  },
+  "ripartire": {
+    "ind": {
+      "pres": {
+        "S1": "riparto",
+        "S3": "riparte",
+        "P3": "ripartono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "riparta",
+        "S2": "riparta",
+        "S3": "riparta",
+        "P3": "ripartano"
+      }
+    }
+  },
+  "ripercuotere": {
+    "part": {
+      "pres": null
+    },
+    "ind": {
+      "pres": {
+        "P2": "ripercuotete"
+      }
+    },
+    "impr": {
+      "pres": {
+        "P2": "ripercuotete"
+      }
+    }
+  },
+  "risapere": {
+    "impr": {
+      "pres": {
+        "S2": "risappi",
+        "P2": "risappiate"
+      }
+    }
+  },
+  "riscuotere": {
+    "ind": {
+      "pres": {
+        "P2": "riscuotete"
+      }
+    },
+    "part": {
+      "pres": null
+    },
+    "impr": {
+      "pres": {
+        "P2": "riscuotete"
+      }
+    }
+  },
+  "risedere": {
+    "part": {
+      "pres": {
+        "S": "risedente",
+        "SF": "risedente",
+        "P": "risedenti",
+        "PF": "risedenti"
+      }
+    }
+  },
+  "ristare": {
+    "ind": {
+      "past": {
+        "S1": "ristetti",
+        "S2": "ristesti",
+        "S3": "ristette",
+        "P1": "ristemmo",
+        "P2": "risteste",
+        "P3": "ristettero"
+      },
+      "fut": {
+        "S1": "ristarò",
+        "S2": "ristarai",
+        "S3": "ristarà",
+        "P1": "ristaremo",
+        "P2": "ristarete",
+        "P3": "ristaranno"
+      },
+      "pres": {
+        "S2": "ristai",
+        "P3": "ristanno"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "ristarei",
+        "S2": "ristaresti",
+        "S3": "ristarebbe",
+        "P1": "ristaremmo",
+        "P2": "ristareste",
+        "P3": "ristarebbero"
+      }
+    },
+    "sub": {
+      "impf": {
+        "S1": "ristessi",
+        "S2": "ristessi",
+        "S3": "ristesse",
+        "P1": "ristessimo",
+        "P2": "risteste",
+        "P3": "ristessero"
+      },
+      "pres": {
+        "S1": "ristia",
+        "S2": "ristia",
+        "S3": "ristia",
+        "P1": "ristiamo",
+        "P2": "ristiate",
+        "P3": "ristiano"
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": "rista'"
+      }
+    }
+  },
+  "rivedere": {
+    "part": {
+      "past": {
+        "S": "rivisto",
+        "SF": "rivista",
+        "P": "rivisti",
+        "PF": "riviste"
+      }
+    }
+  },
+  "rivolere": {
+    "impr": {
+      "pres": {
+        "S2": "rivogli",
+        "P2": "rivogliate"
+      }
+    }
+  },
+  "scernere": {
+    "ind": {
+      "past": {
+        "S1": "scersi",
+        "S3": "scerse",
+        "P3": "scersero"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "scernito",
+        "SF": "scernita",
+        "P": "scerniti",
+        "PF": "scernite"
+      }
+    }
+  },
+  "scompartire": {
+    "ind": {
+      "pres": {
+        "S1": "scompartisco",
+        "P3": "scompartiscono"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "scompartisca",
+        "S2": "scompartisca",
+        "S3": "scompartisca",
+        "P3": "scompartiscano"
+      }
+    }
+  },
+  "scuocere": {
+    "ind": {
+      "past": {
+        "S1": "scossi",
+        "S3": "scosse",
+        "P3": "scossero"
+      }
+    }
+  },
+  "scuotere": {
+    "part": {
+      "pres": {
+        "S": "scuotente",
+        "SF": "scuotente",
+        "P": "scuotenti",
+        "PF": "scuotenti"
+      }
+    },
+    "ind": {
+      "pres": {
+        "P2": "scuotete"
+      }
+    },
+    "impr": {
+      "pres": {
+        "P2": "scuotete"
+      }
+    }
+  },
+  "sedere": {
+    "ind": {
+      "fut": {
+        "S1": "siederò"
+      }
+    },
+    "part": {
+      "pres": {
+        "S": "sedente",
+        "SF": "sedente",
+        "P": "sedenti",
+        "PF": "sedenti"
+      }
+    }
+  },
+  "serpere": {
+    "ind": {
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    }
+  },
+  "soccombere": {
+    "part": {
+      "past": null
+    }
+  },
+  "soffrire": {
+    "part": {
+      "pres": {
+        "S": "sofferente",
+        "SF": "sofferente",
+        "P": "sofferenti",
+        "PF": "sofferenti"
+      }
+    }
+  },
+  "soggiacere": {
+    "ind": {
+      "pres": {
+        "P1": "soggiacciamo"
+      }
+    },
+    "sub": {
+      "pres": {
+        "P1": "soggiacciamo",
+        "P2": "soggiacciate"
+      }
+    },
+    "impr": {
+      "pres": {
+        "P1": "soggiacciamo"
+      }
+    }
+  },
+  "solere": {
+    "cond": null,
+    "sub": {
+      "pres": {
+        "S1": "soglia",
+        "S2": "soglia",
+        "S3": "soglia",
+        "P1": "sogliamo",
+        "P2": "sogliate",
+        "P3": "sogliano"
+      }
+    },
+    "ind": {
+      "past": null,
+      "fut": null
+    },
+    "part": {
+      "pres": {
+        "S": null,
+        "SF": null,
+        "P": null,
+        "PF": null
+      },
+      "past": {
+        "S": null,
+        "SF": null,
+        "P": null,
+        "PF": null
+      }
+    },
+    "impr": {
+      "pres": {
+        "S2": null,
+        "P1": null,
+        "P2": null
+      }
+    }
+  },
+  "sonare": {
+    "inf": {
+      "pres": "sonare"
+    },
+    "ind": {
+      "pres": {
+        "S1": "suono",
+        "S3": "suona",
+        "P2": "sonate",
+        "P3": "suonano"
+      },
+      "impf": {
+        "S1": "sonavo",
+        "S2": "sonavi",
+        "S3": "sonava",
+        "P1": "sonavamo",
+        "P2": "sonavate",
+        "P3": "sonavano"
+      },
+      "past": {
+        "S1": "sonai",
+        "S2": "sonasti",
+        "P1": "sonammo",
+        "P2": "sonaste",
+        "P3": "sonarono"
+      }
+    },
+    "sub": {
+      "impf": {
+        "S1": "sonassi",
+        "S2": "sonassi",
+        "S3": "sonasse",
+        "P1": "sonassimo",
+        "P2": "sonaste",
+        "P3": "sonassero"
+      }
+    },
+    "part": {
+      "pres": {
+        "S": "sonante",
+        "SF": "sonante",
+        "P": "sonanti",
+        "PF": "sonanti"
+      },
+      "past": {
+        "S": "sonato",
+        "SF": "sonata",
+        "P": "sonati",
+        "PF": "sonate"
+      }
+    }
+  },
+  "soprassedere": {
+    "part": {
+      "pres": null
+    }
+  },
+  "sottacere": {
+    "ind": {
+      "pres": {
+        "P1": "sottacciamo"
+      }
+    },
+    "sub": {
+      "pres": {
+        "P1": "sottacciamo",
+        "P2": "sottacciate"
+      }
+    },
+    "impr": {
+      "pres": {
+        "P1": "sottacciamo"
+      }
+    }
+  },
+  "sottostare": {
+    "impr": {
+      "pres": {
+        "S2": "sottosta'"
+      }
+    },
+    "ind": {
+      "past": {
+        "P1": "sottostemmo",
+        "P2": "sottosteste",
+        "P3": "sottostettero"
+      }
+    }
+  },
+  "spandere": {
+    "ind": {
+      "past": {
+        "S1": "spansi",
+        "P3": "spansero"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "spanto",
+        "SF": "spanta",
+        "P": "spanti",
+        "PF": "spante"
+      }
+    }
+  },
+  "spengere": {
+    "ind": {
+      "pres": {
+        "S1": "spengo",
+        "P3": "spengono"
+      },
+      "past": {
+        "S1": "spensi",
+        "S3": "spense",
+        "P3": "spensero"
+      }
+    },
+    "sub": {
+      "pres": {
+        "S1": "spenga",
+        "S2": "spenga",
+        "S3": "spenga",
+        "P3": "spengano"
+      }
+    },
+    "part": {
+      "past": {
+        "S": "spento",
+        "SF": "spenta",
+        "P": "spenti",
+        "PF": "spente"
+      }
+    }
+  },
+  "sperdere": {
+    "part": {
+      "past": {
+        "S": "sperso",
+        "SF": "spersa",
+        "P": "spersi",
+        "PF": "sperse"
+      }
+    }
+  },
+  "sprovvedere": {
+    "ind": {
+      "fut": {
+        "S1": "sprovvederò",
+        "S2": "sprovvederai",
+        "S3": "sprovvederà",
+        "P1": "sprovvederemo",
+        "P2": "sprovvederete",
+        "P3": "sprovvederanno"
+      }
+    },
+    "cond": {
+      "pres": {
+        "S1": "sprovvederei",
+        "S2": "sprovvederesti",
+        "S3": "sprovvederebbe",
+        "P1": "sprovvederemmo",
+        "P2": "sprovvedereste",
+        "P3": "sprovvederebbero"
+      }
+    }
+  },
+  "stare": {
+    "impr": {
+      "pres": {
+        "S2": "sta'"
+      }
+    },
+    "ind": {
+      "past": {
+        "P1": "stemmo",
+        "P2": "steste",
+        "P3": "stettero"
+      }
+    }
+  },
+  "succedere": {
+    "part": {
+      "past": {
+        "S": "successo",
+        "SF": "successa",
+        "P": "successi",
+        "PF": "successe"
+      }
+    },
+    "ind": {
+      "past": {
+        "S1": "successi"
+      }
+    }
+  },
+  "suggere": {
+    "ind": {
+      "past": {
+        "S3": "susse"
+      }
+    }
+  },
+  "tacere": {
+    "ind": {
+      "pres": {
+        "P1": "tacciamo"
+      }
+    },
+    "sub": {
+      "pres": {
+        "P1": "tacciamo",
+        "P2": "tacciate"
+      }
+    },
+    "impr": {
+      "pres": {
+        "P1": "tacciamo"
+      }
+    }
+  },
+  "urgere": {
+    "ind": {
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    }
+  },
+  "vedere": {
+    "part": {
+      "past": {
+        "S": "visto",
+        "SF": "vista",
+        "P": "visti",
+        "PF": "viste"
+      }
+    }
+  },
+  "venare": {
+    "ind": {
+      "pres": {
+        "P1": "veniamo"
+      }
+    },
+    "sub": {
+      "pres": {
+        "P1": "veniamo",
+        "P2": "veniate"
+      }
+    }
+  },
+  "vigere": {
+    "part": {
+      "past": null
+    },
+    "ind": {
+      "past": {
+        "S1": null,
+        "S2": null,
+        "S3": null,
+        "P1": null,
+        "P2": null,
+        "P3": null
+      }
+    }
+  },
+  "volere": {
+    "impr": {
+      "pres": {
+        "S2": "vogli"
+      }
+    }
+  }
+}

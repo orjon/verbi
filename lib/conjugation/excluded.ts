@@ -2,7 +2,7 @@
  * Dictionary entries the app does not offer.
  *
  * Nothing here is repaired — these entries are simply skipped. See
- * resources/README.md for the full account of what is wrong with the data.
+ * notes/README.md for the full account of what is wrong with the data.
  */
 
 /** Not verbs. `dimmi` is an imperative of `dire`; `rimontar` a shortened

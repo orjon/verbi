@@ -4,6 +4,64 @@
    "literary": ["accrescei"]
   }
  },
+ "affocare": {
+  "impr.pres.S2": {
+   "literary": ["affoca"]
+  },
+  "ind.pres.P3": {
+   "literary": ["affocano"]
+  },
+  "ind.pres.S1": {
+   "literary": ["affoco"]
+  },
+  "ind.pres.S2": {
+   "literary": ["affochi"]
+  },
+  "ind.pres.S3": {
+   "literary": ["affoca"]
+  },
+  "sub.pres.P3": {
+   "literary": ["affochino"]
+  },
+  "sub.pres.S1": {
+   "literary": ["affochi"]
+  },
+  "sub.pres.S2": {
+   "literary": ["affochi"]
+  },
+  "sub.pres.S3": {
+   "literary": ["affochi"]
+  }
+ },
+ "aggrinzire": {
+  "impr.pres.S2": {
+   "common": ["aggrinzi"]
+  },
+  "ind.pres.P3": {
+   "common": ["aggrinzono"]
+  },
+  "ind.pres.S1": {
+   "common": ["aggrinzo"]
+  },
+  "ind.pres.S2": {
+   "common": ["aggrinzi"]
+  },
+  "ind.pres.S3": {
+   "common": ["aggrinze"]
+  },
+  "sub.pres.P3": {
+   "common": ["aggrinzano"]
+  },
+  "sub.pres.S1": {
+   "common": ["aggrinza"]
+  },
+  "sub.pres.S2": {
+   "common": ["aggrinza"]
+  },
+  "sub.pres.S3": {
+   "common": ["aggrinza"]
+  }
+ },
  "andare": {
   "impr.pres.S2": {
    "common": ["vai"]
@@ -11,13 +69,13 @@
  },
  "annettere": {
   "ind.past.P3": {
-   "literary": ["annetterono"]
+   "common": ["annessero"]
   },
   "ind.past.S1": {
-   "literary": ["annettei"]
+   "common": ["annessi"]
   },
   "ind.past.S3": {
-   "literary": ["annetté"]
+   "common": ["annesse"]
   }
  },
  "assistere": {
@@ -34,6 +92,39 @@
  "assuefare": {
   "impr.pres.S2": {
    "common": ["assuefai"]
+  }
+ },
+ "avellere": {
+  "part.past.P": {
+   "literary": ["vulsi"]
+  },
+  "part.past.PF": {
+   "literary": ["vulse"]
+  },
+  "part.past.S": {
+   "literary": ["vulso"]
+  },
+  "part.past.SF": {
+   "literary": ["vulsa"]
+  }
+ },
+ "calere": {
+  "sub.pres.S3": {
+   "rare": ["caglia"]
+  }
+ },
+ "cernere": {
+  "part.past.P": {
+   "rare": ["cernuti"]
+  },
+  "part.past.PF": {
+   "rare": ["cernute"]
+  },
+  "part.past.S": {
+   "rare": ["cernuto"]
+  },
+  "part.past.SF": {
+   "rare": ["cernuta"]
   }
  },
  "co-presiedere": {
@@ -159,6 +250,18 @@
   },
   "ind.past.S3": {
    "common": ["concedette"]
+  },
+  "part.past.P": {
+   "rare": ["conceduti"]
+  },
+  "part.past.PF": {
+   "rare": ["concedute"]
+  },
+  "part.past.S": {
+   "rare": ["conceduto"]
+  },
+  "part.past.SF": {
+   "rare": ["conceduta"]
   }
  },
  "confare": {
@@ -168,13 +271,13 @@
  },
  "connettere": {
   "ind.past.P3": {
-   "literary": ["connetterono"]
+   "common": ["connessero"]
   },
   "ind.past.S1": {
-   "literary": ["connettei"]
+   "common": ["connessi"]
   },
   "ind.past.S3": {
-   "literary": ["connetté"]
+   "common": ["connesse"]
   }
  },
  "consentire": {
@@ -291,13 +394,13 @@
  },
  "disconnettere": {
   "ind.past.P3": {
-   "literary": ["disconnetterono"]
+   "common": ["disconnessero"]
   },
   "ind.past.S1": {
-   "literary": ["disconnettei"]
+   "common": ["disconnessi"]
   },
   "ind.past.S3": {
-   "literary": ["disconnetté"]
+   "common": ["disconnesse"]
   }
  },
  "discutere": {
@@ -313,22 +416,22 @@
  },
  "disfare": {
   "cond.pres.P1": {
-   "colloquial": ["disferemmo"]
+   "common": ["disferemmo"]
   },
   "cond.pres.P2": {
-   "colloquial": ["disfereste"]
+   "common": ["disfereste"]
   },
   "cond.pres.P3": {
-   "colloquial": ["disferebbero"]
+   "common": ["disferebbero"]
   },
   "cond.pres.S1": {
-   "colloquial": ["disferei"]
+   "common": ["disferei"]
   },
   "cond.pres.S2": {
-   "colloquial": ["disferesti"]
+   "common": ["disferesti"]
   },
   "cond.pres.S3": {
-   "colloquial": ["disferebbe"]
+   "common": ["disferebbe"]
   },
   "impr.pres.P1": {
    "colloquial": ["disfiamo"]
@@ -338,52 +441,63 @@
    "colloquial": ["disfa"]
   },
   "ind.fut.P1": {
-   "colloquial": ["disferemo"]
+   "common": ["disferemo"]
   },
   "ind.fut.P2": {
-   "colloquial": ["disferete"]
+   "common": ["disferete"]
   },
   "ind.fut.P3": {
-   "colloquial": ["disferanno"]
+   "common": ["disferanno"]
   },
   "ind.fut.S1": {
-   "colloquial": ["disferò"]
+   "common": ["disferò"]
   },
   "ind.fut.S2": {
-   "colloquial": ["disferai"]
+   "common": ["disferai"]
   },
   "ind.fut.S3": {
-   "colloquial": ["disferà"]
+   "common": ["disferà"]
   },
   "ind.pres.P1": {
-   "colloquial": ["disfiamo"]
+   "common": ["disfiamo"]
   },
   "ind.pres.P3": {
-   "colloquial": ["disfano"]
+   "common": ["disfano"]
   },
   "ind.pres.S1": {
-   "colloquial": ["disfo"]
+   "common": ["disfo"]
   },
   "ind.pres.S2": {
-   "colloquial": ["disfi"]
+   "common": ["disfi"]
+  },
+  "ind.pres.S3": {
+   "common": ["disfa"]
   },
   "sub.pres.P1": {
-   "colloquial": ["disfiamo"]
+   "common": ["disfiamo"]
   },
   "sub.pres.P2": {
-   "colloquial": ["disfiate"]
+   "common": ["disfiate"]
   },
   "sub.pres.P3": {
-   "colloquial": ["disfino"]
+   "common": ["disfino"]
   },
   "sub.pres.S1": {
-   "colloquial": ["disfi"]
+   "common": ["disfi"]
   },
   "sub.pres.S2": {
-   "colloquial": ["disfi"]
+   "common": ["disfi"]
   },
   "sub.pres.S3": {
-   "colloquial": ["disfi"]
+   "common": ["disfi"]
+  }
+ },
+ "disparire": {
+  "ind.past.S1": {
+   "rare": ["disparii"]
+  },
+  "ind.past.S3": {
+   "rare": ["disparì"]
   }
  },
  "disseppellire": {
@@ -427,9 +541,57 @@
    "common": ["esisté"]
   }
  },
+ "espandere": {
+  "ind.past.P3": {
+   "colloquial": ["espandettero", "espanderono"]
+  },
+  "ind.past.S1": {
+   "colloquial": ["espandetti", "espandei"]
+  },
+  "part.past.P": {
+   "common": ["espanti"]
+  },
+  "part.past.PF": {
+   "common": ["espante"]
+  },
+  "part.past.S": {
+   "common": ["espanto"]
+  },
+  "part.past.SF": {
+   "common": ["espanta"]
+  }
+ },
+ "esperire": {
+  "part.pres.P": {
+   "archaic": ["esperienti"]
+  },
+  "part.pres.PF": {
+   "archaic": ["esperienti"]
+  },
+  "part.pres.S": {
+   "archaic": ["esperiente"]
+  },
+  "part.pres.SF": {
+   "archaic": ["esperiente"]
+  }
+ },
  "fare": {
   "impr.pres.S2": {
    "common": ["fai"]
+  }
+ },
+ "fendere": {
+  "part.past.P": {
+   "common": ["fessi"]
+  },
+  "part.past.PF": {
+   "common": ["fesse"]
+  },
+  "part.past.S": {
+   "common": ["fesso"]
+  },
+  "part.past.SF": {
+   "common": ["fessa"]
   }
  },
  "flettere": {
@@ -455,6 +617,42 @@
   }
  },
  "godere": {
+  "cond.pres.P1": {
+   "rare": ["goderemmo"]
+  },
+  "cond.pres.P2": {
+   "rare": ["godereste"]
+  },
+  "cond.pres.P3": {
+   "rare": ["goderebbero"]
+  },
+  "cond.pres.S1": {
+   "rare": ["goderei"]
+  },
+  "cond.pres.S2": {
+   "rare": ["goderesti"]
+  },
+  "cond.pres.S3": {
+   "rare": ["goderebbe"]
+  },
+  "ind.fut.P1": {
+   "rare": ["goderemo"]
+  },
+  "ind.fut.P2": {
+   "rare": ["goderete"]
+  },
+  "ind.fut.P3": {
+   "rare": ["goderanno"]
+  },
+  "ind.fut.S1": {
+   "rare": ["goderò"]
+  },
+  "ind.fut.S2": {
+   "rare": ["goderai"]
+  },
+  "ind.fut.S3": {
+   "rare": ["goderà"]
+  },
   "ind.past.S3": {
    "common": ["godette"]
   }
@@ -526,6 +724,20 @@
    "sense": ["inferta"]
   }
  },
+ "infiggere": {
+  "part.past.P": {
+   "literary": ["infitti"]
+  },
+  "part.past.PF": {
+   "literary": ["infitte"]
+  },
+  "part.past.S": {
+   "literary": ["infitto"]
+  },
+  "part.past.SF": {
+   "literary": ["infitta"]
+  }
+ },
  "insistere": {
   "ind.past.P3": {
    "common": ["insisterono"]
@@ -540,6 +752,34 @@
  "intercedere": {
   "ind.past.S3": {
    "common": ["intercedé"]
+  }
+ },
+ "intravedere": {
+  "part.past.P": {
+   "literary": ["intraveduti"]
+  },
+  "part.past.PF": {
+   "literary": ["intravedute"]
+  },
+  "part.past.S": {
+   "literary": ["intraveduto"]
+  },
+  "part.past.SF": {
+   "literary": ["intraveduta"]
+  }
+ },
+ "intravvedere": {
+  "part.past.P": {
+   "literary": ["intravveduti"]
+  },
+  "part.past.PF": {
+   "literary": ["intravvedute"]
+  },
+  "part.past.S": {
+   "literary": ["intravveduto"]
+  },
+  "part.past.SF": {
+   "literary": ["intravveduta"]
   }
  },
  "liquefare": {
@@ -597,6 +837,20 @@
    "rare": ["noccia"]
   }
  },
+ "offrire": {
+  "part.pres.P": {
+   "rare": ["offrenti"]
+  },
+  "part.pres.PF": {
+   "rare": ["offrenti"]
+  },
+  "part.pres.S": {
+   "rare": ["offrente"]
+  },
+  "part.pres.SF": {
+   "rare": ["offrente"]
+  }
+ },
  "pascere": {
   "ind.past.P3": {
    "common": ["pascerono"]
@@ -617,6 +871,20 @@
   },
   "ind.past.S3": {
    "common": ["pendé"]
+  }
+ },
+ "percepire": {
+  "part.pres.P": {
+   "rare": ["percipienti"]
+  },
+  "part.pres.PF": {
+   "rare": ["percipienti"]
+  },
+  "part.pres.S": {
+   "rare": ["percipiente"]
+  },
+  "part.pres.SF": {
+   "rare": ["percipiente"]
   }
  },
  "percuotere": {
@@ -698,6 +966,20 @@
    "common": ["perduta"]
   }
  },
+ "permanere": {
+  "part.past.P": {
+   "archaic": ["permasi"]
+  },
+  "part.past.PF": {
+   "archaic": ["permase"]
+  },
+  "part.past.S": {
+   "archaic": ["permaso"]
+  },
+  "part.past.SF": {
+   "archaic": ["permasa"]
+  }
+ },
  "persistere": {
   "ind.past.P3": {
    "common": ["persisterono"]
@@ -707,6 +989,11 @@
   },
   "ind.past.S3": {
    "common": ["persisté"]
+  }
+ },
+ "piare": {
+  "ind.pres.P1": {
+   "rare": ["piiamo"]
   }
  },
  "possedere": {
@@ -840,9 +1127,37 @@
    "common": ["premora"]
   }
  },
+ "presentire": {
+  "part.pres.P": {
+   "literary": ["presenzienti"]
+  },
+  "part.pres.PF": {
+   "literary": ["presenzienti"]
+  },
+  "part.pres.S": {
+   "literary": ["presenziente"]
+  },
+  "part.pres.SF": {
+   "literary": ["presenziente"]
+  }
+ },
  "presiedere": {
   "ind.past.S3": {
    "common": ["presiedé"]
+  }
+ },
+ "prevedere": {
+  "part.past.P": {
+   "literary": ["preveduti"]
+  },
+  "part.past.PF": {
+   "literary": ["prevedute"]
+  },
+  "part.past.S": {
+   "literary": ["preveduto"]
+  },
+  "part.past.SF": {
+   "literary": ["preveduta"]
   }
  },
  "procombere": {
@@ -859,6 +1174,20 @@
  "prudere": {
   "ind.past.S3": {
    "common": ["prudette"]
+  }
+ },
+ "punire": {
+  "part.pres.P": {
+   "rare": ["punienti"]
+  },
+  "part.pres.PF": {
+   "rare": ["punienti"]
+  },
+  "part.pres.S": {
+   "rare": ["puniente"]
+  },
+  "part.pres.SF": {
+   "rare": ["puniente"]
   }
  },
  "putire": {
@@ -935,6 +1264,18 @@
  "retrocedere": {
   "ind.past.S3": {
    "common": ["retrocedé"]
+  },
+  "part.past.P": {
+   "literary": ["retroceduti"]
+  },
+  "part.past.PF": {
+   "literary": ["retrocedute"]
+  },
+  "part.past.S": {
+   "literary": ["retroceduto"]
+  },
+  "part.past.SF": {
+   "literary": ["retroceduta"]
   }
  },
  "riandare": {
@@ -944,13 +1285,13 @@
  },
  "riannettere": {
   "ind.past.P3": {
-   "literary": ["riannetterono"]
+   "common": ["riannessero"]
   },
   "ind.past.S1": {
-   "literary": ["riannettei"]
+   "common": ["riannessi"]
   },
   "ind.past.S3": {
-   "literary": ["riannetté"]
+   "common": ["riannesse"]
   }
  },
  "ricedere": {
@@ -971,13 +1312,13 @@
  },
  "riconnettere": {
   "ind.past.P3": {
-   "literary": ["riconnetterono"]
+   "common": ["riconnessero"]
   },
   "ind.past.S1": {
-   "literary": ["riconnettei"]
+   "common": ["riconnessi"]
   },
   "ind.past.S3": {
-   "literary": ["riconnetté"]
+   "common": ["riconnesse"]
   }
  },
  "ricuocere": {
@@ -1224,9 +1565,23 @@
    "common": ["risplendé"]
   }
  },
- "scernere": {
-  "ind.past.S3": {
-   "common": ["scernette"]
+ "ristare": {
+  "impr.pres.S2": {
+   "common": ["ristai"]
+  }
+ },
+ "rivedere": {
+  "part.past.P": {
+   "literary": ["riveduti"]
+  },
+  "part.past.PF": {
+   "literary": ["rivedute"]
+  },
+  "part.past.S": {
+   "literary": ["riveduto"]
+  },
+  "part.past.SF": {
+   "literary": ["riveduta"]
   }
  },
  "scompartire": {
@@ -1251,13 +1606,13 @@
  },
  "sconnettere": {
   "ind.past.P3": {
-   "literary": ["sconnetterono"]
+   "common": ["sconnessero"]
   },
   "ind.past.S1": {
-   "literary": ["sconnettei"]
+   "common": ["sconnessi"]
   },
   "ind.past.S3": {
-   "literary": ["sconnetté"]
+   "common": ["sconnesse"]
   }
  },
  "scuotere": {
@@ -1338,6 +1693,11 @@
    "literary": ["seggo"]
   }
  },
+ "sfare": {
+  "ind.pres.S1": {
+   "common": ["sfò"]
+  }
+ },
  "soccombere": {
   "ind.past.P3": {
    "common": ["soccomberono"]
@@ -1351,22 +1711,22 @@
  },
  "soddisfare": {
   "cond.pres.P1": {
-   "colloquial": ["soddisferemmo"]
+   "common": ["soddisferemmo"]
   },
   "cond.pres.P2": {
-   "colloquial": ["soddisfereste"]
+   "common": ["soddisfereste"]
   },
   "cond.pres.P3": {
-   "colloquial": ["soddisferebbero"]
+   "common": ["soddisferebbero"]
   },
   "cond.pres.S1": {
-   "colloquial": ["soddisferei"]
+   "common": ["soddisferei"]
   },
   "cond.pres.S2": {
-   "colloquial": ["soddisferesti"]
+   "common": ["soddisferesti"]
   },
   "cond.pres.S3": {
-   "colloquial": ["soddisferebbe"]
+   "common": ["soddisferebbe"]
   },
   "impr.pres.P1": {
    "colloquial": ["soddisfiamo"]
@@ -1376,52 +1736,69 @@
    "colloquial": ["soddisfa"]
   },
   "ind.fut.P1": {
-   "colloquial": ["soddisferemo"]
+   "common": ["soddisferemo"]
   },
   "ind.fut.P2": {
-   "colloquial": ["soddisferete"]
+   "common": ["soddisferete"]
   },
   "ind.fut.P3": {
-   "colloquial": ["soddisferanno"]
+   "common": ["soddisferanno"]
   },
   "ind.fut.S1": {
-   "colloquial": ["soddisferò"]
+   "common": ["soddisferò"]
   },
   "ind.fut.S2": {
-   "colloquial": ["soddisferai"]
+   "common": ["soddisferai"]
   },
   "ind.fut.S3": {
-   "colloquial": ["soddisferà"]
+   "common": ["soddisferà"]
   },
   "ind.pres.P1": {
-   "colloquial": ["soddisfiamo"]
+   "common": ["soddisfiamo"]
   },
   "ind.pres.P3": {
-   "colloquial": ["soddisfano"]
+   "common": ["soddisfano"]
   },
   "ind.pres.S1": {
-   "colloquial": ["soddisfo"]
+   "common": ["soddisfo"]
   },
   "ind.pres.S2": {
-   "colloquial": ["soddisfi"]
+   "common": ["soddisfi"]
+  },
+  "ind.pres.S3": {
+   "common": ["soddisfa"]
   },
   "sub.pres.P1": {
-   "colloquial": ["soddisfiamo"]
+   "common": ["soddisfiamo"]
   },
   "sub.pres.P2": {
-   "colloquial": ["soddisfiate"]
+   "common": ["soddisfiate"]
   },
   "sub.pres.P3": {
-   "colloquial": ["soddisfino"]
+   "common": ["soddisfino"]
   },
   "sub.pres.S1": {
-   "colloquial": ["soddisfi"]
+   "common": ["soddisfi"]
   },
   "sub.pres.S2": {
-   "colloquial": ["soddisfi"]
+   "common": ["soddisfi"]
   },
   "sub.pres.S3": {
-   "colloquial": ["soddisfi"]
+   "common": ["soddisfi"]
+  }
+ },
+ "soffrire": {
+  "part.pres.P": {
+   "rare": ["soffrenti"]
+  },
+  "part.pres.PF": {
+   "rare": ["soffrenti"]
+  },
+  "part.pres.S": {
+   "rare": ["soffrente"]
+  },
+  "part.pres.SF": {
+   "rare": ["soffrente"]
   }
  },
  "sopraffare": {
@@ -1476,6 +1853,26 @@
  "sottostare": {
   "impr.pres.S2": {
    "common": ["sottostai"]
+  }
+ },
+ "spandere": {
+  "ind.past.P3": {
+   "colloquial": ["spandettero", "spanderono"]
+  },
+  "ind.past.S1": {
+   "colloquial": ["spandetti", "spandei"]
+  },
+  "part.past.P": {
+   "common": ["spanti"]
+  },
+  "part.past.PF": {
+   "common": ["spante"]
+  },
+  "part.past.S": {
+   "common": ["spanto"]
+  },
+  "part.past.SF": {
+   "common": ["spanta"]
   }
  },
  "sparire": {
@@ -1594,6 +1991,20 @@
    "common": ["temé"]
   }
  },
+ "tornire": {
+  "part.pres.P": {
+   "rare": ["tornienti"]
+  },
+  "part.pres.PF": {
+   "rare": ["tornienti"]
+  },
+  "part.pres.S": {
+   "rare": ["torniente"]
+  },
+  "part.pres.SF": {
+   "rare": ["torniente"]
+  }
+ },
  "transigere": {
   "ind.past.P3": {
    "common": ["transigerono"]
@@ -1603,6 +2014,20 @@
   },
   "ind.past.S3": {
    "common": ["transigé"]
+  }
+ },
+ "vedere": {
+  "part.past.P": {
+   "literary": ["veduti"]
+  },
+  "part.past.PF": {
+   "literary": ["vedute"]
+  },
+  "part.past.S": {
+   "literary": ["veduto"]
+  },
+  "part.past.SF": {
+   "literary": ["veduta"]
   }
  }
 }
