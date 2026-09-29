@@ -53,7 +53,7 @@ const ESSERE = new Set<string>([
   'sopravvivere', 'valere',
   // added 2026-09-29 from Wiktionary's auxiliary data, single source
   'abbiosciare', 'addivenire', 'affluire', 'aggettare', 'allibire',
-  'ammuffire', 'arenare', 'arrabbiare', 'arrampicare', 'arrossire',
+  'ammuffire', 'arenare', 'arrabbiare', 'arrossire',
   'assurgere', 'baluginare', 'balzare', 'basire', 'bisognare',
   'capitombolare', 'cascare', 'conflagrare', 'consistere', 'constare',
   'convolare', 'crepare', 'cucciare', 'culminare', 'decedere', 'decorrere',

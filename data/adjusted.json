@@ -5509,13 +5509,13 @@
   "ind.past.S1": {
    "selected": "disparvi",
    "alternatives": {
-    "rare": ["disparii"]
+    "common": ["disparii"]
    }
   },
   "ind.past.S3": {
    "selected": "disparve",
    "alternatives": {
-    "rare": ["disparì"]
+    "common": ["disparì"]
    }
   },
   "ind.pres.P3": {

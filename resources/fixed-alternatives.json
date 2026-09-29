@@ -170,10 +170,10 @@
   },
   "disparire": {
     "ind.past.S1": {
-      "rare": ["disparii"]
+      "common": ["disparii"]
     },
     "ind.past.S3": {
-      "rare": ["disparì"]
+      "common": ["disparì"]
     }
   },
   "disseppellire": {
