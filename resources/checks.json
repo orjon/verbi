@@ -3,17 +3,39 @@
     "ger.pres": [
       {"form": "adempiendo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
     ],
+    "impr.pres.S2": [
+      {"form": "adempisci", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(io adémpio o adempisco, tu adémpi o adempisci, ecc.; part. pass. adempiuto o adempito; le altre forme sono tratte più spesso da adempire)", "url": "https://www.treccani.it/vocabolario/adempiere/", "date": "2026-09-30"}
+    ],
+    "ind.pres.P3": [
+      {"form": "adempiscono", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(io adémpio o adempisco, tu adémpi o adempisci, ecc.; part. pass. adempiuto o adempito; le altre forme sono tratte più spesso da adempire)", "url": "https://www.treccani.it/vocabolario/adempiere/", "date": "2026-09-30"}
+    ],
     "ind.pres.S1": [
-      {"form": "adempio", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+      {"form": "adempio", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"},
+      {"form": "adempisco", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(io adémpio o adempisco, tu adémpi o adempisci, ecc.; part. pass. adempiuto o adempito; le altre forme sono tratte più spesso da adempire)", "url": "https://www.treccani.it/vocabolario/adempiere/", "date": "2026-09-30"}
     ],
     "ind.pres.S2": [
-      {"form": "adempi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+      {"form": "adempi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"},
+      {"form": "adempisci", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(io adémpio o adempisco, tu adémpi o adempisci, ecc.; part. pass. adempiuto o adempito; le altre forme sono tratte più spesso da adempire)", "url": "https://www.treccani.it/vocabolario/adempiere/", "date": "2026-09-30"}
     ],
     "ind.pres.S3": [
-      {"form": "adempie", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+      {"form": "adempie", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"},
+      {"form": "adempisce", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(io adémpio o adempisco, tu adémpi o adempisci, ecc.; part. pass. adempiuto o adempito; le altre forme sono tratte più spesso da adempire)", "url": "https://www.treccani.it/vocabolario/adempiere/", "date": "2026-09-30"}
     ],
     "part.past.S": [
-      {"form": "adempiuto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+      {"form": "adempiuto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"},
+      {"form": "adempito", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(io adémpio o adempisco, tu adémpi o adempisci, ecc.; part. pass. adempiuto o adempito; le altre forme sono tratte più spesso da adempire)", "url": "https://www.treccani.it/vocabolario/adempiere/", "date": "2026-09-30"}
+    ],
+    "sub.pres.P3": [
+      {"form": "adempiscano", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(io adémpio o adempisco, tu adémpi o adempisci, ecc.; part. pass. adempiuto o adempito; le altre forme sono tratte più spesso da adempire)", "url": "https://www.treccani.it/vocabolario/adempiere/", "date": "2026-09-30"}
+    ],
+    "sub.pres.S1": [
+      {"form": "adempisca", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(io adémpio o adempisco, tu adémpi o adempisci, ecc.; part. pass. adempiuto o adempito; le altre forme sono tratte più spesso da adempire)", "url": "https://www.treccani.it/vocabolario/adempiere/", "date": "2026-09-30"}
+    ],
+    "sub.pres.S2": [
+      {"form": "adempisca", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(io adémpio o adempisco, tu adémpi o adempisci, ecc.; part. pass. adempiuto o adempito; le altre forme sono tratte più spesso da adempire)", "url": "https://www.treccani.it/vocabolario/adempiere/", "date": "2026-09-30"}
+    ],
+    "sub.pres.S3": [
+      {"form": "adempisca", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(io adémpio o adempisco, tu adémpi o adempisci, ecc.; part. pass. adempiuto o adempito; le altre forme sono tratte più spesso da adempire)", "url": "https://www.treccani.it/vocabolario/adempiere/", "date": "2026-09-30"}
     ]
   },
   "affiggere": {
@@ -24,6 +46,12 @@
   "aggradare": {
     "ind.pres.S3": [
       {"form": "aggrada", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "annettere": {
+    "ind.past.S1": [
+      {"form": "annessi", "source": "Treccani", "verdict": "variant", "kind": "uncommon", "quote": "(pass. rem. annettéi, meno com. annèssi, annettésti, ecc.; part. pass. annèsso)", "url": "https://www.treccani.it/vocabolario/annettere/", "date": "2026-09-30"},
+      {"form": "annettei", "source": "Treccani", "verdict": "standard", "quote": "(pass. rem. annettéi, meno com. annèssi, annettésti, ecc.; part. pass. annèsso)", "url": "https://www.treccani.it/vocabolario/annettere/", "date": "2026-09-30"}
     ]
   },
   "aspergere": {
@@ -43,12 +71,14 @@
   },
   "avellere": {
     "part.past.S": [
-      {"form": "avulso", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+      {"form": "avulso", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"},
+      {"form": "vulso", "source": "Treccani", "verdict": "absent", "quote": "(io avèllo, ecc.; pass. rem. avulsi, ant. avèlsi, ecc.) — part. pass. avulso; vulso not mentioned", "url": "https://www.treccani.it/vocabolario/avellere/", "date": "2026-09-30"}
     ]
   },
   "calere": {
     "sub.pres.S3": [
-      {"form": "calga", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+      {"form": "calga", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"},
+      {"form": "caglia", "source": "Treccani", "verdict": "variant", "kind": "uncommon", "quote": "(usato soprattutto nella 3a persona sing. cale preceduto da negazione; rare altre forme, come il cong. càglia e il pass. rem. calse), ant.", "url": "https://www.treccani.it/vocabolario/calere/", "date": "2026-09-30"}
     ]
   },
   "cernere": {
@@ -65,11 +95,36 @@
     "ger.pres": [
       {"form": "compiendo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
     ],
+    "impr.pres.S2": [
+      {"form": "compisci", "source": "Treccani", "verdict": "absent", "quote": "io cómpio, ecc.; … anche le altre forme sono da compire … tranne il gerundio compièndo e il part. pass. compiuto — no -isc- forms", "url": "https://www.treccani.it/vocabolario/compiere/", "date": "2026-09-30"}
+    ],
+    "ind.pres.P3": [
+      {"form": "compiscono", "source": "Treccani", "verdict": "absent", "quote": "io cómpio, ecc.; … anche le altre forme sono da compire … tranne il gerundio compièndo e il part. pass. compiuto — no -isc- forms", "url": "https://www.treccani.it/vocabolario/compiere/", "date": "2026-09-30"}
+    ],
     "ind.pres.S1": [
-      {"form": "compio", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+      {"form": "compio", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"},
+      {"form": "compisco", "source": "Treccani", "verdict": "absent", "quote": "io cómpio, ecc.; … anche le altre forme sono da compire … tranne il gerundio compièndo e il part. pass. compiuto — no -isc- forms", "url": "https://www.treccani.it/vocabolario/compiere/", "date": "2026-09-30"}
+    ],
+    "ind.pres.S2": [
+      {"form": "compisci", "source": "Treccani", "verdict": "absent", "quote": "io cómpio, ecc.; … anche le altre forme sono da compire … tranne il gerundio compièndo e il part. pass. compiuto — no -isc- forms", "url": "https://www.treccani.it/vocabolario/compiere/", "date": "2026-09-30"}
+    ],
+    "ind.pres.S3": [
+      {"form": "compisce", "source": "Treccani", "verdict": "absent", "quote": "io cómpio, ecc.; … anche le altre forme sono da compire … tranne il gerundio compièndo e il part. pass. compiuto — no -isc- forms", "url": "https://www.treccani.it/vocabolario/compiere/", "date": "2026-09-30"}
     ],
     "part.past.S": [
       {"form": "compiuto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "sub.pres.P3": [
+      {"form": "compiscano", "source": "Treccani", "verdict": "absent", "quote": "io cómpio, ecc.; … anche le altre forme sono da compire … tranne il gerundio compièndo e il part. pass. compiuto — no -isc- forms", "url": "https://www.treccani.it/vocabolario/compiere/", "date": "2026-09-30"}
+    ],
+    "sub.pres.S1": [
+      {"form": "compisca", "source": "Treccani", "verdict": "absent", "quote": "io cómpio, ecc.; … anche le altre forme sono da compire … tranne il gerundio compièndo e il part. pass. compiuto — no -isc- forms", "url": "https://www.treccani.it/vocabolario/compiere/", "date": "2026-09-30"}
+    ],
+    "sub.pres.S2": [
+      {"form": "compisca", "source": "Treccani", "verdict": "absent", "quote": "io cómpio, ecc.; … anche le altre forme sono da compire … tranne il gerundio compièndo e il part. pass. compiuto — no -isc- forms", "url": "https://www.treccani.it/vocabolario/compiere/", "date": "2026-09-30"}
+    ],
+    "sub.pres.S3": [
+      {"form": "compisca", "source": "Treccani", "verdict": "absent", "quote": "io cómpio, ecc.; … anche le altre forme sono da compire … tranne il gerundio compièndo e il part. pass. compiuto — no -isc- forms", "url": "https://www.treccani.it/vocabolario/compiere/", "date": "2026-09-30"}
     ]
   },
   "compire": {
@@ -114,7 +169,11 @@
   },
   "disparire": {
     "ind.past.S1": [
-      {"form": "disparvi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+      {"form": "disparvi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"},
+      {"form": "disparii", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "pass. rem. disparìi o disparvi e ant. disparsi, disparisti, disparì o disparve, ecc.", "url": "https://www.treccani.it/vocabolario/disparire/", "date": "2026-09-30"}
+    ],
+    "ind.past.S3": [
+      {"form": "disparì", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "pass. rem. disparìi o disparvi e ant. disparsi, disparisti, disparì o disparve, ecc.", "url": "https://www.treccani.it/vocabolario/disparire/", "date": "2026-09-30"}
     ],
     "ind.pres.S1": [
       {"form": "dispaio", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
@@ -190,11 +249,21 @@
   "dovere": {
     "impr.pres.S2": [
       {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ],
+    "ind.pres.P3": [
+      {"form": "debbono", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "pres. indic. dèvo o dèbbo …, dobbiamo, dovéte, dèvono o dèbbono", "url": "https://www.treccani.it/vocabolario/dovere2/", "date": "2026-09-30"},
+      {"form": "devono", "source": "Treccani", "verdict": "standard", "quote": "pres. indic. dèvo o dèbbo …, dobbiamo, dovéte, dèvono o dèbbono", "url": "https://www.treccani.it/vocabolario/dovere2/", "date": "2026-09-30"}
     ]
   },
   "eccellere": {
     "ind.past.S1": [
       {"form": "eccelsi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "empiere": {
+    "part.past.S": [
+      {"form": "empito", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "empire (o émpiere) … part. pass. empito o empiuto", "url": "https://www.treccani.it/vocabolario/empire/", "note": "Treccani treats empiere as a variant headword of empire.", "date": "2026-09-30"},
+      {"form": "empiuto", "source": "Treccani", "verdict": "standard", "quote": "empire (o émpiere) … part. pass. empito o empiuto", "url": "https://www.treccani.it/vocabolario/empire/", "date": "2026-09-30"}
     ]
   },
   "empire": {
@@ -223,7 +292,23 @@
       {"form": "empie", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
     ],
     "part.past.S": [
-      {"form": "empiuto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+      {"form": "empiuto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"},
+      {"form": "empito", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "empire (o émpiere) … part. pass. empito o empiuto", "url": "https://www.treccani.it/vocabolario/empire/", "date": "2026-09-30"}
+    ]
+  },
+  "espandere": {
+    "ind.past.P3": [
+      {"form": "espandettero", "source": "Treccani", "verdict": "absent", "quote": "(pass. rem. espansi, espandésti, ecc.). Part. pass. espanso, anche come agg.", "url": "https://www.treccani.it/vocabolario/espandere/", "date": "2026-09-30"},
+      {"form": "espanderono", "source": "Treccani", "verdict": "absent", "quote": "(pass. rem. espansi, espandésti, ecc.). Part. pass. espanso, anche come agg.", "url": "https://www.treccani.it/vocabolario/espandere/", "date": "2026-09-30"}
+    ],
+    "ind.past.S1": [
+      {"form": "espandetti", "source": "Treccani", "verdict": "absent", "quote": "(pass. rem. espansi, espandésti, ecc.). Part. pass. espanso, anche come agg.", "url": "https://www.treccani.it/vocabolario/espandere/", "date": "2026-09-30"},
+      {"form": "espandei", "source": "Treccani", "verdict": "absent", "quote": "(pass. rem. espansi, espandésti, ecc.). Part. pass. espanso, anche come agg.", "url": "https://www.treccani.it/vocabolario/espandere/", "date": "2026-09-30"},
+      {"form": "espansi", "source": "Treccani", "verdict": "standard", "quote": "(pass. rem. espansi, espandésti, ecc.). Part. pass. espanso, anche come agg.", "url": "https://www.treccani.it/vocabolario/espandere/", "date": "2026-09-30"}
+    ],
+    "part.past.S": [
+      {"form": "espanso", "source": "Treccani", "verdict": "standard", "quote": "(pass. rem. espansi, espandésti, ecc.). Part. pass. espanso, anche come agg.", "url": "https://www.treccani.it/vocabolario/espandere/", "date": "2026-09-30"},
+      {"form": "espanto", "source": "Treccani", "verdict": "absent", "quote": "(pass. rem. espansi, espandésti, ecc.). Part. pass. espanso, anche come agg.", "url": "https://www.treccani.it/vocabolario/espandere/", "date": "2026-09-30"}
     ]
   },
   "esplodere": {
@@ -237,6 +322,51 @@
     ],
     "sub.pres.P1": [
       {"form": "giacciamo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "incartapecorire": {
+    "ind.pres.P3": [
+      {"form": "incartapecorono", "source": "Treccani", "verdict": "absent", "quote": "(io incartapecorisco, tu incartapecorisci, ecc.; aus. essere) — no forms without -isc-", "url": "https://www.treccani.it/vocabolario/incartapecorire/", "date": "2026-09-30"}
+    ],
+    "ind.pres.S1": [
+      {"form": "incartapecoro", "source": "Treccani", "verdict": "absent", "quote": "(io incartapecorisco, tu incartapecorisci, ecc.; aus. essere) — no forms without -isc-", "url": "https://www.treccani.it/vocabolario/incartapecorire/", "date": "2026-09-30"},
+      {"form": "incartapecorisco", "source": "Treccani", "verdict": "standard", "quote": "(io incartapecorisco, tu incartapecorisci, ecc.; aus. essere) — no forms without -isc-", "url": "https://www.treccani.it/vocabolario/incartapecorire/", "date": "2026-09-30"}
+    ],
+    "sub.pres.P3": [
+      {"form": "incartapecorano", "source": "Treccani", "verdict": "absent", "quote": "(io incartapecorisco, tu incartapecorisci, ecc.; aus. essere) — no forms without -isc-", "url": "https://www.treccani.it/vocabolario/incartapecorire/", "date": "2026-09-30"}
+    ],
+    "sub.pres.S1": [
+      {"form": "incartapecora", "source": "Treccani", "verdict": "absent", "quote": "(io incartapecorisco, tu incartapecorisci, ecc.; aus. essere) — no forms without -isc-", "url": "https://www.treccani.it/vocabolario/incartapecorire/", "date": "2026-09-30"}
+    ],
+    "sub.pres.S2": [
+      {"form": "incartapecora", "source": "Treccani", "verdict": "absent", "quote": "(io incartapecorisco, tu incartapecorisci, ecc.; aus. essere) — no forms without -isc-", "url": "https://www.treccani.it/vocabolario/incartapecorire/", "date": "2026-09-30"}
+    ],
+    "sub.pres.S3": [
+      {"form": "incartapecora", "source": "Treccani", "verdict": "absent", "quote": "(io incartapecorisco, tu incartapecorisci, ecc.; aus. essere) — no forms without -isc-", "url": "https://www.treccani.it/vocabolario/incartapecorire/", "date": "2026-09-30"}
+    ]
+  },
+  "inferire": {
+    "ind.past.P3": [
+      {"form": "infersero", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "pass. rem. infèrsi, inferisti, ecc. nel sign. 1; inferìi, ecc. nei sign. 2 e 3; part. pass. infèrto nel sign. 1, inferito negli altri", "url": "https://www.treccani.it/vocabolario/inferire/", "note": "Treccani gives this form only for sense 1 (to inflict).", "date": "2026-09-30"}
+    ],
+    "ind.past.S1": [
+      {"form": "infersi", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "pass. rem. infèrsi, inferisti, ecc. nel sign. 1; inferìi, ecc. nei sign. 2 e 3; part. pass. infèrto nel sign. 1, inferito negli altri", "url": "https://www.treccani.it/vocabolario/inferire/", "note": "Treccani gives this form only for sense 1 (to inflict).", "date": "2026-09-30"}
+    ],
+    "ind.past.S3": [
+      {"form": "inferse", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "pass. rem. infèrsi, inferisti, ecc. nel sign. 1; inferìi, ecc. nei sign. 2 e 3; part. pass. infèrto nel sign. 1, inferito negli altri", "url": "https://www.treccani.it/vocabolario/inferire/", "note": "Treccani gives this form only for sense 1 (to inflict).", "date": "2026-09-30"}
+    ],
+    "part.past.S": [
+      {"form": "inferto", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "pass. rem. infèrsi, inferisti, ecc. nel sign. 1; inferìi, ecc. nei sign. 2 e 3; part. pass. infèrto nel sign. 1, inferito negli altri", "url": "https://www.treccani.it/vocabolario/inferire/", "note": "Treccani gives this form only for sense 1 (to inflict).", "date": "2026-09-30"}
+    ]
+  },
+  "intravedere": {
+    "part.past.S": [
+      {"form": "intraveduto", "source": "Treccani", "verdict": "variant", "kind": "literary", "quote": "(coniug. come vedere) — vedere: part. pass. visto o, meno pop., veduto", "url": "https://www.treccani.it/vocabolario/intravedere/", "note": "Inferred: Treccani says 'coniug. come vedere' and does not list this form.", "date": "2026-09-30"}
+    ]
+  },
+  "intravvedere": {
+    "part.past.S": [
+      {"form": "intravveduto", "source": "Treccani", "verdict": "variant", "kind": "literary", "quote": "intravedére (meno com. intravvedére) … (coniug. come vedere) — vedere: part. pass. visto o, meno pop., veduto", "url": "https://www.treccani.it/vocabolario/intravedere/", "note": "Inferred: Treccani says 'coniug. come vedere' and does not list this form.", "date": "2026-09-30"}
     ]
   },
   "malvolere": {
@@ -268,9 +398,22 @@
       {"form": "penduto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
     ]
   },
+  "percuotere": {
+    "impr.pres.P2": [
+      {"form": "percotete", "source": "Treccani", "verdict": "variant", "kind": "uncommon", "quote": "fuori d'accento sono in uso sia le forme senza dittongo [percotiamo, percotéte, percotéssi, percotèndo, ecc.] sia quelle dittongate [percuotiamo, ecc.], che oggi sono preferite", "url": "https://www.treccani.it/vocabolario/percuotere/", "date": "2026-09-30"}
+    ],
+    "ind.pres.P2": [
+      {"form": "percotete", "source": "Treccani", "verdict": "variant", "kind": "uncommon", "quote": "fuori d'accento sono in uso sia le forme senza dittongo [percotiamo, percotéte, percotéssi, percotèndo, ecc.] sia quelle dittongate [percuotiamo, ecc.], che oggi sono preferite", "url": "https://www.treccani.it/vocabolario/percuotere/", "date": "2026-09-30"}
+    ]
+  },
   "permanere": {
     "part.past.S": [
       {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ]
+  },
+  "piare": {
+    "ind.pres.P1": [
+      {"form": "piiamo", "source": "Treccani", "verdict": "absent", "quote": "pïare v. intr. (aus. avere) — no conjugation given", "url": "https://www.treccani.it/vocabolario/piare/", "date": "2026-09-30"}
     ]
   },
   "plaudere": {
@@ -278,9 +421,34 @@
       {"form": "plaudii", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
     ]
   },
+  "possedere": {
+    "part.pres.S": [
+      {"form": "possedente", "source": "Treccani", "verdict": "variant", "kind": "uncommon", "quote": "part. pres. possedènte: raro, spesso sostituito da possidènte", "url": "https://www.treccani.it/vocabolario/possedere/", "date": "2026-09-30"}
+    ]
+  },
   "potere": {
     "impr.pres.S2": [
       {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ]
+  },
+  "premorire": {
+    "ind.pres.P3": [
+      {"form": "premorono", "source": "Treccani", "verdict": "variant", "kind": "archaic", "quote": "(coniug. come morire) — morire: pres. muòio … [ant. o dial. mòro …, mòrono]; cong. pres. muòia … [ant. o dial. mòra …, mòrano]", "url": "https://www.treccani.it/vocabolario/premorire/", "note": "Inferred: Treccani says 'coniug. come morire'; the form follows morire's 'ant. o dial.' forms.", "date": "2026-09-30"}
+    ],
+    "ind.pres.S1": [
+      {"form": "premoro", "source": "Treccani", "verdict": "variant", "kind": "archaic", "quote": "(coniug. come morire) — morire: pres. muòio … [ant. o dial. mòro …, mòrono]; cong. pres. muòia … [ant. o dial. mòra …, mòrano]", "url": "https://www.treccani.it/vocabolario/premorire/", "note": "Inferred: Treccani says 'coniug. come morire'; the form follows morire's 'ant. o dial.' forms.", "date": "2026-09-30"}
+    ],
+    "sub.pres.P3": [
+      {"form": "premorano", "source": "Treccani", "verdict": "variant", "kind": "archaic", "quote": "(coniug. come morire) — morire: pres. muòio … [ant. o dial. mòro …, mòrono]; cong. pres. muòia … [ant. o dial. mòra …, mòrano]", "url": "https://www.treccani.it/vocabolario/premorire/", "note": "Inferred: Treccani says 'coniug. come morire'; the form follows morire's 'ant. o dial.' forms.", "date": "2026-09-30"}
+    ],
+    "sub.pres.S1": [
+      {"form": "premora", "source": "Treccani", "verdict": "variant", "kind": "archaic", "quote": "(coniug. come morire) — morire: pres. muòio … [ant. o dial. mòro …, mòrono]; cong. pres. muòia … [ant. o dial. mòra …, mòrano]", "url": "https://www.treccani.it/vocabolario/premorire/", "note": "Inferred: Treccani says 'coniug. come morire'; the form follows morire's 'ant. o dial.' forms.", "date": "2026-09-30"}
+    ]
+  },
+  "prevedere": {
+    "part.past.S": [
+      {"form": "preveduto", "source": "Treccani", "verdict": "variant", "kind": "uncommon", "quote": "Part. pass. previsto (meno com. preveduto)", "url": "https://www.treccani.it/vocabolario/prevedere/", "date": "2026-09-30"},
+      {"form": "previsto", "source": "Treccani", "verdict": "standard", "quote": "Part. pass. previsto (meno com. preveduto)", "url": "https://www.treccani.it/vocabolario/prevedere/", "date": "2026-09-30"}
     ]
   },
   "profferire": {
@@ -301,6 +469,12 @@
       {"form": "ristretto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
     ]
   },
+  "retrocedere": {
+    "part.past.S": [
+      {"form": "retroceduto", "source": "Treccani", "verdict": "absent", "quote": "(pass. rem. io retrocèssi [anche retrocedéi o retrocedètti], tu retrocedésti, ecc.; part. pass. retrocèsso)", "url": "https://www.treccani.it/vocabolario/retrocedere/", "date": "2026-09-30"},
+      {"form": "retrocesso", "source": "Treccani", "verdict": "standard", "quote": "(pass. rem. io retrocèssi [anche retrocedéi o retrocedètti], tu retrocedésti, ecc.; part. pass. retrocèsso)", "url": "https://www.treccani.it/vocabolario/retrocedere/", "date": "2026-09-30"}
+    ]
+  },
   "riavere": {
     "ind.pres.P3": [
       {"form": "rianno", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
@@ -315,14 +489,45 @@
       {"form": "rià", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
     ]
   },
+  "ridire": {
+    "impr.pres.S2": [
+      {"form": "ridici", "source": "Treccani", "verdict": "absent", "quote": "(coniug. come dire) — ridici appears only in the example «me la ridici la poesia?» (indicative), not as an imperative", "url": "https://www.treccani.it/vocabolario/ridire/", "note": "ridici appears only in an indicative example, not as an imperative.", "date": "2026-09-30"}
+    ]
+  },
   "riempiere": {
     "ind.pres.S3": [
       {"form": "riempie", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "part.past.S": [
+      {"form": "riempito", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "riempire (non com. rïémpiere …) (io rïémpio, ecc.; coniug. come empire) — empire: part. pass. empito o empiuto", "url": "https://www.treccani.it/vocabolario/riempire/", "note": "Inferred: Treccani says 'coniug. come empire' and does not list this form.", "date": "2026-09-30"}
     ]
   },
   "riempire": {
     "ind.pres.S3": [
       {"form": "riempie", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "ripartire": {
+    "ind.pres.P3": [
+      {"form": "ripartiscono", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "ripartire1 v. tr. [comp. di ri- e partire «dividere»] (io ripartisco, tu ripartisci, ecc.) — ripartire2 v. intr.: io riparto", "url": "https://www.treccani.it/vocabolario/ripartire1/", "note": "Treccani gives -isc- forms only for ripartire1, 'to divide'.", "date": "2026-09-30"}
+    ],
+    "ind.pres.S1": [
+      {"form": "ripartisco", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "ripartire1 v. tr. [comp. di ri- e partire «dividere»] (io ripartisco, tu ripartisci, ecc.) — ripartire2 v. intr.: io riparto", "url": "https://www.treccani.it/vocabolario/ripartire1/", "note": "Treccani gives -isc- forms only for ripartire1, 'to divide'.", "date": "2026-09-30"}
+    ],
+    "ind.pres.S3": [
+      {"form": "ripartisce", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "ripartire1 v. tr. [comp. di ri- e partire «dividere»] (io ripartisco, tu ripartisci, ecc.) — ripartire2 v. intr.: io riparto", "url": "https://www.treccani.it/vocabolario/ripartire1/", "note": "Treccani gives -isc- forms only for ripartire1, 'to divide'.", "date": "2026-09-30"}
+    ],
+    "sub.pres.P3": [
+      {"form": "ripartiscano", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "ripartire1 v. tr. [comp. di ri- e partire «dividere»] (io ripartisco, tu ripartisci, ecc.) — ripartire2 v. intr.: io riparto", "url": "https://www.treccani.it/vocabolario/ripartire1/", "note": "Treccani gives -isc- forms only for ripartire1, 'to divide'.", "date": "2026-09-30"}
+    ],
+    "sub.pres.S1": [
+      {"form": "ripartisca", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "ripartire1 v. tr. [comp. di ri- e partire «dividere»] (io ripartisco, tu ripartisci, ecc.) — ripartire2 v. intr.: io riparto", "url": "https://www.treccani.it/vocabolario/ripartire1/", "note": "Treccani gives -isc- forms only for ripartire1, 'to divide'.", "date": "2026-09-30"}
+    ],
+    "sub.pres.S2": [
+      {"form": "ripartisca", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "ripartire1 v. tr. [comp. di ri- e partire «dividere»] (io ripartisco, tu ripartisci, ecc.) — ripartire2 v. intr.: io riparto", "url": "https://www.treccani.it/vocabolario/ripartire1/", "note": "Treccani gives -isc- forms only for ripartire1, 'to divide'.", "date": "2026-09-30"}
+    ],
+    "sub.pres.S3": [
+      {"form": "ripartisca", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "ripartire1 v. tr. [comp. di ri- e partire «dividere»] (io ripartisco, tu ripartisci, ecc.) — ripartire2 v. intr.: io riparto", "url": "https://www.treccani.it/vocabolario/ripartire1/", "note": "Treccani gives -isc- forms only for ripartire1, 'to divide'.", "date": "2026-09-30"}
     ]
   },
   "ristare": {
@@ -331,6 +536,20 @@
     ],
     "ind.pres.S2": [
       {"form": "ristai", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "rivedere": {
+    "part.past.S": [
+      {"form": "riveduto", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "Part. pass. rivisto e riveduto (riveduto preferito nelle accezioni di cui al n. 2)", "url": "https://www.treccani.it/vocabolario/rivedere/", "date": "2026-09-30"},
+      {"form": "rivisto", "source": "Treccani", "verdict": "standard", "quote": "Part. pass. rivisto e riveduto (riveduto preferito nelle accezioni di cui al n. 2)", "url": "https://www.treccani.it/vocabolario/rivedere/", "date": "2026-09-30"}
+    ]
+  },
+  "scuotere": {
+    "impr.pres.P2": [
+      {"form": "scotete", "source": "Treccani", "verdict": "variant", "kind": "uncommon", "quote": "fuori d'accento le forme senza dittongo [scotiamo, scotésti, scotèndo, ecc.] si alternano con le forme dittongate [scuotiamo, ecc.], che oggi tendono a prevalere", "url": "https://www.treccani.it/vocabolario/scuotere/", "date": "2026-09-30"}
+    ],
+    "ind.pres.P2": [
+      {"form": "scotete", "source": "Treccani", "verdict": "variant", "kind": "uncommon", "quote": "fuori d'accento le forme senza dittongo [scotiamo, scotésti, scotèndo, ecc.] si alternano con le forme dittongate [scuotiamo, ecc.], che oggi tendono a prevalere", "url": "https://www.treccani.it/vocabolario/scuotere/", "date": "2026-09-30"}
     ]
   },
   "serpere": {
@@ -353,9 +572,28 @@
       {"form": "serpé", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
     ]
   },
+  "sfare": {
+    "ind.pres.S1": [
+      {"form": "sfò", "source": "Treccani", "verdict": "variant", "kind": "common", "quote": "(pres. io sfàccio o sfò, tu sfai, ecc.; il resto della coniug. segue fare)", "url": "https://www.treccani.it/vocabolario/sfare/", "date": "2026-09-30"},
+      {"form": "sfaccio", "source": "Treccani", "verdict": "standard", "quote": "(pres. io sfàccio o sfò, tu sfai, ecc.; il resto della coniug. segue fare)", "url": "https://www.treccani.it/vocabolario/sfare/", "date": "2026-09-30"}
+    ]
+  },
   "sottostare": {
     "ind.past.P1": [
       {"form": "sottostemmo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "spandere": {
+    "ind.past.P3": [
+      {"form": "spandettero", "source": "Treccani", "verdict": "absent", "quote": "Raro e ant. il part. pass. spanduto, è comune invece, spec. in usi region. o letter., la forma spanto — pass. rem. spandetti/spandei not mentioned", "url": "https://www.treccani.it/vocabolario/spandere/", "date": "2026-09-30"},
+      {"form": "spanderono", "source": "Treccani", "verdict": "absent", "quote": "Raro e ant. il part. pass. spanduto, è comune invece, spec. in usi region. o letter., la forma spanto — pass. rem. spandetti/spandei not mentioned", "url": "https://www.treccani.it/vocabolario/spandere/", "date": "2026-09-30"}
+    ],
+    "ind.past.S1": [
+      {"form": "spandetti", "source": "Treccani", "verdict": "absent", "quote": "Raro e ant. il part. pass. spanduto, è comune invece, spec. in usi region. o letter., la forma spanto — pass. rem. spandetti/spandei not mentioned", "url": "https://www.treccani.it/vocabolario/spandere/", "date": "2026-09-30"},
+      {"form": "spandei", "source": "Treccani", "verdict": "absent", "quote": "Raro e ant. il part. pass. spanduto, è comune invece, spec. in usi region. o letter., la forma spanto — pass. rem. spandetti/spandei not mentioned", "url": "https://www.treccani.it/vocabolario/spandere/", "date": "2026-09-30"}
+    ],
+    "part.past.S": [
+      {"form": "spanto", "source": "Treccani", "verdict": "standard", "quote": "Raro e ant. il part. pass. spanduto, è comune invece, spec. in usi region. o letter., la forma spanto — pass. rem. spandetti/spandei not mentioned", "url": "https://www.treccani.it/vocabolario/spandere/", "date": "2026-09-30"}
     ]
   },
   "sprovvedere": {
@@ -373,6 +611,16 @@
       {"form": "stretto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
     ]
   },
+  "succedere": {
+    "ind.past.S1": [
+      {"form": "succedetti", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "(pass. rem. io succèssi o anche, escluso il sign. 3, io succedéi o succedètti, tu succedésti, ecc.; part. pass. succèsso o, escluso il sign. 3, succeduto)", "url": "https://www.treccani.it/vocabolario/succedere/", "note": "Treccani gives this form only outside sense 3.", "date": "2026-09-30"},
+      {"form": "succedei", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "(pass. rem. io succèssi o anche, escluso il sign. 3, io succedéi o succedètti, tu succedésti, ecc.; part. pass. succèsso o, escluso il sign. 3, succeduto)", "url": "https://www.treccani.it/vocabolario/succedere/", "note": "Treccani gives this form only outside sense 3.", "date": "2026-09-30"}
+    ],
+    "part.past.S": [
+      {"form": "succeduto", "source": "Treccani", "verdict": "variant", "kind": "sense", "quote": "(pass. rem. io succèssi o anche, escluso il sign. 3, io succedéi o succedètti, tu succedésti, ecc.; part. pass. succèsso o, escluso il sign. 3, succeduto)", "url": "https://www.treccani.it/vocabolario/succedere/", "note": "Treccani gives this form only outside sense 3.", "date": "2026-09-30"},
+      {"form": "successo", "source": "Treccani", "verdict": "standard", "quote": "(pass. rem. io succèssi o anche, escluso il sign. 3, io succedéi o succedètti, tu succedésti, ecc.; part. pass. succèsso o, escluso il sign. 3, succeduto)", "url": "https://www.treccani.it/vocabolario/succedere/", "date": "2026-09-30"}
+    ]
+  },
   "tacere": {
     "ind.pres.P1": [
       {"form": "tacciamo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
@@ -381,6 +629,12 @@
   "tinnire": {
     "ind.pres.S1": [
       {"form": "tinnisco", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "vedere": {
+    "part.past.S": [
+      {"form": "veduto", "source": "Treccani", "verdict": "variant", "kind": "literary", "quote": "part. pass. visto o, meno pop., veduto", "url": "https://www.treccani.it/vocabolario/vedere/", "date": "2026-09-30"},
+      {"form": "visto", "source": "Treccani", "verdict": "standard", "quote": "part. pass. visto o, meno pop., veduto", "url": "https://www.treccani.it/vocabolario/vedere/", "date": "2026-09-30"}
     ]
   },
   "volere": {

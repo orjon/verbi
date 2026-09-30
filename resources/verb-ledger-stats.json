@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T21:33:27.989Z",
+  "generated": "2026-09-30T21:45:32.344Z",
   "verbs": 6076,
   "forms": {
     "total": 333898,
@@ -17,8 +17,8 @@
   },
   "checks": {
     "checked": 280117,
-    "treccaniConfirmed": 99,
-    "differs": 108,
+    "treccaniConfirmed": 111,
+    "differs": 109,
     "unconfirmed": 53781
   },
   "alternatives": {

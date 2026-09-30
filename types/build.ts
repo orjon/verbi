@@ -54,6 +54,8 @@ export type FormCheck = {
   /** For a `variant`: which of our alternative kinds it is. */
   kind?: AlternativeKind;
   quote?: string;
+  /** Anything unusual about the lookup, such as a form inferred from "coniug. come". */
+  note?: string;
   url?: string;
   date: string;
 };
