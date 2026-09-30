@@ -101,6 +101,42 @@ export const PATH = {
 export const formPath = (tensePath: string, key: string): string =>
   `${tensePath}.${key}`
 
+/** Every form path of one tense, keyed by person or gender. */
+const formsOf = <T extends string, K extends string>(
+  tensePath: T,
+  keys: readonly K[],
+) =>
+  Object.fromEntries(keys.map((k) => [k, `${tensePath}.${k}`])) as {
+    [P in K]: `${T}.${P}`
+  }
+
+/**
+ * The path to every form, by mood, tense and person or gender — only the
+ * ones that exist, so `PATH_TO.impr.pres.S1` does not compile. For a fixed
+ * form; use formPath where the person comes from a variable.
+ *
+ *   PATH_TO.indi.futu.S1  →  "ind.fut.S1"
+ *   PATH_TO.part.past.S   →  "part.past.S"
+ */
+export const PATH_TO = {
+  indi: {
+    pres: formsOf(PATH.indi.pres, PERSONS),
+    impf: formsOf(PATH.indi.impf, PERSONS),
+    past: formsOf(PATH.indi.past, PERSONS),
+    futu: formsOf(PATH.indi.futu, PERSONS),
+  },
+  subj: {
+    pres: formsOf(PATH.subj.pres, PERSONS),
+    impf: formsOf(PATH.subj.impf, PERSONS),
+  },
+  cond: { pres: formsOf(PATH.cond.pres, PERSONS) },
+  impr: { pres: formsOf(PATH.impr.pres, IMPERATIVE_PERSONS) },
+  part: {
+    pres: formsOf(PATH.part.pres, GENDERS),
+    past: formsOf(PATH.part.past, GENDERS),
+  },
+} as const
+
 /** The conjugation groups, by the infinitive's ending. */
 export const CONJUGATION = {
   are: "are",
@@ -136,31 +172,40 @@ export const ACCENTS = { eGrave: "è", eAcute: "é" } as const
 /**
  * The kinds of valid alternative to a standard form. `common` and
  * `clipped_common` are equal to the standard and shown beside it; the others are
- * a secondary tier. `archaic` has no forms yet.
+ * a secondary tier.
  *
  *   common          an equal modern variant: fai beside fa'
  *   colloquial      everyday speech, avoided in writing: disfo
- *   formal          careful or official writing: debbono, possederò
+ *   formal          careful or official writing, closer to the Latin root
  *   literary        found mainly in literature: seggo, crescei
- *   rare            correct but seldom used: coceva, possedente
- *   archaic         old-fashioned, no longer used
+ *   uncommon        correct but seldom used: coceva, possedente
+ *   regional        used in one area or dialect, not standard elsewhere
+ *   dated           sounds old-fashioned to a modern speaker, but still used
+ *   archaic         rarely used except deliberately, for effect
+ *   obsolete        no longer in real use; found only in historical texts
  *   sense           a different meaning of the verb: ripartisco ("I divide")
  *   clipped_common  a clipped form in everyday use: han, vuol, aver
  *   clipped_poetic  a clipped form found in poetry and song: parlan, furon
  */
-export const ALTERNATIVES = [
-  "common",
-  "colloquial",
-  "formal",
-  "literary",
-  "rare",
-  "archaic",
-  "sense",
-  "clipped_common",
-  "clipped_poetic",
-] as const
+export const ALTERNATIVE = {
+  common: "common",
+  colloquial: "colloquial",
+  formal: "formal",
+  literary: "literary",
+  uncommon: "uncommon",
+  regional: "regional",
+  dated: "dated",
+  archaic: "archaic",
+  obsolete: "obsolete",
+  sense: "sense",
+  clipped_common: "clipped_common",
+  clipped_poetic: "clipped_poetic",
+} as const
 
-export type AlternativeKind = (typeof ALTERNATIVES)[number]
+export type AlternativeKind = (typeof ALTERNATIVE)[keyof typeof ALTERNATIVE]
+
+/** Every alternative kind, in the order they are listed and shown. */
+export const ALTERNATIVES: readonly AlternativeKind[] = Object.values(ALTERNATIVE)
 
 /** Valid alternatives to one form, by kind: { common: ["fai"] }. */
 export type AlternativeForms = Partial<Record<AlternativeKind, string[]>>

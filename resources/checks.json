@@ -1,0 +1,391 @@
+{
+  "adempiere": {
+    "ger.pres": [
+      {"form": "adempiendo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S1": [
+      {"form": "adempio", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S2": [
+      {"form": "adempi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S3": [
+      {"form": "adempie", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "part.past.S": [
+      {"form": "adempiuto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "affiggere": {
+    "part.past.S": [
+      {"form": "affisso", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "aggradare": {
+    "ind.pres.S3": [
+      {"form": "aggrada", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "aspergere": {
+    "part.past.S": [
+      {"form": "asperso", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "assidere": {
+    "ind.past.S1": [
+      {"form": "assisi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "assolvere": {
+    "part.past.S": [
+      {"form": "assolto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "avellere": {
+    "part.past.S": [
+      {"form": "avulso", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "calere": {
+    "sub.pres.S3": [
+      {"form": "calga", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "cernere": {
+    "part.past.S": [
+      {"form": "cernito", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "collidere": {
+    "ind.past.S1": [
+      {"form": "collisi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "compiere": {
+    "ger.pres": [
+      {"form": "compiendo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S1": [
+      {"form": "compio", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "part.past.S": [
+      {"form": "compiuto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "compire": {
+    "part.past.S": [
+      {"form": "compiuto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "condolere": {
+    "cond.pres.S1": [
+      {"form": "condorrei", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "impr.pres.S2": [
+      {"form": "conduoli", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.fut.S1": [
+      {"form": "condorrò", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.past.S1": [
+      {"form": "condolsi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S1": [
+      {"form": "condolgo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "sub.pres.S1": [
+      {"form": "condolga", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "connettere": {
+    "part.past.S": [
+      {"form": "connesso", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "convincere": {
+    "part.past.S": [
+      {"form": "convinto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "difendere": {
+    "ind.past.S1": [
+      {"form": "difesi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "disparire": {
+    "ind.past.S1": [
+      {"form": "disparvi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S1": [
+      {"form": "dispaio", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "part.past.S": [
+      {"form": "disparito", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "divergere": {
+    "ind.past.P1": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ],
+    "ind.past.P2": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ],
+    "ind.past.P3": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ],
+    "ind.past.S1": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ],
+    "ind.past.S2": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ],
+    "ind.past.S3": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ],
+    "part.past.P": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ],
+    "part.past.PF": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ],
+    "part.past.S": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ],
+    "part.past.SF": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ]
+  },
+  "dolere": {
+    "impr.pres.S2": [
+      {"form": "duoli", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.fut.S1": [
+      {"form": "dorrò", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.P1": [
+      {"form": "doliamo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.P3": [
+      {"form": "dolgono", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S1": [
+      {"form": "dolgo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S2": [
+      {"form": "duoli", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S3": [
+      {"form": "duole", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "sub.pres.P1": [
+      {"form": "doliamo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "sub.pres.P3": [
+      {"form": "dolgano", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "sub.pres.S1": [
+      {"form": "dolga", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "dovere": {
+    "impr.pres.S2": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ]
+  },
+  "eccellere": {
+    "ind.past.S1": [
+      {"form": "eccelsi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "empire": {
+    "ger.pres": [
+      {"form": "empiendo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.fut.S1": [
+      {"form": "empirò", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.impf.S1": [
+      {"form": "empivo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.P1": [
+      {"form": "empiamo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.P2": [
+      {"form": "empite", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S1": [
+      {"form": "empio", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S2": [
+      {"form": "empi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S3": [
+      {"form": "empie", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "part.past.S": [
+      {"form": "empiuto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "esplodere": {
+    "part.past.S": [
+      {"form": "esploso", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "giacere": {
+    "ind.pres.P1": [
+      {"form": "giacciamo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "sub.pres.P1": [
+      {"form": "giacciamo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "malvolere": {
+    "inf.pres": [
+      {"form": "malvolere", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "part.past.S": [
+      {"form": "malvoluto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "negligere": {
+    "ind.past.S1": [
+      {"form": "neglessi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "part.past.S": [
+      {"form": "negletto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "part.pres.S": [
+      {"form": "negligente", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "offendere": {
+    "ind.past.S1": [
+      {"form": "offesi", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "pendere": {
+    "part.past.S": [
+      {"form": "penduto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "permanere": {
+    "part.past.S": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ]
+  },
+  "plaudere": {
+    "ind.past.S1": [
+      {"form": "plaudii", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "potere": {
+    "impr.pres.S2": [
+      {"source": "Treccani", "verdict": "none", "date": "2026-09-29"}
+    ]
+  },
+  "profferire": {
+    "ind.past.S1": [
+      {"form": "profferii", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "part.past.S": [
+      {"form": "profferto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "provvedere": {
+    "ind.fut.S1": [
+      {"form": "provvederò", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "restringere": {
+    "part.past.S": [
+      {"form": "ristretto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "riavere": {
+    "ind.pres.P3": [
+      {"form": "rianno", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S1": [
+      {"form": "riò", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S2": [
+      {"form": "riai", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S3": [
+      {"form": "rià", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "riempiere": {
+    "ind.pres.S3": [
+      {"form": "riempie", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "riempire": {
+    "ind.pres.S3": [
+      {"form": "riempie", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "ristare": {
+    "ind.pres.P3": [
+      {"form": "ristanno", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.pres.S2": [
+      {"form": "ristai", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "serpere": {
+    "ind.past.P1": [
+      {"form": "serpemmo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.past.P2": [
+      {"form": "serpeste", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.past.P3": [
+      {"form": "serperono", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.past.S1": [
+      {"form": "serpei", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.past.S2": [
+      {"form": "serpesti", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ],
+    "ind.past.S3": [
+      {"form": "serpé", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "sottostare": {
+    "ind.past.P1": [
+      {"form": "sottostemmo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "sprovvedere": {
+    "ind.fut.S1": [
+      {"form": "sprovvederò", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "stare": {
+    "ind.past.P1": [
+      {"form": "stemmo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "stringere": {
+    "part.past.S": [
+      {"form": "stretto", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "tacere": {
+    "ind.pres.P1": [
+      {"form": "tacciamo", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "tinnire": {
+    "ind.pres.S1": [
+      {"form": "tinnisco", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "volere": {
+    "impr.pres.S2": [
+      {"form": "vogli", "source": "Treccani", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  }
+}

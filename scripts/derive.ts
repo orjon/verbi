@@ -6,12 +6,16 @@
  * which are alternatives. They never replace a form.
  */
 import {
+  ALTERNATIVE,
   CONJUGATION,
   ENDING,
   PATH,
+  PATH_TO,
   PERSON,
-  formPath,
 } from "./vocabulary.ts"
+
+/** The two kinds a clipped form can be. */
+type ClippedKind = typeof ALTERNATIVE.clipped_common | typeof ALTERNATIVE.clipped_poetic
 
 /**
  * Makes the gerund from the imperfect's `io` form. They share a stem:
@@ -127,13 +131,13 @@ export const imperativeFromPresent = (
  */
 const CLIPPED_SLOTS: string[] = [
   PATH.infi,
-  formPath(PATH.indi.pres, PERSON.p3),
-  formPath(PATH.indi.impf, PERSON.p3),
-  formPath(PATH.indi.past, PERSON.p3),
-  formPath(PATH.indi.futu, PERSON.p3),
-  formPath(PATH.cond.pres, PERSON.p3),
-  formPath(PATH.subj.pres, PERSON.p3),
-  formPath(PATH.subj.impf, PERSON.p3),
+  PATH_TO.indi.pres.P3,
+  PATH_TO.indi.impf.P3,
+  PATH_TO.indi.past.P3,
+  PATH_TO.indi.futu.P3,
+  PATH_TO.cond.pres.P3,
+  PATH_TO.subj.pres.P3,
+  PATH_TO.subj.impf.P3,
 ]
 
 /**
@@ -146,12 +150,12 @@ const CLIPPED_SLOTS: string[] = [
 const CLIPPED_COMMON: Record<string, string[]> = {
   avere: [PATH.infi],
   dire: [PATH.infi],
-  essere: [PATH.infi, formPath(PATH.indi.pres, PERSON.p3)],
+  essere: [PATH.infi, PATH_TO.indi.pres.P3],
   fare: [PATH.infi],
   sapere: [PATH.infi],
   volere: [
-    formPath(PATH.indi.pres, PERSON.s3),
-    formPath(PATH.indi.pres, PERSON.p3),
+    PATH_TO.indi.pres.S3,
+    PATH_TO.indi.pres.P3,
   ],
 }
 
@@ -188,13 +192,13 @@ export const clippedKind = (
   infinitive: string,
   featurePath: string,
   standard: string,
-): "clipped_common" | "clipped_poetic" =>
+): ClippedKind =>
   CLIPPED_COMMON[infinitive]?.includes(featurePath) ||
-  (featurePath === formPath(PATH.indi.pres, PERSON.p3) &&
+  (featurePath === PATH_TO.indi.pres.P3 &&
     standard.endsWith("nno")) ||
   (featurePath === PATH.infi && standard.endsWith("rre"))
-    ? "clipped_common"
-    : "clipped_poetic"
+    ? ALTERNATIVE.clipped_common
+    : ALTERNATIVE.clipped_poetic
 
 /**
  * Makes every clipped form of a verb from its finished standard forms, with its
@@ -211,8 +215,8 @@ export const clippedKind = (
 export const clippedForms = (
   infinitive: string,
   formAt: (featurePath: string) => string | undefined,
-): Record<string, ["clipped_common" | "clipped_poetic", string]> => {
-  const out: Record<string, ["clipped_common" | "clipped_poetic", string]> = {}
+): Record<string, [ClippedKind, string]> => {
+  const out: Record<string, [ClippedKind, string]> = {}
   const paths = new Set([...CLIPPED_SLOTS, ...(CLIPPED_COMMON[infinitive] ?? [])])
   for (const featurePath of paths) {
     const standard = formAt(featurePath)

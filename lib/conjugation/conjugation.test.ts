@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import verbs from 'italian-verbs-dict/dist/verbs.json' with { type: 'json' };
 import { conjugate, conjugateTense, hasVerb, listVerbs } from './conjugate.ts';
 import { EXCLUDED, isExcluded } from './excluded.ts';
-import { getAux, isDualAux, _lists } from './aux.ts';
+import { getAux, isDualAux, isReflexive, _lists } from './aux.ts';
 
 test('every verb in the auxiliary lists exists in the dictionary', () => {
   // `essere` is the one exception: the library conjugates it internally as an
@@ -61,7 +61,7 @@ test('the whole dictionary conjugates, bar known gaps', () => {
   for (const verb of Object.keys(verbs)) {
     const gaps = tenses.filter((t) => conjugateTense(verb, t).every((f) => f === null));
     if (gaps.length === 0) continue;
-    (verb.endsWith('si') ? reflexive : defective).push(verb);
+    (isReflexive(verb) ? reflexive : defective).push(verb);
   }
 
   // The dictionary stores reflexives as infinitives only; callers are pointed
@@ -101,6 +101,6 @@ test('every excluded key is really in the dictionary', () => {
 });
 
 test('all reflexives are excluded', () => {
-  const kept = Object.keys(verbs).filter((v) => v.endsWith('si') && !isExcluded(v));
+  const kept = Object.keys(verbs).filter((v) => isReflexive(v) && !isExcluded(v));
   assert.deepEqual(kept, []);
 });

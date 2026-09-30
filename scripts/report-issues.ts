@@ -8,6 +8,7 @@
 import fs from 'node:fs';
 import { parseLexicon } from './parse-lexicon.ts';
 import { GENDERS, IMPERATIVE_PERSONS, PATH, PERSONS, formPath } from './vocabulary.ts';
+import { isReflexive } from '../lib/conjugation/aux.ts';
 
 
 /** Every slot a fully attested verb would have. */
@@ -33,7 +34,7 @@ const conflicting: Record<string, Record<string, string[]>> = {};
 let verbs = 0, missingCount = 0, conflictCount = 0, clippedOnly = 0;
 
 for (const [verb, paths] of Object.entries(verbForms)) {
-  if (verb.endsWith('si')) continue;
+  if (isReflexive(verb)) continue;
   verbs++;
 
   for (const slot of EXPECTED) {

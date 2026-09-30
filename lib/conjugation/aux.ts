@@ -7,6 +7,7 @@
  * so the rest of the app never has to.
  */
 import type { ItalianAux } from '../../types/index.ts';
+import { REFLEXIVE_SUFFIX } from '../../constants/index.ts';
 
 /**
  * Verbs taking `essere`: intransitives of motion, state, and change of state,
@@ -108,7 +109,7 @@ const DUAL: Record<string, ItalianAux> = {
 
 /** True when the verb is reflexive or pronominal (`lavarsi`, `accorgersi`). */
 export function isReflexive(verb: string): boolean {
-  return verb.endsWith('si');
+  return verb.endsWith(REFLEXIVE_SUFFIX);
 }
 
 /**

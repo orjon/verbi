@@ -14,6 +14,9 @@ export const PERSONS: ReadonlyArray<[Person, Numbers]> = [
   [1, 'S'], [2, 'S'], [3, 'S'], [1, 'P'], [2, 'P'], [3, 'P'],
 ];
 
+/** The ending of a reflexive or pronominal infinitive: lavarsi, accorgersi. */
+export const REFLEXIVE_SUFFIX = 'si';
+
 /** Subject pronouns, in the same order as `PERSONS`, for labelling rows. */
 export const PRONOUNS: readonly string[] = [
   'io', 'tu', 'lui / lei', 'noi', 'voi', 'loro',

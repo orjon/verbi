@@ -12,10 +12,10 @@
  * spelling is corrected here rather than taken from the source. The decision is
  * recorded as *Acute accent in the past historic* in notes/to-verify.md.
  */
-import { ACCENTS, PATH, PERSON, formPath } from "./vocabulary.ts"
+import { ACCENTS, PATH_TO } from "./vocabulary.ts"
 
-const PAST_S1 = formPath(PATH.indi.past, PERSON.s1)
-const PAST_S3 = formPath(PATH.indi.past, PERSON.s3)
+const PAST_S1 = PATH_TO.indi.past.S1
+const PAST_S3 = PATH_TO.indi.past.S3
 
 /**
  * True when a past historic `io` form is weak — the regular endings on the
