@@ -545,7 +545,6 @@ const summarizeLedger = (ledger: VerbLedger) => {
   }
 
   return {
-    generated: new Date().toISOString(),
     verbs: Object.keys(ledger).length,
     forms: { total: leaves, bySource, byStatus },
     checks: { checked, treccaniConfirmed, differs, unconfirmed },
@@ -575,7 +574,13 @@ export const writeLedger = async (ledger: VerbLedger, verbs: Tree) => {
   )
   fs.writeFileSync(LEDGER_FILE, stringifyLedger(sorted) + "\n")
 
-  const stats = summarizeLedger(ledger)
+  const stats = {
+    generated: new Date().toISOString(),
+    // When the Wiktionary file was downloaded (its last-modified time), since
+    // a newer download can give a different ledger.
+    wiktionaryDownloaded: fs.statSync(KAIKKI_FILE).mtime.toISOString(),
+    ...summarizeLedger(ledger),
+  }
   fs.writeFileSync(STATS_FILE, JSON.stringify(stats, null, 2) + "\n")
 
   return { wiktionary, stats }

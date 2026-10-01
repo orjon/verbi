@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --test lib/**/*.test.ts",
-    "check:wiktionary": "node scripts/check-wiktionary.ts"
+    "test": "node --test lib/**/*.test.ts"
   },
   "dependencies": {
     "italian-verbs": "^5.4.0",

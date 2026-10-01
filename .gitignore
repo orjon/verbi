@@ -48,3 +48,6 @@ next-env.d.ts
 /resources/external/
 /parked/
 /notes/
+
+# rebuilt by scripts/build.ts from the files above and resources/checks.json
+/resources/verb-ledger.json
