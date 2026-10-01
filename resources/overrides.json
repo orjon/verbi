@@ -1060,10 +1060,10 @@
     "part.past.PF": { "value": "plaudite" }
   },
   "possedere": {
-    "part.pres.S": { "value": "possidente", "alternatives": { "uncommon": ["possedente"] } },
-    "part.pres.SF": { "value": "possidente", "alternatives": { "uncommon": ["possedente"] } },
-    "part.pres.P": { "value": "possidenti", "alternatives": { "uncommon": ["possedenti"] } },
-    "part.pres.PF": { "value": "possidenti", "alternatives": { "uncommon": ["possedenti"] } }
+    "part.pres.S": { "value": "possedente", "alternatives": { "common": ["possidente"] } },
+    "part.pres.SF": { "value": "possedente", "alternatives": { "common": ["possidente"] } },
+    "part.pres.P": { "value": "possedenti", "alternatives": { "common": ["possidenti"] } },
+    "part.pres.PF": { "value": "possedenti", "alternatives": { "common": ["possidenti"] } }
   },
   "potere": {
     "impr.pres.S2": { "value": null },
@@ -1229,10 +1229,10 @@
   },
   "riempire": {
     "ger.pres": { "value": "riempiendo" },
-    "part.past.S": { "value": "riempiuto" },
-    "part.past.SF": { "value": "riempiuta", "alternatives": { "common": ["riempita"] } },
-    "part.past.P": { "value": "riempiuti", "alternatives": { "common": ["riempiti"] } },
-    "part.past.PF": { "value": "riempiute", "alternatives": { "common": ["riempite"] } },
+    "part.past.S": { "alternatives": { "common": ["riempiuto"] } },
+    "part.past.SF": { "alternatives": { "common": ["riempiuta"] } },
+    "part.past.P": { "alternatives": { "common": ["riempiuti"] } },
+    "part.past.PF": { "alternatives": { "common": ["riempiute"] } },
     "ind.pres.S3": { "value": "riempie" }
   },
   "riesplodere": {
