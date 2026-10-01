@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/build.ts",
+    "predev": "node build-lexicon/scripts/last-built.ts",
     "dev": "next dev",
     "build": "next build",
+    "build:lexicon": "node build-lexicon/scripts/build.ts",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --test lib/**/*.test.ts"
+    "test": "node --test conjugation/**/*.test.ts"
   },
   "dependencies": {
     "italian-verbs": "^5.4.0",

@@ -8,7 +8,7 @@ import {
   nonFiniteForms,
   PRONOUNS,
   TENSE_GROUPS,
-} from "@/lib/conjugation";
+} from "@/conjugation";
 
 export async function generateMetadata({
   params,

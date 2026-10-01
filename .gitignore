@@ -45,9 +45,13 @@ next-env.d.ts
 # https://raw.githubusercontent.com/RosaeNLG/rosaenlg/master/packages/italian-verbs-dict/resources/morph-it_048.txt
 # Wiktionary Italian extract (wiktextract / kaikki.org, 771 MB):
 # https://kaikki.org/dictionary/Italian/kaikki.org-dictionary-Italian.jsonl
-/resources/external/
+/data-sources/external/
 /parked/
 /notes/
 
-# rebuilt by scripts/build.ts from the files above and resources/checks.json
-/resources/verb-ledger.json
+# rebuilt by build-lexicon/scripts/build.ts from the files above and data-sources/checks.json
+/lexicons/it-verbs-ledger.json
+
+# AI assistant instruction files: kept locally, not published
+/AGENTS.md
+/CLAUDE.md

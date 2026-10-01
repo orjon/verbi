@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { listVerbs } from "@/lib/conjugation";
+import { listVerbs } from "@/conjugation";
 import { VerbList } from "./verb-list";
 
 export const metadata: Metadata = {
