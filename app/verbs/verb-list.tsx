@@ -3,29 +3,23 @@
 import Link from "next/link"
 import { useMemo, useState } from "react"
 
-const ENDINGS = ["are", "ere", "ire", "rre"] as const
-type Ending = (typeof ENDINGS)[number]
+// Import from the files themselves, not from "@/conjugation": that pulls the
+// whole lexicon into the browser.
+import { VERB_TYPES, VERB_TYPE_LABEL } from "@/conjugation/constants"
+import type { VerbType } from "@/conjugation/types"
 
-/**
- * Which of the four infinitive endings a verb has. `-rre` is checked first:
- * those verbs are contracted `-ere` verbs (*porre*, *condurre*) and would not
- * match the others anyway, but the order makes the intent explicit.
- */
-function endingOf(verb: string): Ending | null {
-  if (verb.endsWith("rre")) return "rre"
-  for (const e of ENDINGS) if (verb.endsWith(e)) return e
-  return null
-}
+/** A verb and its kind, worked out on the server. */
+type Entry = { verb: string; type: VerbType | null }
 
 export function VerbList({
   verbs,
   letters,
 }: {
-  verbs: string[]
+  verbs: Entry[]
   letters: string[]
 }) {
   const [letter, setLetter] = useState<string | null>(null)
-  const [ending, setEnding] = useState<Ending | "">("")
+  const [type, setType] = useState<VerbType | "">("")
   const [query, setQuery] = useState("")
 
   const search = query.trim().toLowerCase()
@@ -34,16 +28,16 @@ export function VerbList({
     () =>
       verbs.filter(
         (v) =>
-          (!letter || v.startsWith(letter)) &&
-          (!ending || endingOf(v) === ending) &&
-          (!search || v.includes(search)),
+          (!letter || v.verb.startsWith(letter)) &&
+          (!type || v.type === type) &&
+          (!search || v.verb.includes(search)),
       ),
-    [verbs, letter, ending, search],
+    [verbs, letter, type, search],
   )
 
   const filters = [
     search && `containing "${search}"`,
-    ending && `ending in -${ending}`,
+    type && `of type ${VERB_TYPE_LABEL[type]}`,
     letter && `starting with ${letter.toUpperCase()}`,
   ].filter(Boolean)
 
@@ -71,21 +65,21 @@ export function VerbList({
             </div>
 
             <label
-              htmlFor="ending"
+              htmlFor="type"
               className="text-sm text-black/60 dark:text-white/60"
             >
               Type
             </label>
             <select
-              id="ending"
-              value={ending}
-              onChange={(e) => setEnding(e.target.value as Ending | "")}
+              id="type"
+              value={type}
+              onChange={(e) => setType(e.target.value as VerbType | "")}
               className="rounded border border-black/15 bg-transparent px-2 py-1 text-sm dark:border-white/20"
             >
               <option value="">All types</option>
-              {ENDINGS.map((e) => (
-                <option key={e} value={e}>
-                  -{e}
+              {VERB_TYPES.map((t) => (
+                <option key={t} value={t}>
+                  {VERB_TYPE_LABEL[t]}
                 </option>
               ))}
             </select>
@@ -116,7 +110,7 @@ export function VerbList({
           </p>
         )}
         <ul className="mx-auto w-full max-w-5xl columns-2 gap-6 sm:columns-3 lg:columns-4">
-          {shown.map((verb) => (
+          {shown.map(({ verb }) => (
             <li key={verb} className="break-inside-avoid">
               <Link
                 href={`/verbs/${verb}`}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { listVerbs } from "@/conjugation";
+import { listVerbs, verbType } from "@/conjugation";
 import { VerbList } from "./verb-list";
 
 export const metadata: Metadata = {
@@ -12,5 +12,7 @@ export default function VerbsPage() {
   // Only the letters Italian actually uses — no j, k, w, x or y.
   const letters = [...new Set(verbs.map((v) => v[0]))].sort();
 
-  return <VerbList verbs={verbs} letters={letters} />;
+  const entries = verbs.map((verb) => ({ verb, type: verbType(verb) }));
+
+  return <VerbList verbs={entries} letters={letters} />;
 }

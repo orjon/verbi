@@ -6,6 +6,12 @@
  * conjugation library does not ripple through every file.
  */
 
+/**
+ * The kinds of verb the verb list can be filtered by. `isc` is an -ire verb
+ * that adds -isc- in the present (finisco); `ire` is one that does not (dormo).
+ */
+export type VerbType = 'are' | 'ere' | 'ire' | 'isc' | 'rre';
+
 /** The helper verb a compound tense is built with. */
 export type ItalianAux = 'ESSERE' | 'AVERE';
 

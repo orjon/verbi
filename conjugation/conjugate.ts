@@ -5,29 +5,24 @@
  * They never choose an auxiliary, so they cannot choose the wrong one.
  */
 import { getConjugation } from 'italian-verbs';
-import type { VerbsInfo } from 'italian-verbs-dict';
-import verbsJson from 'italian-verbs-dict/dist/verbs.json' with { type: 'json' };
+import { verbs } from './lexicon.ts';
 import { getAux, isReflexive, reflexiveBase } from './aux.ts';
 import { isExcluded } from './excluded.ts';
 import type { ConjugateOptions, Numbers, Person, Tense } from './types.ts';
 import { COMPOUND_TENSES, PERSONS } from './constants.ts';
 
-// The JSON import resolves to `{}` under some TypeScript module settings, so
-// state the shape the package already declares rather than relying on it.
-const verbs = verbsJson as unknown as VerbsInfo;
-
 export function isCompound(tense: Tense): boolean {
   return COMPOUND_TENSES.includes(tense);
 }
 
-/** True when the dictionary has this verb, excluded or not. */
+/** True when the lexicon has this verb. */
 export function hasVerb(verb: string): boolean {
   return Object.prototype.hasOwnProperty.call(verbs, verb);
 }
 
 /**
- * The verbs the app offers: every dictionary key except the excluded ones,
- * sorted. Use this for search and listings rather than reading the dictionary
+ * The verbs the app offers: every lexicon key except the excluded ones,
+ * sorted. Use this for search and listings rather than reading the lexicon
  * directly.
  */
 export function listVerbs(): string[] {
@@ -37,7 +32,7 @@ export function listVerbs(): string[] {
 /**
  * One conjugated form.
  *
- * Throws if the verb is not in the dictionary, so a typo surfaces at the call
+ * Throws if the verb is not in the lexicon, so a typo surfaces at the call
  * site rather than as a confusing error from inside the library.
  */
 export function conjugate(
@@ -48,6 +43,13 @@ export function conjugate(
   options: ConjugateOptions = {},
 ): string {
   if (!hasVerb(verb)) {
+    // The lexicon has no reflexive verbs, so point the caller at the base verb.
+    if (isReflexive(verb)) {
+      throw new Error(
+        `${verb} is reflexive and the lexicon does not conjugate it. ` +
+          `Conjugate ${reflexiveBase(verb)} and add the reflexive pronoun.`,
+      );
+    }
     throw new Error(`Unknown verb: ${verb}`);
   }
 
@@ -63,13 +65,6 @@ export function conjugate(
       agreeNumber: agrees ? number : 'S',
     });
   } catch (cause) {
-    if (isReflexive(verb)) {
-      throw new Error(
-        `${verb} is reflexive and the dictionary does not conjugate it. ` +
-          `Conjugate ${reflexiveBase(verb)} and add the reflexive pronoun.`,
-        { cause },
-      );
-    }
     // Defective verbs genuinely lack some tenses: `vigere` has no participle,
     // so no compound tense exists to build.
     throw new Error(`${verb} has no ${tense} form.`, { cause });
