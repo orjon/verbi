@@ -22,7 +22,7 @@ import {
   withParticipleIente,
   withStressedI,
 } from "./corrections.ts"
-import { fixedAlternatives } from "./build-alternatives.ts"
+import { alternativesOf } from "./overrides.ts"
 import { FARE } from "../constants/verb-groups.ts"
 import { getFormAt } from "./verb-utils.ts"
 import type { Resolution, Tree } from "../types/build.ts"
@@ -79,7 +79,7 @@ export const resolveConflict = (
     candidates,
     forms,
     getFormAt(built[FARE] ?? {}, featurePath),
-    fixedAlternatives(FARE)[featurePath] ?? {},
+    alternativesOf(FARE)[featurePath] ?? {},
   ) ??
   resolveIsc(infinitive, featurePath, candidates) ??
   resolveParticipleIente(infinitive, featurePath, candidates) ??

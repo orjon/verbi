@@ -1,12 +1,12 @@
 {
-  "generated": "2026-10-01T08:19:01.287Z",
+  "generated": "2026-10-01T12:53:53.007Z",
   "wiktionaryDownloaded": "2026-09-29T15:14:03.244Z",
   "verbs": 6076,
   "forms": {
     "total": 333898,
     "bySource": {
-      "morph-it": 330297,
-      "override": 1296,
+      "morph-it": 330395,
+      "override": 1198,
       "rule": 2098,
       "none": 207
     },
@@ -17,20 +17,20 @@
     }
   },
   "checks": {
-    "checked": 280117,
-    "treccaniConfirmed": 111,
-    "differs": 109,
-    "unconfirmed": 53781
+    "checked": 280339,
+    "confirmed": 3446,
+    "differs": 223,
+    "unconfirmed": 53559
   },
   "alternatives": {
-    "forms": 51577,
-    "values": 53169,
+    "forms": 51575,
+    "values": 53167,
     "byKind": {
       "common": 2633,
       "colloquial": 29,
       "formal": 37,
       "literary": 198,
-      "uncommon": 406,
+      "uncommon": 404,
       "regional": 1,
       "dated": 9,
       "archaic": 1247,

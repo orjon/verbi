@@ -21,12 +21,12 @@ import { REFLEXIVE_SUFFIX } from '../../constants/index.ts';
  * *Auxiliary verbs* in notes/to-verify.md.
  *
  * The block below the original list (`abbiosciare` on) was added 2026-09-29
- * from Wiktionary's auxiliary data, then rechecked against Treccani the same
- * day (see *Auxiliary recheck* in notes/to-verify.md): `rampare` removed
- * (Treccani: "aus. avere", not essere); `dilagare`, `rifluire`, `rimbalzare`
- * moved to DUAL (Treccani gives both auxiliaries, not essere alone). A
- * handful of verbs Treccani's site did not have a page for are listed as
- * unconfirmed in the same note, not silently assumed correct.
+ * from Wiktionary's auxiliary data, then rechecked against a second reference
+ * the same day (see *Auxiliary recheck* in notes/to-verify.md): `rampare`
+ * removed (it takes avere, not essere); `dilagare`, `rifluire`, `rimbalzare`
+ * moved to DUAL (they take both auxiliaries, not essere alone). A handful of
+ * verbs the second reference had no page for are listed as unconfirmed in the
+ * same note, not silently assumed correct.
  */
 const ESSERE = new Set<string>([
   // motion
@@ -62,9 +62,9 @@ const ESSERE = new Set<string>([
   'divampare', 'emergere', 'fioccare', 'fluire', 'franare', 'fuoriuscire',
   'imbolsire', 'imbronciare', 'immigrare', 'incartapecorire', 'incorrere',
   'infreddolire', 'insorgere', 'invalere', 'inviperire', 'irrancidire',
-  // licere, pollare: Treccani gives no compound tenses in real use for these
-  // (pollare explicitly "non usato nei tempi comp."), so the auxiliary is
-  // moot; kept here rather than removed since it does no harm either way.
+  // licere, pollare: these have no compound tenses in real use (pollare is
+  // not used in them at all), so the auxiliary is moot; kept here rather than
+  // removed since it does no harm either way.
   'licere', 'muffire', 'pollare', 'preesistere', 'premorire', 'prenascere',
   'rabbuiare', 'rampollare', 'rassegare', 'regredire', 'residuare',
   'riammalare', 'riapparire', 'riboccare', 'ricascare', 'ricomparire',
@@ -74,8 +74,8 @@ const ESSERE = new Set<string>([
   'soggiacere', 'sottentrare', 'sottostare', 'spiacere', 'susseguire',
   'sussistere', 'svaporare', 'svignare', 'talentare', 'tombolare',
   'tracollare', 'tramontare', 'transitare', 'trasparire', 'trasumanare',
-  // permanere: Treccani confirms "aus. essere", though compound tenses are
-  // rarely used in practice (its past participle is archaic-only)
+  // permanere: takes essere, though compound tenses are rarely used in
+  // practice (its past participle is archaic-only)
   'permanere',
 ]);
 
@@ -94,9 +94,8 @@ const DUAL: Record<string, ItalianAux> = {
   peggiorare: 'ESSERE', procedere: 'AVERE', salire: 'ESSERE',
   salpare: 'ESSERE', saltare: 'AVERE', scendere: 'ESSERE', servire: 'ESSERE',
   suonare: 'AVERE', trascorrere: 'ESSERE', volare: 'AVERE', vivere: 'AVERE',
-  // added 2026-09-29, Treccani-confirmed as taking either auxiliary (not
-  // pure essere, as first placed): dilagare "aus. avere o essere"; rifluire
-  // "aus. avere o essere"; rimbalzare "essere e anche avere"
+  // added 2026-09-29, confirmed as taking either auxiliary (not pure essere,
+  // as first placed): dilagare, rifluire and rimbalzare take avere or essere
   dilagare: 'ESSERE', rifluire: 'ESSERE', rimbalzare: 'ESSERE',
   // weather, and the phases of daylight: both are standard (è piovuto, ha
   // piovuto); essere is the traditional choice

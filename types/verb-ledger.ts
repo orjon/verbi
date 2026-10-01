@@ -12,6 +12,9 @@ export type LedgerAlternative = {
   sources: string[];
   /** Per source, where it disagrees: the kind it gives instead, or "absent". */
   differs?: Record<string, string>;
+  /** A Lillian check (LILLIAN_SOURCES) lists this form too. Such a source is
+   *  never one of its `sources`. */
+  confirmed?: true;
 };
 
 /** A verb's valid alternatives to one form, by kind. */
@@ -48,9 +51,9 @@ export type LedgerAlternatives = Partial<
  *               `differs` (an external source's own value).
  *   checked     every source that looked at this value and agreed with it.
  *   differs     per source, what it gives instead, where it disagrees.
- *   treccaniConfirmed  Treccani — the standard of truth — has confirmed
- *                      this by hand. Treccani is never also listed in
- *                      `checked` once this is true; it would be redundant.
+ *   confirmed   a Lillian check (LILLIAN_SOURCES) — the standard of truth —
+ *               has confirmed this by hand. That source is never also
+ *               listed in `checked` once this is true; it would be redundant.
  */
 export type LedgerLeaf = {
   value?: string;
@@ -64,7 +67,7 @@ export type LedgerLeaf = {
   alternatives?: LedgerAlternatives;
   checked?: string[];
   differs?: Record<string, string[]>;
-  treccaniConfirmed?: true;
+  confirmed?: true;
 };
 
 /** The verb's auxiliary, or its secondary sense if it is dual (see aux.ts). */
@@ -74,7 +77,7 @@ export type AuxiliaryEntry = {
   rule?: RuleName;
   checked?: string[];
   differs?: Record<string, string[]>;
-  treccaniConfirmed?: true;
+  confirmed?: true;
 };
 
 export interface VerbLedgerEntry {

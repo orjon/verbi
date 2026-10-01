@@ -27,7 +27,7 @@ export const RULE = {
   // A later adjustment to a form already decided.
   ACCENTED_COMPOUNDS: "ACCENTED_COMPOUNDS",
 
-  // A form with hand-added alternatives but no value of its own.
+  // A form with override alternatives but no value of its own.
   NO_VALUE: "NO_VALUE",
 } as const
 

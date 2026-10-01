@@ -24,16 +24,17 @@ and *loro* candidates and picks the standard one:
   annettere, connettere, disconnettere, riannettere, riconnettere,
   sconnettere, the **weak** form is standard (*annettei*, not *annessi*),
   with the strong form kept as a `common` alternative. This replaced an
-  earlier decision, sourced only from ChatGPT, that had it backwards — Treccani
-  says "annettéi, meno com. annèssi" directly, and confirms connettere
-  "coniuga come annettere". `flettere`/`deflettere`/`genuflettere` are left
-  as strong-standard, unresolved — Treccani gives both forms as equal for
-  that family, so there's no clear standard to switch to.
+  earlier decision, sourced only from ChatGPT, that had it backwards — a standard
+  dictionary (IT8) gives *annettei* first and *annessi* as the less common
+  form, and says connettere conjugates like annettere.
+  `flettere`/`deflettere`/`genuflettere` are left as strong-standard,
+  unresolved — the dictionary gives both forms as equal for that family, so
+  there's no clear standard to switch to.
 
 **Source:** the general strong/weak decisions and the exceptions list were
 made earlier in the project (see `notes/to-verify.md`, item 5); the
 *-nettere* correction and the flettere-family note are from this session's
-Treccani check.
+IT8 check.
 
 ---
 

@@ -31,6 +31,7 @@ import {
   GRAMMAR_TAGS,
   KAIKKI_FILE,
   LEDGER_FILE,
+  LILLIAN_SOURCES,
   NO_FORM,
   PERSON_BY_TAGS,
   SOURCE,
@@ -346,8 +347,8 @@ const checkAuxiliary = (
 /**
  * Checks every verb's every form, and its auxiliary, against Wiktionary's
  * conjugation tables — the one external, independent source checked at
- * scale (Treccani has no bulk export; hand-checking against it is separate
- * and sets `treccaniConfirmed`). Mutates the ledger in place.
+ * scale (hand checks are separate: see applyChecks). Mutates the ledger in
+ * place.
  */
 const compareAgainstWiktionary = async (verbs: Tree, ledger: VerbLedger) => {
   const wiktionary = await readWiktionary(new Set(Object.keys(verbs)))
@@ -380,14 +381,14 @@ const compareAgainstWiktionary = async (verbs: Tree, ledger: VerbLedger) => {
 // ---------------------------------------------------------------------------
 
 /**
- * Marks a form (or auxiliary) as confirmed by a source. Treccani, the standard
- * of truth, sets `treccaniConfirmed` and is never also listed in `checked`.
+ * Marks a form (or auxiliary) as confirmed by a source. A Lillian check
+ * (LILLIAN_SOURCES) sets `confirmed` and is never also listed in `checked`.
  */
 const confirm = (
-  target: { checked?: string[]; treccaniConfirmed?: true },
+  target: { checked?: string[]; confirmed?: true },
   source: string,
 ) => {
-  if (source === SOURCE.treccani) target.treccaniConfirmed = true
+  if (LILLIAN_SOURCES.has(source)) target.confirmed = true
   else if (!(target.checked ??= []).includes(source)) target.checked.push(source)
 }
 
@@ -428,13 +429,18 @@ const applyFormCheck = (leaf: LedgerLeaf, check: FormCheck) => {
     if (!alt) continue
     if (verdict === VERDICT.absent) (alt.differs ??= {})[source] = VERDICT.absent
     else {
-      if (!alt.sources.includes(source)) alt.sources.push(source)
+      if (LILLIAN_SOURCES.has(source)) confirm(alt, source)
+      else if (!alt.sources.includes(source)) alt.sources.push(source)
       if (verdict === VERDICT.standard) recordDiffers(leaf, source, [form])
       else if (check.kind && check.kind !== kind) (alt.differs ??= {})[source] = check.kind
     }
     return
   }
-  if (verdict === VERDICT.standard) recordDiffers(leaf, source, [form])
+  // A form we have from no other source. A source not listing it says nothing
+  // against us; a Lillian check that does list it only records it.
+  if (verdict === VERDICT.absent) return
+  if (verdict === VERDICT.standard || LILLIAN_SOURCES.has(source))
+    recordDiffers(leaf, source, [form])
   else if (verdict === VERDICT.variant)
     addAlternative(leaf, check.kind ?? ALTERNATIVE.common, form, source)
 }
@@ -507,7 +513,7 @@ const summarizeLedger = (ledger: VerbLedger) => {
   const byAlternativeKind = zeroed(ALTERNATIVES)
   let leaves = 0
   let checked = 0
-  let treccaniConfirmed = 0
+  let confirmed = 0
   let differs = 0
   let unconfirmed = 0
   let withAlternatives = 0
@@ -526,10 +532,10 @@ const summarizeLedger = (ledger: VerbLedger) => {
       leaves++
       bySource[l.source]++
       if (l.status) byStatus[l.status]++
-      const isChecked = !!l.checked?.length || !!l.treccaniConfirmed
+      const isChecked = !!l.checked?.length || !!l.confirmed
       if (isChecked) checked++
       else unconfirmed++
-      if (l.treccaniConfirmed) treccaniConfirmed++
+      if (l.confirmed) confirmed++
       if (l.differs) differs++
       if (l.alternatives) {
         withAlternatives++
@@ -547,7 +553,7 @@ const summarizeLedger = (ledger: VerbLedger) => {
   return {
     verbs: Object.keys(ledger).length,
     forms: { total: leaves, bySource, byStatus },
-    checks: { checked, treccaniConfirmed, differs, unconfirmed },
+    checks: { checked, confirmed, differs, unconfirmed },
     alternatives: { forms: withAlternatives, values: alternativeValues, byKind: byAlternativeKind },
     type: byRegular,
     auxiliary: { bySource: byAuxiliarySource, dual: dualAuxiliary },

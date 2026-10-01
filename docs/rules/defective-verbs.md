@@ -31,12 +31,12 @@ plural use (*accadono cose strane*).
 rincrescere.
 
 **`aggradare` is deliberately NOT in this rule**, despite fitting the same
-shape — Treccani is stricter for it: "è usato solo nella 3a pers. sing.
-dell'indic. pres." (singular only, not even the plural this class keeps).
+shape — it is stricter: it is used only in the third person singular of the
+present (singular only, not even the plural this class keeps).
 Handled by its own override, nulling everything except the third singular
 present.
 
-**Source:** `aggradare` and `accadere` confirmed on Treccani; the rest
+**Source:** `aggradare` and `accadere` confirmed against IT8; the rest
 carried forward from earlier project decisions (see `notes/to-verify.md`).
 
 ---

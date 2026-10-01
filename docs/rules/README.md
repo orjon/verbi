@@ -22,16 +22,18 @@ to read a rule's whole story in one go.
    (`resources/overrides.json`). They're for one-off cases that don't fit a
    pattern worth writing a rule for.
 4. Where something looked wrong or uncertain, we checked it against
-   **Treccani** — the standard, single source of truth for modern Italian —
-   and, more cautiously, against English Wiktionary's conjugation tables as a
+   **a standard reference dictionary** (code name IT8) — treated as the single
+   source of truth for modern Italian — and, more cautiously, against English
+   Wiktionary's conjugation tables as a
    bulk comparison tool for spotting candidates worth checking (never trusted
    on its own; see `docs/rules/present-tense.md` and others for cases where
    it was wrong). What we found gets written back in as a rule or an
    override, with the source recorded.
-5. **`resources/confirmed.json`** tracks which sources agree on which
-   individual forms (`["Treccani"]`, `["Treccani", "ISC_VERBS"]`, etc.) —
-   the running list of what's actually been checked, separate from this
-   prose reference.
+5. **`resources/checks.json`** records which sources confirmed which
+   individual forms (by code name, such as IT8 and IT6) — the running list of
+   what's actually been checked, separate from this prose reference.
+   Wiktionary is compared automatically on every build and shows in
+   `resources/verb-ledger.json`.
 
 ## Files in this reference
 

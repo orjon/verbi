@@ -22,7 +22,6 @@
  *   9. attachRejected      note Morph-it's own discarded candidates
  *  10. finalizeLedgerEntry  add `regular`/`auxiliary` and store the result
  */
-import fs from "node:fs"
 import type { Features } from "./parse-lexicon.ts"
 import { choose } from "./validate.ts"
 import { absentPaths, accentedCompound } from "./corrections.ts"
@@ -50,14 +49,10 @@ import {
 } from "./vocabulary.ts"
 import type { Resolution, Slots, Tree, UnresolvedForm } from "../types/build.ts"
 import { getForm, getFormAt, setForm } from "./verb-utils.ts"
+import { overridesOf } from "./overrides.ts"
 import { RULE, type RuleName } from "../constants/rules.ts"
 import type { AuxiliaryEntry, LedgerLeaf, VerbLedger } from "../types/verb-ledger.ts"
 import type { Stats } from "./build-stats.ts"
-
-const OVERRIDES = "resources/overrides.json"
-
-// Our corrections for Morph-it's incorrect or missing data, keyed by verb.
-const verbFormOverrides: Tree = JSON.parse(fs.readFileSync(OVERRIDES, "utf8"))
 
 // Marks a slot where Morph-it gives forms but validate.ts rejects them all. It
 // never equals a final form, so such a slot always counts as adjusted.
@@ -86,21 +81,17 @@ const IMPERFECT_S1: Features = {
  * all three are checked.
  */
 const getOverride = (verb: string, { mood, tense, slot }: Features) => {
-  const overrides = verbFormOverrides[verb]
-  if (!overrides) return undefined
+  const entries = overridesOf(verb)
+  const valueAt = (path: string) => entries[path]?.value
 
-  if (overrides[mood] === null) return null // the whole mood does not exist
-  const moodOverrides = overrides[mood]
-  if (moodOverrides === undefined) return undefined
-
-  if (moodOverrides[tense] === null) return null // the whole tense does not exist
-  const tenseOverrides = moodOverrides[tense]
-  if (tenseOverrides === undefined) return undefined
+  if (valueAt(mood) === null) return null // the whole mood does not exist
+  const tensePath = `${mood}.${tense}`
+  const tenseValue = valueAt(tensePath)
+  if (tenseValue === null) return null // the whole tense does not exist
 
   // a tense with no slots, such as `inf.pres`, holds the form directly
-  if (typeof tenseOverrides === "string")
-    return slot ? undefined : tenseOverrides
-  return slot && slot in tenseOverrides ? tenseOverrides[slot] : undefined
+  if (typeof tenseValue === "string") return slot ? undefined : tenseValue
+  return slot ? valueAt(`${tensePath}.${slot}`) : undefined
 }
 
 /**
@@ -151,17 +142,11 @@ const formPaths = (
   const paths = new Set(Object.keys(featurePaths))
   // paths: Set<string> = Set { "impr.pres.S2", "ind.pres.S3", ... }
 
-  for (const [mood, tenses] of Object.entries(
-    verbFormOverrides[infinitive] ?? {},
-  )) {
-    if (tenses === null || typeof tenses !== "object") continue
-    for (const [tense, forms] of Object.entries(tenses as Tree)) {
-      if (forms === null) continue
-      if (typeof forms === "string") paths.add(`${mood}.${tense}`)
-      else
-        for (const slot of Object.keys(forms))
-          paths.add(`${mood}.${tense}.${slot}`)
-    }
+  for (const [path, { value }] of Object.entries(overridesOf(infinitive))) {
+    if (value === undefined) continue // alternatives only
+    // a null above a slot (a whole mood or tense) fills no path
+    if (value === null && path.split(".").length < 3) continue
+    paths.add(path)
   }
   return paths
 }

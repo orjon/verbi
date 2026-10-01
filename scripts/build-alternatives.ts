@@ -3,8 +3,8 @@
  * chosen as the main value — gathered from every source and attached to its
  * ledger entry. Called from buildVerb (scripts/build-verb.ts).
  */
-import fs from "node:fs"
 import { iscAlternatives } from "./corrections.ts"
+import { alternativesOf } from "./overrides.ts"
 import { clippedForms } from "./derive.ts"
 import {
   ALTERNATIVES,
@@ -13,24 +13,10 @@ import {
 } from "./vocabulary.ts"
 import type { LedgerLeaf } from "../types/verb-ledger.ts"
 import type { Stats } from "./build-stats.ts"
-import { FIXED_ALTERNATIVES } from "../constants/build.ts"
 import { RULE } from "../constants/rules.ts"
 
 /** Reads a verb's finished form at a path, or undefined if it has none. */
 export type FormAt = (featurePath: string) => string | undefined
-
-// Valid variants of a form that were not chosen, decided one at a time: verb →
-// form path → kind → forms. The conflict rules and the clipped forms add more
-// as the build runs.
-//   { "fare": { "impr.pres.S2": { "common": ["fai"] } } }
-const verbFormAlternatives: Record<
-  string,
-  Record<string, AlternativeForms>
-> = JSON.parse(fs.readFileSync(FIXED_ALTERNATIVES, "utf8"))
-
-/** A verb's hand-curated alternatives, by path. */
-export const fixedAlternatives = (verb: string): Record<string, AlternativeForms> =>
-  verbFormAlternatives[verb] ?? {}
 
 /**
  * Joins two sets of alternatives for one path, keeping each kind's forms in
@@ -54,13 +40,13 @@ export const allForms = (alternatives: AlternativeForms): string[] =>
 
 /**
  * Every valid alternative for the verb, by path: from
- * resources/fixed-alternatives.json, the conflict rules, the forms without
+ * resources/overrides.json, the conflict rules, the forms without
  * -isc- of a verb that also uses them (aggrinzo), and the clipped forms made
  * from the finished forms by clippedForms (scripts/derive.ts).
  *
- * Also returns which "path.kind.form" triples came from the hand-curated
- * file specifically, so attachAlternatives can tell a hand-added alternative
- * from one derived from Morph-it's own data.
+ * Also returns which "path.kind.form" triples came from the overrides file
+ * specifically, so attachAlternatives can tell an override from an alternative
+ * derived from Morph-it's own data.
  */
 const collectAlternatives = (
   infinitive: string,
@@ -69,12 +55,12 @@ const collectAlternatives = (
   stats: Stats,
 ) => {
   const alternatives = new Map<string, AlternativeForms>(
-    Object.entries(fixedAlternatives(infinitive)),
+    Object.entries(alternativesOf(infinitive)),
   )
-  const handAdded = new Set<string>() // "path.kind.form" already in the hand-curated file
+  const overrideAdded = new Set<string>() // "path.kind.form" already in the overrides file
   for (const [featurePath, forms] of alternatives)
     for (const [kind, values] of Object.entries(forms))
-      for (const value of values ?? []) handAdded.add(`${featurePath}.${kind}.${value}`)
+      for (const value of values ?? []) overrideAdded.add(`${featurePath}.${kind}.${value}`)
 
   for (const [featurePath, forms] of [
     ...ruleAlternatives,
@@ -107,20 +93,20 @@ const collectAlternatives = (
     else alternatives.delete(featurePath)
   }
 
-  return { alternatives, handAdded }
+  return { alternatives, overrideAdded }
 }
 
 /**
  * Attaches the verb's alternatives to their path's ledger entry, each
- * tagged with where it came from: "hand" for resources/fixed-alternatives.json,
+ * tagged with where it came from: "override" for resources/overrides.json,
  * "morph-it" for everything derived from Morph-it's own rejected candidates
  * by a rule or by clippedForms. A path with alternatives but no ledger entry
- * yet (a hand-added alternative on an otherwise-untouched Morph-it form)
+ * yet (an override alternative on an otherwise-untouched Morph-it form)
  * still needs a base entry to hang them off.
  */
 const attachAlternatives = (
   alternatives: Map<string, AlternativeForms>,
-  handAdded: Set<string>,
+  overrideAdded: Set<string>,
   formAt: FormAt,
   ledger: Map<string, LedgerLeaf>,
 ) => {
@@ -132,7 +118,7 @@ const attachAlternatives = (
       if (!values?.length) continue
       withSources[kind] = values.map((value) => ({
         value,
-        sources: [handAdded.has(`${featurePath}.${kind}.${value}`) ? "hand" : "morph-it"],
+        sources: [overrideAdded.has(`${featurePath}.${kind}.${value}`) ? "override" : "morph-it"],
       }))
     }
     const existing = ledger.get(featurePath)
@@ -159,12 +145,12 @@ export const recordAlternatives = (
   ledger: Map<string, LedgerLeaf>,
   stats: Stats,
 ): Map<string, AlternativeForms> => {
-  const { alternatives, handAdded } = collectAlternatives(
+  const { alternatives, overrideAdded } = collectAlternatives(
     infinitive,
     formAt,
     ruleAlternatives,
     stats,
   )
-  attachAlternatives(alternatives, handAdded, formAt, ledger)
+  attachAlternatives(alternatives, overrideAdded, formAt, ledger)
   return alternatives
 }

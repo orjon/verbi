@@ -377,9 +377,9 @@ export const resolveFareCompound = (
   // Each valid form, with its kind: fare's own alternatives keep their kind
   // (*disfai*, common). The regular -are form is common (*disfo*, *disfiamo*,
   // *disferò*), except in the imperative, where it is colloquial (*disfa*).
-  // Treccani lists "disfàccio o disfò o disfo … disfacciamo o disfiamo", but
-  // for the imperative only "disfà o disfài o disfa'". Accademia della Crusca:
-  // *soddisfaccio* and *soddisfo* are both correct.
+  // The present has *disfaccio*, *disfò* and *disfo* side by side, and
+  // *disfacciamo* beside *disfiamo*, but the imperative only has *disfà*,
+  // *disfài* and *disfa'*. *soddisfaccio* and *soddisfo* are both correct.
   const valid = new Map<string, AlternativeKind>()
   for (const [kind, forms] of Object.entries(fareAlternatives))
     for (const f of forms ?? []) valid.set(prefix + f, kind as AlternativeKind)

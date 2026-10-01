@@ -17,8 +17,8 @@ export const LEDGER_FILE = 'resources/verb-ledger.json';
 /** Totals for everything in the ledger, written fresh each build. */
 export const STATS_FILE = 'resources/verb-ledger-stats.json';
 
-/** Hand-curated valid alternatives, by verb → form path → kind. */
-export const FIXED_ALTERNATIVES = 'resources/fixed-alternatives.json';
+/** Our corrections to Morph-it: forms and valid alternatives, by verb → form path. */
+export const OVERRIDES_FILE = 'resources/overrides.json';
 
 /**
  * Wiktionary's Italian entries, extracted by wiktextract and published by
@@ -126,8 +126,17 @@ export const PERSON_BY_TAGS: Record<string, string> = {
 /** Hand-kept record of every manual check against an outside source. */
 export const CHECKS_FILE = 'resources/checks.json';
 
-/** The outside sources a form can be checked against. */
-export const SOURCE = { treccani: 'Treccani', wiktionary: 'Wiktionary' } as const;
+/** The outside sources a form can be checked against. IT8's real name is in
+ *  .env.local (not committed). */
+export const SOURCE = { it8: 'IT8', it6: 'IT6', wiktionary: 'Wiktionary' } as const;
+
+/**
+ * Sources used only for Lillian checks: they can confirm, disagree with or
+ * reclassify a form that another source already gives, but never supply a
+ * form or count as one of its sources. A form only they give is recorded
+ * as a disagreement (`differs`), not added.
+ */
+export const LILLIAN_SOURCES: ReadonlySet<string> = new Set([SOURCE.it8, SOURCE.it6]);
 
 /**
  * What a source says about one form, in resources/checks.json:

@@ -19,15 +19,15 @@ had simply missed this for these 17 verbs.
 censire, graffire, grugnire, gualcire, incretinire, inferocire, plaudire,
 poltrire, rabbonire, rattrappire, tripartire.
 
-**Exception — `aggrinzire`:** Treccani gives both forms as valid ("io
-aggrinzisco o aggrinzo"), so the plain form is kept as a `common` alternative
-via `ISC_AND_PLAIN`. For the other 16, the plain form is a mistake, not an
-alternative — including `rattrappire`, where Treccani's "e rispettivam. io
-rattrappo" reads as belonging to the separate verb *rattrappare*, not as a
-valid alternative of *rattrappire*.
+**Exception — `aggrinzire`:** both forms are valid (*aggrinzisco* and
+*aggrinzo*), so the plain form is kept as a `common` alternative via
+`ISC_AND_PLAIN`. For the other 16, the plain form is a mistake, not an
+alternative — including `rattrappire`, where a plain *rattrappo* in the
+dictionary entry reads as belonging to the separate verb *rattrappare*, not as
+a valid alternative of *rattrappire*.
 
-**Source:** each verb checked individually on Treccani ("io abbrutisco, tu
-abbrutisci, ecc." and equivalents); English Wiktionary agreed for all 17.
+**Source:** each verb checked individually against IT8, which gives the
+*-isc-* forms for each; English Wiktionary agreed for all 17.
 
 **A bug found and fixed here:** `resolveIsc` originally had no restriction on
 which tense it applied to, so for a verb that was *also* in
@@ -64,12 +64,8 @@ ravviare, razziare, riavviare, sciare, spiare, striare, sviare.
 *scerò*) — the only verb in this list where the stressed *i* survives beyond
 the present tense.
 
-**`piare`'s `noi` form:** kept as *piamo* (matching Wiktionary and the
-regular pattern used for the rest of the family); Hoepli's *piiamo* is kept
-as a `rare` alternative in the present indicative only.
-
-**Source:** each verb checked — Treccani marks the stress directly for 10
-("io devìo", "io strio, tu strii"); Hoepli for `piare` ("pìo, -pìi, piiàmo");
+**Source:** each verb checked — IT8 marks the stress directly for 10 (for
+example *devìo*); a second dictionary (IT6) for `piare`;
 conjugation tables (not dictionaries) for `riavviare`, `sciare` and `sviare`,
 cross-checked against each other; English Wiktionary agreed for all 14.
 Morph-it's unstressed forms are rejected outright — they aren't valid

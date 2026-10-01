@@ -25,7 +25,7 @@ punire→*puniente* (rare), tornire→*torniente* (rare).
 **`sapere` is the one deliberate exception worth calling out**: its
 "participle" *sapiente* has fully detached from the verb in modern Italian —
 you cannot say "la persona sapiente la verità", only "la persona che sa la
-verità". Added 2026-09-29 on Orjon's decision (source: ChatGPT, not Treccani).
+verità". Added 2026-09-29 on Orjon's decision (source: ChatGPT, not a dictionary).
 
 ---
 
@@ -47,27 +47,22 @@ past participle at all, so Italian has no way to say things like "I have
 fulgere, irrompere, mingere, risplendere, strapiombare, vertere,
 controvertere, divergere, serpere, urgere, lucere, rilucere, tralucere,
 suggere. `controvertere` and `urgere` also lack the passato remoto (a
-compound consequence, since it's a different tense — confirmed separately on
-Treccani for each).
+compound consequence, since it's a different tense — confirmed separately in IT8 for each).
 
 **Two exceptions found while building this list, not simply included:**
-`eccellere` has a real, standard participle (*eccelso* — Treccani gives no
-rarity note at all) and `convergere` has one that's rare but real (*converso*
-— Treccani: "raro il part. pass. converso"). Both are set directly as
+`eccellere` has a real, standard participle (*eccelso* — with no rarity note at all) and `convergere` has one that's rare but real (*converso*
+— marked rare). Both are set directly as
 overrides rather than nulled. `permanere`'s participle is archaic-only
-(*permaso*/*permanso* — "solo ant.") — nulled as the main form and kept as an
+(*permaso*/*permanso* — archaic only) — nulled as the main form and kept as an
 `archaic` alternative, its first real use.
 
-**Source:** each checked on Treccani, explicitly "difettivo" or "manca(no) il
-part. pass."; `lucere`, `rilucere`, `tralucere` and `suggere` are
+**Source:** each checked against IT8, which marks each as defective or lacking a past participle; `lucere`, `rilucere`, `tralucere` and `suggere` are
 Wiktionary-only (extremely rare literary words where the pattern was already
 well established across the family).
 
 **A genuine bug, not just a missing rule, was found in this area**: `serpere`
 had been wrongly given the same "no passato remoto" treatment as
-`urgere`/`divergere` by analogy. Rechecked directly: Treccani actually says
-"è usato soltanto nei tempi semplici dell'indicativo" (used only in the
-*simple* tenses) — and passato remoto is a simple tense, not a compound one.
+`urgere`/`divergere` by analogy. Rechecked directly: IT8 actually says it is used only in the *simple* tenses of the indicative — and passato remoto is a simple tense, not a compound one.
 Restored to Morph-it's own natural form.
 
 ---
@@ -95,10 +90,8 @@ same session) adempire, compire, inorgoglire.
 
 **Four further verbs have an irregular present participle that is its own
 word, not "stem + iente"**, handled by override instead: `assentire` →
-*assenziente*, `dissentire` → *dissenziente* (Treccani: "-nziente", not a
-simple insertion), `concepire` → *concipiente* (Treccani: "sostituito dal
-latinismo concipiente" — the regular form isn't used at all), `concupire` →
+*assenziente*, `dissentire` → *dissenziente* (the ending is "-nziente", not a simple insertion), `concepire` → *concipiente* (the Latinism replaces the regular form, which isn't used at all), `concupire` →
 *concupiscente* (from the archaic *concupiscere*, a different stem).
 
-**Source:** checked on Treccani for the *venire* family, `nutrire`,
+**Source:** checked against IT8 for the *venire* family, `nutrire`,
 `impedire`, `progredire`, `ubbidire`; English Wiktionary agreed for the rest.

@@ -28,30 +28,23 @@ default returned).
 
 98 verbs were added to `ESSERE` from a comparison against Wiktionary's own
 auxiliary data — a single source, not individually checked at the time given
-the scale. All 98 were then rechecked directly against Treccani, one by one,
+the scale. All 98 were then rechecked directly against IT8, one by one,
 in a later pass the same day. Results:
 
 - **~90 confirmed exactly as added.**
-- **`rampare` removed** — Treccani: "aus. avere", not essere.
-- **`arrampicare` removed** (found in a *second* recheck pass) — Treccani:
-  "aus. avere" for the plain verb. (`arrampicarsi`, the reflexive form,
+- **`rampare` removed** — it takes avere, not essere.
+- **`arrampicare` removed** (found in a *second* recheck pass) — the plain verb takes avere. (`arrampicarsi`, the reflexive form,
   still takes essere independently, via the reflexive rule.)
-- **`dilagare`, `rifluire`, `rimbalzare` moved to `DUAL`** — Treccani gives
-  both auxiliaries for each, not essere alone.
-- **`pollare`, `licere`**: Treccani says these have no compound tenses in
-  real use at all (`pollare`: "non usato nei tempi comp."), so the
+- **`dilagare`, `rifluire`, `rimbalzare` moved to `DUAL`** — both auxiliaries are given for each, not essere alone.
+- **`pollare`, `licere`**: these have no compound tenses in real use at all (`pollare` is not used in them), so the
   auxiliary question doesn't really apply — left in `ESSERE` since it does
   no harm (never invoked), rather than removed.
-- **`permanere`**: added separately — Treccani confirms "aus. essere",
-  though it notes compound tenses are rarely used since the participle
-  itself is archaic-only.
+- **`permanere`**: added separately — it takes essere, though compound tenses are rarely used since the participle itself is archaic-only.
 
-**Still unconfirmed** (Treccani's site returned no usable page, even via
+**Still unconfirmed** (IT8 returned no usable page, even via
 web search, across two recheck attempts): `cucciare`, `rabbuiare`,
 `smemorare`, `arenare`. Two more are confirmed only by inheritance from
-their base verb, not a direct auxiliary quote: `addivenire` (from `venire`),
-`ristare` (from `stare`'s own confirmed "negli altri tempi, coniug. come
-stare").
+their base verb, not a direct auxiliary check: `addivenire` (from `venire`), `ristare` (from `stare`, which it follows in the other tenses).
 
 **A test exists for this**: `lib/conjugation/aux.test.ts` checks that every
 verb named in `ESSERE` and `DUAL` actually exists in the dictionary, so a

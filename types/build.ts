@@ -8,6 +8,16 @@ import type { VERDICT } from '../constants/build.ts';
 export type Slots = Record<string, string>;
 export type Tree = Record<string, any>;
 
+/** One form path's entry in resources/overrides.json. See scripts/overrides.ts. */
+export type OverrideEntry = {
+  /** The form; null says there is none. Absent when the entry only has alternatives. */
+  value?: string | null;
+  alternatives?: AlternativeForms;
+};
+
+/** resources/overrides.json: verb → form path → entry. */
+export type Overrides = Record<string, Record<string, OverrideEntry>>;
+
 /**
  * A form the main decision loop could not settle on its own: its features,
  * its path, and Morph-it's candidates there. Later steps may still fill it.
@@ -53,10 +63,6 @@ export type FormCheck = {
   verdict: CheckVerdict;
   /** For a `variant`: which of our alternative kinds it is. */
   kind?: AlternativeKind;
-  quote?: string;
-  /** Anything unusual about the lookup, such as a form inferred from "coniug. come". */
-  note?: string;
-  url?: string;
   date: string;
 };
 

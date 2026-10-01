@@ -21,21 +21,15 @@ as fully regular *-are* verbs, giving *no* conflict at all to resolve
 (*contraffo*, *contraffò* — not even offering the *fare*-pattern form as a
 candidate). `withFareForms` adds the *fare*-pattern candidate for these
 before the rule can choose it: contraffare, mansuefare, sfare, torrefare,
-tumefare, affare (this last one on Wiktionary's word alone — no Treccani
-entry exists for it, an extremely obscure verb).
+tumefare, affare (this last one on Wiktionary's word alone — no second source covers it, an extremely obscure verb).
 
 **Alternatives:** a compound's own alternatives are inherited from *fare*'s,
 keeping their kind. The regular *-are* form is also a valid alternative for
-**only** `disfare` and `soddisfare` (`FARE_REGULAR_ALSO`) — Treccani and the
-Accademia della Crusca both confirm both forms are correct for these two
-specifically ("soddisfaccio, soddisfo… le prime due vanno bene"); no source
-supports it for any other compound, so it isn't generalised. The regular
+**only** `disfare` and `soddisfare` (`FARE_REGULAR_ALSO`) — both forms are correct for these two specifically (*soddisfaccio* and *soddisfo* are both fine); nothing supports it for any other compound, so it isn't generalised. The regular
 form is `common` everywhere except the imperative, where it's `colloquial`
-(Treccani: "disfà o disfài o disfa'" — no *disfa* — but "disfacciamo o
-disfiamo" for *noi*).
+(the imperative lists *disfà*, *disfài* and *disfa'*, not plain *disfa*; the present has *disfacciamo* beside *disfiamo* for *noi*).
 
-**Source:** Treccani for the five confirmed compounds and the disfare/
-soddisfare alternative; Accademia della Crusca corroborating the latter.
+**Source:** IT8 for the five confirmed compounds and the disfare/ soddisfare alternative; a second reference corroborating the latter.
 
 ---
 
@@ -58,8 +52,7 @@ tumefare); `stare` → ristare, sottostare; `andare` → riandare; `sapere` →
 risapere; `essere` → riessere.
 
 **`disfare` and `soddisfare` keep their plain form as a `common`
-alternative** (`ACCENT_PLAIN_ALSO`) — Treccani: "disfà o disfa", "soddisfà o
-soddisfa".
+alternative** (`ACCENT_PLAIN_ALSO`) — both *disfà* and *disfa*, *soddisfà* and *soddisfa* are in use.
 
 **A real bug in the first version of this rule**: it accented *any* form
 ending in the base's bare syllable, which wrongly turned *risti* into
@@ -67,10 +60,7 @@ ending in the base's bare syllable, which wrongly turned *risti* into
 *real* one-syllable form *at that same path* (`ONE_SYLLABLE_FORMS` lists
 each base's actual forms by path, not just their spelling).
 
-**Source:** Treccani's own grammar entry on accents ("parole tronche…
-formate da più parole, l'ultima delle quali, da sola, andrebbe scritta senza
-accento" — the same reasoning as *tre* → *ventitré*); Treccani verb entries
-for `rifare` ("egli rifà") and `sottostare` ("io sottostò… egli sottostà").
+**Source:** IT8's grammar entry on accents (a word built from several words takes an accent when its last part would be written without one — the same reasoning as *tre* → *ventitré*); IT8's verb entries for `rifare` (*egli rifà*) and `sottostare` (*io sottostò*, *egli sottostà*).
 `riavere` is deliberately **not** in this list — it needs a different fix
 (dropping the *h*: *riò*, not *riho'*), covered in
 [notable-overrides.md](notable-overrides.md).

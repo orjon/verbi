@@ -114,7 +114,7 @@ export const NO_PRESENT_PARTICIPLE = new Set<string>([
   // added 2026-09-29, checked against English Wiktionary's tables ("-" given
   // for the slot, and no valid alternate): ambire, compatire, deperire,
   // gioire, perire, riessere, risapere, risentire. Five more have a genuine
-  // rare/archaic/literary alternate kept in resources/fixed-alternatives.json
+  // rare/archaic/literary alternate kept in resources/overrides.json
   // instead of being lost: esperire, percepire, presentire, punire, tornire.
   // sapere added 2026-09-29, decided by Orjon (source: ChatGPT): "sapiente"
   // has fully detached from the verb — it can no longer be used verbally
@@ -169,9 +169,9 @@ export const WEATHER_VERBS = [
 /**
  * A state of affairs rather than an action: *vigono nuove leggi*. accadere
  * added 2026-09-29 (real plural use too: *accadono cose strane*). aggradare
- * is more restrictive still — Treccani: "è usato solo nella 3a pers. sing.
- * dell'indic. pres." (singular only, not even the plural this class keeps)
- * — so it is handled by override instead, not added here.
+ * is more restrictive still: it is used only in the third person singular of
+ * the present (not even the plural this class keeps), so it is handled by
+ * override instead, not added here.
  */
 export const STATE_VERBS = ["vigere", "accadere"]
 
@@ -191,8 +191,8 @@ export const THIRD_PERSON_ONLY = new Set<string>([
  * Verbs with no past participle, so no compound tenses. Morph-it gives one
  * anyway (a regular -uto ending on a Latinate stem that never took it:
  * *vertuto*, *urto*), which is simply wrong — not a valid rare alternative.
- * Checked on Treccani, each explicitly "difettivo" or "manca(no) il part.
- * pass.", 2026-09-29; see notes/reports/wiktionary/summary.md. Four of these
+ * Each is a defective verb without one, checked 2026-09-29; see
+ * notes/reports/wiktionary/summary.md. Four of these
  * (controvertere, divergere, serpere, urgere) also lack the passato remoto,
  * handled separately in resources/overrides.json. eccellere and convergere
  * were flagged by the same Wiktionary comparison but turned out to have a
@@ -224,9 +224,8 @@ export const NO_PAST_PARTICIPLE = new Set<string>([
 
 /**
  * -ire verbs that take -isc- (*abbrutisco*), which Morph-it gives only without
- * it (*abbruto*). Treccani gives -isc- for each ("io abbrutisco, tu
- * abbrutisci, ecc."), and so does English Wiktionary. Checked 2026-09-29; see
- * notes/reports/wiktionary/summary.md.
+ * it (*abbruto*). Each takes -isc- throughout the present, and English
+ * Wiktionary agrees. Checked 2026-09-29; see notes/reports/wiktionary/summary.md.
  */
 export const ISC_VERBS = new Set([
   "abbrutire",
@@ -250,18 +249,17 @@ export const ISC_VERBS = new Set([
 
 /**
  * ISC_VERBS whose form without -isc- is also in use, as a common alternative.
- * Treccani: "io aggrinzisco o aggrinzo".
+ * Both *aggrinzisco* and *aggrinzo* are in use.
  */
 export const ISC_AND_PLAIN = new Set(["aggrinzire"])
 
 /**
  * -iare verbs whose i is stressed in the present (*devìo*), so an ending i
  * keeps it: *devii*, *deviino*, not *devi*, *devino*. Morph-it gives the forms
- * of an unstressed-i verb (*studi*, *studino*). Treccani marks the stress
- * ("io devìo", "io strio, tu strii"), Hoepli for piare ("pìo, -pìi"), and
- * English Wiktionary gives the stressed-i forms for all. riavviare, sciare and
- * sviare are confirmed by conjugation tables instead of Treccani. Checked
- * 2026-09-29; see notes/reports/wiktionary/summary.md.
+ * of an unstressed-i verb (*studi*, *studino*). The stress is marked on each
+ * (*devìo*), and English Wiktionary gives the stressed-i forms for all.
+ * riavviare, sciare and sviare are confirmed by conjugation tables instead.
+ * Checked 2026-09-29; see notes/reports/wiktionary/summary.md.
  */
 export const STRESSED_I_VERBS = new Set([
   "desiare",
@@ -283,13 +281,11 @@ export const STRESSED_I_VERBS = new Set([
 /**
  * Compounds of a verb with one-syllable forms, and the verb each is built on.
  * The compound form of a one-syllable form takes a written accent: *fa* →
- * *rifà*, *sto* → *sottostò*, *fu* → *rifù*. Treccani grammar ("accento"):
- * the accent is required on words "formate da più parole, l'ultima delle
- * quali, da sola, andrebbe scritta senza accento" (tre → ventitré). Treccani
- * entries: "egli rifà"; "io sottostò … egli sottostà". English Wiktionary
- * agrees for all. A list, because the ending alone would catch costare
- * (*costa*) or mandare (*mando*). riavere is not here: Treccani spells it
- * without h (*riò, rià*).
+ * *rifà*, *sto* → *sottostò*, *fu* → *rifù*. The accent is required when a
+ * word is built from several words and its last part would be written without
+ * an accent on its own (like tre → ventitré). English Wiktionary agrees for
+ * all. A list, because the ending alone would catch costare (*costa*) or
+ * mandare (*mando*). riavere is not here: it is spelled without h (*riò, rià*).
  */
 export const ACCENTED_COMPOUNDS: Record<string, string> = {
   assuefare: "fare",
@@ -318,7 +314,7 @@ export const ACCENTED_COMPOUNDS: Record<string, string> = {
 
 /**
  * ACCENTED_COMPOUNDS whose form without the accent is also in use, as a common
- * alternative. Treccani: "disfà o disfa", "soddisfà o soddisfa".
+ * alternative: *disfà* and *disfa*, *soddisfà* and *soddisfa* are both in use.
  */
 export const ACCENT_PLAIN_ALSO = new Set(["disfare", "soddisfare"])
 
@@ -343,9 +339,9 @@ export const ONE_SYLLABLE_FORMS: Record<string, Record<string, [string, string]>
 /**
  * -ire verbs whose present participle keeps the Latin -iente ending instead of
  * the regular -ente (venire's own "veniente", not "venente"). Morph-it gives
- * only the -ente form, so no conflict ever reaches a rule. Checked on
- * Treccani, 2026-09-29 (e.g. "conveniènte", "nutrïènte", "progrediènte",
- * "ubbidiènte"); adempire, compire and inorgoglire added later the same day,
+ * only the -ente form, so no conflict ever reaches a rule. Checked 2026-09-29
+ * (e.g. *conveniente*, *nutriente*, *progrediente*, *ubbidiente*); adempire,
+ * compire and inorgoglire added later the same day,
  * matching the same stem+iente pattern (riempire already had it correctly
  * from Morph-it). See notes/reports/wiktionary/summary.md. Four further verbs
  * with an irregular present participle (assentire, dissentire, concepire,
@@ -407,14 +403,14 @@ export const FARE_REGULAR_TENSES: string[] = [
 
 /**
  * Compounds of fare that Morph-it gives only regular -are forms (*contraffo*,
- * *contraffò*), so no conflict reaches resolveFareCompound. Treccani: "coniug.
- * come fare" (contraffare, mansuefare, torrefare, tumefare); sfare "il resto
- * della coniug. segue fare". English Wiktionary agrees. A list, because the
- * ending cannot tell a compound from tuffare or fotografare.
+ * *contraffò*), so no conflict reaches resolveFareCompound. These
+ * (contraffare, mansuefare, torrefare, tumefare, and sfare apart from its
+ * alternative present *sfò*) conjugate like fare, and English Wiktionary
+ * agrees. A list, because the ending cannot tell a compound from tuffare or
+ * fotografare.
  *
  * affare added later the same day on Wiktionary's forms alone (affacendo,
- * affece, affarà — all matching the fare pattern); Treccani has no entry for
- * it to cross-check against.
+ * affece, affarà — all matching the fare pattern); no second source was checked.
  */
 export const FARE_COMPOUNDS_AS_ARE = new Set([
   "affare",
@@ -427,8 +423,8 @@ export const FARE_COMPOUNDS_AS_ARE = new Set([
 
 /**
  * Compounds of fare whose regular -are forms are also in use (*disfo*,
- * *soddisfo*): Accademia della Crusca and Treccani. For other compounds the
- * regular form is a mistake.
+ * *soddisfo*): both forms are in use. For other compounds the regular form is
+ * a mistake.
  */
 export const FARE_REGULAR_ALSO = new Set(["disfare", "soddisfare"])
 
@@ -525,8 +521,8 @@ export const WEAK_BESIDE_STRONG: Record<string, AlternativeKind> = {
 
 /**
  * Verbs whose weak past historic is the standard, with the strong form a common
- * alternative: the -nettere family, *annettei* over *annessi*. Treccani:
- * "annettéi, meno com. annèssi", and connettere "conjugates like annettere";
- * English Wiktionary labels *annessi* uncommon.
+ * alternative: the -nettere family, *annettei* over *annessi*, which is the
+ * less common form (English Wiktionary labels it uncommon too). connettere
+ * conjugates like annettere.
  */
 export const WEAK_PAST_STANDARD = /nettere$/
