@@ -5,7 +5,7 @@
   "scripts": {
     "predev": "node build-lexicon/scripts/last-built.ts",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/service-worker.ts",
     "build:lexicon": "node build-lexicon/scripts/build.ts",
     "start": "next start",
     "lint": "eslint",

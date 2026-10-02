@@ -1,22 +1,25 @@
 "use client"
 
-import Link from "next/link"
 import { useEffect, useMemo, useRef, useState } from "react"
+import { NavLink } from "./navigation"
 
-// Import from the files themselves, not from "@/conjugation": that pulls the
-// whole lexicon into the browser.
+// The lexicon is in the browser: the site is one page that works with no connection.
 import {
   AUX_KINDS,
   AUX_KIND_LABEL,
+  auxKind,
+  definitionsOf,
+  listVerbs,
   VERB_TYPES,
   VERB_TYPE_LABEL,
-} from "@/conjugation/constants"
-import type { AuxKind, VerbType } from "@/conjugation/types"
+  verbType,
+} from "@/conjugation"
+import type { AuxKind, VerbType } from "@/conjugation"
 
 /** A number with a thousands separator. The locale is fixed so the server and the browser agree. */
 const count = (n: number) => n.toLocaleString("en-US")
 
-/** A verb, its kind, which auxiliaries it takes and its definitions, worked out on the server. */
+/** A verb, its kind, which auxiliaries it takes and its definitions. */
 type Entry = {
   verb: string
   type: VerbType | null
@@ -39,13 +42,19 @@ const TIP_DEFINITIONS = 10
 const TIP_WIDTH = 320
 const TIP_ROOM = 280
 
-export function VerbList({
-  verbs,
-  letters,
-}: {
-  verbs: Entry[]
-  letters: string[]
-}) {
+export function VerbList() {
+  const verbs = useMemo<Entry[]>(
+    () =>
+      listVerbs().map((verb) => ({
+        verb,
+        type: verbType(verb),
+        aux: auxKind(verb),
+        definitions: definitionsOf(verb),
+      })),
+    [],
+  )
+  // Only the letters Italian actually uses — no j, k, w, x or y.
+  const letters = useMemo(() => [...new Set(verbs.map((v) => v.verb[0]))].sort(), [verbs])
   const [letter, setLetter] = useState<string | null>(null)
   const [type, setType] = useState<VerbType | "">("")
   const [aux, setAux] = useState<AuxKind | "">("")
@@ -81,6 +90,7 @@ export function VerbList({
 
   return (
     <div className="flex h-dvh flex-col overflow-hidden">
+      <title>Verbi</title>
       <header className="shrink-0 overflow-y-hidden border-b border-black/10 px-6 pt-2.5 pb-2.5 [scrollbar-gutter:stable] dark:border-white/10">
         <div className="mx-auto w-full max-w-5xl">
           <div className="flex items-baseline justify-between gap-4">
@@ -177,8 +187,8 @@ export function VerbList({
         <ul className="mx-auto w-full max-w-5xl columns-[9rem] gap-4">
           {shown.map(({ verb }) => (
             <li key={verb} className="break-inside-avoid">
-              <Link
-                href={`/${verb}`}
+              <NavLink
+                to={verb}
                 className="block py-0.5 text-sm"
                 onMouseEnter={(e) => showTip(verb, e.currentTarget)}
                 onMouseLeave={() => setTip(null)}
@@ -186,7 +196,7 @@ export function VerbList({
                 onBlur={() => setTip(null)}
               >
                 {verb}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>

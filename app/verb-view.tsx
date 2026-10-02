@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { notFound } from "next/navigation";
+"use client";
+
+import { NavLink } from "./navigation";
 import {
   auxInfo,
   auxTooltipSections,
@@ -133,16 +133,17 @@ function AuxList({
   );
 }
 
-export async function generateMetadata({
-  params,
-}: PageProps<"/[verb]">): Promise<Metadata> {
-  const { verb } = await params;
-  return { title: verb, description: `Every form of the Italian verb ${verb}.` };
-}
-
-export default async function VerbPage({ params }: PageProps<"/[verb]">) {
-  const { verb } = await params;
-  if (!hasVerb(verb) || isExcluded(verb)) notFound();
+/** One verb's page. */
+export function VerbView({ verb }: { verb: string }) {
+  if (!hasVerb(verb) || isExcluded(verb))
+    return (
+      <div className="flex h-dvh flex-col items-center justify-center gap-3">
+        <p className="text-sm text-black/60 dark:text-white/60">&ldquo;{verb}&rdquo; is not a verb.</p>
+        <NavLink to={null} className="text-sm">
+          Verbi
+        </NavLink>
+      </div>
+    );
 
   const nonFinite = nonFiniteForms(verb);
   const auxiliaries = auxInfo(verb);
@@ -150,17 +151,19 @@ export default async function VerbPage({ params }: PageProps<"/[verb]">) {
   const tip = auxTooltipSections(auxiliaries);
 
   return (
+    <>
+    <title>{verb}</title>
     <div className="flex h-dvh flex-col overflow-hidden">
       <header className="shrink-0 overflow-y-hidden border-b border-black/10 px-6 py-2.5 [scrollbar-gutter:stable] dark:border-white/10">
         <div className="mx-auto w-full max-w-5xl">
           <div className="flex items-baseline justify-between gap-4">
             <h1 className="text-3xl font-semibold tracking-tight">{verb}</h1>
-            <Link
-              href="/"
+            <NavLink
+              to={null}
               className="shrink-0 text-sm whitespace-nowrap text-black/60 dark:text-white/60"
             >
               Verbi
-            </Link>
+            </NavLink>
           </div>
         </div>
       </header>
@@ -332,5 +335,6 @@ export default async function VerbPage({ params }: PageProps<"/[verb]">) {
         </div>
       </div>
     </div>
+    </>
   );
 }

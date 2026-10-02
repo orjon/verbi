@@ -1,0 +1,54 @@
+name: Deploy
+
+# Every push to main is checked, built as a static site and copied to the droplet,
+# which serves it at orjon.com/verbi (see the droplet-nginx repo).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# A newer push replaces a deploy that is still running.
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The pnpm version is the one pinned in package.json.
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm lint
+
+      - run: pnpm test
+
+      # Writes the whole site to out/, and the service worker that keeps it on the
+      # device. It uses the committed lexicons; the lexicon build needs the Wiktionary
+      # and Morph-it downloads, which are not in git.
+      - run: pnpm build
+
+      # Only the files that changed are sent (the hashed ones keep their names), and
+      # they arrive together at the end, so a visitor never sees a half-updated site.
+      - name: Copy to the droplet
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          DROPLET_IP: ${{ secrets.DROPLET_IP }}
+          DROPLET_USER: ${{ secrets.DROPLET_USER }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$DROPLET_IP" >> ~/.ssh/known_hosts
+          rsync -az --checksum --delay-updates --delete-after \
+            -e "ssh -i ~/.ssh/deploy_key" \
+            out/ "$DROPLET_USER@$DROPLET_IP:/var/www/verbi/"
