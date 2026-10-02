@@ -69,19 +69,36 @@ export type LedgerLeaf = {
   confirmed?: true;
 };
 
-/** The verb's auxiliary, or its secondary sense if it is dual (see aux.ts). */
+/**
+ * One of the verb's auxiliaries: the first one listed in
+ * data-sources/auxiliaries.json is `primary`, a second one is `secondary`.
+ *
+ *   value        avere or essere.
+ *   origin       "file" (listed in data-sources/auxiliaries.json) or "default"
+ *                (the verb is not listed, so it takes avere).
+ *   sources      every outside source that gives this auxiliary. Our own file is
+ *                the origin, never one of the sources.
+ *   rule, derivedFrom, when, note, frequency
+ *                as in data-sources/auxiliaries.json.
+ *   differs      per source, the auxiliaries it gives where none of them is one
+ *                of ours. A source that only lacks one of ours, or adds one, is
+ *                not a disagreement.
+ */
 export type AuxiliaryEntry = {
   value: string;
-  source: 'rule' | 'list' | 'default';
-  rule?: RuleName;
-  checked?: string[];
+  origin: 'file' | 'default';
+  sources: string[];
+  rule?: string;
+  derivedFrom?: string;
+  when?: string;
+  note?: string;
+  frequency?: AlternativeKind;
   differs?: Record<string, string[]>;
-  confirmed?: true;
 };
 
 export interface VerbLedgerEntry {
   regular?: 'ARE' | 'ERE' | 'IRE' | 'ISC';
-  auxiliary: { primary: AuxiliaryEntry; secondary?: AuxiliaryEntry };
+  aux: { primary: AuxiliaryEntry; secondary?: AuxiliaryEntry };
   [path: string]: Loose;
 }
 

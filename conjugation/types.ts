@@ -12,6 +12,9 @@
  */
 export type VerbType = 'are' | 'ere' | 'ire' | 'isc' | 'rre';
 
+/** Which auxiliaries a verb takes: only avere, only essere, or both. */
+export type AuxKind = 'avere' | 'essere' | 'both';
+
 /** The helper verb a compound tense is built with. */
 export type ItalianAux = 'ESSERE' | 'AVERE';
 
@@ -38,4 +41,9 @@ export interface ConjugateOptions {
    * the participle does not agree with the subject. Defaults to masculine.
    */
   gender?: Gender;
+  /**
+   * Forces the auxiliary of a compound tense, for a verb that takes both.
+   * Defaults to the verb's own first auxiliary.
+   */
+  aux?: ItalianAux;
 }

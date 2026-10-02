@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T15:25:03.512Z",
+  "generated": "2026-10-02T13:36:55.134Z",
   "wiktionaryDownloaded": "2026-09-29T15:14:03.244Z",
   "verbs": 6076,
   "forms": {
@@ -48,11 +48,28 @@
     "irregular": 885
   },
   "auxiliary": {
-    "bySource": {
-      "rule": 0,
-      "list": 243,
-      "default": 5872
+    "verbs": {
+      "avere": 5327,
+      "essere": 149,
+      "both": 600
     },
-    "dual": 39
+    "byOrigin": {
+      "file": 1349,
+      "default": 5327
+    },
+    "byFrequency": {
+      "common": 0,
+      "colloquial": 0,
+      "formal": 0,
+      "literary": 2,
+      "uncommon": 15,
+      "regional": 1,
+      "dated": 0,
+      "archaic": 15,
+      "obsolete": 0,
+      "sense": 0,
+      "clipped_common": 0,
+      "clipped_poetic": 0
+    }
   }
 }

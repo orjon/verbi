@@ -3,13 +3,13 @@ import {
   GENDER,
   PERSON,
   PERSONS,
-} from '../constants/grammar.ts';
+} from '../build-lexicon/constants/grammar.ts';
 import {
   ENDING,
-} from '../constants/endings.ts';
+} from '../build-lexicon/constants/endings.ts';
 import {
   PATH,
-} from '../constants/feature-paths.ts';
+} from '../build-lexicon/constants/feature-paths.ts';
 
 /**
  * The regular Italian paradigms, as documented in notes/regular-verbs.md.
@@ -17,6 +17,9 @@ import {
  * Used to fill a slot that Morph-it leaves empty or fills with something that
  * cannot belong there. Generating is preferred to hard-coding a value: the rule
  * states its own reasoning and keeps working if the source changes.
+ *
+ * It lives in the app because the app uses it too: a regular verb is shipped
+ * as a marker and filled in from these forms (see conjugation/compact.ts).
  */
 type Person = (typeof PERSONS)[number];
 type Row = Partial<Record<Person, string>>;

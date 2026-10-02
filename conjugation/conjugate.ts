@@ -6,7 +6,8 @@
  */
 import { getConjugation } from 'italian-verbs';
 import { verbs } from './lexicon.ts';
-import { getAux, isReflexive, reflexiveBase } from './aux.ts';
+import { getAux } from './aux.ts';
+import { isReflexive, reflexiveBase } from './reflexive.ts';
 import { isExcluded } from './excluded.ts';
 import type { ConjugateOptions, Numbers, Person, Tense } from './types.ts';
 import { COMPOUND_TENSES, PERSONS } from './constants.ts';
@@ -53,7 +54,7 @@ export function conjugate(
     throw new Error(`Unknown verb: ${verb}`);
   }
 
-  const aux = getAux(verb);
+  const aux = options.aux ?? getAux(verb);
   const agrees = aux === 'ESSERE';
 
   try {

@@ -36,6 +36,30 @@ export type OverrideEntry = {
 export type Overrides = Record<string, Record<string, OverrideEntry>>;
 
 /**
+ * One auxiliary of a verb in data-sources/auxiliaries.json: `true` when it is
+ * simply valid, or its details. See build-lexicon/scripts/auxiliaries.ts.
+ */
+export type AuxiliaryDetail =
+  | true
+  | {
+      /** A rule from explanations.json that says when this auxiliary applies. */
+      rule?: string;
+      /** For the compound rule: the verb whose auxiliary this one follows. */
+      derivedFrom?: string;
+      /** The meaning or use this auxiliary goes with. */
+      when?: string;
+      /** Detail the rule or `when` does not give. */
+      note?: string;
+      frequency?: AlternativeKind;
+    };
+
+/** A verb's auxiliaries; the first one listed is the one the app uses. */
+export type AuxiliaryChoices = Partial<Record<'avere' | 'essere', AuxiliaryDetail>>;
+
+/** data-sources/auxiliaries.json: verb → its auxiliaries. */
+export type Auxiliaries = Record<string, AuxiliaryChoices>;
+
+/**
  * A form the main decision loop could not settle on its own: its features,
  * its path, and Morph-it's candidates there. Later steps may still fill it.
  */

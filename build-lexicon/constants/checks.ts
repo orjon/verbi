@@ -3,6 +3,8 @@
 export const SOURCE = {
   it8: "IT8",
   it6: "IT6",
+  it62: "IT6-2",
+  it7: "IT7",
   wiktionary: "Wiktionary",
 } as const
 
@@ -15,6 +17,8 @@ export const SOURCE = {
 export const LILLIAN_SOURCES: ReadonlySet<string> = new Set([
   SOURCE.it8,
   SOURCE.it6,
+  SOURCE.it62,
+  SOURCE.it7,
 ])
 
 /**

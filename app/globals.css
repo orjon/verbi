@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --scrollbar-thumb: rgb(0 0 0 / 0.45);
+  --scrollbar-thumb-hover: rgb(0 0 0 / 0.65);
 }
 
 @theme inline {
@@ -16,6 +18,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --scrollbar-thumb: #3f3f46;
+    --scrollbar-thumb-hover: #52525b;
   }
 }
 
@@ -23,4 +27,33 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Scroll bars: a dark thumb with no track behind it. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+  background-clip: content-box;
 }

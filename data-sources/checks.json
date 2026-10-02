@@ -570,6 +570,30 @@
       {"form": "annetta", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
     ]
   },
+  "appartenere": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "approdare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "arrampicare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT8", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "absent", "date": "2026-10-02"}
+    ]
+  },
   "aspergere": {
     "ind.past.P3": [
       {"form": "aspersero", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -1068,6 +1092,22 @@
       {"form": "astringa", "source": "IT8", "verdict": "standard", "derivedFrom": "stringere", "date": "2026-10-01"}
     ]
   },
+  "atterrare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "variant", "kind": "uncommon", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "avanzare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "avellere": {
     "ind.impf.S1": [
       {"form": "avellevo", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -1105,6 +1145,22 @@
       {"form": "avellente", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
     ]
   },
+  "bruciare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "calare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "calere": {
     "auxiliary": [
       {"form": "avere", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -1137,6 +1193,14 @@
     "sub.pres.S3": [
       {"form": "caglia", "source": "IT8", "verdict": "standard", "date": "2026-09-30"},
       {"form": "caglia", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "campare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "cerchiare": {
@@ -1235,6 +1299,14 @@
     ],
     "sub.pres.S3": [
       {"form": "cerna", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "cessare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "collidere": {
@@ -1444,6 +1516,12 @@
     "part.pres.S": [
       {"form": "concernente", "source": "IT6", "verdict": "standard", "date": "2026-10-01"},
       {"form": "concernente", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "concorrere": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "concupire": {
@@ -1682,9 +1760,26 @@
       {"form": "consenta", "source": "IT6", "verdict": "standard", "derivedFrom": "sentire", "date": "2026-10-01"}
     ]
   },
+  "consistere": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "variant", "kind": "uncommon", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "consumere": {
     "part.past.S": [
       {"form": "consunto", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "continuare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "controvertere": {
@@ -1703,7 +1798,8 @@
   },
   "convergere": {
     "auxiliary": [
-      {"form": "essere", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
+      {"form": "essere", "source": "IT6", "verdict": "standard", "date": "2026-10-01"},
+      {"form": "essere", "source": "IT8", "verdict": "absent", "date": "2026-10-02"}
     ],
     "cond.pres.S1": [
       {"form": "convergerei", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -1796,7 +1892,21 @@
       {"form": "convinto", "source": "IT8", "verdict": "standard", "date": "2026-09-29"}
     ]
   },
+  "crollare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "cuocere": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ],
     "ind.past.S1": [
       {"form": "cossi", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
     ],
@@ -1856,6 +1966,14 @@
       {"form": "dannato", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
     ]
   },
+  "decollare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "variant", "kind": "uncommon", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "variant", "kind": "uncommon", "date": "2026-10-02"}
+    ]
+  },
   "defiggere": {
     "ind.pres.S1": [
       {"form": "defiggo", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -1884,6 +2002,14 @@
     "part.pres.S": [
       {"form": "delinquente", "source": "IT6", "verdict": "standard", "date": "2026-10-01"},
       {"form": "delinquente", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "deragliare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "variant", "kind": "uncommon", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "variant", "kind": "uncommon", "date": "2026-10-02"}
     ]
   },
   "detergere": {
@@ -2101,6 +2227,12 @@
     ],
     "part.pres.S": [
       {"form": "difendente", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "dimorare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "dire": {
@@ -3082,7 +3214,10 @@
   },
   "dolere": {
     "auxiliary": [
-      {"form": "avere", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
+      {"form": "avere", "source": "IT6-2", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT8", "verdict": "standard", "date": "2026-10-01"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
     ],
     "cond.pres.P3": [
       {"form": "dorrebbero", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -3604,6 +3739,15 @@
       {"form": "escutessi", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
     ]
   },
+  "esistere": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "variant", "kind": "uncommon", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "espandere": {
     "cond.pres.P1": [
       {"form": "espanderemmo", "source": "IT6", "verdict": "standard", "derivedFrom": "spandere", "date": "2026-10-01"}
@@ -3978,6 +4122,14 @@
       {"form": "evolvessi", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
     ]
   },
+  "fallire": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "fare": {
     "cond.pres.P1": [
       {"form": "faremmo", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -4154,6 +4306,38 @@
       {"form": "fitto", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
     ]
   },
+  "fiorire": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "variant", "kind": "literary", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "fuggire": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "gelare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "germogliare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "giacere": {
     "auxiliary": [
       {"form": "essere", "source": "IT6", "verdict": "standard", "date": "2026-10-01"},
@@ -4208,6 +4392,30 @@
       {"form": "giaccia", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
     ]
   },
+  "giovare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "girare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "giungere": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "godere": {
     "auxiliary": [
       {"form": "avere", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -4225,6 +4433,14 @@
     ],
     "part.pres.S": [
       {"form": "godente", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "guarire": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "imbestialire": {
@@ -5288,6 +5504,14 @@
       {"form": "intravveduto", "source": "IT8", "verdict": "variant", "kind": "literary", "date": "2026-09-30"}
     ]
   },
+  "invecchiare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "licere": {
     "auxiliary": [
       {"form": "essere", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -5299,6 +5523,23 @@
     ],
     "part.past.S": [
       {"form": "malvoluto", "source": "IT8", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "marcire": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "variant", "kind": "uncommon", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "naufragare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "negligere": {
@@ -5488,6 +5729,15 @@
       {"form": "offerto", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
     ]
   },
+  "partire": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "pendere": {
     "auxiliary": [
       {"form": "avere", "source": "IT6", "verdict": "standard", "date": "2026-10-01"},
@@ -5608,6 +5858,14 @@
     ],
     "sub.pres.S3": [
       {"form": "penda", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "penetrare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "percepire": {
@@ -6549,6 +6807,14 @@
       {"form": "preveda", "source": "IT8", "verdict": "standard", "derivedFrom": "vedere", "date": "2026-10-01"}
     ]
   },
+  "procedere": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "procombere": {
     "ind.pres.S1": [
       {"form": "procombo", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -6791,6 +7057,16 @@
     "sub.pres.S3": [
       {"form": "propenda", "source": "IT6", "verdict": "standard", "derivedFrom": "pendere", "date": "2026-10-01"},
       {"form": "propenda", "source": "IT8", "verdict": "standard", "derivedFrom": "pendere", "date": "2026-10-01"}
+    ]
+  },
+  "prorompere": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "provvedere": {
@@ -7202,6 +7478,11 @@
     ],
     "sub.pres.P2": [
       {"form": "rammolliate", "source": "IT6", "verdict": "standard", "derivedFrom": "ammollire", "date": "2026-10-01"}
+    ]
+  },
+  "rampare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "restringere": {
@@ -9734,6 +10015,13 @@
       {"form": "ristia", "source": "IT6", "verdict": "standard", "derivedFrom": "stare", "date": "2026-10-01"}
     ]
   },
+  "ritornare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "rivedere": {
     "cond.pres.P1": [
       {"form": "rivedremmo", "source": "IT6", "verdict": "standard", "derivedFrom": "vedere", "date": "2026-10-01"},
@@ -10150,6 +10438,21 @@
       {"form": "rivoglia", "source": "IT8", "verdict": "standard", "derivedFrom": "volere", "date": "2026-10-01"}
     ]
   },
+  "rovinare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
+  "scemare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "scernere": {
     "ind.fut.S1": [
       {"form": "scernerò", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
@@ -10217,6 +10520,16 @@
       {"form": "scerna", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
     ]
   },
+  "scivolare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT8", "verdict": "variant", "kind": "uncommon", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "scompartire": {
     "ind.pres.S1": [
       {"form": "scompartisco", "source": "IT6", "verdict": "standard", "date": "2026-10-01"},
@@ -10226,6 +10539,15 @@
     "ind.pres.S2": [
       {"form": "scomparti", "source": "IT8", "verdict": "variant", "date": "2026-10-01"},
       {"form": "scompartisci", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "scoppiare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "variant", "kind": "obsolete", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "scuocere": {
@@ -10439,6 +10761,14 @@
     ],
     "part.past.S": [
       {"form": "scosso", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "sdrucciolare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "sedere": {
@@ -12045,6 +12375,14 @@
       {"form": "sperda", "source": "IT8", "verdict": "standard", "derivedFrom": "perdere", "date": "2026-10-01"}
     ]
   },
+  "spirare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "sprovvedere": {
     "ger.pres": [
       {"form": "sprovvedendo", "source": "IT6", "verdict": "standard", "derivedFrom": "provvedere", "date": "2026-10-01"},
@@ -12217,6 +12555,15 @@
     "sub.pres.S3": [
       {"form": "sprovveda", "source": "IT6", "verdict": "standard", "derivedFrom": "provvedere", "date": "2026-10-01"},
       {"form": "sprovveda", "source": "IT8", "verdict": "standard", "derivedFrom": "provvedere", "date": "2026-10-01"}
+    ]
+  },
+  "spuntare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "absent", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT8", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "stare": {
@@ -12548,9 +12895,25 @@
       {"form": "taccia", "source": "IT8", "verdict": "standard", "date": "2026-10-01"}
     ]
   },
+  "terminare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
+    ]
+  },
   "tinnire": {
     "ind.pres.S1": [
       {"form": "tinnisco", "source": "IT8", "verdict": "standard", "date": "2026-09-29"}
+    ]
+  },
+  "tornare": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "tornire": {
@@ -12693,6 +13056,14 @@
     ],
     "sub.pres.S3": [
       {"form": "urga", "source": "IT6", "verdict": "standard", "date": "2026-10-01"}
+    ]
+  },
+  "valere": {
+    "auxiliary": [
+      {"form": "avere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "avere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT6-2", "verdict": "standard", "date": "2026-10-02"},
+      {"form": "essere", "source": "IT7", "verdict": "standard", "date": "2026-10-02"}
     ]
   },
   "vedere": {

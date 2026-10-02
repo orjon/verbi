@@ -33,9 +33,9 @@ import {
   mergeKinds,
   recordAlternatives,
 } from "./build-alternatives.ts"
-import { regularForms } from "./regular.ts"
-// TEMPORARY: reaches into the app code. Goes away when the auxiliaries move into the data (notes/to-do.md).
-import { getAux, isDualAux, _lists as auxLists } from "../../conjugation/aux.ts"
+// The generator is shared with the app, which fills regular verbs in from it.
+import { regularForms } from "../../conjugation/regular.ts"
+import { auxiliariesOf } from "./auxiliaries.ts"
 import {
   CONJUGATION,
   IMPERATIVE_PERSONS,
@@ -574,24 +574,27 @@ const verbRegularity = (
   return undefined
 }
 
-/** The verb's auxiliary (avere/essere), and a second sense's if it is dual. */
+/**
+ * The verb's auxiliary (avere/essere), and a second one if it takes both, as
+ * listed in data-sources/auxiliaries.json. A verb that is not listed takes
+ * avere. The outside sources that give each one are added later, in
+ * build-lexicon/scripts/build-ledger.ts.
+ */
 const verbAuxiliary = (
   infinitive: string,
 ): { primary: AuxiliaryEntry; secondary?: AuxiliaryEntry } => {
-  const dual = isDualAux(infinitive)
-  const listed = dual || auxLists.ESSERE.has(infinitive)
-  const primaryValue = getAux(infinitive) === "ESSERE" ? "essere" : "avere"
-  const primary: AuxiliaryEntry = {
-    value: primaryValue,
-    source: listed ? "list" : "default",
-  }
-  const entry: { primary: AuxiliaryEntry; secondary?: AuxiliaryEntry } = { primary }
-  if (dual)
-    entry.secondary = {
-      value: primaryValue === "essere" ? "avere" : "essere",
-      source: "list",
-    }
-  return entry
+  const choices = auxiliariesOf(infinitive)
+  if (!choices)
+    return { primary: { value: "avere", origin: "default", sources: [] } }
+  const [primary, secondary] = Object.entries(choices).map(
+    ([value, detail]): AuxiliaryEntry => ({
+      value,
+      origin: "file",
+      sources: [],
+      ...(detail === true ? {} : detail),
+    }),
+  )
+  return secondary ? { primary, secondary } : { primary }
 }
 
 /** Adds `regular`/`auxiliary` to the verb's ledger entry, and stores it. */
@@ -604,7 +607,7 @@ const finalizeLedgerEntry = (
   if (!ledger.size) return
   const entry: VerbLedger[string] = {
     ...Object.fromEntries([...ledger].sort(([a], [b]) => a.localeCompare(b))),
-    auxiliary: verbAuxiliary(infinitive),
+    aux: verbAuxiliary(infinitive),
   }
   const regular = verbRegularity(infinitive, verbEntry)
   if (regular) entry.regular = regular
@@ -664,5 +667,7 @@ export const buildVerb = (
   attachRejected(morphItForms, morphItPaths, verbEntry, alternatives, ledger)
 
   finalizeLedgerEntry(infinitive, verbEntry, ledger, ledgerOut)
+  const aux = auxiliariesOf(infinitive)
+  if (aux) verbEntry.aux = aux
   return verbEntry
 }

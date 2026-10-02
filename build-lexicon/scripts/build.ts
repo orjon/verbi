@@ -16,7 +16,8 @@
  *
  * Writes:
  *
- *   lexicons/it-verbs.json            the finished data — the small, shippable file
+ *   lexicons/it-verbs.json            the finished data — the small, shippable file, with
+ *                              each exactly regular verb as a marker
  *   lexicons/it-verbs-ledger.json every form's value, source, alternatives, and
  *                              what confirms or disagrees with it — see
  *                              build-lexicon/scripts/build-ledger.ts
@@ -34,15 +35,18 @@ import { IGNORED_ENTRIES } from "../constants/defective-verbs.ts"
 import { buildVerb } from "./build-verb.ts"
 import { newStats, printStats } from "./build-stats.ts"
 import { writeLedger, type VerbLedger } from "./build-ledger.ts"
+import { readDefinitions, writeDefinitions } from "./build-definitions.ts"
+import { compactLexicon, countMarkers, verifyCompact, writeCompact } from "./compact.ts"
 import {
+  DEFINITIONS_FILE,
   LEDGER_FILE,
   OUT_DIR,
   STATS_FILE,
   VERBS_FILE,
 } from "../constants/paths.ts"
 import type { Tree } from "../types/build.ts"
-// TEMPORARY: reaches into the app code. Goes away when the auxiliaries move into the data (notes/to-do.md).
-import { isReflexive } from "../../conjugation/aux.ts"
+// TEMPORARY: reaches into the app code, for the reflexive check only (notes/to-do.md).
+import { isReflexive } from "../../conjugation/reflexive.ts"
 import { sortKeys } from "../utils/index.ts"
 
 /**
@@ -87,15 +91,29 @@ const build = async () => {
   // Written alphabetically by infinitive, whatever order they were built in.
   const sorted = sortKeys(verbs)
   fs.mkdirSync(OUT_DIR, { recursive: true })
-  fs.writeFileSync(VERBS_FILE, JSON.stringify(sorted))
+  // The shipped file: exactly regular verbs as markers, checked against the full
+  // lexicon held here, which is not written out.
+  const compact = compactLexicon(sorted)
+  verifyCompact(sorted, compact)
+  writeCompact(compact)
   const { wiktionary } = await writeLedger(ledger, sorted)
 
-  return { stats, wiktionary }
+  const definitions = await readDefinitions(new Set(Object.keys(sorted)))
+  writeDefinitions(definitions)
+
+  return {
+    stats,
+    wiktionary,
+    definitions: Object.keys(definitions).length,
+    markers: countMarkers(compact),
+    verbs: Object.keys(sorted).length,
+  }
 }
 
-build().then(({ stats, wiktionary }) => {
+build().then(({ stats, wiktionary, definitions, markers, verbs }) => {
   printStats(stats, [
     { label: basename(VERBS_FILE), path: VERBS_FILE },
+    { label: basename(DEFINITIONS_FILE), path: DEFINITIONS_FILE },
     { label: basename(LEDGER_FILE), path: LEDGER_FILE },
     { label: basename(STATS_FILE), path: STATS_FILE },
   ])
@@ -107,5 +125,7 @@ build().then(({ stats, wiktionary }) => {
     wiktionary.notInWiktionary.toLocaleString(),
     "with no table",
   )
+  console.log("regular as markers   :", markers.toLocaleString(), "of", verbs.toLocaleString(), "verbs")
+  console.log("definitions for      :", definitions.toLocaleString(), "verbs")
   console.log("ledger totals in    :", STATS_FILE)
 })

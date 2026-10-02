@@ -334,8 +334,27 @@ const checkPath = (
   }
 }
 
-/** Compares a verb's auxiliary against Wiktionary's, mutating the ledger. */
+/**
+ * Records what one source says about a verb's auxiliaries: it is added to the
+ * `sources` of each of ours it gives. A source that gives an auxiliary we lack,
+ * or lacks one we have, is not a disagreement. Only a source with none of ours
+ * in common is: that goes in the primary's `differs`.
+ */
 const checkAuxiliary = (
+  entry: VerbLedgerEntry,
+  source: string,
+  given: string[],
+) => {
+  const { primary, secondary } = entry.aux
+  const ours = [primary, secondary].filter((aux) => aux !== undefined)
+  const shared = ours.filter((aux) => given.includes(aux.value))
+  for (const aux of shared)
+    if (!aux.sources.includes(source)) aux.sources.push(source)
+  if (!shared.length) recordDiffers(primary, source, given)
+}
+
+/** Compares a verb's auxiliary against Wiktionary's, mutating the ledger. */
+const checkAuxiliaryAgainstWiktionary = (
   entry: VerbLedgerEntry,
   wiktionaryAux: string[],
   fromReflexiveTable: boolean,
@@ -343,16 +362,7 @@ const checkAuxiliary = (
   // A reflexive table always gives essere, which says nothing about the
   // plain verb's own auxiliary.
   if (fromReflexiveTable || !wiktionaryAux.length) return
-  for (const aux of [entry.auxiliary.primary, entry.auxiliary.secondary]) {
-    if (!aux) continue
-    if (wiktionaryAux.includes(aux.value)) {
-      aux.checked ??= []
-      if (!aux.checked.includes(SOURCE.wiktionary)) aux.checked.push(SOURCE.wiktionary)
-    } else {
-      aux.differs ??= {}
-      aux.differs[SOURCE.wiktionary] = wiktionaryAux
-    }
-  }
+  checkAuxiliary(entry, SOURCE.wiktionary, wiktionaryAux)
 }
 
 /**
@@ -374,7 +384,7 @@ const compareAgainstWiktionary = async (verbs: Tree, ledger: VerbLedger) => {
     }
     compared++
     const entry = (ledger[verb] ??= {
-      auxiliary: { primary: { value: "avere", source: "default" } },
+      aux: { primary: { value: "avere", origin: "default", sources: [] } },
     })
     const flat = flattenVerbTree(tree)
     for (const [path, forms] of Object.entries(wikEntry.forms)) {
@@ -382,7 +392,7 @@ const compareAgainstWiktionary = async (verbs: Tree, ledger: VerbLedger) => {
       const leaf: LedgerLeaf = (entry[path] ??= { source: "none" })
       checkPath(leaf, flat[path] ?? null, forms)
     }
-    checkAuxiliary(entry, wikEntry.auxiliaries, wikEntry.reflexive)
+    checkAuxiliaryAgainstWiktionary(entry, wikEntry.auxiliaries, wikEntry.reflexive)
   }
   return { compared, notInWiktionary }
 }
@@ -404,21 +414,28 @@ const confirm = (
 }
 
 /** Records on a leaf that a source gives something other than our value. */
-const recordDiffers = (leaf: LedgerLeaf, source: string, forms: string[]) => {
+const recordDiffers = (
+  leaf: { differs?: Record<string, string[]> },
+  source: string,
+  forms: string[],
+) => {
   leaf.differs ??= {}
   leaf.differs[source] = [...new Set([...(leaf.differs[source] ?? []), ...forms])]
 }
 
-/** Applies one check to a verb's auxiliary. */
-const applyAuxiliaryCheck = (entry: VerbLedgerEntry, check: FormCheck) => {
-  const { primary, secondary } = entry.auxiliary
-  const aux = [primary, secondary].find((a) => a?.value === check.form)
-  const positive = check.verdict === VERDICT.standard || check.verdict === VERDICT.variant
-  if (aux && positive) confirm(aux, check.source)
-  else if (check.form && check.verdict === VERDICT.standard) {
-    primary.differs ??= {}
-    primary.differs[check.source] = [check.form]
+/**
+ * Applies every manual check of a verb's auxiliary. Each source's checks are
+ * read together, as the auxiliaries it gives (a `standard` or `variant`
+ * verdict). An `absent` verdict says nothing: a source that does not list an
+ * auxiliary has not said it is wrong.
+ */
+const applyAuxiliaryChecks = (entry: VerbLedgerEntry, checks: FormCheck[]) => {
+  const bySource = new Map<string, string[]>()
+  for (const { source, form, verdict } of checks) {
+    if (!form || (verdict !== VERDICT.standard && verdict !== VERDICT.variant)) continue
+    bySource.set(source, [...(bySource.get(source) ?? []), form])
   }
+  for (const [source, given] of bySource) checkAuxiliary(entry, source, given)
 }
 
 /** Applies one check to one form path's ledger entry. */
@@ -465,11 +482,11 @@ const applyChecks = (ledger: VerbLedger, checks: Checks) => {
   for (const [verb, paths] of Object.entries(checks)) {
     const entry = ledger[verb]
     if (!entry) continue
-    for (const [path, list] of Object.entries(paths))
-      for (const check of list) {
-        if (path === "auxiliary") applyAuxiliaryCheck(entry, check)
-        else if (entry[path]) applyFormCheck(entry[path] as LedgerLeaf, check)
-      }
+    for (const [path, list] of Object.entries(paths)) {
+      if (path === "auxiliary") applyAuxiliaryChecks(entry, list)
+      else if (entry[path])
+        for (const check of list) applyFormCheck(entry[path] as LedgerLeaf, check)
+    }
   }
 }
 
@@ -520,7 +537,9 @@ const summarizeLedger = (ledger: VerbLedger) => {
   const bySource = zeroed(["morph-it", "override", "rule", "none"] as const)
   const byStatus = zeroed(["conflict", "rejected", "futureStemDisagrees"] as const)
   const byRegular = zeroed(["ARE", "ERE", "IRE", "ISC", "irregular"] as const)
-  const byAuxiliarySource = zeroed(["rule", "list", "default"] as const)
+  const byAuxiliaryOrigin = zeroed(["file", "default"] as const)
+  const byAuxiliaryVerbs = zeroed(["avere", "essere", "both"] as const)
+  const byAuxiliaryFrequency = zeroed(ALTERNATIVES)
   const byAlternativeKind = zeroed(ALTERNATIVES)
   let leaves = 0
   let checked = 0
@@ -529,16 +548,19 @@ const summarizeLedger = (ledger: VerbLedger) => {
   let unconfirmed = 0
   let withAlternatives = 0
   let alternativeValues = 0
-  let dualAuxiliary = 0
 
   for (const entry of Object.values(ledger)) {
     byRegular[entry.regular ?? "irregular"]++
-    if (entry.auxiliary.secondary) dualAuxiliary++
-    for (const aux of [entry.auxiliary.primary, entry.auxiliary.secondary])
-      if (aux) byAuxiliarySource[aux.source]++
+    const { primary, secondary } = entry.aux
+    byAuxiliaryVerbs[secondary ? "both" : primary.value === "essere" ? "essere" : "avere"]++
+    for (const aux of [primary, secondary]) {
+      if (!aux) continue
+      byAuxiliaryOrigin[aux.origin]++
+      if (aux.frequency) byAuxiliaryFrequency[aux.frequency]++
+    }
 
     for (const [path, leaf] of Object.entries(entry)) {
-      if (path === "regular" || path === "auxiliary") continue
+      if (path === "regular" || path === "aux") continue
       const l = leaf as LedgerLeaf
       leaves++
       bySource[l.source]++
@@ -567,7 +589,11 @@ const summarizeLedger = (ledger: VerbLedger) => {
     checks: { checked, confirmed, differs, unconfirmed },
     alternatives: { forms: withAlternatives, values: alternativeValues, byKind: byAlternativeKind },
     type: byRegular,
-    auxiliary: { bySource: byAuxiliarySource, dual: dualAuxiliary },
+    auxiliary: {
+      verbs: byAuxiliaryVerbs,
+      byOrigin: byAuxiliaryOrigin,
+      byFrequency: byAuxiliaryFrequency,
+    },
   }
 }
 

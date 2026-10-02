@@ -5,7 +5,7 @@
  * data-sources/overrides.json instead. This file is for things that would be
  * tedious or misleading to write out one verb at a time.
  */
-import { regularForms } from "./regular.ts"
+import { regularForms } from "../../conjugation/regular.ts"
 import type { PastKind, Resolution, AlternativeForms, AlternativeKind } from "../types/build.ts"
 import { RULE } from "../constants/rules.ts"
 import { type RuleName } from "../types/build.ts"

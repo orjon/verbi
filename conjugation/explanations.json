@@ -1,0 +1,108 @@
+{
+  "auxiliary": {
+    "transitive": {
+      "label": "With or without an object",
+      "technical": "The verb has a transitive and an intransitive use. The transitive use takes avere and the intransitive use takes essere.",
+      "explanation": "This verb can be used with a direct object or without one. With an object it takes avere. Without one, the thing that changes is the subject, and it takes essere.",
+      "avere": "Used with a direct object.",
+      "essere": "Used without a direct object.",
+      "examples": ["ha cominciato il lavoro", "il film è cominciato"]
+    },
+    "weather": {
+      "label": "Weather verb",
+      "technical": "A verb for weather or the time of day. Both auxiliaries are correct with no change in meaning.",
+      "explanation": "Verbs about the weather can take either auxiliary, and the meaning is the same. Essere is the more traditional choice.",
+      "avere": "Correct, same meaning as essere.",
+      "essere": "Correct, same meaning as avere. The more traditional choice.",
+      "examples": ["è piovuto", "ha piovuto"]
+    },
+    "modal": {
+      "label": "Takes the auxiliary of the next verb",
+      "technical": "A modal verb takes the auxiliary of the verb it governs.",
+      "explanation": "This verb takes the same auxiliary as the verb that follows it.",
+      "avere": "When the next verb takes avere.",
+      "essere": "When the next verb takes essere.",
+      "examples": ["ho dovuto parlare", "sono dovuto andare"]
+    },
+    "motion-goal": {
+      "label": "Movement to a place, or movement itself",
+      "technical": "A verb of movement. It takes essere when a destination or direction is stated, and avere when the activity itself or its duration is the point.",
+      "explanation": "With a place the movement goes to, this verb takes essere. When it describes the activity on its own, for example how long it lasted, it takes avere.",
+      "avere": "The activity itself, or how long it lasted.",
+      "essere": "A destination or direction is stated.",
+      "examples": ["sono corso a casa", "ho corso un'ora"]
+    },
+    "compound": {
+      "label": "Follows the base verb",
+      "technical": "A verb built by adding a prefix to another verb. It takes the auxiliary of the verb named in `derivedFrom`.",
+      "explanation": "This verb is built on another verb and takes the same auxiliary as that verb.",
+      "avere": "The base verb takes avere.",
+      "essere": "The base verb takes essere.",
+      "examples": ["è provenuto"]
+    },
+    "reflexive": {
+      "label": "Reflexive verb",
+      "technical": "A reflexive or pronominal verb always takes essere. Applied in the code from the verb's -si ending, so no verb has an entry for it.",
+      "explanation": "A reflexive verb always takes essere.",
+      "essere": "Always.",
+      "examples": ["mi sono lavato"]
+    },
+    "default": {
+      "label": "Takes avere",
+      "technical": "A verb with no entry in the auxiliaries file takes avere.",
+      "explanation": "Most verbs take avere.",
+      "avere": "The usual auxiliary.",
+      "examples": ["ho parlato"]
+    }
+  },
+  "frequency": {
+    "common": {
+      "label": "Common variant",
+      "explanation": "An equal modern variant, shown beside the standard form."
+    },
+    "colloquial": {
+      "label": "Colloquial",
+      "explanation": "Used in everyday speech, avoided in writing."
+    },
+    "formal": {
+      "label": "Formal",
+      "explanation": "Used in careful or official writing, closer to the Latin root."
+    },
+    "literary": {
+      "label": "Literary",
+      "explanation": "Found mainly in literature."
+    },
+    "uncommon": {
+      "label": "Uncommon",
+      "explanation": "Correct, but seldom used."
+    },
+    "regional": {
+      "label": "Regional",
+      "explanation": "Used in one area or dialect, not standard elsewhere."
+    },
+    "dated": {
+      "label": "Dated",
+      "explanation": "Sounds old-fashioned to a modern speaker, but still used."
+    },
+    "archaic": {
+      "label": "Archaic",
+      "explanation": "Rarely used except deliberately, for effect."
+    },
+    "obsolete": {
+      "label": "Obsolete",
+      "explanation": "No longer in real use. Found only in historical texts."
+    },
+    "sense": {
+      "label": "Different meaning",
+      "explanation": "A different meaning of the verb."
+    },
+    "clipped_common": {
+      "label": "Clipped, everyday",
+      "explanation": "A shortened form in everyday use."
+    },
+    "clipped_poetic": {
+      "label": "Clipped, poetic",
+      "explanation": "A shortened form found in poetry and song."
+    }
+  }
+}

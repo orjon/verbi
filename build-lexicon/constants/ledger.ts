@@ -9,5 +9,5 @@ export const COMPACT_KEYS = new Set([
   "differs",
   "alternatives",
   "sources",
-  "auxiliary",
+  "aux",
 ])

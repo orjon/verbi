@@ -1,17 +1,28 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import verbs from '../lexicons/it-verbs.json' with { type: 'json' };
+import { verbs } from './lexicon.ts';
 import { conjugate, conjugateTense, hasVerb, listVerbs } from './conjugate.ts';
 import { EXCLUDED, isExcluded } from './excluded.ts';
-import { getAux, isDualAux, isReflexive, _lists } from './aux.ts';
+import { getAux, isDualAux } from './aux.ts';
+import { isReflexive } from './reflexive.ts';
 import { gerund, nonFiniteForms } from './forms.ts';
+import { auxChoices, auxKind } from './aux.ts';
+import { definitionsOf } from './definitions.ts';
+import { progressiveTense } from './progressive.ts';
+import { auxInfo, auxTooltipSections, conjugateTenseDisplay } from './display.ts';
+import { auxRuleText, frequencyText } from './explanations.ts';
 import { verbType } from './verb-type.ts';
 
-test('every verb in the auxiliary lists exists in the lexicon', () => {
-  // `essere` is skipped: the library conjugates it internally as an auxiliary.
-  const missing = [...(_lists.ESSERE as Set<string>), ...Object.keys(_lists.DUAL)]
-    .filter((v) => !hasVerb(v) && v !== 'essere');
-  assert.deepEqual(missing, [], `not in lexicon: ${missing.join(', ')}`);
+test('an auxiliary entry names only avere and essere', () => {
+  const bad = Object.entries(verbs as unknown as Record<string, { aux?: Record<string, unknown> }>)
+    .filter(([, v]) => v.aux && Object.keys(v.aux).some((a) => a !== 'avere' && a !== 'essere'))
+    .map(([verb]) => verb);
+  assert.deepEqual(bad, [], `unknown auxiliary: ${bad.join(', ')}`);
+});
+
+test('the first auxiliary listed is the one used', () => {
+  assert.equal(getAux('cominciare'), 'ESSERE');
+  assert.equal(getAux('correre'), 'AVERE');
 });
 
 test('avere is the default', () => {
@@ -142,4 +153,92 @@ test('-isc- is found even when a verb has only a third-person present', () => {
 test('every verb in the lexicon has a type', () => {
   const untyped = Object.keys(verbs).filter((v) => verbType(v) === null);
   assert.deepEqual(untyped, []);
+});
+
+test('every rule and frequency in the auxiliary data has explanation text', () => {
+  const missing: string[] = [];
+  for (const verb of Object.keys(verbs)) {
+    for (const choice of auxChoices(verb)) {
+      if (choice.rule && !auxRuleText(choice.rule)) missing.push(`${verb}: rule ${choice.rule}`);
+      if (choice.frequency && !frequencyText(choice.frequency))
+        missing.push(`${verb}: frequency ${choice.frequency}`);
+    }
+  }
+  assert.deepEqual(missing, []);
+});
+
+test('a verb that takes both auxiliaries equally shows both forms with a pipe', () => {
+  const rows = conjugateTenseDisplay('approdare', 'PASSATO_PROSSIMO');
+  // the participle is written once when it is the same
+  assert.equal(rows[0], 'ho | sono approdato');
+  // in the plural essere agrees and avere does not, so both forms are written out
+  assert.equal(rows[3], 'abbiamo approdato | siamo approdati');
+});
+
+test('an unusual auxiliary follows the usual one in brackets', () => {
+  const rows = conjugateTenseDisplay('decollare', 'PASSATO_PROSSIMO');
+  assert.equal(rows[0], 'ho (sono) decollato');
+  assert.equal(rows[3], 'abbiamo decollato (siamo decollati)');
+  assert.equal(conjugateTenseDisplay('perire', 'PASSATO_PROSSIMO')[0], 'sono (ho) perito');
+});
+
+test('other tenses and single-auxiliary verbs are unchanged', () => {
+  assert.deepEqual(conjugateTenseDisplay('parlare', 'PASSATO_PROSSIMO'), conjugateTense('parlare', 'PASSATO_PROSSIMO'));
+  assert.deepEqual(conjugateTenseDisplay('andare', 'PASSATO_PROSSIMO'), conjugateTense('andare', 'PASSATO_PROSSIMO'));
+  assert.deepEqual(conjugateTenseDisplay('decollare', 'PRESENTE'), conjugateTense('decollare', 'PRESENTE'));
+});
+
+test('the header lists each auxiliary with its frequency, rule and reason', () => {
+  const decollare = auxInfo('decollare');
+  assert.deepEqual(decollare.map((a) => a.label), ['Avere', 'Essere']);
+  assert.equal(decollare[1].frequency?.label, 'Uncommon');
+  const cominciare = auxInfo('cominciare');
+  assert.equal(cominciare[0].rule?.label, 'With or without an object');
+  assert.match(cominciare[1].detail ?? '', /^Used with a direct object\./);
+  assert.equal(auxInfo('parlare')[0].hint, 'Most verbs take avere.');
+});
+
+test('the hover covers every auxiliary, headed by name when there are two, and is empty when there is nothing to say', () => {
+  assert.deepEqual(auxTooltipSections(auxInfo('decollare')), [
+    { title: 'Essere', lines: ['Uncommon: Correct, but seldom used.'] },
+  ]);
+  const cominciare = auxTooltipSections(auxInfo('cominciare'));
+  assert.deepEqual(cominciare.map((s) => s.title), ['Essere', 'Avere']);
+  assert.match(cominciare[0].lines[0], /^With or without an object: /);
+  assert.equal(cominciare[0].lines[1], 'Used without a direct object.');
+  assert.deepEqual(auxTooltipSections(auxInfo('andare')), []);
+  assert.deepEqual(auxTooltipSections(auxInfo('parlare')), [
+    { title: null, lines: ['Most verbs take avere.'] },
+  ]);
+});
+
+test('a verb has its definitions, one string per meaning', () => {
+  assert.deepEqual(definitionsOf('cominciare'), ['to begin, to start, to commence, to set about']);
+  assert.deepEqual(definitionsOf('parlare').slice(0, 2), ['to talk, to speak', 'to cant']);
+});
+
+test('a verb with no definition, or no such verb, gives an empty list', () => {
+  assert.deepEqual(definitionsOf('nonesiste'), []);
+  assert.deepEqual(definitionsOf('toString'), []);
+});
+
+test('a verb is avere only, essere only or both', () => {
+  assert.equal(auxKind('parlare'), 'avere');
+  assert.equal(auxKind('andare'), 'essere');
+  assert.equal(auxKind('cominciare'), 'both');
+  const counts = { avere: 0, essere: 0, both: 0 };
+  for (const verb of listVerbs()) counts[auxKind(verb)]++;
+  assert.equal(counts.avere + counts.essere + counts.both, listVerbs().length);
+  assert.ok(counts.both > 0 && counts.essere > 0);
+});
+
+test('a progressive tense is stare and the gerund', () => {
+  assert.deepEqual(progressiveTense('cominciare', 'PRESENTE'),
+    ['sto cominciando', 'stai cominciando', 'sta cominciando', 'stiamo cominciando', 'state cominciando', 'stanno cominciando']);
+  assert.equal(progressiveTense('cominciare', 'IMPERFETTO')[3], 'stavamo cominciando');
+  assert.equal(progressiveTense('cominciare', 'FUTURO_SEMPLICE')[0], 'starò cominciando');
+});
+
+test('a verb with no gerund has no progressive tense', () => {
+  assert.ok(progressiveTense('licere', 'PRESENTE').every((form) => form === null));
 });

@@ -22,17 +22,28 @@ export const KAIKKI_FILE = `${EXTERNAL_DIR}/kaikki-italian.jsonl`;
 /** Our corrections to Morph-it: forms and valid alternatives, by verb → form path. */
 export const OVERRIDES_FILE = `${SOURCES_DIR}/overrides.json`;
 
+/** Which auxiliaries each verb takes, when it is not just avere. */
+export const AUXILIARIES_FILE = `${SOURCES_DIR}/auxiliaries.json`;
+
 /** Hand-kept record of every manual check against an outside source. */
 export const CHECKS_FILE = `${SOURCES_DIR}/checks.json`;
 
 /** Where the build writes the lexicons. */
 export const OUT_DIR = 'lexicons';
 
-/** The finished verb forms — the small, shippable file the app reads. */
+/**
+ * The finished verb forms, and the only form of them the app reads: every exactly
+ * regular verb is a marker ("parlare": "are") filled in by the app, every other
+ * verb is written out in full. The build keeps the full lexicon in memory and
+ * checks this file against it; see build-lexicon/scripts/compact.ts.
+ */
 export const VERBS_FILE = `${OUT_DIR}/it-verbs.json`;
 
 /** The dev-only record of every form, its source, and its checks. Not committed. */
 export const LEDGER_FILE = `${OUT_DIR}/it-verbs-ledger.json`;
+
+/** Each verb's English definitions, from Wiktionary — read by the app. */
+export const DEFINITIONS_FILE = `${OUT_DIR}/it-definitions.json`;
 
 /** Totals for everything in the lexicon, written fresh each build. */
 export const STATS_FILE = `${OUT_DIR}/it-verbs-stats.json`;

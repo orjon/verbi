@@ -1,11 +1,23 @@
+import type { Metadata } from "next";
+import { auxKind, definitionsOf, listVerbs, verbType } from "@/conjugation";
+import { VerbList } from "./verb-list";
+
+export const metadata: Metadata = {
+  title: "Verbi",
+  description: "Every Italian verb in the dictionary, in the infinitive.",
+};
+
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-          i verbi
-        </h1>
-      </main>
-    </div>
-  )
+  const verbs = listVerbs();
+  // Only the letters Italian actually uses — no j, k, w, x or y.
+  const letters = [...new Set(verbs.map((v) => v[0]))].sort();
+
+  const entries = verbs.map((verb) => ({
+    verb,
+    type: verbType(verb),
+    aux: auxKind(verb),
+    definitions: definitionsOf(verb),
+  }));
+
+  return <VerbList verbs={entries} letters={letters} />;
 }
